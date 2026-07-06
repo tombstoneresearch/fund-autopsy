@@ -10,12 +10,48 @@ ever published.
 from __future__ import annotations
 
 import json
+import signal
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 from typing import Any, Callable
 
 SNAPSHOT_VERSION = "2.0"
+
+DEFAULT_PER_FUND_TIMEOUT_S = 180
+
+
+class FundTimeout(Exception):
+    """Raised inside a pipeline stage when the per-fund wall clock expires."""
+
+
+class _fund_deadline:
+    """SIGALRM-based wall-clock guard around one fund's pipeline run.
+
+    A hung EDGAR request or a pathological registrant scan becomes a
+    legible stage failure ("FundTimeout: exceeded Ns") instead of a
+    silent multi-minute stall — the exact v1 failure mode that drove
+    the operator away. Unix main-thread only; a zero/None timeout
+    disables the guard.
+    """
+
+    def __init__(self, seconds: int | None):
+        self.seconds = seconds or 0
+
+    def __enter__(self) -> None:
+        if self.seconds > 0:
+            def _raise(_signum: int, _frame: Any) -> None:
+                raise FundTimeout(
+                    f"exceeded the {self.seconds}s per-fund wall clock"
+                )
+
+            self._old = signal.signal(signal.SIGALRM, _raise)
+            signal.alarm(self.seconds)
+
+    def __exit__(self, *exc: Any) -> None:
+        if self.seconds > 0:
+            signal.alarm(0)
+            signal.signal(signal.SIGALRM, self._old)
 
 
 def default_quarter_label(today: date | None = None) -> str:
@@ -60,6 +96,7 @@ def run_batch(
     pipeline: Callable[[str], Any] | None = None,
     serializer: Callable[[Any], dict[str, Any]] | None = None,
     on_progress: Callable[[str, str], None] | None = None,
+    per_fund_timeout_s: int | None = DEFAULT_PER_FUND_TIMEOUT_S,
 ) -> BatchSummary:
     """Analyze each ticker and write per-fund snapshots plus a manifest.
 
@@ -92,7 +129,40 @@ def run_batch(
                 on_progress(ticker, "skipped (snapshot exists)")
             continue
 
-        report = pipeline(ticker)
+        report = None
+        crash_reason: str | None = None
+        try:
+            with _fund_deadline(per_fund_timeout_s):
+                report = pipeline(ticker)
+        except FundTimeout as exc:
+            crash_reason = f"Wall clock: {exc}"
+        except Exception as exc:  # noqa: BLE001 — one fund must never kill the batch
+            crash_reason = f"Pipeline crash outside stage handling: {type(exc).__name__}: {exc}"
+
+        if report is None:
+            snapshot = {
+                "snapshot_version": SNAPSHOT_VERSION,
+                "generated": str(date.today()),
+                "quarter": quarter,
+                "ticker": ticker,
+                "provenance": {
+                    "ticker": ticker,
+                    "verdict": f"EXCLUDED — {crash_reason}",
+                    "completed": False,
+                    "stages": [],
+                    "quality_notes": [],
+                },
+                "analysis": None,
+                "excluded_reason": crash_reason,
+            }
+            snap_path.write_text(
+                json.dumps(snapshot, indent=2, default=str), encoding="utf-8"
+            )
+            summary.excluded.append(ticker)
+            if on_progress:
+                on_progress(ticker, f"excluded ({crash_reason})")
+            continue
+
         snapshot: dict[str, Any] = {
             "snapshot_version": SNAPSHOT_VERSION,
             "generated": str(date.today()),

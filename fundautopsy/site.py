@@ -126,11 +126,33 @@ class FundRow:
     name: str
     family: str
     stated_bps: float | None
+    reported_hidden_bps: float | None
     est_low_bps: float | None
     est_high_bps: float | None
     gap_bps: float | None
     period: str
     caveats: int
+
+
+def reported_hidden_bps(costs: dict[str, Any]) -> float | None:
+    """Sum of hidden costs backed by reported filing dollars only.
+
+    Brokerage commissions and disclosed soft-dollar commissions are
+    figures a fund filed with the SEC; spreads and market impact are
+    model estimates and are deliberately excluded here. The ledger
+    leads with this number because it is immune to model criticism.
+    """
+    total = 0.0
+    found = False
+    bc = costs.get("brokerage_commissions_bps")
+    if bc and bc.get("value") is not None:
+        total += float(bc["value"])
+        found = True
+    soft = costs.get("soft_dollar_arrangements")
+    if soft and soft.get("value_bps") is not None:
+        total += float(soft["value_bps"])
+        found = True
+    return total if found else None
 
 
 def _esc(text: Any) -> str:
@@ -201,6 +223,7 @@ def _row_from_snapshot(snap: dict[str, Any]) -> FundRow | None:
         name=analysis.get("name") or "",
         family=analysis.get("fund_family") or "",
         stated_bps=stated,
+        reported_hidden_bps=reported_hidden_bps(costs),
         est_low_bps=low,
         est_high_bps=high,
         gap_bps=gap,
@@ -211,7 +234,12 @@ def _row_from_snapshot(snap: dict[str, Any]) -> FundRow | None:
 
 def _render_index(rows: list[FundRow], generated: str, quarter: str) -> str:
     rows_sorted = sorted(
-        rows, key=lambda r: (r.gap_bps is None, -(r.gap_bps or 0))
+        rows,
+        key=lambda r: (
+            r.reported_hidden_bps is None,
+            -(r.reported_hidden_bps or 0),
+            -(r.gap_bps or 0),
+        ),
     )
     body_rows = []
     for i, r in enumerate(rows_sorted, 1):
@@ -226,8 +254,8 @@ def _render_index(rows: list[FundRow], generated: str, quarter: str) -> str:
             f'<td class="l"><a href="funds/{_esc(r.ticker)}.html">{_esc(r.name) or _esc(r.ticker)}</a>{caveat}</td>'
             f'<td class="l">{_esc(r.ticker)}</td>'
             f"<td>{_bps(r.stated_bps)}</td>"
+            f'<td class="gap">{_bps(r.reported_hidden_bps)}</td>'
             f"<td>{est}</td>"
-            f'<td class="gap">{_bps(r.gap_bps)}</td>'
             f'<td class="l">{_esc(r.period)}</td></tr>'
         )
     prologue = f"""
@@ -236,16 +264,17 @@ def _render_index(rows: list[FundRow], generated: str, quarter: str) -> str:
   soft dollar arrangements, bid-ask spreads, and market impact — costs that reduce a fund's return before its
   NAV is ever struck. The data to estimate them has been sitting in SEC filings since 2018. This ledger
   aggregates it, fund by fund, with every figure tagged to its source filing or estimation model.</p>
-  <p>Figures are in basis points per year. "The Gap" is the estimated distance between what a fund states it
-  costs and the midpoint-inclusive range of what it costs in practice. Estimates carry ranges because they are
-  estimates; the methodology and its limitations are published in full.</p>
+  <p>Figures are in basis points per year. "Reported hidden" counts only costs the fund itself filed in
+  dollars (brokerage commissions and disclosed soft-dollar commissions from N-CEN); it is the number no model
+  can be blamed for. "Estimated total" adds modeled spread and market-impact ranges on top, tagged as
+  estimates because that is what they are. The methodology and its limitations are published in full.</p>
 </div>"""
     table = f"""
 <table class="ledger">
   <caption>Snapshot {_esc(quarter)}</caption>
   <thead><tr>
     <th>No.</th><th class="l">Fund</th><th class="l">Ticker</th>
-    <th>Stated (bps)</th><th>Estimated total (bps)</th><th>The Gap (bps)</th><th class="l">Filing period</th>
+    <th>Stated (bps)</th><th>Reported hidden (bps)</th><th>Estimated total (bps)</th><th class="l">Filing period</th>
   </tr></thead>
   <tbody>{''.join(body_rows)}</tbody>
 </table>"""

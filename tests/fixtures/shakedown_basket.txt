@@ -1,0 +1,33 @@
+# Stratified live-EDGAR shakedown basket — 2026-07-05
+# Index equity, multiple sponsors
+VFIAX
+FXAIX
+SWPPX
+VTSAX
+# Active equity, large families
+AGTHX
+FCNTX
+TRBCX
+DODGX
+OAKMX
+FMAGX
+# Bond, active and index
+VBTLX
+DODIX
+MWTRX
+PTTAX
+# Target-date, five sponsors incl. known hard cases
+VFIFX
+FFFHX
+TRRMX
+AADTX
+LIPSX
+# International
+VTIAX
+AEPGX
+# Sector
+VGHCX
+FSPHX
+# Boutique active
+SEQUX
+FLPSX

@@ -167,6 +167,9 @@ def batch(
     force: bool = typer.Option(
         False, "--force", help="Re-analyze tickers whose snapshot already exists"
     ),
+    timeout: int = typer.Option(
+        180, "--timeout", help="Per-fund wall clock in seconds; a hang becomes a legible exclusion"
+    ),
 ) -> None:
     """Analyze many funds and write dated JSON snapshots with provenance."""
     from fundautopsy.batch import run_batch
@@ -177,7 +180,9 @@ def batch(
     def progress(t: str, status: str) -> None:
         console.print(f"  {t:<8} {status}")
 
-    summary = run_batch(tickers, out, force=force, on_progress=progress)
+    summary = run_batch(
+        tickers, out, force=force, on_progress=progress, per_fund_timeout_s=timeout
+    )
     console.print(
         f"\n[green]{len(summary.complete)} complete[/green], "
         f"[yellow]{len(summary.caveats)} with caveats[/yellow], "
