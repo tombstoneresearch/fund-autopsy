@@ -21,7 +21,7 @@ This directory holds the working-paper series published under the Tombstone Rese
 
 **Data provenance.** Every figure in every paper is traced to the source SEC filing (by CIK, accession number, and item) or to an explicitly cited public dataset. Where an estimate is used in place of a reported figure, the estimate is labeled and its methodology is cited.
 
-**Open source.** The data pipeline and scoring code that produce each paper's figures are maintained in the Fund Autopsy repository at `github.com/Tombstone-Research/fund-autopsy`. Readers may reproduce every figure with the same code the paper uses.
+**Open source.** The data pipeline and scoring code that produce each paper's figures are maintained in the Fund Autopsy repository at `github.com/tombstoneresearch/fund-autopsy`. Readers may reproduce every figure with the same code the paper uses.
 
 **Pseudonymity.** The author publishes under the pseudonym E. J. Baldwin. The project accepts no sponsorship and takes no advertising. Pseudonymity is a structural feature, not a temporary choice; it removes the commercial incentive distortion that has mediated prior industry research on these topics.
 
@@ -33,7 +33,7 @@ This directory holds the working-paper series published under the Tombstone Rese
 
 Citations may use the form:
 
-> Baldwin, E. J. (2026). Beneath the Expense Ratio: Ten Disclosure Dimensions in SEC Form N-CEN That Industry Cost Analysis Systematically Omits. *Tombstone Research Working Paper No. 1*. https://github.com/Tombstone-Research/fund-autopsy/blob/main/research/working_paper_01_beneath_the_expense_ratio.md
+> Baldwin, E. J. (2026). Beneath the Expense Ratio: Ten Disclosure Dimensions in SEC Form N-CEN That Industry Cost Analysis Systematically Omits. *Tombstone Research Working Paper No. 1*. https://github.com/tombstoneresearch/fund-autopsy/blob/main/research/working_paper_01_beneath_the_expense_ratio.md
 
 ## Contact
 
