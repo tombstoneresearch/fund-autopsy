@@ -1273,6 +1273,12 @@ def fee_history(ticker: str):
             "changes": changes,
         }
 
+    except HTTPException:
+        # _resolve_or_explain raises 422s (ETF, unknown ticker) that the
+        # broad handler below was converting into opaque 500s — the exact
+        # "unidentifiable issue" failure class. Every sibling endpoint
+        # already re-raises; this one was the odd one out.
+        raise
     except ValueError as e:
         raise HTTPException(404, str(e))
     except Exception as e:
