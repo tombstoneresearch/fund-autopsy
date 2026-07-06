@@ -143,5 +143,63 @@ def compare(
     render_comparison(results, investment, horizon, assumed_return, console)
 
 
+@app.command()
+def doctor(
+    ticker: str = typer.Argument(..., help="Fund ticker symbol to diagnose"),
+) -> None:
+    """Run the pipeline one stage at a time and explain any failure in plain English."""
+    from fundautopsy.doctor import render_report, run_pipeline
+
+    report = run_pipeline(ticker)
+    render_report(report, console)
+    if not report.completed:
+        raise typer.Exit(1)
+
+
+@app.command()
+def batch(
+    tickers_file: Path = typer.Argument(
+        ..., help="Text file with one ticker per line (# for comments)"
+    ),
+    out: Path = typer.Option(
+        Path("data/snapshots"), "--out", "-o", help="Snapshot root directory"
+    ),
+    force: bool = typer.Option(
+        False, "--force", help="Re-analyze tickers whose snapshot already exists"
+    ),
+) -> None:
+    """Analyze many funds and write dated JSON snapshots with provenance."""
+    from fundautopsy.batch import run_batch
+
+    tickers = tickers_file.read_text(encoding="utf-8").splitlines()
+    console.print(f"\n[bold]Fund Autopsy[/bold] — batch run, {len(tickers)} lines\n")
+
+    def progress(t: str, status: str) -> None:
+        console.print(f"  {t:<8} {status}")
+
+    summary = run_batch(tickers, out, force=force, on_progress=progress)
+    console.print(
+        f"\n[green]{len(summary.complete)} complete[/green], "
+        f"[yellow]{len(summary.caveats)} with caveats[/yellow], "
+        f"[red]{len(summary.excluded)} excluded[/red], "
+        f"{len(summary.skipped)} skipped → {summary.out_dir}\n"
+    )
+
+
+@app.command()
+def site(
+    snapshots: Path = typer.Argument(..., help="Snapshot directory (e.g., data/snapshots/2026-Q3)"),
+    out: Path = typer.Option(Path("site"), "--out", "-o", help="Output directory for static HTML"),
+) -> None:
+    """Render batch snapshots into the static scorecard site."""
+    from fundautopsy.site import build_site
+
+    counts = build_site(snapshots, out)
+    console.print(
+        f"\n[green]Site built:[/green] {counts['funds']} fund pages, "
+        f"{counts['excluded']} excluded → {out}/index.html\n"
+    )
+
+
 if __name__ == "__main__":
     app()
