@@ -1,0 +1,70 @@
+# Scorecard universe: ~50 largest actively managed U.S. open-end mutual funds
+# Curated 2026-07-05 from AUM rankings as of Claude's knowledge (2025 vintage).
+# VERIFY against current AUM before publication — rankings drift, and this
+# list intentionally uses each fund's largest retail share class ticker.
+# Criteria: actively managed (no pure index), open-end mutual fund (no ETF),
+# retail-accessible share class. A few target-date wrappers included
+# deliberately for the wrapper-fee story.
+#
+# American Funds (Capital Group)
+AGTHX
+AMCPX
+AWSHX
+AEPGX
+ANCFX
+AMECX
+AIVSX
+ABALX
+CWGIX
+SMCWX
+AMRMX
+ANWPX
+CAIBX
+AHITX
+ABNDX
+# Fidelity active
+FCNTX
+FBGRX
+FBALX
+FPURX
+FLPSX
+FMAGX
+FSPHX
+FDIVX
+# Vanguard active
+VWENX
+VWIAX
+VPMAX
+VWUAX
+VWELX
+# PIMCO
+PIMIX
+PTTAX
+PONAX
+# T. Rowe Price
+TRBCX
+PRGFX
+PRWCX
+RPMGX
+PRNHX
+# Dodge & Cox
+DODGX
+DODIX
+DODFX
+# Other majors and boutiques
+OAKMX
+SGENX
+MWTRX
+BAGIX
+FKGRX
+TPINX
+JLGRX
+OLGAX
+# Target-date wrappers (five sponsors, for the wrapper-fee finding)
+VFIFX
+FFFHX
+TRRMX
+AADTX
+# LIZKX removed 2026-07-05: absent from SEC census (dead ticker), caught
+# authoritatively by the census resolver. Live BlackRock TDF class below.
+LPSFX

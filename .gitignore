@@ -79,7 +79,7 @@ content/
 /web/
 
 # Local data and generated artifacts (root-level only, not fundautopsy/data/)
-/data/
+/data/snapshots/
 .coverage*
 
 # Mypy cache
@@ -90,3 +90,4 @@ scripts/.pseudonymity_patterns
 
 # Portfolio TCO rollup scoping doc (internal)
 docs/spec_portfolio_tco_rollup.md
+# Universe definitions ARE tracked (data/universes/); snapshots are not.
