@@ -23,7 +23,9 @@ def _tag_label(tag: DataSourceTag) -> str:
         DataSourceTag.NOT_DISCLOSED: "not_disclosed",
         DataSourceTag.UNAVAILABLE: "unavailable",
     }
-    return labels.get(tag, str(tag))
+    # Fall back to the bare enum name ("calculated"), never the repr
+    # ("DataSourceTag.CALCULATED") that used to leak into artifacts.
+    return labels.get(tag, getattr(tag, "name", str(tag)).lower())
 
 
 def _serialize_node(node: FundNode) -> dict[str, Any]:

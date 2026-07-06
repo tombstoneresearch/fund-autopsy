@@ -214,7 +214,10 @@ def _row_from_snapshot(snap: dict[str, Any]) -> FundRow | None:
     if not analysis:
         return None
     costs = analysis.get("costs", {})
-    stated = costs.get("total_reported_bps")
+    # Stated = the prospectus expense ratio, and only that. Never
+    # substitute total_reported_bps (a hidden-cost composite) here.
+    er = costs.get("expense_ratio_bps") or {}
+    stated = er.get("value")
     low = costs.get("total_estimated_low_bps")
     high = costs.get("total_estimated_high_bps")
     gap = costs.get("hidden_cost_gap_bps")

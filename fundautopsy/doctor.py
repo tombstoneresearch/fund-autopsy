@@ -39,6 +39,12 @@ STAGE_HINTS: dict[str, str] = {
         "the batch runner, which processes children with a persistent "
         "cache."
     ),
+    "fees": (
+        "Prospectus fee extraction failed: none of the 497K, family-"
+        "specific, or 485BPOS XBRL parsers produced a fee table. The "
+        "fund renders without a stated expense ratio (shown as a gap, "
+        "not a zero). Worth a manual look at the filing."
+    ),
 }
 
 
@@ -112,6 +118,68 @@ def _collect_quality_notes(node: Any) -> list[str]:
     return notes
 
 
+def _enrich_root_fees(root: Any) -> StageResult:
+    """Populate the root node's stated fee facts from the prospectus.
+
+    v1's CLI pipeline never carried the stated expense ratio — only the
+    web app fetched it, separately. Snapshots therefore lacked the one
+    number every reader anchors on. This stage closes that gap for the
+    root fund. Non-fatal by design: a fund whose fee table resists all
+    three parser families still renders, with the stated column shown
+    as an honest gap.
+    """
+    label = "Retrieve stated fees from prospectus (497K/485BPOS)"
+    t0 = time.perf_counter()
+    try:
+        from fundautopsy.data.prospectus import retrieve_prospectus_fees
+        from fundautopsy.models.filing_data import DataSourceTag, TaggedValue
+
+        ticker = getattr(getattr(root, "metadata", None), "ticker", None)
+        cb = getattr(root, "cost_breakdown", None)
+        if not ticker or cb is None:
+            return StageResult(
+                "fees", label, "degraded", time.perf_counter() - t0,
+                detail="No root ticker or cost breakdown to enrich.",
+            )
+        fees = retrieve_prospectus_fees(ticker)
+        if fees is None:
+            return StageResult(
+                "fees", label, "degraded", time.perf_counter() - t0,
+                detail="No parseable fee table found.",
+                hint=STAGE_HINTS.get("fees", ""),
+            )
+
+        def _bps(pct: float | None) -> float | None:
+            return round(pct * 100.0, 2) if pct is not None else None
+
+        er_pct = fees.net_expenses if fees.net_expenses is not None else fees.total_annual_expenses
+        if cb.expense_ratio_bps is None and er_pct is not None:
+            cb.expense_ratio_bps = TaggedValue(
+                value=_bps(er_pct), tag=DataSourceTag.REPORTED,
+                note="Prospectus fee table",
+            )
+        if cb.management_fee_bps is None and fees.management_fee is not None:
+            cb.management_fee_bps = TaggedValue(
+                value=_bps(fees.management_fee), tag=DataSourceTag.REPORTED,
+            )
+        if cb.twelve_b1_fee_bps is None and fees.twelve_b1_fee is not None:
+            cb.twelve_b1_fee_bps = TaggedValue(
+                value=_bps(fees.twelve_b1_fee), tag=DataSourceTag.REPORTED,
+            )
+        if fees.portfolio_turnover is not None and getattr(root, "prospectus_turnover", None) is None:
+            try:
+                root.prospectus_turnover = fees.portfolio_turnover
+            except Exception:  # noqa: BLE001 — attribute optional on some nodes
+                pass
+        return StageResult("fees", label, "ok", time.perf_counter() - t0)
+    except Exception as exc:  # noqa: BLE001 — never fail the run over fees
+        return StageResult(
+            "fees", label, "degraded", time.perf_counter() - t0,
+            detail=f"{type(exc).__name__}: {exc}",
+            hint=STAGE_HINTS.get("fees", ""),
+        )
+
+
 def run_pipeline(ticker: str) -> PipelineReport:
     """Run the four analysis stages one at a time, timing and trapping each."""
     from fundautopsy.core.costs import compute_costs
@@ -170,6 +238,7 @@ def run_pipeline(ticker: str) -> PipelineReport:
             )
 
     if not failed and value is not None:
+        report.stages.append(_enrich_root_fees(value))
         report.result = value
         report.quality_notes = _collect_quality_notes(value)
         if report.quality_notes:
