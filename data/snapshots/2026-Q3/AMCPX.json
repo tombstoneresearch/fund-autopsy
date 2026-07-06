@@ -1,0 +1,121 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "AMCPX",
+  "provenance": {
+    "ticker": "AMCPX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.84,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 0.82,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "AMCPX: Cash management: 1 registered fund holdings (~3.7% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "AMCPX",
+    "name": "AMCAP FUND",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "4405",
+    "series_id": "S000008817",
+    "class_id": "C000024003",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 93859793596.53,
+    "holdings_count": 145,
+    "reporting_period_end": "2026-02-28",
+    "asset_class_weights": {
+      "EC": 96.05068339379996,
+      "STIV": 3.6755268756,
+      "EP": 0.2683007005
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.91,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$8,544,945 commissions / $93,859,793,597 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.41,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.04,
+        "high_bps": 6.08,
+        "mid_bps": 4.5600000000000005,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 1%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.91,
+      "total_estimated_low_bps": 6.95,
+      "total_estimated_high_bps": 12.99,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 64.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 29.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 24.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 1 registered fund holdings (~3.7% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

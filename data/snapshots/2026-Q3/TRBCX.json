@@ -1,0 +1,114 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "TRBCX",
+  "provenance": {
+    "ticker": "TRBCX",
+    "verdict": "COMPLETE \u2014 all stages clean.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.77,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 0.77,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": []
+  },
+  "analysis": {
+    "ticker": "TRBCX",
+    "name": "T. Rowe Price Blue Chip Growth Fund, Inc.",
+    "fund_family": "T. Rowe Price Associates, Inc.",
+    "cik": "902259",
+    "series_id": "S000002069",
+    "class_id": "C000005424",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 58793003831.6,
+    "holdings_count": 74,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 98.58549611229996,
+      "EP": 0.8844196988,
+      "DBT": 0.23976016309999998,
+      "STIV": 0.3113005721
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.22,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$1,319,208 commissions / $58,793,003,832 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.1,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.02,
+        "mid_bps": 4.515,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.22,
+      "total_estimated_low_bps": 6.23,
+      "total_estimated_high_bps": 12.239999999999998,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 70.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 55.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": []
+  }
+}

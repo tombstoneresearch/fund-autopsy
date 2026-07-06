@@ -1,0 +1,124 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "ABNDX",
+  "provenance": {
+    "ticker": "ABNDX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.76,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.91,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.02,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "ABNDX: Cash management: 25 registered fund holdings (~4.2% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "ABNDX",
+    "name": "BOND FUND OF AMERICA",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "13075",
+    "series_id": "S000009231",
+    "class_id": "C000025097",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 99516681006.76,
+    "holdings_count": 5760,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EP": 0.0049614798,
+      "EC": 0.0241058069,
+      "LON": 0.2750877772,
+      "ABS-O": 6.956100800199994,
+      "DBT": 64.29147225059988,
+      "ABS-CBDO": 4.857688587100004,
+      "ABS-MBS": 21.120489712099975,
+      "DFE": 0.005464276999999999,
+      "DIR": -0.2921664308,
+      "STIV": 3.9078696692,
+      "DCR": 0.0222346106
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.0,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$6,595 commissions / $99,516,681,007 net assets"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 1.52,
+        "high_bps": 6.47,
+        "mid_bps": 3.995,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 1.71,
+        "high_bps": 3.42,
+        "mid_bps": 2.565,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 97%, small-cap weight: 100%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0,
+      "total_estimated_low_bps": 3.23,
+      "total_estimated_high_bps": 9.89,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 59.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 19.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 25.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 25 registered fund holdings (~4.2% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

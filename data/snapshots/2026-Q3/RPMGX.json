@@ -1,0 +1,117 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "RPMGX",
+  "provenance": {
+    "ticker": "RPMGX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.79,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.49,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "RPMGX: Cash management: 1 registered fund holdings (~2.8% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "RPMGX",
+    "name": "T. Rowe Price Mid-Cap Growth Fund, Inc.",
+    "fund_family": "T. Rowe Price Associates, Inc.",
+    "cik": "887147",
+    "series_id": "S000002102",
+    "class_id": "C000005470",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 22527988998.36,
+    "holdings_count": 123,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 96.7218633891,
+      "EP": 0.6284956699,
+      "STIV": 2.7687905787
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 2.24,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$5,056,679 commissions / $22,527,988,998 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 1.01,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.01,
+        "mid_bps": 4.505,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.19,
+        "high_bps": 6.38,
+        "mid_bps": 4.785,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 3%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 2.24,
+      "total_estimated_low_bps": 8.43,
+      "total_estimated_high_bps": 14.629999999999999,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 77.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 61.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 1 registered fund holdings (~2.8% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

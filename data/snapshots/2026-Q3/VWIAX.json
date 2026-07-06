@@ -1,0 +1,122 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "VWIAX",
+  "provenance": {
+    "ticker": "VWIAX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.74,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.47,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.01,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "VWIAX: Cash management: 13 registered fund holdings (~0.7% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "VWIAX",
+    "name": "VANGUARD WELLESLEY INCOME FUND",
+    "fund_family": "Wellington Management Company LLP",
+    "cik": "105544",
+    "series_id": "S000004405",
+    "class_id": "C000012162",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 47434114595.2,
+    "holdings_count": 1524,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "DBT": 57.952386703800016,
+      "ABS-MBS": 2.0290180628759997,
+      "RA": 1.648813320691,
+      "DE": 0.013854712532000001,
+      "ABS-CBDO": 0.6811744562180001,
+      "EC": 37.186385857061,
+      "STIV": 1.3531105e-05,
+      "DIR": 0.000957963448
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 1.36,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$6,468,954 commissions / $47,434,114,595 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.61,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 1.98,
+        "high_bps": 6.18,
+        "mid_bps": 4.08,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 2.09,
+        "high_bps": 4.18,
+        "mid_bps": 3.135,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 61%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 1.36,
+      "total_estimated_low_bps": 5.43,
+      "total_estimated_high_bps": 11.719999999999999,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 15.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 14.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 13 registered fund holdings (~0.7% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

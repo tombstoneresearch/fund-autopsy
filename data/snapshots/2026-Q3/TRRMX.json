@@ -1,0 +1,159 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-05",
+  "quarter": "2026-Q3",
+  "ticker": "TRRMX",
+  "provenance": {
+    "ticker": "TRRMX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.69,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.9,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "24 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "TRRMX: Unresolved underlying fund: 'TRP DYNAMIC GLOBAL BOND FD-Z' (0.12% of NAV, CUSIP 87281D702).",
+      "TRRMX: Unresolved underlying fund: 'TRP EM MKTS DISCOVERY STK FD-Z CL' (3.35% of NAV, CUSIP 87281D884).",
+      "TRRMX: Unresolved underlying fund: 'TRP EMER MKTS STOCK FD-Z' (3.01% of NAV, CUSIP 87281D876).",
+      "TRRMX: Unresolved underlying fund: 'TRP EQUITY INDEX 500 FD-Z' (8.97% of NAV, CUSIP 779552504).",
+      "TRRMX: Unresolved underlying fund: 'TRP GROWTH STOCK FD-Z' (14.67% of NAV, CUSIP 77958E208).",
+      "TRRMX: Unresolved underlying fund: 'TRP INTL BOND FD (USD HEDGED)-Z' (0.22% of NAV, CUSIP 87281D850).",
+      "TRRMX: Unresolved underlying fund: 'TRP INTL STOCK FD-Z' (6.58% of NAV, CUSIP 87281D843).",
+      "TRRMX: Unresolved underlying fund: 'TRP INTL VALUE EQUITY FD-Z' (9.11% of NAV, CUSIP 87281D827).",
+      "TRRMX: Unresolved underlying fund: 'TRP LTD DURATION INFL FOCUSED BD FD-Z' (0.01% of NAV, CUSIP 872798301).",
+      "TRRMX: Unresolved underlying fund: 'TRP MID-CAP GROWTH FD-Z' (2.95% of NAV, CUSIP 779556505).",
+      "TRRMX: Unresolved underlying fund: 'TRP MID-CAP VALUE FD-Z' (3.18% of NAV, CUSIP 77957Y502).",
+      "TRRMX: Unresolved underlying fund: 'TRP NEW HORIZONS FD-Z' (1.83% of NAV, CUSIP 779562305).",
+      "TRRMX: Unresolved underlying fund: 'TRP NEW INCOME FD-Z' (0.52% of NAV, CUSIP 779570506).",
+      "TRRMX: Unresolved underlying fund: 'TRP OVERSEAS STOCK FD-Z' (8.31% of NAV, CUSIP 87281D835).",
+      "TRRMX: Unresolved underlying fund: 'TRP REAL ASSETS FD-Z' (6.77% of NAV, CUSIP 87279W308).",
+      "TRRMX: Unresolved underlying fund: 'TRP SMALL-CAP STOCK FD-Z' (1.76% of NAV, CUSIP 779572601).",
+      "TRRMX: Unresolved underlying fund: 'TRP SMALL-CAP VALUE FD-Z' (1.78% of NAV, CUSIP 77957Q400).",
+      "TRRMX: Unresolved underlying fund: 'TRP TRANSITION FD' (0.01% of NAV, CUSIP 87283Y100).",
+      "TRRMX: Unresolved underlying fund: 'TRP US LARGE-CAP CORE FD-Z' (8.65% of NAV, CUSIP 74149R404).",
+      "TRRMX: Unresolved underlying fund: 'TRP US TREASURY LONG-TERM INDEX FD-Z' (0.34% of NAV, CUSIP 77957T701).",
+      "TRRMX: Unresolved underlying fund: 'TRP US TREASURY MONEY FD-Z' (1.40% of NAV, CUSIP 77957T800).",
+      "TRRMX: Unresolved underlying fund: 'TRP VALUE FD-Z' (16.40% of NAV, CUSIP 779578400).",
+      "TRRMX: Fund-of-funds detected: 22 underlying fund holdings representing ~99.9% of net assets. Resolved 0/22 to SEC CIKs for recursive unwind.",
+      "TRRMX: 22 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup."
+    ]
+  },
+  "analysis": {
+    "ticker": "TRRMX",
+    "name": "T. Rowe Price Retirement 2050 Fund",
+    "fund_family": "T. Rowe Price Associates, Inc.",
+    "cik": "1177017",
+    "series_id": "S000014996",
+    "class_id": "C000040835",
+    "is_fund_of_funds": true,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 18255575888.44,
+    "holdings_count": 30,
+    "reporting_period_end": "2026-02-28",
+    "asset_class_weights": {
+      "DE": -0.032090233200000005,
+      "EC": 98.5414939825,
+      "STIV": 1.4017183373,
+      "DBT": 0.0924444845
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.0,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$0 commissions / $18,255,575,888 net assets"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.02,
+        "high_bps": 6.04,
+        "mid_bps": 4.53,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0,
+      "total_estimated_low_bps": 6.02,
+      "total_estimated_high_bps": 12.04,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 62.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 62.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Unresolved underlying fund: 'TRP DYNAMIC GLOBAL BOND FD-Z' (0.12% of NAV, CUSIP 87281D702).",
+      "Unresolved underlying fund: 'TRP EM MKTS DISCOVERY STK FD-Z CL' (3.35% of NAV, CUSIP 87281D884).",
+      "Unresolved underlying fund: 'TRP EMER MKTS STOCK FD-Z' (3.01% of NAV, CUSIP 87281D876).",
+      "Unresolved underlying fund: 'TRP EQUITY INDEX 500 FD-Z' (8.97% of NAV, CUSIP 779552504).",
+      "Unresolved underlying fund: 'TRP GROWTH STOCK FD-Z' (14.67% of NAV, CUSIP 77958E208).",
+      "Unresolved underlying fund: 'TRP INTL BOND FD (USD HEDGED)-Z' (0.22% of NAV, CUSIP 87281D850).",
+      "Unresolved underlying fund: 'TRP INTL STOCK FD-Z' (6.58% of NAV, CUSIP 87281D843).",
+      "Unresolved underlying fund: 'TRP INTL VALUE EQUITY FD-Z' (9.11% of NAV, CUSIP 87281D827).",
+      "Unresolved underlying fund: 'TRP LTD DURATION INFL FOCUSED BD FD-Z' (0.01% of NAV, CUSIP 872798301).",
+      "Unresolved underlying fund: 'TRP MID-CAP GROWTH FD-Z' (2.95% of NAV, CUSIP 779556505).",
+      "Unresolved underlying fund: 'TRP MID-CAP VALUE FD-Z' (3.18% of NAV, CUSIP 77957Y502).",
+      "Unresolved underlying fund: 'TRP NEW HORIZONS FD-Z' (1.83% of NAV, CUSIP 779562305).",
+      "Unresolved underlying fund: 'TRP NEW INCOME FD-Z' (0.52% of NAV, CUSIP 779570506).",
+      "Unresolved underlying fund: 'TRP OVERSEAS STOCK FD-Z' (8.31% of NAV, CUSIP 87281D835).",
+      "Unresolved underlying fund: 'TRP REAL ASSETS FD-Z' (6.77% of NAV, CUSIP 87279W308).",
+      "Unresolved underlying fund: 'TRP SMALL-CAP STOCK FD-Z' (1.76% of NAV, CUSIP 779572601).",
+      "Unresolved underlying fund: 'TRP SMALL-CAP VALUE FD-Z' (1.78% of NAV, CUSIP 77957Q400).",
+      "Unresolved underlying fund: 'TRP TRANSITION FD' (0.01% of NAV, CUSIP 87283Y100).",
+      "Unresolved underlying fund: 'TRP US LARGE-CAP CORE FD-Z' (8.65% of NAV, CUSIP 74149R404).",
+      "Unresolved underlying fund: 'TRP US TREASURY LONG-TERM INDEX FD-Z' (0.34% of NAV, CUSIP 77957T701).",
+      "Unresolved underlying fund: 'TRP US TREASURY MONEY FD-Z' (1.40% of NAV, CUSIP 77957T800).",
+      "Unresolved underlying fund: 'TRP VALUE FD-Z' (16.40% of NAV, CUSIP 779578400).",
+      "Fund-of-funds detected: 22 underlying fund holdings representing ~99.9% of net assets. Resolved 0/22 to SEC CIKs for recursive unwind.",
+      "22 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup."
+    ]
+  }
+}

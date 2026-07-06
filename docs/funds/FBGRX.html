@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FBGRX — Fund Autopsy</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="org">Tombstone Research</div>
+  <h1><a href="../index.html" style="text-decoration:none">Fund Autopsy</a></h1>
+  <div class="motto">Leave no stone unturned.</div>
+</header>
+<div class="dateline"><span>A ledger of what funds actually cost</span><span>Prepared 2026-07-06</span></div>
+
+<div class="report-head">
+  <div class="no">Autopsy report No. 021 · Snapshot 2026-Q3</div>
+  <h2>Fidelity Blue Chip Growth Fund</h2>
+  <div class="subject-grid">
+    <div><span class="k">Ticker</span>FBGRX</div>
+    <div><span class="k">Family</span>Fidelity Management &amp; Research Company LLC</div>
+    <div><span class="k">CIK</span>754510</div>
+    <div><span class="k">Series / Class</span>S000007195 / C000019693</div>
+    <div><span class="k">Net assets</span>$95,316,933,798</div>
+    <div><span class="k">Holdings period</span>2026-04-30</div>
+  </div>
+</div>
+<div class="verdict">
+  <div><div class="fig">1</div><div class="lbl">Stated cost (bps)</div></div>
+  <div><div class="fig">7–14</div><div class="lbl">Estimated total (bps)</div></div>
+  <div><div class="fig gap">—</div><div class="lbl">The Gap (bps)</div></div>
+</div>
+<h3 class="section">Findings</h3>
+<table class="ledger">
+  <thead><tr><th class="l">Component</th><th>bps</th><th>Midpoint</th><th class="l">Source</th></tr></thead>
+  <tbody><tr><td class="l">Expense ratio (stated)</td><td>61</td><td>—</td><td class='l'>reported</td></tr><tr><td class="l">Management fee</td><td>60</td><td>—</td><td class='l'>reported</td></tr><tr><td class="l">12b-1 fee</td><td>—</td><td>—</td><td class='l'>—</td></tr><tr><td class="l">Brokerage commissions</td><td>1</td><td>—</td><td class='l'>DataSourceTag.CALCULATED</td></tr><tr><td class="l">Bid-ask spread cost</td><td>3–6</td><td>5</td><td class='l'>estimated</td></tr><tr><td class="l">Market impact</td><td>3–7</td><td>5</td><td class='l'>estimated</td></tr><tr><td class="l">Soft dollar arrangements</td><td>0</td><td>—</td><td class='l'>estimated · ACTIVE</td></tr></tbody>
+</table>
+<h3 class="section">Data notes</h3>
+<ul class="notes"><li>None recorded.</li></ul>
+<h3 class="section">Chain of custody</h3>
+<ul class="notes provenance"><li class="st-ok">Resolve ticker to CIK / series / class</li><li class="st-ok">Retrieve filings, detect fund structure</li><li class="st-ok">Extract fees, compute cost estimates</li><li class="st-ok">Roll up fund-of-funds cost tree</li><li class="st-ok">Retrieve stated fees from prospectus (backfilled post-run)</li></ul>
+
+<footer class="colophon">
+  <p>Educational and informational purposes only. Not investment advice, not a recommendation, not an offer to buy or sell any security. Trading-cost figures are estimates derived from public SEC filings and published academic models; actual costs vary. Tombstone Research is not a registered investment adviser or broker-dealer.</p>
+  <p>Every figure on this page traces to a public SEC filing (N-CEN, N-PORT, 497K, 485BPOS, SAI, N-CSR) or to a
+  disclosed estimation model. Snapshots are precomputed and dated; nothing on this site is calculated at
+  request time. <a href="https://github.com/tombstoneresearch/fund-autopsy">Source code and methodology</a> ·
+  <a href="../working_paper_01.pdf">Working Paper No. 1 (PDF)</a></p>
+</footer>
+</body>
+</html>

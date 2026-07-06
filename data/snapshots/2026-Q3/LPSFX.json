@@ -1,0 +1,647 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "LPSFX",
+  "provenance": {
+    "ticker": "LPSFX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.84,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 31.76,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.09,
+        "detail": "17 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "LPSFX: Unresolved underlying fund: 'iShares iBoxx USD Investment Grade Corporate Bond ETF' (0.00% of NAV, CUSIP 464287242).",
+      "LPSFX: Unresolved underlying fund: 'BlackRock Funds III' (3.09% of NAV, CUSIP 066922519).",
+      "LPSFX: Unresolved underlying fund: 'BLACKROCK CASH FUNDS TREASURY SL AGENCY SHARES' (5.75% of NAV, CUSIP 066922477).",
+      "LPSFX: Unresolved underlying fund: 'DIVERSIFIED EQUITY MASTER' (37.65% of NAV, CUSIP 999113103).",
+      "LPSFX: Fund-of-funds detected: 14 underlying fund holdings representing ~101.8% of net assets. Resolved 10/14 to SEC CIKs for recursive unwind.",
+      "LPSFX: 4 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup.",
+      "LPSFX: Rolled up 10 underlying fund(s) (54.3% of FoF allocation): 1.4 bps weighted underlying cost.",
+      "?: Cash management: 6 registered fund holdings (~6.9% of assets, likely cash sweep vehicles).",
+      "BRBCX: Cash management: 7 registered fund holdings (~3.8% of assets, likely cash sweep vehicles).",
+      "?: Cash management: 43 registered fund holdings (~11.8% of assets, likely cash sweep vehicles).",
+      "EWC: Cash management: 2 registered fund holdings (~1.0% of assets, likely cash sweep vehicles).",
+      "SCZ: Cash management: 46 registered fund holdings (~5.9% of assets, likely cash sweep vehicles).",
+      "IGF: Cash management: 3 registered fund holdings (~0.7% of assets, likely cash sweep vehicles).",
+      "USIG: Cash management: 99 registered fund holdings (~10.8% of assets, likely cash sweep vehicles).",
+      "STIP: Cash management: 1 registered fund holdings (~3.7% of assets, likely cash sweep vehicles).",
+      "IEMG: Cash management: 13 registered fund holdings (~4.4% of assets, likely cash sweep vehicles).",
+      "?: Cash management: 3 registered fund holdings (~3.6% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "LPSFX",
+    "name": "BlackRock LifePath Dynamic 2040 Fund",
+    "fund_family": "BlackRock Fund Advisors",
+    "cik": "893818",
+    "series_id": "S000004279",
+    "class_id": "C000051482",
+    "is_fund_of_funds": true,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 539080323.08,
+    "holdings_count": 38,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 92.971453357153,
+      "DFE": -0.217684832795,
+      "STIV": 8.837597994265,
+      "DE": 0.009362294997999995,
+      "DIR": 0.087429045329
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.95,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$50,952 commissions / $539,080,323 net assets"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 2.99,
+        "high_bps": 5.98,
+        "mid_bps": 4.485,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 4.62,
+        "high_bps": 9.24,
+        "mid_bps": 6.93,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 27%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 2.3302394913409437,
+      "total_estimated_low_bps": 9.940239491340943,
+      "total_estimated_high_bps": 17.550239491340946,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 34.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 30.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 0.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Unresolved underlying fund: 'iShares iBoxx USD Investment Grade Corporate Bond ETF' (0.00% of NAV, CUSIP 464287242).",
+      "Unresolved underlying fund: 'BlackRock Funds III' (3.09% of NAV, CUSIP 066922519).",
+      "Unresolved underlying fund: 'BLACKROCK CASH FUNDS TREASURY SL AGENCY SHARES' (5.75% of NAV, CUSIP 066922477).",
+      "Unresolved underlying fund: 'DIVERSIFIED EQUITY MASTER' (37.65% of NAV, CUSIP 999113103).",
+      "Fund-of-funds detected: 14 underlying fund holdings representing ~101.8% of net assets. Resolved 10/14 to SEC CIKs for recursive unwind.",
+      "4 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup.",
+      "Rolled up 10 underlying fund(s) (54.3% of FoF allocation): 1.4 bps weighted underlying cost."
+    ],
+    "underlying_funds": [
+      {
+        "ticker": "",
+        "name": "BlackRock Real Estate Securities Fund",
+        "fund_family": "BlackRock Advisors, LLC",
+        "cik": "844779",
+        "series_id": "S000038448",
+        "class_id": null,
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.02871490278436115,
+        "depth": 1,
+        "net_assets": 436550173.93,
+        "holdings_count": 46,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "DFE": -0.006062469228,
+          "EC": 98.750067656378,
+          "STIV": 1.302801029443
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 9.74,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$424,995 commissions / $436,550,174 net assets"
+          },
+          "soft_dollar_arrangements": {
+            "active": true,
+            "value_bps": 4.38,
+            "tag": "estimated"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.0,
+            "high_bps": 6.0,
+            "mid_bps": 4.5,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 9.0,
+            "high_bps": 18.0,
+            "mid_bps": 13.5,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 100%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 9.74,
+          "total_estimated_low_bps": 21.740000000000002,
+          "total_estimated_high_bps": 33.74,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 6 registered fund holdings (~6.9% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "BRBCX",
+        "name": "BlackRock Tactical Opportunities Fund",
+        "fund_family": "BlackRock Advisors, LLC",
+        "cik": "844779",
+        "series_id": "S000001870",
+        "class_id": "C000004882",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.05108239378019277,
+        "depth": 1,
+        "net_assets": 5088912083.22,
+        "holdings_count": 1193,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "EC": 65.00050901913201,
+          "UNKNOWN": 0.000201950235,
+          "STIV": 19.799919798034,
+          "DE": -1.117441551055,
+          "ABS-CBDO": 4.716e-09,
+          "EP": 0.012557676956,
+          "DBT": 5.889999999999999e-10,
+          "DFE": 0.06783628928100001,
+          "DIR": 1.39653002911,
+          "DCR": 0.310570569927
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 5.56,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$2,826,989 commissions / $5,088,912,083 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 2.93,
+            "high_bps": 5.87,
+            "mid_bps": 4.4,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 7.44,
+            "high_bps": 14.89,
+            "mid_bps": 11.165000000000001,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 74%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 5.56,
+          "total_estimated_low_bps": 15.93,
+          "total_estimated_high_bps": 26.32,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 7 registered fund holdings (~3.8% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "",
+        "name": "BlackRock Diversified Fixed Income Fund",
+        "fund_family": "BlackRock Fund Advisors",
+        "cik": "893818",
+        "series_id": "S000079204",
+        "class_id": null,
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.15500845422277082,
+        "depth": 1,
+        "net_assets": 1261577346.27,
+        "holdings_count": 4588,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "DBT": 56.89336552185695,
+          "ABS-MBS": 38.23506515724399,
+          "DFE": -0.027050208256000047,
+          "DIR": -0.1836448177899999,
+          "DCR": 0.07721091088899999,
+          "ABS-O": 3.1115150264129996,
+          "DO": 0.023644844344,
+          "ABS-CBDO": 2.301517330286001,
+          "DE": 0.005873417975999999,
+          "LON": 0.05827541308499999,
+          "EC": 0.5429503153439998,
+          "SN": 0.24131179503,
+          "STIV": 11.333545076940998,
+          "EP": 0.004292245747
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 1.56,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$196,658 commissions / $1,261,577,346 net assets"
+          },
+          "soft_dollar_arrangements": {
+            "active": true,
+            "value_bps": 0.7,
+            "tag": "estimated"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 1.51,
+            "high_bps": 6.22,
+            "mid_bps": 3.8649999999999998,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 1.5,
+            "high_bps": 3.0,
+            "mid_bps": 2.25,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 100%, small-cap weight: 100%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 1.56,
+          "total_estimated_low_bps": 4.57,
+          "total_estimated_high_bps": 10.78,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 43 registered fund holdings (~11.8% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "EWC",
+        "name": "iShares MSCI Canada ETF",
+        "fund_family": "BlackRock Fund Advisors",
+        "cik": "930667",
+        "series_id": "S000004265",
+        "class_id": "C000011969",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.004717670205423345,
+        "depth": 1,
+        "net_assets": 4482914131.42,
+        "holdings_count": 87,
+        "reporting_period_end": "2026-02-28",
+        "asset_class_weights": {
+          "EC": 99.688375506147,
+          "STIV": 1.039147388379,
+          "DE": 0.012615102885
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.07,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$31,174 commissions / $4,482,914,131 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.02,
+            "high_bps": 6.05,
+            "mid_bps": 4.535,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 4.57,
+            "high_bps": 9.13,
+            "mid_bps": 6.8500000000000005,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 26%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.07,
+          "total_estimated_low_bps": 7.66,
+          "total_estimated_high_bps": 15.25,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 2 registered fund holdings (~1.0% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "SCZ",
+        "name": "iShares MSCI EAFE Small-Cap ETF",
+        "fund_family": "BlackRock Fund Advisors",
+        "cik": "1100663",
+        "series_id": "S000019124",
+        "class_id": "C000052896",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.022683404321130977,
+        "depth": 1,
+        "net_assets": 14390466191.5,
+        "holdings_count": 2052,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "EC": 96.34287455493788,
+          "STIV": 3.855365332692,
+          "UNKNOWN": 2.966477476858,
+          "DE": 0.023615655215
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.41,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$584,611 commissions / $14,390,466,192 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.09,
+            "high_bps": 6.26,
+            "mid_bps": 4.675,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 8.87,
+            "high_bps": 17.74,
+            "mid_bps": 13.305,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 98%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.41,
+          "total_estimated_low_bps": 12.37,
+          "total_estimated_high_bps": 24.409999999999997,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 46 registered fund holdings (~5.9% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "IGF",
+        "name": "iShares Global Infrastructure ETF",
+        "fund_family": "BlackRock Fund Advisors",
+        "cik": "1100663",
+        "series_id": "S000019356",
+        "class_id": "C000053784",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.021168326707063295,
+        "depth": 1,
+        "net_assets": 10102028129.72,
+        "holdings_count": 93,
+        "reporting_period_end": "2026-03-31",
+        "asset_class_weights": {
+          "EC": 85.36483315015498,
+          "STIV": 0.309559011006,
+          "UNKNOWN": 14.359472444361998,
+          "DE": -0.0025003070269999997
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.48,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$485,778 commissions / $10,102,028,130 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.43,
+            "high_bps": 7.29,
+            "mid_bps": 5.36,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 3.36,
+            "high_bps": 6.72,
+            "mid_bps": 5.04,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 6%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.48,
+          "total_estimated_low_bps": 7.27,
+          "total_estimated_high_bps": 14.489999999999998,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 3 registered fund holdings (~0.7% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "USIG",
+        "name": "iShares Broad USD Investment Grade Corporate Bond ETF",
+        "fund_family": "BlackRock Fund Advisors",
+        "cik": "1100663",
+        "series_id": "S000013699",
+        "class_id": "C000037541",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.04450948923055539,
+        "depth": 1,
+        "net_assets": 16993595451.88,
+        "holdings_count": 11296,
+        "reporting_period_end": "2026-02-28",
+        "asset_class_weights": {
+          "DBT": 99.14213408181689,
+          "STIV": 10.273131968878001
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.0,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$0 commissions / $16,993,595,452 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 1.37,
+            "high_bps": 6.0,
+            "mid_bps": 3.685,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 1.51,
+            "high_bps": 3.03,
+            "mid_bps": 2.27,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 99%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0,
+          "total_estimated_low_bps": 2.88,
+          "total_estimated_high_bps": 9.03,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 99 registered fund holdings (~10.8% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "STIP",
+        "name": "iShares 0-5 Year TIPS Bond ETF",
+        "fund_family": "BlackRock Fund Advisors",
+        "cik": "1100663",
+        "series_id": "S000030481",
+        "class_id": "C000093655",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.0023462592909493114,
+        "depth": 1,
+        "net_assets": 14994641657.91,
+        "holdings_count": 26,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "STIV": 3.672544039286,
+          "DBT": 96.21470826625499
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.0,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$0 commissions / $14,994,641,658 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 1.26,
+            "high_bps": 5.99,
+            "mid_bps": 3.625,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 1.56,
+            "high_bps": 3.11,
+            "mid_bps": 2.335,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 96%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0,
+          "total_estimated_low_bps": 2.8200000000000003,
+          "total_estimated_high_bps": 9.1,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 1 registered fund holdings (~3.7% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "IEMG",
+        "name": "iShares Core MSCI Emerging Markets ETF",
+        "fund_family": "BlackRock Fund Advisors",
+        "cik": "930667",
+        "series_id": "S000038923",
+        "class_id": "C000119708",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.07146129466006138,
+        "depth": 1,
+        "net_assets": 148632250660.34,
+        "holdings_count": 2708,
+        "reporting_period_end": "2026-02-28",
+        "asset_class_weights": {
+          "EC": 96.7065236121741,
+          "UNKNOWN": 2.884771967087,
+          "EP": 0.228279364122,
+          "STIV": 4.279209429859,
+          "DE": 0.009227021591
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.61,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$9,038,469 commissions / $148,632,250,660 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.08,
+            "high_bps": 6.25,
+            "mid_bps": 4.665,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 4.27,
+            "high_bps": 8.53,
+            "mid_bps": 6.3999999999999995,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 21%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.61,
+          "total_estimated_low_bps": 7.959999999999999,
+          "total_estimated_high_bps": 15.39,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 13 registered fund holdings (~4.4% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "",
+        "name": "International Tilts Master Portfolio",
+        "fund_family": "BlackRock Advisors, LLC",
+        "cik": "915092",
+        "series_id": "S000043688",
+        "class_id": null,
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.14164609999108047,
+        "depth": 1,
+        "net_assets": 1118809260.79,
+        "holdings_count": 357,
+        "reporting_period_end": "2026-03-31",
+        "asset_class_weights": {
+          "EC": 97.47680452411703,
+          "STIV": 3.228750073492,
+          "DE": -0.01891404258
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 3.61,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$404,018 commissions / $1,118,809,261 net assets"
+          },
+          "soft_dollar_arrangements": {
+            "active": true,
+            "value_bps": 1.63,
+            "tag": "estimated"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.02,
+            "high_bps": 6.04,
+            "mid_bps": 4.53,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 9.0,
+            "high_bps": 18.0,
+            "mid_bps": 13.5,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 100%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 3.61,
+          "total_estimated_low_bps": 15.629999999999999,
+          "total_estimated_high_bps": 27.65,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 3 registered fund holdings (~3.6% of assets, likely cash sweep vehicles)."
+        ]
+      }
+    ]
+  }
+}

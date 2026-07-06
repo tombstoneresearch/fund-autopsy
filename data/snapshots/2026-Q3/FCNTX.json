@@ -1,0 +1,118 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-05",
+  "quarter": "2026-Q3",
+  "ticker": "FCNTX",
+  "provenance": {
+    "ticker": "FCNTX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.76,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.69,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "FCNTX: Cash management: 2 registered fund holdings (~0.8% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "FCNTX",
+    "name": "Fidelity Contrafund",
+    "fund_family": "Fidelity Management & Research Company LLC",
+    "cik": "24238",
+    "series_id": "S000006037",
+    "class_id": "C000016601",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 157803695260.41,
+    "holdings_count": 428,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 94.51198228207404,
+      "STIV": 0.841168805,
+      "EP": 4.883414068641,
+      "DBT": 0.003781335747
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.96,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$15,115,475 commissions / $157,803,695,260 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.43,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.01,
+        "mid_bps": 4.51,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.13,
+        "high_bps": 6.27,
+        "mid_bps": 4.699999999999999,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 2%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.96,
+      "total_estimated_low_bps": 7.1,
+      "total_estimated_high_bps": 13.239999999999998,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 74.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 73.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 2 registered fund holdings (~0.8% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

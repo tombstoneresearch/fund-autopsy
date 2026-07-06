@@ -1,0 +1,343 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-05",
+  "quarter": "2026-Q3",
+  "ticker": "VFIFX",
+  "provenance": {
+    "ticker": "VFIFX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.54,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 19.26,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.15,
+        "detail": "8 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "VFIFX: Fund-of-funds detected: 5 underlying fund holdings representing ~100.0% of net assets. Resolved 5/5 to SEC CIKs for recursive unwind.",
+      "VFIFX: Rolled up 4 underlying fund(s) (99.5% of FoF allocation): 0.1 bps weighted underlying cost.",
+      "VFIFX: Missing cost data for 1 child fund(s): VANGUARD MARKET LIQUIDITY FUND.",
+      "VTBIX: Cash management: 98 registered fund holdings (~5.7% of assets, likely cash sweep vehicles).",
+      "VGTSX: Cash management: 71 registered fund holdings (~2.9% of assets, likely cash sweep vehicles).",
+      "VTIIX: Cash management: 115 registered fund holdings (~2.7% of assets, likely cash sweep vehicles).",
+      "VITSX: Cash management: 57 registered fund holdings (~0.9% of assets, likely cash sweep vehicles).",
+      "?: N-PORT filing not found \u2014 holdings-based estimates unavailable"
+    ]
+  },
+  "analysis": {
+    "ticker": "VFIFX",
+    "name": "VANGUARD TARGET RETIREMENT 2050 FUND",
+    "fund_family": "The Vanguard Group, Inc.",
+    "cik": "752177",
+    "series_id": "S000012762",
+    "class_id": "C000034441",
+    "is_fund_of_funds": true,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 95791621891.6,
+    "holdings_count": 7,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 99.412624475921,
+      "DIR": -0.00561795688,
+      "STIV": 0.542190371719,
+      "DE": -0.00532206265
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.0,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$0 commissions / $95,791,621,892 net assets"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.12765949607139787,
+      "total_estimated_low_bps": 6.127659496071398,
+      "total_estimated_high_bps": 12.127659496071399,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 8.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 0.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Fund-of-funds detected: 5 underlying fund holdings representing ~100.0% of net assets. Resolved 5/5 to SEC CIKs for recursive unwind.",
+      "Rolled up 4 underlying fund(s) (99.5% of FoF allocation): 0.1 bps weighted underlying cost.",
+      "Missing cost data for 1 child fund(s): VANGUARD MARKET LIQUIDITY FUND."
+    ],
+    "underlying_funds": [
+      {
+        "ticker": "VTBIX",
+        "name": "VANGUARD TOTAL BOND MARKET II INDEX FUND",
+        "fund_family": "The Vanguard Group, Inc.",
+        "cik": "794105",
+        "series_id": "S000025158",
+        "class_id": "C000075027",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.07417472876709602,
+        "depth": 1,
+        "net_assets": 367425881760.44,
+        "holdings_count": 15642,
+        "reporting_period_end": "2026-03-31",
+        "asset_class_weights": {
+          "DBT": 77.43536594847528,
+          "ABS-MBS": 20.51850440185001,
+          "ABS-CBDO": 0.4107605121880004,
+          "DCR": 0.012894962309,
+          "STIV": 5.467724996139
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.0,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$0 commissions / $367,425,881,760 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 1.31,
+            "high_bps": 6.04,
+            "mid_bps": 3.675,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 1.52,
+            "high_bps": 3.05,
+            "mid_bps": 2.285,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 98%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0,
+          "total_estimated_low_bps": 2.83,
+          "total_estimated_high_bps": 9.09,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 98 registered fund holdings (~5.7% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "VGTSX",
+        "name": "VANGUARD TOTAL INTERNATIONAL STOCK INDEX FUND",
+        "fund_family": "The Vanguard Group, Inc.",
+        "cik": "736054",
+        "series_id": "S000002932",
+        "class_id": "C000008020",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.36639209425562436,
+        "depth": 1,
+        "net_assets": 629120124704.15,
+        "holdings_count": 8878,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "EC": 98.08745770733577,
+          "EP": 0.754436809278,
+          "DFE": -0.003146881904,
+          "STIV": 2.475033937173,
+          "DE": 0.049897202632999994,
+          "DBT": 1.4981e-08
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.22,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$13,856,276 commissions / $629,120,124,704 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.0,
+            "high_bps": 6.0,
+            "mid_bps": 4.5,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 3.77,
+            "high_bps": 7.54,
+            "mid_bps": 5.655,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 13%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.22,
+          "total_estimated_low_bps": 6.99,
+          "total_estimated_high_bps": 13.76,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 71 registered fund holdings (~2.9% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "VTIIX",
+        "name": "VANGUARD TOTAL INTERNATIONAL BOND II INDEX FUND",
+        "fund_family": "The Vanguard Group, Inc.",
+        "cik": "1532203",
+        "series_id": "S000067956",
+        "class_id": "C000217896",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.031195096310916933,
+        "depth": 1,
+        "net_assets": 145778151393.93,
+        "holdings_count": 7664,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "DFE": -2.0357110137500003,
+          "DBT": 98.0075141283629,
+          "STIV": 2.023046447859,
+          "DIR": -0.016839708213
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.0,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$0 commissions / $145,778,151,394 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 1.14,
+            "high_bps": 5.81,
+            "mid_bps": 3.4749999999999996,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 1.53,
+            "high_bps": 3.06,
+            "mid_bps": 2.295,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 98%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0,
+          "total_estimated_low_bps": 2.67,
+          "total_estimated_high_bps": 8.87,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 115 registered fund holdings (~2.7% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "VITSX",
+        "name": "VANGUARD TOTAL STOCK MARKET INDEX FUND",
+        "fund_family": "The Vanguard Group, Inc.",
+        "cik": "36405",
+        "series_id": "S000002848",
+        "class_id": "C000007807",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.5228137259462278,
+        "depth": 1,
+        "net_assets": 1991691212321.29,
+        "holdings_count": 3524,
+        "reporting_period_end": "2026-03-31",
+        "asset_class_weights": {
+          "EC": 99.64021426508418,
+          "EP": 2.348141e-06,
+          "DE": -0.0005785758959999999,
+          "STIV": 0.606692703946
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.09,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$17,852,246 commissions / $1,991,691,212,321 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.01,
+            "high_bps": 6.01,
+            "mid_bps": 4.51,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 3.07,
+            "high_bps": 6.14,
+            "mid_bps": 4.6049999999999995,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 1%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.09,
+          "total_estimated_low_bps": 6.17,
+          "total_estimated_high_bps": 12.239999999999998,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 57 registered fund holdings (~0.9% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "",
+        "name": "VANGUARD MARKET LIQUIDITY FUND",
+        "fund_family": "The Vanguard Group, Inc.",
+        "cik": "1273878",
+        "series_id": "S000002575",
+        "class_id": null,
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.005424354720134839,
+        "depth": 1,
+        "net_assets": null,
+        "holdings_count": 0,
+        "reporting_period_end": null,
+        "asset_class_weights": {},
+        "costs": {
+          "total_reported_bps": null,
+          "total_estimated_low_bps": null,
+          "total_estimated_high_bps": null,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "N-PORT filing not found \u2014 holdings-based estimates unavailable"
+        ]
+      }
+    ]
+  }
+}

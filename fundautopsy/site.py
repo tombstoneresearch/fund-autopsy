@@ -109,6 +109,17 @@ ul.notes li::before { content: "— "; color: var(--ink-faded); }
 @media (max-width: 40rem) { .masthead h1 { font-size: 2rem; } body { padding: 1.2rem 0.8rem 3rem; } }
 """
 
+def _repo_url() -> str:
+    try:
+        from fundautopsy.config import GITHUB_URL
+
+        return GITHUB_URL
+    except Exception:  # noqa: BLE001 — footer link is cosmetic
+        return "https://github.com/tombstoneresearch/fund-autopsy"
+
+
+_REPO_URL = _repo_url()
+
 _DISCLAIMER = (
     "Educational and informational purposes only. Not investment advice, not a "
     "recommendation, not an offer to buy or sell any security. Trading-cost "
@@ -190,8 +201,9 @@ def _page(title: str, body: str, generated: str, depth: int = 0) -> str:
 <footer class="colophon">
   <p>{_esc(_DISCLAIMER)}</p>
   <p>Every figure on this page traces to a public SEC filing (N-CEN, N-PORT, 497K, 485BPOS, SAI, N-CSR) or to a
-  disclosed estimation model. Methodology, limitations, and source code are published in full.
-  Snapshots are precomputed and dated; nothing on this site is calculated at request time.</p>
+  disclosed estimation model. Snapshots are precomputed and dated; nothing on this site is calculated at
+  request time. <a href="{_esc(_REPO_URL)}">Source code and methodology</a> ·
+  <a href="{('../' * depth)}working_paper_01.pdf">Working Paper No. 1 (PDF)</a></p>
 </footer>
 </body>
 </html>"""

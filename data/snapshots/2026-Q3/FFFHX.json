@@ -1,0 +1,178 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-05",
+  "quarter": "2026-Q3",
+  "ticker": "FFFHX",
+  "provenance": {
+    "ticker": "FFFHX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.76,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 3.13,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "33 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (10.29% of NAV, CUSIP 315910125).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Concord Street Trust' (0.82% of NAV, CUSIP 315912782).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Contrafund' (5.99% of NAV, CUSIP 316071802).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Devonshire Trust' (6.73% of NAV, CUSIP 316128552).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Devonshire Trust' (6.13% of NAV, CUSIP 316128586).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Devonshire Trust' (2.01% of NAV, CUSIP 316128636).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Oxford Street Trust' (0.76% of NAV, CUSIP 316146638).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Hastings Street Trust' (10.20% of NAV, CUSIP 31617F833).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Hastings Street Trust' (0.52% of NAV, CUSIP 31617F858).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (7.37% of NAV, CUSIP 31618H721).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (0.95% of NAV, CUSIP 31618H762).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (7.54% of NAV, CUSIP 31618H770).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Mt. Vernon Street Trust' (10.22% of NAV, CUSIP 316200831).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Puritan Trust' (1.29% of NAV, CUSIP 316345875).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Revere Street Trust' (0.15% of NAV, CUSIP 31635A105).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Salem Street Trust' (3.05% of NAV, CUSIP 31635V406).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Securities Fund' (5.65% of NAV, CUSIP 316389386).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Securities Fund' (0.09% of NAV, CUSIP 316389436).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Securities Fund' (1.91% of NAV, CUSIP 316389691).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Summer Street Trust' (0.09% of NAV, CUSIP 31641Q409).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Summer Street Trust' (0.52% of NAV, CUSIP 31641Q607).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Salem Street Trust' (1.99% of NAV, CUSIP 31635V620).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity School Street Trust' (0.02% of NAV, CUSIP 31638R725).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (4.03% of NAV, CUSIP 31618H358).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (2.63% of NAV, CUSIP 31618H341).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (7.44% of NAV, CUSIP 31618H176).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Hastings Street Trust' (0.14% of NAV, CUSIP 31617F783).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity School Street Trust' (0.79% of NAV, CUSIP 31638R667).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Salem Street Trust' (0.05% of NAV, CUSIP 31635T658).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Investment Trust' (0.08% of NAV, CUSIP 31618Q762).",
+      "FFFHX: Unresolved underlying fund: 'Fidelity Concord Street Trust' (0.29% of NAV, CUSIP 315911479).",
+      "FFFHX: Fund-of-funds detected: 31 underlying fund holdings representing ~99.8% of net assets. Resolved 0/31 to SEC CIKs for recursive unwind.",
+      "FFFHX: 31 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup."
+    ]
+  },
+  "analysis": {
+    "ticker": "FFFHX",
+    "name": "Fidelity Freedom 2050 Fund",
+    "fund_family": "Fidelity Management & Research Company LLC",
+    "cik": "880195",
+    "series_id": "S000012118",
+    "class_id": "C000033049",
+    "is_fund_of_funds": true,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 22506979768.12,
+    "holdings_count": 45,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 99.60490182,
+      "STIV": 0.153827067632,
+      "DE": 0.012846657347000003,
+      "DBT": 0.288134861305,
+      "DIR": -0.13682068045
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.13,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$288,796 commissions / $22,506,979,768 net assets"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.02,
+        "high_bps": 6.05,
+        "mid_bps": 4.535,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.13,
+      "total_estimated_low_bps": 6.15,
+      "total_estimated_high_bps": 12.18,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 68.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 68.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (10.29% of NAV, CUSIP 315910125).",
+      "Unresolved underlying fund: 'Fidelity Concord Street Trust' (0.82% of NAV, CUSIP 315912782).",
+      "Unresolved underlying fund: 'Fidelity Contrafund' (5.99% of NAV, CUSIP 316071802).",
+      "Unresolved underlying fund: 'Fidelity Devonshire Trust' (6.73% of NAV, CUSIP 316128552).",
+      "Unresolved underlying fund: 'Fidelity Devonshire Trust' (6.13% of NAV, CUSIP 316128586).",
+      "Unresolved underlying fund: 'Fidelity Devonshire Trust' (2.01% of NAV, CUSIP 316128636).",
+      "Unresolved underlying fund: 'Fidelity Oxford Street Trust' (0.76% of NAV, CUSIP 316146638).",
+      "Unresolved underlying fund: 'Fidelity Hastings Street Trust' (10.20% of NAV, CUSIP 31617F833).",
+      "Unresolved underlying fund: 'Fidelity Hastings Street Trust' (0.52% of NAV, CUSIP 31617F858).",
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (7.37% of NAV, CUSIP 31618H721).",
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (0.95% of NAV, CUSIP 31618H762).",
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (7.54% of NAV, CUSIP 31618H770).",
+      "Unresolved underlying fund: 'Fidelity Mt. Vernon Street Trust' (10.22% of NAV, CUSIP 316200831).",
+      "Unresolved underlying fund: 'Fidelity Puritan Trust' (1.29% of NAV, CUSIP 316345875).",
+      "Unresolved underlying fund: 'Fidelity Revere Street Trust' (0.15% of NAV, CUSIP 31635A105).",
+      "Unresolved underlying fund: 'Fidelity Salem Street Trust' (3.05% of NAV, CUSIP 31635V406).",
+      "Unresolved underlying fund: 'Fidelity Securities Fund' (5.65% of NAV, CUSIP 316389386).",
+      "Unresolved underlying fund: 'Fidelity Securities Fund' (0.09% of NAV, CUSIP 316389436).",
+      "Unresolved underlying fund: 'Fidelity Securities Fund' (1.91% of NAV, CUSIP 316389691).",
+      "Unresolved underlying fund: 'Fidelity Summer Street Trust' (0.09% of NAV, CUSIP 31641Q409).",
+      "Unresolved underlying fund: 'Fidelity Summer Street Trust' (0.52% of NAV, CUSIP 31641Q607).",
+      "Unresolved underlying fund: 'Fidelity Salem Street Trust' (1.99% of NAV, CUSIP 31635V620).",
+      "Unresolved underlying fund: 'Fidelity School Street Trust' (0.02% of NAV, CUSIP 31638R725).",
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (4.03% of NAV, CUSIP 31618H358).",
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (2.63% of NAV, CUSIP 31618H341).",
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (7.44% of NAV, CUSIP 31618H176).",
+      "Unresolved underlying fund: 'Fidelity Hastings Street Trust' (0.14% of NAV, CUSIP 31617F783).",
+      "Unresolved underlying fund: 'Fidelity School Street Trust' (0.79% of NAV, CUSIP 31638R667).",
+      "Unresolved underlying fund: 'Fidelity Salem Street Trust' (0.05% of NAV, CUSIP 31635T658).",
+      "Unresolved underlying fund: 'Fidelity Investment Trust' (0.08% of NAV, CUSIP 31618Q762).",
+      "Unresolved underlying fund: 'Fidelity Concord Street Trust' (0.29% of NAV, CUSIP 315911479).",
+      "Fund-of-funds detected: 31 underlying fund holdings representing ~99.8% of net assets. Resolved 0/31 to SEC CIKs for recursive unwind.",
+      "31 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup."
+    ]
+  }
+}

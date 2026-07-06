@@ -1,0 +1,120 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "JLGRX",
+  "provenance": {
+    "ticker": "JLGRX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.72,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.98,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "JLGRX: Cash management: 3 registered fund holdings (~4.8% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "JLGRX",
+    "name": "JPMorgan Large Cap Growth Fund",
+    "fund_family": "J.P. Morgan Investment Management Inc.",
+    "cik": "763852",
+    "series_id": "S000003856",
+    "class_id": "C000076449",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 107433534976.57,
+    "holdings_count": 85,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 95.22887732897495,
+      "STIV": 4.778810358327999
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 1.11,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$11,923,840 commissions / $107,433,534,977 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.5,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.01,
+        "mid_bps": 4.51,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 1.11,
+      "total_estimated_low_bps": 7.12,
+      "total_estimated_high_bps": 13.120000000000001,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 126.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 45.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 50.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 3 registered fund holdings (~4.8% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

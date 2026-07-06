@@ -1,0 +1,119 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "SGENX",
+  "provenance": {
+    "ticker": "SGENX",
+    "verdict": "COMPLETE \u2014 all stages clean.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.97,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.4,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": []
+  },
+  "analysis": {
+    "ticker": "SGENX",
+    "name": "First Eagle Global Fund",
+    "fund_family": "First Eagle Investment Management, LLC",
+    "cik": "906352",
+    "series_id": "S000011211",
+    "class_id": "C000030894",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 74863503400.84,
+    "holdings_count": 234,
+    "reporting_period_end": "2026-04-30",
+    "asset_class_weights": {
+      "STIV": 5.66390369869,
+      "EC": 83.79257345919899,
+      "DBT": 0.007092673343,
+      "DFE": 0.016073731702,
+      "COMM": 10.36067863412
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 1.28,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$9,545,445 commissions / $74,863,503,401 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.57,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.31,
+        "high_bps": 6.92,
+        "mid_bps": 5.115,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.01,
+        "mid_bps": 4.51,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 1.28,
+      "total_estimated_low_bps": 7.6,
+      "total_estimated_high_bps": 14.209999999999999,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 110.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 75.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 25.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": []
+  }
+}

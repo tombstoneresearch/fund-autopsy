@@ -1,0 +1,90 @@
+
+:root {
+  --paper: #f2ead8;
+  --paper-deep: #e9dfc8;
+  --ink: #211a12;
+  --ink-faded: #5c5142;
+  --rule: #8d7f66;
+  --accent: #7c2b23; /* weathered red: the investigator's pen */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { background: var(--paper-deep); }
+body {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  background: var(--paper);
+  color: var(--ink);
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  line-height: 1.55;
+  font-variant-numeric: oldstyle-nums tabular-nums;
+}
+a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+
+.masthead { text-align: center; border-top: 4px double var(--ink); border-bottom: 1px solid var(--ink); padding: 1.4rem 0 1rem; }
+.masthead .org {
+  font-size: 0.85rem; letter-spacing: 0.45em; text-transform: uppercase; color: var(--ink-faded);
+}
+.masthead h1 {
+  font-size: 3rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.1; margin: 0.4rem 0 0.2rem;
+}
+.masthead .motto { font-style: italic; color: var(--ink-faded); font-size: 1rem; }
+.dateline {
+  display: flex; justify-content: space-between; font-size: 0.78rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-faded);
+  border-bottom: 4px double var(--ink); padding: 0.35rem 0.2rem; margin-bottom: 2rem;
+}
+
+.prologue { max-width: 44rem; margin: 0 auto 2.2rem; font-size: 1.02rem; }
+.prologue p + p { margin-top: 0.8rem; }
+.prologue .smallcaps { font-variant: small-caps; letter-spacing: 0.04em; }
+
+table.ledger { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+table.ledger caption {
+  font-variant: small-caps; letter-spacing: 0.25em; font-size: 0.85rem;
+  border-bottom: 1px solid var(--ink); padding-bottom: 0.4rem; margin-bottom: 0.2rem;
+}
+table.ledger th {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
+  color: var(--ink-faded); text-align: right; padding: 0.5rem 0.6rem;
+  border-bottom: 2px solid var(--ink);
+}
+table.ledger th.l, table.ledger td.l { text-align: left; }
+table.ledger td { padding: 0.45rem 0.6rem; text-align: right; border-bottom: 1px dotted var(--rule); }
+table.ledger tr:hover td { background: var(--paper-deep); }
+td.gap, .gap { color: var(--accent); font-weight: 700; }
+.caveat { font-size: 0.75rem; color: var(--ink-faded); font-style: italic; }
+
+.report-head { border: 1px solid var(--ink); padding: 1.2rem 1.4rem; margin-bottom: 1.6rem; }
+.report-head .no { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faded); }
+.report-head h2 { font-size: 1.7rem; text-transform: uppercase; letter-spacing: 0.04em; margin: 0.2rem 0 0.6rem; }
+.subject-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 0.4rem 1.4rem; font-size: 0.9rem; }
+.subject-grid .k { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faded); display: block; }
+
+.verdict {
+  border-top: 4px double var(--ink); border-bottom: 4px double var(--ink);
+  margin: 1.8rem 0; padding: 1rem 0.4rem; display: flex; gap: 2.5rem; flex-wrap: wrap; justify-content: center; text-align: center;
+}
+.verdict .fig { font-size: 1.9rem; font-weight: 700; }
+.verdict .lbl { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faded); }
+
+h3.section {
+  font-variant: small-caps; letter-spacing: 0.22em; font-weight: 600; font-size: 0.95rem;
+  border-bottom: 1px solid var(--ink); margin: 2rem 0 0.7rem; padding-bottom: 0.25rem;
+}
+ul.notes { list-style: none; font-size: 0.88rem; }
+ul.notes li { padding: 0.25rem 0; border-bottom: 1px dotted var(--rule); }
+ul.notes li::before { content: "— "; color: var(--ink-faded); }
+
+.provenance { font-size: 0.85rem; }
+.provenance .st-ok::before { content: "✓ "; }
+.provenance .st-degraded::before { content: "△ "; color: var(--accent); }
+.provenance .st-failed::before { content: "✕ "; color: var(--accent); }
+
+.colophon {
+  margin-top: 3rem; border-top: 1px solid var(--ink); padding-top: 0.9rem;
+  font-size: 0.78rem; color: var(--ink-faded);
+}
+.colophon p + p { margin-top: 0.5rem; }
+@media (max-width: 40rem) { .masthead h1 { font-size: 2rem; } body { padding: 1.2rem 0.8rem 3rem; } }

@@ -1,0 +1,125 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "AHITX",
+  "provenance": {
+    "ticker": "AHITX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.72,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.55,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "AHITX: Cash management: 21 registered fund holdings (~8.1% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "AHITX",
+    "name": "AMERICAN HIGH INCOME TRUST",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "823620",
+    "series_id": "S000009230",
+    "class_id": "C000025083",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 27222492844.31,
+    "holdings_count": 1070,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 4.0701913822,
+      "EP": 0.1345786318,
+      "DBT": 85.37593308899991,
+      "LON": 3.6080828383999997,
+      "STIV": 6.0440319935,
+      "DCR": -0.0021304333000000007,
+      "DIR": -0.032376434999999995
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.01,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$26,991 commissions / $27,222,492,844 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": false,
+        "value_bps": 0.0,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 1.55,
+        "high_bps": 6.28,
+        "mid_bps": 3.915,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 1.86,
+        "high_bps": 3.72,
+        "mid_bps": 2.79,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 85%, small-cap weight: 16%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.01,
+      "total_estimated_low_bps": 3.42,
+      "total_estimated_high_bps": 10.01,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 74.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 32.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 26.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 21 registered fund holdings (~8.1% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

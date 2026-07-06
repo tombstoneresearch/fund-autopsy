@@ -1,0 +1,118 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "PRNHX",
+  "provenance": {
+    "ticker": "PRNHX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.67,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.41,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "PRNHX: Cash management: 3 registered fund holdings (~6.4% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "PRNHX",
+    "name": "T. Rowe Price New Horizons Fund, Inc.",
+    "fund_family": "T. Rowe Price Associates, Inc.",
+    "cik": "80248",
+    "series_id": "S000002106",
+    "class_id": "C000005478",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 12768854770.890001,
+    "holdings_count": 392,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 89.37437420230005,
+      "EP": 4.681344481299999,
+      "DE": 0.0236693263,
+      "STIV": 6.3517610092
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 8.53,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$10,886,880 commissions / $12,768,854,771 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 3.84,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.03,
+        "mid_bps": 4.52,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 5.48,
+        "high_bps": 10.96,
+        "mid_bps": 8.22,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 41%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 8.53,
+      "total_estimated_low_bps": 17.02,
+      "total_estimated_high_bps": 25.52,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 80.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 63.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 3 registered fund holdings (~6.4% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

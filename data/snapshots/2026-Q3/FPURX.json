@@ -1,0 +1,132 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "FPURX",
+  "provenance": {
+    "ticker": "FPURX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.79,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 8.89,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "8 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "FPURX: Unresolved underlying fund: 'Fidelity Central Investment Portfolios II LLC' (28.66% of NAV, CUSIP 31606V500).",
+      "FPURX: Unresolved underlying fund: 'Fidelity Central Investment Portfolios LLC' (3.19% of NAV, CUSIP 31606V690).",
+      "FPURX: Unresolved underlying fund: 'Fidelity Revere Street Trust' (0.08% of NAV, CUSIP 31635A105).",
+      "FPURX: Unresolved underlying fund: 'Fidelity Revere Street Trust' (0.40% of NAV, CUSIP 31635A303).",
+      "FPURX: Unresolved underlying fund: 'NORTHERN TRUST CORP' (0.16% of NAV, CUSIP 665859104).",
+      "FPURX: Unresolved underlying fund: 'Fidelity Private Credit Central Fund LLC' (0.19% of NAV, CUSIP 316129105).",
+      "FPURX: Fund-of-funds detected: 6 underlying fund holdings representing ~32.7% of net assets. Resolved 0/6 to SEC CIKs for recursive unwind.",
+      "FPURX: 6 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup."
+    ]
+  },
+  "analysis": {
+    "ticker": "FPURX",
+    "name": "Fidelity Puritan Fund",
+    "fund_family": "Fidelity Management & Research Company LLC",
+    "cik": "81205",
+    "series_id": "S000007153",
+    "class_id": "C000019557",
+    "is_fund_of_funds": true,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 32473033091.2,
+    "holdings_count": 250,
+    "reporting_period_end": "2026-02-28",
+    "asset_class_weights": {
+      "EC": 99.41118803468493,
+      "STIV": 0.478615324424,
+      "EP": 0.37199604979499995,
+      "DBT": 0.022756281894
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 1.36,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$4,423,422 commissions / $32,473,033,091 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.61,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.02,
+        "mid_bps": 4.515,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.42,
+        "high_bps": 6.85,
+        "mid_bps": 5.135,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 7%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 1.36,
+      "total_estimated_low_bps": 7.79,
+      "total_estimated_high_bps": 14.23,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 47.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 46.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Unresolved underlying fund: 'Fidelity Central Investment Portfolios II LLC' (28.66% of NAV, CUSIP 31606V500).",
+      "Unresolved underlying fund: 'Fidelity Central Investment Portfolios LLC' (3.19% of NAV, CUSIP 31606V690).",
+      "Unresolved underlying fund: 'Fidelity Revere Street Trust' (0.08% of NAV, CUSIP 31635A105).",
+      "Unresolved underlying fund: 'Fidelity Revere Street Trust' (0.40% of NAV, CUSIP 31635A303).",
+      "Unresolved underlying fund: 'NORTHERN TRUST CORP' (0.16% of NAV, CUSIP 665859104).",
+      "Unresolved underlying fund: 'Fidelity Private Credit Central Fund LLC' (0.19% of NAV, CUSIP 316129105).",
+      "Fund-of-funds detected: 6 underlying fund holdings representing ~32.7% of net assets. Resolved 0/6 to SEC CIKs for recursive unwind.",
+      "6 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup."
+    ]
+  }
+}

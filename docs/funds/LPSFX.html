@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LPSFX — Fund Autopsy</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="org">Tombstone Research</div>
+  <h1><a href="../index.html" style="text-decoration:none">Fund Autopsy</a></h1>
+  <div class="motto">Leave no stone unturned.</div>
+</header>
+<div class="dateline"><span>A ledger of what funds actually cost</span><span>Prepared 2026-07-06</span></div>
+
+<div class="report-head">
+  <div class="no">Autopsy report No. 031 · Snapshot 2026-Q3</div>
+  <h2>BlackRock LifePath Dynamic 2040 Fund</h2>
+  <div class="subject-grid">
+    <div><span class="k">Ticker</span>LPSFX</div>
+    <div><span class="k">Family</span>BlackRock Fund Advisors</div>
+    <div><span class="k">CIK</span>893818</div>
+    <div><span class="k">Series / Class</span>S000004279 / C000051482</div>
+    <div><span class="k">Net assets</span>$539,080,323</div>
+    <div><span class="k">Holdings period</span>2026-03-31</div>
+  </div>
+</div>
+<div class="verdict">
+  <div><div class="fig">2</div><div class="lbl">Stated cost (bps)</div></div>
+  <div><div class="fig">10–18</div><div class="lbl">Estimated total (bps)</div></div>
+  <div><div class="fig gap">—</div><div class="lbl">The Gap (bps)</div></div>
+</div>
+<h3 class="section">Findings</h3>
+<table class="ledger">
+  <thead><tr><th class="l">Component</th><th>bps</th><th>Midpoint</th><th class="l">Source</th></tr></thead>
+  <tbody><tr><td class="l">Expense ratio (stated)</td><td>34</td><td>—</td><td class='l'>reported</td></tr><tr><td class="l">Management fee</td><td>30</td><td>—</td><td class='l'>reported</td></tr><tr><td class="l">12b-1 fee</td><td>0</td><td>—</td><td class='l'>reported</td></tr><tr><td class="l">Brokerage commissions</td><td>1</td><td>—</td><td class='l'>DataSourceTag.CALCULATED</td></tr><tr><td class="l">Bid-ask spread cost</td><td>3–6</td><td>4</td><td class='l'>estimated</td></tr><tr><td class="l">Market impact</td><td>5–9</td><td>7</td><td class='l'>estimated</td></tr></tbody>
+</table>
+<h3 class="section">Data notes</h3>
+<ul class="notes"><li>LPSFX: Unresolved underlying fund: &#x27;iShares iBoxx USD Investment Grade Corporate Bond ETF&#x27; (0.00% of NAV, CUSIP 464287242).</li><li>LPSFX: Unresolved underlying fund: &#x27;BlackRock Funds III&#x27; (3.09% of NAV, CUSIP 066922519).</li><li>LPSFX: Unresolved underlying fund: &#x27;BLACKROCK CASH FUNDS TREASURY SL AGENCY SHARES&#x27; (5.75% of NAV, CUSIP 066922477).</li><li>LPSFX: Unresolved underlying fund: &#x27;DIVERSIFIED EQUITY MASTER&#x27; (37.65% of NAV, CUSIP 999113103).</li><li>LPSFX: Fund-of-funds detected: 14 underlying fund holdings representing ~101.8% of net assets. Resolved 10/14 to SEC CIKs for recursive unwind.</li><li>LPSFX: 4 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup.</li><li>LPSFX: Rolled up 10 underlying fund(s) (54.3% of FoF allocation): 1.4 bps weighted underlying cost.</li><li>?: Cash management: 6 registered fund holdings (~6.9% of assets, likely cash sweep vehicles).</li><li>BRBCX: Cash management: 7 registered fund holdings (~3.8% of assets, likely cash sweep vehicles).</li><li>?: Cash management: 43 registered fund holdings (~11.8% of assets, likely cash sweep vehicles).</li><li>EWC: Cash management: 2 registered fund holdings (~1.0% of assets, likely cash sweep vehicles).</li><li>SCZ: Cash management: 46 registered fund holdings (~5.9% of assets, likely cash sweep vehicles).</li><li>IGF: Cash management: 3 registered fund holdings (~0.7% of assets, likely cash sweep vehicles).</li><li>USIG: Cash management: 99 registered fund holdings (~10.8% of assets, likely cash sweep vehicles).</li><li>STIP: Cash management: 1 registered fund holdings (~3.7% of assets, likely cash sweep vehicles).</li><li>IEMG: Cash management: 13 registered fund holdings (~4.4% of assets, likely cash sweep vehicles).</li><li>?: Cash management: 3 registered fund holdings (~3.6% of assets, likely cash sweep vehicles).</li></ul>
+<h3 class="section">Chain of custody</h3>
+<ul class="notes provenance"><li class="st-ok">Resolve ticker to CIK / series / class</li><li class="st-ok">Retrieve filings, detect fund structure</li><li class="st-degraded">Extract fees, compute cost estimates — 17 data note(s); see quality_notes.</li><li class="st-ok">Roll up fund-of-funds cost tree</li><li class="st-ok">Retrieve stated fees from prospectus (backfilled post-run)</li></ul>
+
+<footer class="colophon">
+  <p>Educational and informational purposes only. Not investment advice, not a recommendation, not an offer to buy or sell any security. Trading-cost figures are estimates derived from public SEC filings and published academic models; actual costs vary. Tombstone Research is not a registered investment adviser or broker-dealer.</p>
+  <p>Every figure on this page traces to a public SEC filing (N-CEN, N-PORT, 497K, 485BPOS, SAI, N-CSR) or to a
+  disclosed estimation model. Snapshots are precomputed and dated; nothing on this site is calculated at
+  request time. <a href="https://github.com/tombstoneresearch/fund-autopsy">Source code and methodology</a> ·
+  <a href="../working_paper_01.pdf">Working Paper No. 1 (PDF)</a></p>
+</footer>
+</body>
+</html>

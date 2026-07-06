@@ -1,0 +1,128 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "ABALX",
+  "provenance": {
+    "ticker": "ABALX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.75,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.72,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.02,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "ABALX: Cash management: 28 registered fund holdings (~9.7% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "ABALX",
+    "name": "AMERICAN BALANCED FUND",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "4568",
+    "series_id": "S000008801",
+    "class_id": "C000023937",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 263864446768.48,
+    "holdings_count": 4044,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 60.83601427120001,
+      "ABS-O": 2.5788665554999994,
+      "ABS-MBS": 6.232391033799995,
+      "ABS-CBDO": 2.107740249199999,
+      "DBT": 21.624562792999985,
+      "EP": 0.5431393117,
+      "DFE": 0.0004281334,
+      "DIR": -0.01421380469999998,
+      "STIV": 6.7738287672,
+      "DCR": -0.0010440666
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.61,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$16,125,057 commissions / $263,864,446,768 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.28,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 2.54,
+        "high_bps": 6.23,
+        "mid_bps": 4.385,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 2.51,
+        "high_bps": 5.03,
+        "mid_bps": 3.77,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 33%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.61,
+      "total_estimated_low_bps": 5.66,
+      "total_estimated_high_bps": 11.870000000000001,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 55.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 21.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 25.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 28 registered fund holdings (~9.7% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

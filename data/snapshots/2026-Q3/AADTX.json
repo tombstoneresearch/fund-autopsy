@@ -1,0 +1,466 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-05",
+  "quarter": "2026-Q3",
+  "ticker": "AADTX",
+  "provenance": {
+    "ticker": "AADTX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.6,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 8.71,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.02,
+        "detail": "24 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "AADTX: Unresolved underlying fund: 'AMERICAN FUNDS STRATEGIC BOND FUND (SBF)' (2.98% of NAV, CUSIP 02631E789).",
+      "AADTX: Unresolved underlying fund: 'BOND FUND OF AMERICA (THE) (BFA)' (8.28% of NAV, CUSIP 097873814).",
+      "AADTX: Unresolved underlying fund: 'CAPITAL WORLD BOND FUND (WBF)' (2.00% of NAV, CUSIP 140541814).",
+      "AADTX: Unresolved underlying fund: 'AMERICAN FUNDS GLOBAL BALANCED FUND (GBAL)' (4.00% of NAV, CUSIP 02629W817).",
+      "AADTX: Unresolved underlying fund: 'U S GOVERNMENT SECURITIES FUND (GVT)' (4.97% of NAV, CUSIP 026300814).",
+      "AADTX: Unresolved underlying fund: 'INVESTMENT COMPANY OF AMERICA' (3.01% of NAV, CUSIP 461308819).",
+      "AADTX: Unresolved underlying fund: 'INCOME FUND OF AMERICA (THE) (IFA)' (9.39% of NAV, CUSIP 453320814).",
+      "AADTX: Unresolved underlying fund: 'INTERNATIONAL GROWTH & INCOME FUND' (0.70% of NAV, CUSIP 45956T816).",
+      "AADTX: Unresolved underlying fund: 'AMERICAN FUNDS INFLATION LINKED BOND (ILBF)' (7.29% of NAV, CUSIP 02630D816).",
+      "AADTX: Unresolved underlying fund: 'CAPITAL INCOME BUILDER (CIB)' (5.49% of NAV, CUSIP 140193822).",
+      "AADTX: Unresolved underlying fund: 'AMERICAN BALANCED FUND (AMBAL)' (8.04% of NAV, CUSIP 024071813).",
+      "AADTX: Unresolved underlying fund: 'AMERICAN FUNDS MORTGAGE (AFMF)' (5.96% of NAV, CUSIP 02630V816).",
+      "AADTX: Unresolved underlying fund: 'AMERICAN FUNDS MULTI-SECTOR INCOME FUND (MSI)' (3.97% of NAV, CUSIP 02631W771).",
+      "AADTX: Unresolved underlying fund: 'AMERICAN MUTUAL FUND (AMF)' (6.07% of NAV, CUSIP 027681816).",
+      "AADTX: Unresolved underlying fund: 'WASHINGTON MUTUAL INVESTORS FUND (WMIF)' (5.04% of NAV, CUSIP 939330817).",
+      "AADTX: Fund-of-funds detected: 21 underlying fund holdings representing ~99.9% of net assets. Resolved 6/21 to SEC CIKs for recursive unwind.",
+      "AADTX: 15 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup.",
+      "AADTX: Rolled up 6 underlying fund(s) (22.7% of FoF allocation): 0.2 bps weighted underlying cost.",
+      "AMCFX: Cash management: 1 registered fund holdings (~3.7% of assets, likely cash sweep vehicles).",
+      "AIBAX: Cash management: 7 registered fund holdings (~8.7% of assets, likely cash sweep vehicles).",
+      "AFICX: Cash management: 3 registered fund holdings (~3.1% of assets, likely cash sweep vehicles).",
+      "AGVDX: Cash management: 1 registered fund holdings (~3.9% of assets, likely cash sweep vehicles).",
+      "?: Cash management: 21 registered fund holdings (~6.4% of assets, likely cash sweep vehicles).",
+      "CWGCX: Cash management: 10 registered fund holdings (~3.0% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "AADTX",
+    "name": "American Funds 2025 Target Date Retirement Fund",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "1380175",
+    "series_id": "S000015558",
+    "class_id": "C000042393",
+    "is_fund_of_funds": true,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 31475209399.29,
+    "holdings_count": 21,
+    "reporting_period_end": "2026-04-30",
+    "asset_class_weights": {
+      "EC": 99.88715562479997
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.0,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$0 commissions / $31,475,209,399 net assets"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 5.99,
+        "mid_bps": 4.495,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.23024527937362674,
+      "total_estimated_low_bps": 6.2302452793736265,
+      "total_estimated_high_bps": 12.220245279373627,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 77.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 0.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 30.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Unresolved underlying fund: 'AMERICAN FUNDS STRATEGIC BOND FUND (SBF)' (2.98% of NAV, CUSIP 02631E789).",
+      "Unresolved underlying fund: 'BOND FUND OF AMERICA (THE) (BFA)' (8.28% of NAV, CUSIP 097873814).",
+      "Unresolved underlying fund: 'CAPITAL WORLD BOND FUND (WBF)' (2.00% of NAV, CUSIP 140541814).",
+      "Unresolved underlying fund: 'AMERICAN FUNDS GLOBAL BALANCED FUND (GBAL)' (4.00% of NAV, CUSIP 02629W817).",
+      "Unresolved underlying fund: 'U S GOVERNMENT SECURITIES FUND (GVT)' (4.97% of NAV, CUSIP 026300814).",
+      "Unresolved underlying fund: 'INVESTMENT COMPANY OF AMERICA' (3.01% of NAV, CUSIP 461308819).",
+      "Unresolved underlying fund: 'INCOME FUND OF AMERICA (THE) (IFA)' (9.39% of NAV, CUSIP 453320814).",
+      "Unresolved underlying fund: 'INTERNATIONAL GROWTH & INCOME FUND' (0.70% of NAV, CUSIP 45956T816).",
+      "Unresolved underlying fund: 'AMERICAN FUNDS INFLATION LINKED BOND (ILBF)' (7.29% of NAV, CUSIP 02630D816).",
+      "Unresolved underlying fund: 'CAPITAL INCOME BUILDER (CIB)' (5.49% of NAV, CUSIP 140193822).",
+      "Unresolved underlying fund: 'AMERICAN BALANCED FUND (AMBAL)' (8.04% of NAV, CUSIP 024071813).",
+      "Unresolved underlying fund: 'AMERICAN FUNDS MORTGAGE (AFMF)' (5.96% of NAV, CUSIP 02630V816).",
+      "Unresolved underlying fund: 'AMERICAN FUNDS MULTI-SECTOR INCOME FUND (MSI)' (3.97% of NAV, CUSIP 02631W771).",
+      "Unresolved underlying fund: 'AMERICAN MUTUAL FUND (AMF)' (6.07% of NAV, CUSIP 027681816).",
+      "Unresolved underlying fund: 'WASHINGTON MUTUAL INVESTORS FUND (WMIF)' (5.04% of NAV, CUSIP 939330817).",
+      "Fund-of-funds detected: 21 underlying fund holdings representing ~99.9% of net assets. Resolved 6/21 to SEC CIKs for recursive unwind.",
+      "15 underlying holding(s) could not be resolved to a SEC fund identifier; their costs are not yet reflected in the rollup.",
+      "Rolled up 6 underlying fund(s) (22.7% of FoF allocation): 0.2 bps weighted underlying cost."
+    ],
+    "underlying_funds": [
+      {
+        "ticker": "AMCFX",
+        "name": "AMCAP FUND",
+        "fund_family": "Capital Research and Management Company",
+        "cik": "4405",
+        "series_id": "S000008817",
+        "class_id": "C000068557",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.02032415583366518,
+        "depth": 1,
+        "net_assets": 93859793596.53,
+        "holdings_count": 145,
+        "reporting_period_end": "2026-02-28",
+        "asset_class_weights": {
+          "EC": 96.05068339379996,
+          "STIV": 3.6755268756,
+          "EP": 0.2683007005
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.91,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$8,544,945 commissions / $93,859,793,597 net assets"
+          },
+          "soft_dollar_arrangements": {
+            "active": true,
+            "value_bps": 0.41,
+            "tag": "estimated"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.0,
+            "high_bps": 6.0,
+            "mid_bps": 4.5,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 3.04,
+            "high_bps": 6.08,
+            "mid_bps": 4.5600000000000005,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 1%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.91,
+          "total_estimated_low_bps": 6.95,
+          "total_estimated_high_bps": 12.99,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 1 registered fund holdings (~3.7% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "AIBAX",
+        "name": "INTERMEDIATE BOND FUND OF AMERICA",
+        "fund_family": "Capital Research and Management Company",
+        "cik": "826813",
+        "series_id": "S000009236",
+        "class_id": "C000025146",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.059651475480803906,
+        "depth": 1,
+        "net_assets": 28641237054.1,
+        "holdings_count": 2985,
+        "reporting_period_end": "2026-02-28",
+        "asset_class_weights": {
+          "ABS-MBS": 17.105571722800008,
+          "ABS-CBDO": 9.972590983900021,
+          "ABS-O": 16.7418476297,
+          "STIV": 8.3993977825,
+          "DCR": 0.0022261891,
+          "DIR": 0.09265112390000002,
+          "DBT": 50.94766509519996,
+          "EP": 0.0110609748
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.0,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$0 commissions / $28,641,237,054 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 1.81,
+            "high_bps": 6.87,
+            "mid_bps": 4.34,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 1.89,
+            "high_bps": 3.78,
+            "mid_bps": 2.835,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 95%, small-cap weight: 100%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0,
+          "total_estimated_low_bps": 3.7,
+          "total_estimated_high_bps": 10.65,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 7 registered fund holdings (~8.7% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "AFICX",
+        "name": "AMERICAN FUNDS FUNDAMENTAL INVESTORS",
+        "fund_family": "Capital Research and Management Company",
+        "cik": "39473",
+        "series_id": "S000009227",
+        "class_id": "C000025057",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.030178519205442,
+        "depth": 1,
+        "net_assets": 153972651838.99,
+        "holdings_count": 240,
+        "reporting_period_end": "2026-03-31",
+        "asset_class_weights": {
+          "EC": 95.77119827350008,
+          "EP": 0.7485248218,
+          "STIV": 2.8111950946
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 1.04,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$15,993,526 commissions / $153,972,651,839 net assets"
+          },
+          "soft_dollar_arrangements": {
+            "active": true,
+            "value_bps": 0.47,
+            "tag": "estimated"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 2.98,
+            "high_bps": 5.96,
+            "mid_bps": 4.47,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 3.01,
+            "high_bps": 6.02,
+            "mid_bps": 4.515,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 1.04,
+          "total_estimated_low_bps": 7.029999999999999,
+          "total_estimated_high_bps": 13.02,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 3 registered fund holdings (~3.1% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "AGVDX",
+        "name": "American Funds Global Insight Fund",
+        "fund_family": "Capital Research and Management Company",
+        "cik": "1785347",
+        "series_id": "S000066952",
+        "class_id": "C000215510",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.027030968523540908,
+        "depth": 1,
+        "net_assets": 20581899581.96,
+        "holdings_count": 191,
+        "reporting_period_end": "2026-04-30",
+        "asset_class_weights": {
+          "EC": 96.07160233759997,
+          "STIV": 3.9456259184
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 1.39,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$2,856,528 commissions / $20,581,899,582 net assets"
+          },
+          "soft_dollar_arrangements": {
+            "active": true,
+            "value_bps": 0.62,
+            "tag": "estimated"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.0,
+            "high_bps": 6.0,
+            "mid_bps": 4.5,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 3.68,
+            "high_bps": 7.35,
+            "mid_bps": 5.515,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 11%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 1.39,
+          "total_estimated_low_bps": 8.07,
+          "total_estimated_high_bps": 14.739999999999998,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 1 registered fund holdings (~3.9% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "",
+        "name": "American High-Income Trust",
+        "fund_family": "Capital Research and Management Company",
+        "cik": "729528",
+        "series_id": "S000008787",
+        "class_id": null,
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.03316558553277589,
+        "depth": 1,
+        "net_assets": 853297184.54,
+        "holdings_count": 873,
+        "reporting_period_end": "2026-03-31",
+        "asset_class_weights": {
+          "EC": 6.664142335000001,
+          "DBT": 85.04358300690001,
+          "LON": 3.8123457176,
+          "DCR": 0.0033885766999999997,
+          "DIR": -0.0205491923,
+          "STIV": 3.7900972353
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 0.03,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$2,441 commissions / $853,297,185 net assets"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 1.56,
+            "high_bps": 6.3,
+            "mid_bps": 3.9299999999999997,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 2.62,
+            "high_bps": 5.24,
+            "mid_bps": 3.93,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 85%, small-cap weight: 100%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 0.03,
+          "total_estimated_low_bps": 4.21,
+          "total_estimated_high_bps": 11.57,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 21 registered fund holdings (~6.4% of assets, likely cash sweep vehicles)."
+        ]
+      },
+      {
+        "ticker": "CWGCX",
+        "name": "CAPITAL WORLD GROWTH & INCOME FUND",
+        "fund_family": "Capital Research and Management Company",
+        "cik": "894005",
+        "series_id": "S000009001",
+        "class_id": "C000024484",
+        "is_fund_of_funds": false,
+        "allocation_weight": 0.05694643525205887,
+        "depth": 1,
+        "net_assets": 149367995889.8,
+        "holdings_count": 333,
+        "reporting_period_end": "2026-02-28",
+        "asset_class_weights": {
+          "EC": 97.02217281979999,
+          "EP": 0.2787514401,
+          "DBT": 0.0280590253,
+          "STIV": 2.741948464
+        },
+        "costs": {
+          "brokerage_commissions_bps": {
+            "value": 2.49,
+            "tag": "DataSourceTag.CALCULATED",
+            "note": "$37,186,333 commissions / $149,367,995,890 net assets"
+          },
+          "soft_dollar_arrangements": {
+            "active": true,
+            "value_bps": 1.12,
+            "tag": "estimated"
+          },
+          "bid_ask_spread_cost": {
+            "low_bps": 3.0,
+            "high_bps": 6.0,
+            "mid_bps": 4.5,
+            "tag": "estimated",
+            "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+          },
+          "market_impact_cost": {
+            "low_bps": 3.05,
+            "high_bps": 6.1,
+            "mid_bps": 4.574999999999999,
+            "tag": "estimated",
+            "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 1%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+          },
+          "total_reported_bps": 2.49,
+          "total_estimated_low_bps": 8.54,
+          "total_estimated_high_bps": 14.59,
+          "hidden_cost_gap_bps": null
+        },
+        "data_notes": [
+          "Cash management: 10 registered fund holdings (~3.0% of assets, likely cash sweep vehicles)."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "AIVSX",
+  "provenance": {
+    "ticker": "AIVSX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.64,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.38,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "AIVSX: Cash management: 10 registered fund holdings (~3.2% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "AIVSX",
+    "name": "INVESTMENT CO OF AMERICA",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "51931",
+    "series_id": "S000009597",
+    "class_id": "C000026214",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 165946417312.78,
+    "holdings_count": 173,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 96.7844243294,
+      "EP": 0.4691780732,
+      "STIV": 3.0651683373
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 1.1,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$18,300,124 commissions / $165,946,417,313 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.5,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.02,
+        "mid_bps": 4.515,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.03,
+        "mid_bps": 4.52,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 1.1,
+      "total_estimated_low_bps": 7.119999999999999,
+      "total_estimated_high_bps": 13.149999999999999,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 55.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 23.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 24.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 10 registered fund holdings (~3.2% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

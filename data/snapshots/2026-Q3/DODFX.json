@@ -1,0 +1,120 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "DODFX",
+  "provenance": {
+    "ticker": "DODFX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.83,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 0.92,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "DODFX: Cash management: 2 registered fund holdings (~1.2% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "DODFX",
+    "name": "Dodge & Cox International Stock Fund",
+    "fund_family": "Dodge & Cox",
+    "cik": "29440",
+    "series_id": "S000011203",
+    "class_id": "C000030876",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 61089178374.15,
+    "holdings_count": 259,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "DFE": 0.053945614100000025,
+      "EC": 95.36163431909999,
+      "EP": 3.4338913054,
+      "STIV": 0.6911324005,
+      "RA": 0.0975396415,
+      "DE": -0.025959296
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 2.02,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$12,310,061 commissions / $61,089,178,374 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.91,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 2.99,
+        "high_bps": 5.99,
+        "mid_bps": 4.49,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.01,
+        "high_bps": 6.02,
+        "mid_bps": 4.515,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 2.02,
+      "total_estimated_low_bps": 8.02,
+      "total_estimated_high_bps": 14.03,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 61.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 60.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 2 registered fund holdings (~1.2% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "PIMIX",
+  "provenance": {
+    "ticker": "PIMIX",
+    "verdict": "COMPLETE \u2014 all stages clean.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.77,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 3.07,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "ok",
+        "seconds": 0.05,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": []
+  },
+  "analysis": {
+    "ticker": "PIMIX",
+    "name": "PIMCO Income Fund",
+    "fund_family": "Pacific Investment Management Company LLC",
+    "cik": "810893",
+    "series_id": "S000016548",
+    "class_id": "C000046102",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 224789032259.55,
+    "holdings_count": 10796,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "DFE": -0.0219246,
+      "DBT": 34.51646979999994,
+      "LON": 2.7556765,
+      "ABS-MBS": 94.03760190000035,
+      "ABS-O": 7.785176300000002,
+      "EC": 0.4318589,
+      "ABS-CBDO": 7.1200326999999985,
+      "DIR": 3.1148485,
+      "DCR": 0.23796790000000004,
+      "RA": -1.0748974,
+      "EP": 0.132689,
+      "STIV": 0.223943,
+      "DE": 0.0049827
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.43,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$9,658,830 commissions / $224,789,032,260 net assets"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 1.49,
+        "high_bps": 6.48,
+        "mid_bps": 3.9850000000000003,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 1.5,
+        "high_bps": 3.0,
+        "mid_bps": 2.25,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 100%, small-cap weight: 12%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.43,
+      "total_estimated_low_bps": 3.42,
+      "total_estimated_high_bps": 9.91,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 54.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 50.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": []
+  }
+}

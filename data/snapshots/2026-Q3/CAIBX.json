@@ -1,0 +1,129 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "CAIBX",
+  "provenance": {
+    "ticker": "CAIBX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.7,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.75,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.01,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "CAIBX: Cash management: 29 registered fund holdings (~7.3% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "CAIBX",
+    "name": "CAPITAL INCOME BUILDER",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "811968",
+    "series_id": "S000009000",
+    "class_id": "C000024463",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 126783857971.41,
+    "holdings_count": 2704,
+    "reporting_period_end": "2026-04-30",
+    "asset_class_weights": {
+      "DBT": 11.006309226999988,
+      "ABS-MBS": 4.016475930999995,
+      "ABS-CBDO": 0.5257282294,
+      "ABS-O": 0.5760865724000003,
+      "EC": 78.81293142789998,
+      "LON": 0.15409473700000004,
+      "DCR": 0.0013696695,
+      "DIR": -0.05961493899999999,
+      "EP": 0.4817466742,
+      "STIV": 5.0861497418,
+      "DFE": -0.0013850048999999997
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 1.69,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$21,426,293 commissions / $126,783,857,971 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.76,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 2.76,
+        "high_bps": 6.1,
+        "mid_bps": 4.43,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 2.82,
+        "high_bps": 5.65,
+        "mid_bps": 4.235,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 16%, small-cap weight: 1%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 1.69,
+      "total_estimated_low_bps": 7.27,
+      "total_estimated_high_bps": 13.44,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 58.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 22.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 25.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 29 registered fund holdings (~7.3% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-06",
+  "quarter": "2026-Q3",
+  "ticker": "ANWPX",
+  "provenance": {
+    "ticker": "ANWPX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.74,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.51,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "ANWPX: Cash management: 10 registered fund holdings (~3.7% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "ANWPX",
+    "name": "NEW PERSPECTIVE FUND",
+    "fund_family": "Capital Research and Management Company",
+    "cik": "71516",
+    "series_id": "S000009613",
+    "class_id": "C000026302",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 152763992091.01,
+    "holdings_count": 283,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 96.84284034900001,
+      "STIV": 3.3132083871
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 1.42,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$21,737,015 commissions / $152,763,992,091 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.64,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.01,
+        "mid_bps": 4.505,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.03,
+        "high_bps": 6.05,
+        "mid_bps": 4.54,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 1.42,
+      "total_estimated_low_bps": 7.449999999999999,
+      "total_estimated_high_bps": 13.48,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 71.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 36.0,
+        "tag": "reported"
+      },
+      "twelve_b1_fee_bps": {
+        "value": 24.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 10 registered fund holdings (~3.7% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}

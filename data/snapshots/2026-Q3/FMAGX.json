@@ -1,0 +1,116 @@
+{
+  "snapshot_version": "2.0",
+  "generated": "2026-07-05",
+  "quarter": "2026-Q3",
+  "ticker": "FMAGX",
+  "provenance": {
+    "ticker": "FMAGX",
+    "verdict": "COMPLETE WITH CAVEATS \u2014 see data notes.",
+    "completed": true,
+    "stages": [
+      {
+        "stage": "resolve",
+        "label": "Resolve ticker to CIK / series / class",
+        "status": "ok",
+        "seconds": 0.79,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "structure",
+        "label": "Retrieve filings, detect fund structure",
+        "status": "ok",
+        "seconds": 1.32,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "costs",
+        "label": "Extract fees, compute cost estimates",
+        "status": "degraded",
+        "seconds": 0.0,
+        "detail": "1 data note(s); see quality_notes.",
+        "hint": ""
+      },
+      {
+        "stage": "rollup",
+        "label": "Roll up fund-of-funds cost tree",
+        "status": "ok",
+        "seconds": 0.0,
+        "detail": "",
+        "hint": ""
+      },
+      {
+        "stage": "fees",
+        "label": "Retrieve stated fees from prospectus (backfilled post-run)",
+        "status": "ok",
+        "seconds": 0,
+        "detail": "",
+        "hint": ""
+      }
+    ],
+    "quality_notes": [
+      "FMAGX: Cash management: 1 registered fund holdings (~0.6% of assets, likely cash sweep vehicles)."
+    ]
+  },
+  "analysis": {
+    "ticker": "FMAGX",
+    "name": "Fidelity Magellan Fund",
+    "fund_family": "Fidelity Management & Research Company LLC",
+    "cik": "61397",
+    "series_id": "S000007112",
+    "class_id": "C000019441",
+    "is_fund_of_funds": false,
+    "allocation_weight": 1.0,
+    "depth": 0,
+    "net_assets": 33066632220.64,
+    "holdings_count": 52,
+    "reporting_period_end": "2026-03-31",
+    "asset_class_weights": {
+      "EC": 99.39008485047502,
+      "STIV": 0.614986400952
+    },
+    "costs": {
+      "brokerage_commissions_bps": {
+        "value": 0.9,
+        "tag": "DataSourceTag.CALCULATED",
+        "note": "$2,986,899 commissions / $33,066,632,221 net assets"
+      },
+      "soft_dollar_arrangements": {
+        "active": true,
+        "value_bps": 0.41,
+        "tag": "estimated"
+      },
+      "bid_ask_spread_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Bid-ask spread estimated from N-PORT asset class weights and portfolio turnover. Spread assumptions based on asset-class-specific averages. Formula: turnover x 2 x weighted avg one-way spread."
+      },
+      "market_impact_cost": {
+        "low_bps": 3.0,
+        "high_bps": 6.0,
+        "mid_bps": 4.5,
+        "tag": "estimated",
+        "methodology": "Market impact estimated using regression-weighted blend of equity and fixed income impact assumptions. Bond weight: 0%, small-cap weight: 0%. Based on Edelen, Evans, and Kadlec (2007). Directional estimate."
+      },
+      "total_reported_bps": 0.9,
+      "total_estimated_low_bps": 6.9,
+      "total_estimated_high_bps": 12.9,
+      "hidden_cost_gap_bps": null,
+      "expense_ratio_bps": {
+        "value": 64.0,
+        "tag": "reported",
+        "note": "Prospectus fee table (backfilled)"
+      },
+      "management_fee_bps": {
+        "value": 64.0,
+        "tag": "reported"
+      }
+    },
+    "data_notes": [
+      "Cash management: 1 registered fund holdings (~0.6% of assets, likely cash sweep vehicles)."
+    ]
+  }
+}
