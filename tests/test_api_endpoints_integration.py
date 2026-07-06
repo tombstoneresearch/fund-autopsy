@@ -66,7 +66,10 @@ def test_endpoint_rejects_known_etf_with_422(client, endpoint):
     assert r.status_code == 422
     body = r.json()
     assert "detail" in body
-    assert any(word in body["detail"].lower()
+    # FastAPI may serialize the detail payload as a string or a dict
+    # depending on version; compare against the flattened text either way.
+    detail_text = str(body["detail"]).lower()
+    assert any(word in detail_text
                for word in ("etf", "exchange-traded", "mutual fund"))
 
 

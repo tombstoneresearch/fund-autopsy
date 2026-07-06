@@ -15,9 +15,11 @@ from typing import Any
 STAGE_HINTS: dict[str, str] = {
     "resolve": (
         "The ticker did not resolve to a CIK, series, and class. Check the "
-        "spelling first. If the ticker is valid, it may be missing from "
-        "SEC's mutual fund ticker master and the ICF walker fallback also "
-        "missed; record it as a resolution gap rather than retrying blindly."
+        "spelling first. Then check the SEC's authoritative series/class "
+        "census (investment-company-series-class CSV at sec.gov): if the "
+        "ticker is absent there, it is dead or renamed and no amount of "
+        "retrying will resolve it (this was the case with LIPSX, 2026-07). "
+        "If it IS in the census, record it as a resolution gap."
     ),
     "structure": (
         "Filings could not be retrieved or parsed into a holdings "

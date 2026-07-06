@@ -354,21 +354,32 @@ def _full_text_search(
     """Query EDGAR full-text search for registration filings mentioning
     the ticker. Returns candidate CIKs in rank order.
     """
-    params = {
-        "q": f'"{ticker.upper()}"',
-        "forms": ",".join(_ICF_FORMS),
-    }
+    # NOTE (2026-07-05 shakedown finding): do NOT pass a "forms" filter.
+    # EDGAR full-text search returns zero hits for 497K/485BPOS when the
+    # forms parameter is supplied (verified live: bare query for LIPSX
+    # returns 3 hits, the same query with forms=497K,485BPOS returns 0).
+    # Precision is enforced downstream anyway: every candidate CIK must
+    # survive the SGML header confirmation before it resolves.
+    params = {"q": f'"{ticker.upper()}"'}
     try:
         resp = _request_with_retry(
             client, "GET", _EDGAR_FULL_TEXT_SEARCH_URL, params=params
         )
         body = resp.json()
     except Exception as exc:  # noqa: BLE001 — walker is best-effort
-        logger.debug(
-            "Full-text search failed for ticker=%s: %s", ticker, exc
+        # Warning, not debug: a silent [] here cost us the LIPSX
+        # resolution for weeks. Best-effort must still be audible.
+        logger.warning(
+            "EDGAR full-text search failed for ticker=%s: %s", ticker, exc
         )
         return []
-    return parse_candidate_ciks(body)
+    candidates = parse_candidate_ciks(body)
+    if not candidates:
+        logger.warning(
+            "EDGAR full-text search returned no candidate CIKs for %s",
+            ticker,
+        )
+    return candidates
 
 
 # ---------------------------------------------------------------------------

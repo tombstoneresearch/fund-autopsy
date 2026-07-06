@@ -55,6 +55,23 @@ _FUND_NAME_PATTERNS = re.compile(
     re.IGNORECASE,
 )
 
+# Securitization vehicles are legally trusts but are not registered
+# investment companies. Without this exclusion, a bond fund's N-PORT
+# ("Bear Stearns Asset Backed Securities Trust", "GNMA Pass-Through
+# Trust", hundreds of similar names) floods fund-of-funds detection
+# with false candidates — burning one CUSIP resolver call per holding
+# (25/min rate limit at OpenFIGI, i.e. ten-plus silent minutes on a
+# single bond fund) and drowning the data notes in noise. Genuine
+# underlying funds ("PIMCO Total Return Fund") do not match these
+# patterns, so target-date decomposition is unaffected.
+_SECURITIZATION_PATTERNS = re.compile(
+    r"(asset[\s-]?backed|mortgage|remic|securitiz|receivable|"
+    r"pass[\s-]?thr(?:ough|u)?|collateralized|\bcdo\b|\bclo\b|"
+    r"home\s+equity|student\s+loan|auto\s+(?:loan|lease|owner)|"
+    r"\bmtge?\b|\bcmbs\b|\brmbs\b|\babs\b)",
+    re.IGNORECASE,
+)
+
 
 def retrieve_nport(
     fund_id: MutualFundIdentifier,
@@ -390,9 +407,14 @@ def detect_fund_holdings(nport: NPortData) -> list[NPortHolding]:
         if holding.issuer_category and holding.issuer_category.upper() in ("RF", "RIC"):
             is_fund = True
 
-        # Check name patterns
+        # Check name patterns, excluding securitization vehicles whose
+        # legal names contain "Trust" but which are not registered funds.
         if not is_fund and _FUND_NAME_PATTERNS.search(holding.name):
-            is_fund = True
+            cat = (holding.asset_category or "").upper()
+            if _SECURITIZATION_PATTERNS.search(holding.name) or cat.startswith("ABS"):
+                pass  # MBS/ABS/CLO paper, not a registered investment company
+            else:
+                is_fund = True
 
         # STIV with substantial allocation is often a money market fund
         # But small STIV positions (<5% of assets) are typically cash sweeps

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 import threading
 import time
 from dataclasses import dataclass, field
@@ -923,6 +924,19 @@ _openfigi_cache_lock = threading.Lock()
 _OPENFIGI_URL: str = "https://api.openfigi.com/v3/mapping"
 _OPENFIGI_TIMEOUT_SECONDS: float = 10.0
 
+# Circuit breaker. Without it, a network environment where OpenFIGI is
+# unreachable (firewall, offline, DNS failure) costs the full timeout
+# on EVERY candidate holding: 10s x 50 holdings is an eight-minute
+# silent stall that looks like a hang from the operator's seat. After
+# _OPENFIGI_BREAKER_THRESHOLD consecutive transport failures the
+# resolver disables itself for the remainder of the process and the
+# pipeline proceeds treating those holdings as direct securities
+# (an explicit, logged degradation instead of a mystery stall).
+# FUNDAUTOPSY_DISABLE_OPENFIGI=1 disables it outright.
+_OPENFIGI_BREAKER_THRESHOLD: int = 3
+_openfigi_consecutive_failures: int = 0
+_openfigi_disabled: bool = bool(os.environ.get("FUNDAUTOPSY_DISABLE_OPENFIGI"))
+
 
 def _resolve_cusip_via_openfigi(
     cusip: str,
@@ -947,6 +961,10 @@ def _resolve_cusip_via_openfigi(
     response is cached so a second lookup on the same CUSIP is free.
     """
     if not cusip or len(cusip) != 9:
+        return None
+
+    global _openfigi_consecutive_failures, _openfigi_disabled
+    if _openfigi_disabled:
         return None
 
     key = cusip.upper()
@@ -1017,6 +1035,17 @@ def _resolve_cusip_via_openfigi(
             break
     except Exception as exc:  # noqa: BLE001 — resolver is best-effort
         logger.debug("OpenFIGI lookup failed for CUSIP %s: %s", key, exc)
+        _openfigi_consecutive_failures += 1
+        if _openfigi_consecutive_failures >= _OPENFIGI_BREAKER_THRESHOLD:
+            _openfigi_disabled = True
+            logger.warning(
+                "OpenFIGI unreachable %d times in a row; disabling CUSIP "
+                "resolution for the rest of this run. Affected holdings "
+                "will be treated as direct securities.",
+                _openfigi_consecutive_failures,
+            )
+    else:
+        _openfigi_consecutive_failures = 0
 
     # Cache successful lookups (both positive hits AND definite misses
     # where OpenFIGI said the identifier is unknown). Do NOT cache
