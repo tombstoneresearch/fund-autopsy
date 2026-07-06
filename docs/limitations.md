@@ -26,7 +26,7 @@
 
 9. **Administrative cost allocations** beyond what is captured in the expense ratio are not separately identifiable.
 
-10. **Tax drag is excluded** from the current scope. Capital gains distributions and tax efficiency are important cost components but are already addressed by existing tools (Morningstar tax cost ratio, PersonalFund tax estimates). Fund Autopsy focuses on the gap those tools miss: transaction costs and soft dollars.
+10. **Tax drag is displayed but not composited.** The turnover-to-distribution linkage is real, N-CEN-native, and shown as its own dimension where computed. It is deliberately excluded from any headline cost figure for two reasons: existing tools already serve it well (Morningstar tax cost ratio and similar), and it applies only to taxable accounts, so folding it into a single number would misstate costs for the retirement accounts where most fund assets sit. (This supersedes the earlier blanket exclusion; Working Paper No. 1 discusses the dimension in full.)
 
 ## Technical
 

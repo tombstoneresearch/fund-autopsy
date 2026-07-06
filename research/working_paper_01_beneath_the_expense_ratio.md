@@ -248,7 +248,7 @@ The fourth question is how the post-2022 Rule 18f-4 framework has changed deriva
 
 The fifth question is whether the governance structure of a fund complex, including independent chair, independence ratio, and interlocking directorships, predicts fee renegotiation outcomes during adviser contract renewal periods. Older work by Khorana, Servaes, and Tufano (2004) has answered this partially, and the N-CEN makes a comprehensive test feasible.
 
-These and adjacent questions are the subject of forthcoming Tombstone Research working papers. Paper 2 in this series will address soft-dollar intensity in the post-MiFID II landscape, with particular attention to the asymmetric regulatory environment between U.S. and European fund execution. Paper 3 will cover securities-lending revenue splits across the industry. Paper 4 will address affiliated-broker routing trends since 2018. The Fund Autopsy open-source repository publishes data and code for each paper alongside the narrative.
+These and adjacent questions are the subject of forthcoming Tombstone Research working papers. Paper 2 in this series will address soft-dollar intensity in the post-MiFID II environment, with particular attention to the asymmetric regulatory environment between U.S. and European fund execution. Paper 3 will cover securities-lending revenue splits across the industry. Paper 4 will address affiliated-broker routing trends since 2018. The Fund Autopsy open-source repository publishes data and code for each paper alongside the narrative.
 
 ---
 
@@ -292,7 +292,7 @@ U.S. Securities and Exchange Commission (2020). Use of Derivatives by Registered
 
 ---
 
-## Appendix A — Index of N-CEN Fields Referenced
+## Appendix A: Index of N-CEN Fields Referenced
 
 The table below cross-references the ten disclosure dimensions discussed in Section 4 with the corresponding N-CEN reporting items. Item lettering follows the current N-CEN schema in effect as of 2026-04-22. Prior schema versions had different item lettering, and the Fund Autopsy parser handles the versioning.
 
@@ -313,7 +313,7 @@ Current N-CEN schema documentation is maintained by the SEC and is available thr
 
 ---
 
-## Appendix B — Data Access
+## Appendix B: Data Access
 
 All N-CEN filings are available without authentication on EDGAR. Raw XML can be retrieved by CIK and accession number at predictable URL patterns. Bulk retrieval requires respecting the SEC's rate-limit guidance, which historically has been ten requests per second with an identifying User-Agent, though current SEC guidance is authoritative and should be consulted before building any production pipeline.
 
