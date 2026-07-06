@@ -277,9 +277,33 @@ def resolve_ticker(ticker: str, client: Optional[httpx.Client] = None) -> Option
                 _resolve_cache_put(ticker_upper, result)
                 return result
 
-        # MF-universe miss. Deferred import avoids a circular dependency
-        # at module-load time — icf_walker imports MutualFundIdentifier
-        # back from this module.
+        # MF-universe miss. Consult the SEC's authoritative series/class
+        # census next: a HIT resolves instantly, and an ABSENT is a
+        # definitive "this ticker does not exist as a live share class"
+        # that makes any further scanning pointless. Deferred imports
+        # avoid circular dependencies at module-load time.
+        from fundautopsy.data.census import CensusVerdict, resolve_via_census
+
+        verdict, census_hit = resolve_via_census(ticker_upper, client)
+        if verdict is CensusVerdict.HIT and census_hit is not None:
+            logger.info(
+                "Ticker %s resolved via SEC series/class census: "
+                "cik=%s series=%s class=%s",
+                ticker_upper, census_hit.cik,
+                census_hit.series_id, census_hit.class_id,
+            )
+            _resolve_cache_put(ticker_upper, census_hit)
+            return census_hit
+        if verdict is CensusVerdict.ABSENT:
+            logger.warning(
+                "Ticker %s is absent from the SEC series/class census — "
+                "dead or renamed ticker; skipping walker scan.",
+                ticker_upper,
+            )
+            _resolve_cache_put(ticker_upper, None)
+            return None
+
+        # Census unavailable — fall through to the ICF walker.
         from fundautopsy.data.icf_walker import resolve_ticker_via_walker
         walker_hit = resolve_ticker_via_walker(ticker_upper, client=client)
         if walker_hit is not None:
