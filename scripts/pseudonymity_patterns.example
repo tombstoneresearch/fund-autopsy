@@ -1,0 +1,25 @@
+# Pseudonymity pattern file — EXAMPLE (this file is tracked).
+#
+# check_pseudonymity.sh reads one of:
+#   1. $PSEUDONYMITY_PATTERNS_FILE (if set and readable)
+#   2. scripts/.pseudonymity_patterns (local, gitignored — preferred)
+# and exits nonzero if any pattern hits a tracked or untracked file.
+#
+# To activate the scanner locally:
+#   cp scripts/pseudonymity_patterns.example scripts/.pseudonymity_patterns
+#   # edit scripts/.pseudonymity_patterns and add the identifiers you
+#   # want blocked from ever reaching the public remote, one ERE
+#   # regex per non-blank, non-comment line.
+#
+# Install the pre-push hook so the scanner runs before every push:
+#   ln -sf ../../scripts/check_pseudonymity.sh .git/hooks/pre-push
+#   chmod +x .git/hooks/pre-push
+#
+# The patterns live only in your local .pseudonymity_patterns file —
+# they are never committed and never leave your machine.
+
+# Illustrative patterns (replace with your own in .pseudonymity_patterns):
+# \bYourFirstName\b
+# YourLastName
+# your\.email@provider\.tld
+# \bINTERNAL_PROJECT_ACRONYM\b

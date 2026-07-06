@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fund Autopsy — Portfolio Total Cost of Ownership</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+<style>
+  /* Portfolio-page-specific layout. Reuses root tokens from styles.css. */
+  .pf-page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 48px 32px 96px;
+  }
+  .pf-heading {
+    font-size: 42px; font-weight: 800; letter-spacing: -0.03em;
+    color: var(--text); margin-bottom: 10px;
+  }
+  .pf-heading span { color: var(--accent); }
+  .pf-sub {
+    font-size: 15px; color: var(--text-dim); max-width: 680px;
+    line-height: 1.55; margin-bottom: 36px;
+  }
+  .pf-form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  .pf-form label {
+    display: block; font-size: 12px; font-weight: 600;
+    color: var(--text-dim); text-transform: uppercase;
+    letter-spacing: 0.08em; margin-bottom: 8px;
+  }
+  .pf-textarea {
+    width: 100%; min-height: 150px;
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px 16px; font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; line-height: 1.7;
+    resize: vertical;
+  }
+  .pf-textarea:focus {
+    outline: none; border-color: var(--accent);
+  }
+  .pf-assumptions {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px; margin-top: 20px;
+  }
+  .pf-input {
+    width: 100%; background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; font-family: 'Inter', sans-serif;
+    font-size: 15px;
+  }
+  .pf-input:focus { outline: none; border-color: var(--accent); }
+  .pf-actions {
+    display: flex; gap: 12px; align-items: center;
+    margin-top: 20px;
+  }
+  .pf-submit {
+    background: var(--accent); color: #1a1408;
+    border: none; border-radius: 8px;
+    padding: 12px 28px; font-weight: 700; font-size: 15px;
+    cursor: pointer; letter-spacing: 0.01em;
+  }
+  .pf-submit:hover { filter: brightness(1.1); }
+  .pf-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+  .pf-help {
+    font-size: 13px; color: var(--text-muted);
+  }
+  .pf-error {
+    background: var(--red-dim); border: 1px solid var(--red);
+    border-radius: 8px; padding: 14px 16px; color: #fca5a5;
+    font-size: 14px; margin-top: 16px; display: none;
+  }
+  /* Summary block */
+  .pf-summary {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px; margin-bottom: 32px;
+  }
+  .pf-summary-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .pf-summary-card.accent {
+    border-color: var(--accent); background: var(--accent-dim);
+  }
+  .pf-summary-label {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text-dim); margin-bottom: 8px;
+  }
+  .pf-summary-value {
+    font-size: 32px; font-weight: 800; letter-spacing: -0.02em;
+    color: var(--text);
+  }
+  .pf-summary-unit { font-size: 16px; color: var(--text-dim); margin-left: 4px; }
+  .pf-summary-note { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+
+  /* Holdings table */
+  .pf-section-title {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--text-dim); margin: 32px 0 14px;
+  }
+  .pf-table-wrap {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+  }
+  .pf-table { width: 100%; border-collapse: collapse; }
+  .pf-table th {
+    background: var(--surface-2); color: var(--text-dim);
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; padding: 12px 14px; text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  .pf-table td {
+    padding: 14px; font-size: 14px; color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+  .pf-table tr:last-child td { border-bottom: none; }
+  .pf-table .num { text-align: right; font-family: 'JetBrains Mono', monospace; }
+  .pf-table .ticker { font-weight: 700; color: var(--accent); }
+  .pf-tag {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; padding: 3px 8px; border-radius: 4px;
+    display: inline-block;
+  }
+  .pf-tag.REPORTED { background: var(--green-dim); color: var(--green); }
+  .pf-tag.CALCULATED { background: var(--yellow-dim); color: var(--yellow); }
+  .pf-tag.PARTIAL { background: var(--yellow-dim); color: var(--yellow); }
+  .pf-tag.UNAVAILABLE { background: var(--red-dim); color: var(--red); }
+
+  /* Projection block */
+  .pf-projection {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px; margin-top: 14px;
+  }
+  .pf-projection-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px;
+  }
+  .pf-projection-horizon {
+    font-size: 13px; color: var(--text-dim); margin-bottom: 6px;
+  }
+  .pf-projection-drag {
+    font-size: 26px; font-weight: 800; color: var(--red);
+    letter-spacing: -0.02em;
+  }
+  .pf-projection-pct {
+    font-size: 13px; color: var(--text-dim); margin-top: 4px;
+  }
+  .pf-projection-terms {
+    font-size: 11px; color: var(--text-muted); margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Notes list */
+  .pf-notes {
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px; margin-top: 18px;
+  }
+  .pf-notes li {
+    list-style: none; padding: 6px 0;
+    font-size: 13px; color: var(--text-dim);
+    border-bottom: 1px dashed var(--border);
+  }
+  .pf-notes li:last-child { border-bottom: none; }
+
+  .pf-loading {
+    text-align: center; padding: 48px 24px;
+    color: var(--text-dim); font-size: 14px;
+  }
+
+  @media (max-width: 720px) {
+    .pf-summary { grid-template-columns: repeat(2, 1fr); }
+    .pf-projection { grid-template-columns: 1fr; }
+    .pf-assumptions { grid-template-columns: 1fr; }
+    .pf-heading { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-brand">
+    <div class="topbar-icon">☠</div>
+    Fund Autopsy
+  </div>
+  <div class="topbar-sub">Tombstone Research</div>
+  <div style="flex: 1"></div>
+  <a href="/" style="color: var(--text-dim); font-size: 13px; text-decoration: none; margin-right: 16px;">Single fund</a>
+  <a href="/portfolio" style="color: var(--accent); font-size: 13px; text-decoration: none; font-weight: 600;">Portfolio</a>
+</div>
+
+<div class="pf-page">
+  <h1 class="pf-heading">What does your <span>portfolio</span> actually cost?</h1>
+  <p class="pf-sub">
+    Return-side tools assume the stated expense ratio is the whole cost story.
+    It is not. Brokerage commissions, soft dollars, and underlying fund-of-funds
+    layers are all in the filings and rarely aggregated at the portfolio level.
+    Paste a ticker list below to see your weighted true cost of ownership and
+    what it compounds into over thirty years.
+  </p>
+
+  <form class="pf-form" id="pfForm" onsubmit="runRollup(event)">
+    <label for="holdings">Holdings (one per line: TICKER WEIGHT)</label>
+    <textarea class="pf-textarea" id="holdings" spellcheck="false" placeholder="VTSAX 60&#10;VTIAX 30&#10;VBTLX 10"></textarea>
+
+    <div class="pf-assumptions">
+      <div>
+        <label for="balance">Starting balance ($)</label>
+        <input class="pf-input" id="balance" type="number" step="1000" min="1" value="100000">
+      </div>
+      <div>
+        <label for="return">Gross annual return (%)</label>
+        <input class="pf-input" id="return" type="number" step="0.1" min="-20" max="20" value="7.0">
+      </div>
+    </div>
+
+    <div class="pf-actions">
+      <button type="submit" class="pf-submit" id="pfSubmit">Roll up the portfolio</button>
+      <span class="pf-help">Accepts spaces, commas, colons, or percent signs. Weights should sum to ~100%.</span>
+    </div>
+
+    <div class="pf-error" id="pfError"></div>
+  </form>
+
+  <div id="pfResults"></div>
+</div>
+
+<script>
+const elForm = document.getElementById('pfForm');
+const elSubmit = document.getElementById('pfSubmit');
+const elError = document.getElementById('pfError');
+const elResults = document.getElementById('pfResults');
+
+function fmtBps(n) {
+  if (n === null || n === undefined) return '—';
+  return n.toFixed(1) + ' bps';
+}
+function fmtPct(n) {
+  if (n === null || n === undefined) return '—';
+  return n.toFixed(2) + '%';
+}
+function fmtDollars(n) {
+  if (n === null || n === undefined) return '—';
+  return '$' + Math.round(n).toLocaleString('en-US');
+}
+
+async function runRollup(e) {
+  e.preventDefault();
+  elError.style.display = 'none';
+  elResults.innerHTML = '<div class="pf-loading">Pricing each holding against EDGAR. This takes 10-30 seconds on a cold cache.</div>';
+  elSubmit.disabled = true;
+  elSubmit.textContent = 'Working...';
+
+  const body = {
+    raw: document.getElementById('holdings').value,
+    starting_balance: Number(document.getElementById('balance').value),
+    gross_return_pct: Number(document.getElementById('return').value),
+  };
+
+  try {
+    const res = await fetch('/api/portfolio', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({detail: 'Unknown error'}));
+      throw new Error(err.detail || 'Request failed');
+    }
+    const data = await res.json();
+    renderResults(data);
+  } catch (ex) {
+    elResults.innerHTML = '';
+    elError.textContent = ex.message;
+    elError.style.display = 'block';
+  } finally {
+    elSubmit.disabled = false;
+    elSubmit.textContent = 'Roll up the portfolio';
+  }
+}
+
+function renderResults(data) {
+  const priced = (data.priced_weight_fraction * 100).toFixed(1);
+  const unpriced = (data.unpriced_weight_fraction * 100).toFixed(1);
+  const thirty = data.projections.find(p => p.horizon_years === 30) || data.projections[data.projections.length - 1];
+
+  let html = '';
+
+  // Summary cards
+  html += '<div class="pf-summary">';
+  html += summaryCard('Weighted True TCO', fmtBps(data.weighted_true_tco_bps), `across ${priced}% of portfolio weight`, false);
+  html += summaryCard('Weighted Stated ER', fmtBps(data.weighted_expense_ratio_bps), 'what the marketing pages quote', false);
+  html += summaryCard('Hidden Gap', fmtBps(data.hidden_gap_bps), 'true cost beyond stated ER', true);
+  html += summaryCard(`30-Year Drag`, fmtDollars(thirty ? thirty.drag_dollars : null), thirty ? `${(thirty.drag_percent * 100).toFixed(1)}% of terminal wealth` : '', true);
+  html += '</div>';
+
+  // Per-holding table
+  html += '<div class="pf-section-title">Per-holding breakdown</div>';
+  html += '<div class="pf-table-wrap"><table class="pf-table"><thead><tr>';
+  html += '<th>Ticker</th><th>Fund</th><th class="num">Weight</th>';
+  html += '<th class="num">Stated ER</th><th class="num">Brokerage</th>';
+  html += '<th class="num">Underlying</th><th class="num">True TCO</th>';
+  html += '<th class="num">Contribution</th><th>Quality</th>';
+  html += '</tr></thead><tbody>';
+  for (const h of data.holdings) {
+    html += '<tr>';
+    html += `<td class="ticker">${h.ticker}</td>`;
+    html += `<td>${h.fund_name || '—'}${h.is_fund_of_funds ? ' <span class="pf-tag CALCULATED">FoF</span>' : ''}</td>`;
+    html += `<td class="num">${fmtPct(h.weight_pct)}</td>`;
+    html += `<td class="num">${fmtBps(h.expense_ratio_bps)}</td>`;
+    html += `<td class="num">${fmtBps(h.brokerage_commissions_bps)}</td>`;
+    html += `<td class="num">${fmtBps(h.underlying_funds_weighted_bps)}</td>`;
+    html += `<td class="num"><strong>${fmtBps(h.true_tco_bps)}</strong></td>`;
+    html += `<td class="num">${fmtBps(h.portfolio_contribution_bps)}</td>`;
+    html += `<td><span class="pf-tag ${h.data_quality}">${h.data_quality}</span></td>`;
+    html += '</tr>';
+  }
+  html += '</tbody></table></div>';
+
+  // Projections
+  html += '<div class="pf-section-title">Compound drag ($' + data.starting_balance.toLocaleString() + ' at ' + (data.gross_return_annual * 100).toFixed(1) + '% gross)</div>';
+  html += '<div class="pf-projection">';
+  for (const p of data.projections) {
+    html += '<div class="pf-projection-card">';
+    html += `<div class="pf-projection-horizon">${p.horizon_years}-year horizon</div>`;
+    html += `<div class="pf-projection-drag">${fmtDollars(p.drag_dollars)}</div>`;
+    html += `<div class="pf-projection-pct">${(p.drag_percent * 100).toFixed(2)}% of terminal wealth lost to the gap</div>`;
+    html += `<div class="pf-projection-terms">True: ${fmtDollars(p.terminal_wealth_true_tco)}<br>Stated: ${fmtDollars(p.terminal_wealth_stated_er)}</div>`;
+    html += '</div>';
+  }
+  html += '</div>';
+
+  // Notes
+  if (data.data_notes && data.data_notes.length) {
+    html += '<div class="pf-section-title">Data notes</div>';
+    html += '<ul class="pf-notes">';
+    for (const n of data.data_notes) {
+      html += `<li>${n}</li>`;
+    }
+    html += '</ul>';
+  }
+
+  if (parseFloat(unpriced) > 0) {
+    html += `<p class="pf-help" style="margin-top:14px;">${unpriced}% of the portfolio could not be priced (tickers outside the SEC mutual-fund universe, missing filings, or pipeline failures). The weighted costs above are rebased to the ${priced}% that priced.</p>`;
+  }
+
+  elResults.innerHTML = html;
+}
+
+function summaryCard(label, value, note, accent) {
+  return `<div class="pf-summary-card ${accent ? 'accent' : ''}">
+    <div class="pf-summary-label">${label}</div>
+    <div class="pf-summary-value">${value}</div>
+    <div class="pf-summary-note">${note || ''}</div>
+  </div>`;
+}
+</script>
+</body>
+</html>

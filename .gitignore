@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Cache
+.fundautopsy/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Preview / scratch artifacts
+fundautopsy_preview*.html
+fundautopsy_dashboard*.html
+fundautopsy_report_*.html
+dashboard.html
+hype-video.html
+
+# Leaderboard data (user-generated, not committed)
+data/leaderboard.json
+
+# Concept mockups
+autopsy_report_concept.html
+
+# Internal operational documentation (not for public repo)
+docs/persona_package.md
+docs/hype_video_script.md
+docs/ncen_novel_angles.md
+docs/release_roadmap.md
+docs/research_synthesis.md
+docs/brand_voice_guidelines.md
+docs/competitive_brief.md
+docs/design_critique.md
+docs/launch_campaign_plan.md
+
+# Internal validation and audit reports
+VALIDATION_REPORT.md
+ISSUES_FOR_TWITTER_SCRUTINY.md
+
+# Internal autonomy plan and weekly autopilot reports (per Ventures/CLAUDE.md)
+AUTONOMY.md
+Intelligence/
+
+# Internal dev notes and pre-commit staging docs
+COMMIT_ME.md
+docs/spec_*.md
+
+# Content directory (internal strategy, design, drafts)
+content/
+
+# Stale root-level web/ directory (real web code is in fundautopsy/web/)
+/web/
+
+# Local data and generated artifacts (root-level only, not fundautopsy/data/)
+/data/
+.coverage*
+
+# Mypy cache
+.mypy_cache/
+
+# Local identifier-leak scanner patterns (see scripts/check_pseudonymity.sh)
+scripts/.pseudonymity_patterns
+
+# Portfolio TCO rollup scoping doc (internal)
+docs/spec_portfolio_tco_rollup.md

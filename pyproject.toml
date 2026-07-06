@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fundautopsy"
+version = "0.1.0"
+description = "Fund Autopsy — Open-source mutual fund total cost of ownership analyzer. Uncovers hidden costs that expense ratios don't show."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Tombstone Research" },
+]
+keywords = ["mutual-funds", "sec", "edgar", "expense-ratio", "soft-dollars", "fund-analysis"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+dependencies = [
+    "edgartools>=2.0.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "httpx>=0.25.0",
+    "lxml>=4.9.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "beautifulsoup4>=4.12.0",
+    "requests>=2.31.0",
+    "defusedxml>=0.7.0",
+]
+
+[project.optional-dependencies]
+web = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "jinja2>=3.1.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+fundautopsy = "fundautopsy.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/Tombstone-Research/fund-autopsy"
+Repository = "https://github.com/Tombstone-Research/fund-autopsy"
+Issues = "https://github.com/Tombstone-Research/fund-autopsy/issues"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fund Autopsy — Total Cost of Ownership Analyzer</title>
+<meta name="description" content="Open-source mutual fund cost analyzer. Parses every SEC filing a fund is required to submit and surfaces the hidden costs the expense ratio does not capture.">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fund Autopsy — Total Cost of Ownership Analyzer">
+<meta property="og:description" content="The expense ratio is the front door. Fund Autopsy kicks in the back. Parses every SEC filing a mutual fund is required to submit and surfaces the costs the industry does not show you.">
+<meta property="og:site_name" content="Tombstone Research">
+<meta property="og:url" content="https://fund-autopsy.onrender.com/">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ejbaldwin_">
+<meta name="twitter:title" content="Fund Autopsy — Total Cost of Ownership Analyzer">
+<meta name="twitter:description" content="Open-source tool surfacing the mutual fund costs your expense ratio does not capture. Brokerage, soft-dollar, affiliated routing, derivative notional, and more.">
+
+<!-- JSON-LD structured data (Schema.org) for search visibility -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Fund Autopsy",
+  "description": "Open-source mutual fund cost analyzer. Parses N-CEN, N-PORT, 497K, 485BPOS, SAI, and N-CSR SEC filings to surface the hidden costs the expense ratio does not capture.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "url": "https://fund-autopsy.onrender.com",
+  "creator": {
+    "@type": "Organization",
+    "name": "Tombstone Research",
+    "url": "https://github.com/Tombstone-Research"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-brand">
+    <div class="topbar-icon">☠</div>
+    Fund Autopsy
+  </div>
+  <div class="topbar-sub">Tombstone Research</div>
+  <div class="search-wrap" style="position:relative">
+    <span class="search-icon">&#128269;</span>
+    <input class="search-input" id="tickerInput" type="text"
+           placeholder="Ticker or fund name…" maxlength="60" autocomplete="off" spellcheck="false">
+    <span class="search-hint">Enter &#8629;</span>
+    <div id="topbarSuggestions" class="suggestions-dropdown" style="display:none"></div>
+  </div>
+  <button class="home-btn" id="homeBtn" onclick="goHome()" title="Back to home" style="display:none">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+  </button>
+</div>
+
+<div class="main">
+  <!-- Welcome -->
+  <div id="welcome" class="welcome">
+    <h1>Dissect your <span>mutual fund</span></h1>
+    <p>See the hidden trading costs your fund company doesn't show you.
+       Brokerage commissions, soft dollars, bid-ask spreads, and market impact
+       — pulled directly from SEC filings. Every number traced back to its source.</p>
+
+    <div class="welcome-search" style="position:relative">
+      <div class="welcome-search-box">
+        <span class="welcome-search-icon">&#128269;</span>
+        <input class="welcome-search-input" id="welcomeTickerInput" type="text"
+               placeholder="Ticker or fund name (e.g. AMCAP, Contrafund)…" maxlength="60"
+               autocomplete="off" spellcheck="false">
+        <button class="welcome-search-btn" id="welcomeSearchBtn" onclick="triggerWelcomeSearch()">Analyze</button>
+      </div>
+      <div id="welcomeSuggestions" class="suggestions-dropdown welcome-suggestions" style="display:none"></div>
+      <div class="welcome-search-hint">Try AGTHX, FCNTX, DODGX, AMCAP, or Growth Fund of America. First lookup on a cold fund can take 15-45 seconds as the SEC pipeline warms up.</div>
+
+      <!-- Beta disclaimer banner -->
+      <div style="margin-top:20px;padding:12px 16px;background:rgba(234,179,8,0.08);border:1px solid rgba(234,179,8,0.3);border-radius:8px;font-size:12px;color:var(--text-dim,#a1a1aa);line-height:1.6;max-width:720px;margin-left:auto;margin-right:auto;text-align:left">
+        <strong style="color:#eab308">Beta — Tombstone Research 2026.</strong>
+        This tool is free and open-source. First lookups run against the live SEC EDGAR API and can take 15 to 45 seconds on a cold fund. Subsequent queries for the same fund return in under a second. If a lookup errors, the ticker may be an ETF (not yet supported), a dormant share class, or a naming pattern our resolver does not yet cover. Methodology at <a href="/methodology" style="color:#60a5fa">/methodology</a>; report issues on <a href="https://github.com/Tombstone-Research/fund-autopsy/issues" style="color:#60a5fa">GitHub</a>.
+      </div>
+    </div>
+
+    <div class="welcome-compare">
+      <div class="welcome-compare-label">or compare funds side-by-side</div>
+      <div class="welcome-compare-box">
+        <input class="welcome-compare-input" id="compareInput" type="text"
+               placeholder="AGTHX, VFINX, FCNTX" autocomplete="off" spellcheck="false">
+        <button class="welcome-compare-btn" onclick="triggerWelcomeCompare()">Compare</button>
+      </div>
+    </div>
+
+    <!-- Most-Searched Funds board (formerly Worst Offenders — renamed for accuracy) -->
+    <div id="leaderboardSection" class="leaderboard-section" style="display:none">
+      <div class="leaderboard-header">
+        <div class="leaderboard-title">Most-Searched Funds</div>
+        <div class="leaderboard-subtitle">Funds recently analyzed by Tombstone readers. Rankings use reported filing data only.</div>
+      </div>
+      <div class="leaderboard-stats" id="leaderboardStats"></div>
+      <div class="leaderboard-sort">
+        <span class="leaderboard-sort-label">Sort by:</span>
+        <button class="leaderboard-sort-btn active" data-sort="lookup_count">Most Searched</button>
+        <button class="leaderboard-sort-btn" data-sort="conflict_count">Conflicts Flagged</button>
+        <button class="leaderboard-sort-btn" data-sort="aggregate_commissions_usd">Commissions Reported</button>
+      </div>
+      <div class="leaderboard-table" id="leaderboardTable"></div>
+      <div class="leaderboard-cta">
+        Look up a fund to add it to the board.
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div id="loading" class="loading" style="display:none">
+    <div class="loading-spinner"></div>
+    <div style="font-size:18px;font-weight:600;margin-bottom:4px">Analyzing <span id="loadTicker" style="color:var(--accent);font-family:'JetBrains Mono',monospace"></span></div>
+    <div style="font-size:13px;color:var(--text-dim)">Pulling live SEC EDGAR data...</div>
+    <div class="loading-stages" id="stages">
+      <div class="stage active" id="s1"><span class="stage-dot"></span> Resolving ticker via SEC</div>
+      <div class="stage" id="s2"><span class="stage-dot"></span> Retrieving N-CEN filing</div>
+      <div class="stage" id="s3"><span class="stage-dot"></span> Parsing N-PORT holdings</div>
+      <div class="stage" id="s4"><span class="stage-dot"></span> Computing hidden costs</div>
+    </div>
+  </div>
+
+  <!-- Error -->
+  <div id="error" class="error-msg" style="display:none">
+    <div class="error-card" id="errorCard"></div>
+  </div>
+
+  <!-- Comparison Results -->
+  <div id="compare" style="display:none">
+    <div class="comparison-header">
+      <div class="comparison-title">Fund Comparison</div>
+      <button class="comparison-reset-btn" onclick="goHome()">Compare Different Funds</button>
+    </div>
+    <div id="comparisonCardsContainer" class="comparison-cards"></div>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dash" class="dash">
+    <div class="fund-header" style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="fund-title" id="fundTitle"></div>
+        <div class="fund-family" id="fundFamily">
+          <span id="edgarStatus" style="display:none;align-items:center;gap:4px;margin-left:10px;font-size:11px;color:#f59e0b;opacity:0.8;cursor:help" title="">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            SEC data delayed
+          </span>
+        </div>
+      </div>
+      <div class="share-btn-group" id="shareBtnGroup">
+        <button class="share-btn share-btn-x" onclick="shareOnX()" title="Share on X">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Share on X
+        </button>
+        <button class="share-btn share-btn-copy" onclick="shareResults()" id="shareBtn" title="Copy to clipboard">
+          Copy Link
+        </button>
+      </div>
+    </div>
+
+    <!-- Tab bar -->
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchTab('xray')">X-Ray</button>
+      <button class="tab-btn" onclick="switchTab('about')">About</button>
+      <button class="tab-btn" onclick="switchTab('dollar')">Dollar Impact</button>
+      <button class="tab-btn" onclick="switchTab('deepdive')">Deep Dive</button>
+      <button class="tab-btn" onclick="switchTab('references')">References</button>
+    </div>
+
+    <!-- Tab 1: X-Ray -->
+    <div id="tab-xray" class="tab-content active">
+      <div class="kpi-strip" id="kpiStrip"></div>
+
+      <div class="hero-card">
+        <div class="hero-split">
+          <div class="hero-col">
+            <div class="hero-label">What They Report</div>
+            <div class="hero-number"><span id="heroReported"></span><span class="hero-unit">%</span></div>
+            <div class="hero-sub">Stated Expense Ratio</div>
+          </div>
+          <div class="hero-col">
+            <div class="hero-label">Estimated Total Cost</div>
+            <div class="hero-number"><span id="heroActual"></span><span class="hero-unit">%</span></div>
+            <div class="hero-sub">Expense Ratio + Estimated Trading Costs</div>
+          </div>
+          <div class="hero-col">
+            <div class="hero-label">Trading Costs (est.)</div>
+            <div class="hero-number"><span id="heroHidden"></span><span class="hero-unit">bps</span></div>
+            <div class="hero-sub" id="heroHiddenSub">Modeled, not observed — see methodology</div>
+            <div id="heroConflictBadge" class="hero-conflict-badge" style="display:none"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Persistent disclaimer banner — above the fold on every result page -->
+      <div class="estimate-disclaimer" style="margin:0 0 20px 0;padding:10px 14px;background:rgba(234,179,8,0.06);border:1px solid rgba(234,179,8,0.25);border-radius:8px;font-size:12px;color:var(--text-dim,#a1a1aa);line-height:1.55">
+        Trading cost estimates are model outputs, not observed costs. Every reported figure cites its source SEC filing. See <a href="/methodology" style="color:#60a5fa">methodology</a>.
+      </div>
+
+      <!-- Key Findings — compact verdicts from SAI, N-CSR, fee history (loads async) -->
+      <div id="findingsStrip" class="findings-strip" style="display:none">
+        <div id="findingsContent" class="findings-content"></div>
+      </div>
+
+      <!-- Filing Disclosures Section (renamed from "What Your Fund Is Hiding") -->
+      <div id="conflictHighlightSection" style="display:none;margin-bottom:28px">
+        <div class="conflict-highlight-panel">
+          <div class="conflict-highlight-header">
+            <div class="conflict-highlight-title">Filing Disclosures</div>
+            <div class="conflict-highlight-subtitle">Conflicts and structural items disclosed in the fund's SEC filings</div>
+          </div>
+          <div id="conflictHighlightContent"></div>
+        </div>
+      </div>
+
+      <div id="noConflictSection" style="display:none;margin-bottom:28px">
+        <div class="no-conflict-panel">
+          <div class="no-conflict-header">
+            <div class="no-conflict-icon">✓</div>
+            <div class="no-conflict-text">
+              <div class="no-conflict-title">No Structural Conflicts Detected</div>
+              <div class="no-conflict-subtitle">This fund shows no significant soft dollar arrangements, affiliated broker issues, or securities lending conflicts in available filings.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Score Card (Shareable Report Card) — above cost breakdown for visibility -->
+      <div id="scoreCardContainer" style="display:none"></div>
+
+      <div class="dash-grid">
+        <div>
+          <div class="panel">
+            <div class="panel-header">Cost Breakdown (Reported + Estimated)</div>
+            <div id="costRows"></div>
+          </div>
+
+          <div class="panel" style="margin-top:20px">
+            <div class="panel-header">Fee Breakdown</div>
+            <div id="feeRows"></div>
+          </div>
+        </div>
+        <div>
+          <div class="panel sidebar-section">
+            <div class="panel-header">Asset Allocation</div>
+            <div id="assetBars" style="padding:12px 0"></div>
+          </div>
+          <div class="panel sidebar-section" id="underlyingFundsPanel" style="display:none; margin-top:20px">
+            <div class="panel-header">Fund-of-Funds Composition</div>
+            <div class="underlying-subtitle">Underlying registered funds held by this portfolio (% of net assets)</div>
+            <div class="underlying-pie-wrap">
+              <svg id="underlyingPie" viewBox="-110 -110 220 220" role="img" aria-label="Underlying fund composition pie chart"></svg>
+            </div>
+            <div id="underlyingLegend" class="underlying-legend"></div>
+          </div>
+          <div class="panel sidebar-section" id="notesPanel" style="display:none">
+            <div class="panel-header">Data Notes</div>
+            <div class="notes" id="notesContent"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tab 2: Dollar Impact -->
+    <div id="tab-dollar" class="tab-content">
+      <div class="calc-section">
+        <div class="calc-title">Customize Your Scenario</div>
+        <div class="calc-inputs">
+          <div class="calc-input-group">
+            <label class="calc-input-label">Investment Amount</label>
+            <div class="calc-input-row">
+              <input class="calc-input" id="calcInvestment" type="number" value="100000" min="1000" step="1000">
+              <div class="calc-unit">USD</div>
+            </div>
+          </div>
+          <div class="calc-input-group">
+            <label class="calc-input-label">Time Horizon</label>
+            <div class="calc-input-row">
+              <input class="calc-input" id="calcHorizon" type="number" value="20" min="1" max="50" step="1">
+              <div class="calc-unit">yrs</div>
+            </div>
+          </div>
+          <div class="calc-input-group">
+            <label class="calc-input-label">Assumed Return</label>
+            <div class="calc-input-row">
+              <input class="calc-input" id="calcReturn" type="number" value="7" min="0" max="20" step="0.1">
+              <div class="calc-unit">% p.a.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scenarios-grid" id="scenariosContainer"></div>
+
+      <div class="impact-card">
+        <div class="impact-title">Estimated Trading Costs Over the Period</div>
+        <div class="impact-value" id="impactValue"></div>
+        <div class="impact-sub">Range reflects low and high assumptions in the spread &amp; impact model</div>
+      </div>
+
+      <div class="bars-chart">
+        <div class="bars-title">Final Portfolio Value Comparison</div>
+        <div class="bars-container" id="barsContainer"></div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Deep Dive -->
+    <div id="tab-deepdive" class="tab-content">
+      <div id="conflictFlagsContainer" style="display:none;margin-bottom:24px">
+        <div class="section-title" style="color:var(--red)">Conflict Flags</div>
+        <div id="conflictFlagsList" style="background:var(--red-dim);border:1px solid rgba(239,68,68,0.25);border-radius:12px;padding:16px 20px"></div>
+      </div>
+
+      <div class="section-title">Brokerage Commissions</div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:20px">
+        <div class="cost-row">
+          <span class="cost-label">Aggregate Commissions Paid</span>
+          <span class="cost-val" id="aggCommissions" style="color:var(--text)"></span>
+        </div>
+      </div>
+
+      <div class="broker-list" id="brokersContainer"></div>
+
+      <div class="section-title">Securities Lending</div>
+      <div class="broker-list" id="lendingContainer"></div>
+
+      <div class="section-title">Service Providers</div>
+      <div id="providersContainer"></div>
+
+      <!-- Derivatives (N-PORT Item C) -->
+      <div id="derivativesSection" style="display:none;margin-top:28px">
+        <div class="section-title">Derivatives Footprint</div>
+        <div class="section-subtitle" style="font-size:12px;color:var(--text-dim);margin-bottom:12px">
+          From the fund's most recent N-PORT portfolio disclosure. Notional is face value, not market exposure.
+        </div>
+        <div id="derivativesContent" style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px"></div>
+      </div>
+
+      <!-- Geographic exposure (N-PORT invCountry aggregate) -->
+      <div id="geographySection" style="display:none;margin-top:28px">
+        <div class="section-title">Geographic Exposure</div>
+        <div class="section-subtitle" style="font-size:12px;color:var(--text-dim);margin-bottom:12px">
+          Issuer country weighted by % of net assets. Based on N-PORT `invCountry`. Country of risk may differ from issuer country for holdings routed through offshore vehicles.
+        </div>
+        <div id="geographyContent" style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px"></div>
+      </div>
+
+      <!-- Mergers / Reorganizations (Form N-14) -->
+      <div id="mergersSection" style="display:none;margin-top:28px">
+        <div class="section-title">Mergers &amp; Reorganizations</div>
+        <div class="section-subtitle" style="font-size:12px;color:var(--text-dim);margin-bottom:12px">
+          Form N-14 filings at the trust level. A merger in the trust may or may not affect this specific fund — check the filing.
+        </div>
+        <div id="mergersContent" style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px"></div>
+      </div>
+
+      <!-- Fee History (485BPOS amendments) -->
+      <div id="feeHistorySection" style="display:none;margin-top:28px">
+        <div class="section-title">Fee Change History</div>
+        <div class="section-subtitle" style="font-size:12px;color:var(--text-dim);margin-bottom:12px">
+          Tracked from historical 485BPOS prospectus amendments on EDGAR.
+        </div>
+        <div id="feeHistoryContent" style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px"></div>
+      </div>
+
+      <!-- SAI (Statement of Additional Information) -->
+      <div id="saiSection" style="display:none;margin-top:28px">
+        <div class="section-title">Statement of Additional Information</div>
+        <div class="section-subtitle" style="font-size:12px;color:var(--text-dim);margin-bottom:12px">
+          From the fund's 485BPOS filing. Data investors only get "upon request."
+        </div>
+        <div id="saiContent"></div>
+      </div>
+
+      <!-- N-CSR (Shareholder Reports) -->
+      <div id="ncsrSection" style="display:none;margin-top:28px">
+        <div class="section-title">Shareholder Report (N-CSR)</div>
+        <div class="section-subtitle" style="font-size:12px;color:var(--text-dim);margin-bottom:12px">
+          Audited commission history and turnover from annual shareholder reports.
+        </div>
+        <div id="ncsrContent"></div>
+      </div>
+
+      <div style="background:var(--surface-2);border-left:2px solid var(--border);border-radius:6px;padding:16px;margin-top:32px;font-size:12px;color:var(--text-dim);line-height:1.6">
+        Data sourced from SEC Form N-CEN, N-PORT, N-CSR, SAI (485BPOS), and 497K. All data is public and available via EDGAR.
+      </div>
+    </div>
+
+    <!-- Tab 4: About -->
+    <div id="tab-about" class="tab-content">
+      <div class="about-section">
+        <div class="about-title">What is Fund Autopsy?</div>
+        <div class="about-text">
+          Fund Autopsy reveals the true cost of ownership for mutual funds. Mutual fund companies are required to disclose their expense ratio
+          (management fee, 12b-1 fees, and other expenses). But that number alone doesn't tell the full story.
+        </div>
+        <div class="about-text">
+          Every time a fund buys or sells securities, it incurs trading costs that aren't reflected in the expense ratio: brokerage commissions,
+          bid-ask spreads, market impact, and in many cases, undisclosed "soft dollar" arrangements where the fund uses client commissions
+          to pay for research.
+        </div>
+        <div class="about-text">
+          Fund Autopsy pulls data directly from SEC filings to calculate the full cost of ownership, including these hidden trading costs.
+          The result is a true picture of how much a fund actually costs to own.
+        </div>
+      </div>
+
+      <div class="about-section">
+        <div class="about-title">How This Started</div>
+        <div class="about-text">
+          Fund Autopsy began with a simple question: what does a mutual fund actually cost? The expense ratio was the obvious answer,
+          but pulling SEC filings revealed a second cost layer hiding underneath it. Brokerage commissions in N-CEN data showed funds
+          paying millions in trading costs that never appear on any investor statement.
+        </div>
+        <div class="about-text">
+          That led to the next question: if commissions are hidden, what else is? N-PORT holdings data revealed the raw material
+          for estimating bid-ask spreads and market impact. Soft dollar arrangements showed funds paying inflated commissions
+          so their managers could get research for free. Each filing we parsed surfaced another cost nobody was talking about.
+        </div>
+        <div class="about-text">
+          Then we found the Statement of Additional Information &mdash; a companion document to the prospectus that funds are required
+          to file but only provide to investors "upon request." Inside it: broker-specific commission breakdowns, portfolio manager
+          compensation structures, revenue sharing arrangements, and commission recapture programs. An entire layer of conflict
+          and cost data, technically public, practically invisible.
+        </div>
+        <div class="about-text">
+          Each discovery opened the next door. Fund costs led to advisor conflicts. Advisor conflicts led to BrokerCheck and FINRA data.
+          Revenue sharing explained why certain funds end up on recommended lists. The chain of realizations turned a cost calculator
+          into a regulatory transparency engine. We coined "sub-NAV drag" to name what the industry had left unnamed, and we're
+          building parsers for every filing the SEC requires &mdash; because the data was always there. Nobody had stitched it together.
+        </div>
+        <div class="about-text">
+          This project was built with AI. Every parser, every data pipeline, every piece of research was developed in
+          collaboration with Claude. The tool exists because AI made it possible to read, parse, and connect regulatory
+          filings at a scale that would have taken a team of analysts months to accomplish manually.
+        </div>
+      </div>
+
+      <div class="about-section">
+        <div class="about-title">Where does the data come from?</div>
+        <ul class="about-list">
+          <li><strong>Form N-CEN:</strong> Annual operating information including brokerage commissions, soft dollar arrangements, securities lending, and service provider details.</li>
+          <li><strong>Form N-PORT:</strong> Monthly portfolio holdings (publicly disclosed with a 60-day lag), used to estimate bid-ask spreads and market impact by asset class.</li>
+          <li><strong>Form 497K:</strong> Summary prospectus per share class. Primary source for expense ratio, management fee, 12b-1 fee, and turnover.</li>
+          <li><strong>Form 485BPOS:</strong> Statutory prospectus with structured XBRL fee facts. Used as a fallback when the 497K summary is incomplete or absent.</li>
+          <li><strong>SAI (Statement of Additional Information):</strong> Broker-specific commission breakdowns, portfolio manager compensation structures, and soft dollar arrangements.</li>
+          <li><strong>Form N-CSR:</strong> Shareholder reports with realized commission history, turnover, and board advisory contract approval basis.</li>
+          <li><strong>SEC EDGAR:</strong> All filings retrieved from the public EDGAR database.</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <div class="about-title">Methodology</div>
+        <ul class="about-list">
+          <li><strong>Expense Ratio:</strong> Management fee, 12b-1 fee, and other expenses extracted from the fund's 497K summary prospectus via structured SEC filings.</li>
+          <li><strong>Brokerage Commissions:</strong> Reported directly from Form N-CEN as aggregate dollars paid to executing brokers, converted to basis points using net assets from N-PORT.</li>
+          <li><strong>Soft Dollar Arrangements:</strong> N-CEN discloses whether a fund directs brokerage commissions to brokers who provide research services in return. When active, the fund is paying inflated per-share commissions (e.g. 5 cents instead of 2 cents) and the difference subsidizes research the manager would otherwise pay for out of pocket. This cost is captured in the brokerage commission line, but there is a secondary effect that cannot be cleanly quantified from public filings: funds routing for soft dollar value rather than best execution may accept wider effective spreads and greater market impact. Our spread and impact estimates use asset-class averages and turnover rates rather than actual execution data, so they do not double-count the soft dollar effect, but they also cannot capture execution quality degradation specific to a given fund. We flag soft dollar arrangements as a qualitative warning rather than a precise dollar figure for this reason.</li>
+          <li><strong>Bid-Ask Spreads & Market Impact:</strong> Estimated from portfolio turnover rate and the fund's asset class mix derived from N-PORT holdings. Equities, high-yield bonds, and international securities carry higher estimated spreads than investment-grade domestic fixed income. These are model estimates, not observed execution costs.</li>
+          <li><strong>True Total Cost:</strong> Expense ratio + hidden trading costs, presented as a range (low estimate uses conservative spread assumptions; high estimate uses wider assumptions for less liquid asset classes).</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <div class="about-title">SEC Filing Structure</div>
+        <div class="about-text">
+          SEC filings for mutual funds follow a trust-based hierarchy that creates complexity for any fund-level analysis tool.
+          A single registrant (CIK) represents a trust entity, which may contain dozens of fund series. Each series may have multiple
+          share classes (Investor, Institutional, Admiral, etc.).
+        </div>
+        <div class="about-text">
+          Form N-CEN is filed once per trust and contains operating data for every series within that trust. We match to the
+          correct series using the SEC's series identifier (e.g. S000006037 for Fidelity Contrafund within CIK 24238, which is
+          Fidelity Puritan Trust). Form N-PORT is filed per-series on a quarterly basis with full portfolio holdings and
+          asset breakdowns. Form 497K is the summary prospectus filed per share class. When a ticker resolves to a trust
+          with multiple series, we iterate through recent filings until we find the one matching the target series, rather
+          than assuming the most recent filing belongs to the fund you searched for.
+        </div>
+      </div>
+
+      <div class="about-section">
+        <div class="about-title">References & Further Reading</div>
+        <div class="about-text">
+          The cost estimation framework draws on established academic and regulatory work on mutual fund trading costs:
+        </div>
+        <ul class="about-list">
+          <li>Edelen, Evans, and Kadlec (2013) — "Shedding Light on 'Invisible' Costs: Trading Costs in Mutual Funds" (Financial Analysts Journal). Foundational study estimating trading costs as a material drag on fund returns beyond the expense ratio.</li>
+          <li>Chalmers, Edelen, and Kadlec (1999) — "An Analysis of Mutual Fund Trading Costs" (Working Paper). Early quantification of bid-ask spread and market impact costs for equity mutual funds.</li>
+          <li>SEC Form N-CEN (Investment Company Reporting Modernization, 2018) — Annual census-type filing that replaced N-SAR, requiring disclosure of brokerage commissions, soft dollar arrangements, securities lending, and service providers.</li>
+          <li>SEC Form N-PORT (2019) — Monthly portfolio reporting with 60-day public lag, providing granular holdings and asset classification data used for spread estimation.</li>
+          <li>Livingston and O'Neal (1996) — "Mutual Fund Brokerage Commissions" (Journal of Financial Research). Analysis of commission variation across fund types and the role of soft dollar arrangements in inflating per-share costs.</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <div class="about-title">Built by Tombstone Research</div>
+        <div class="about-text">
+          Fund Autopsy is a public research tool built by <strong>Tombstone Research</strong>, an independent financial research firm focused on transparency
+          in fund costs and performance. Source code is available on <a href="https://github.com/tombstoneresearch/fund-autopsy" class="reference-link" target="_blank">GitHub</a>.
+        </div>
+      </div>
+
+      <div class="about-section">
+        <div class="about-title">Important Disclosures</div>
+        <div class="about-text" style="font-size:12px; color:var(--text-muted); line-height:1.7;">
+          Fund Autopsy is an independent research tool provided for educational and informational purposes only.
+          It does not constitute investment advice, a recommendation, or an offer to buy or sell any security.
+          Past performance is not indicative of future results. All investments involve risk, including possible loss of principal.
+          Hidden cost estimates are based on publicly available SEC filings and standard academic models for bid-ask spreads
+          and market impact; actual trading costs may vary. Users should consult with a qualified financial advisor before
+          making any investment decisions. Tombstone Research is not a registered investment adviser, broker-dealer, or
+          financial planner. Data is sourced from public SEC EDGAR filings and may contain errors, omissions, or delays.
+          Tombstone Research makes no warranty regarding the accuracy or completeness of the information presented.
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 5: References (APA 7th Edition) -->
+    <div id="tab-references" class="tab-content">
+      <div class="about-section">
+        <div class="about-title">References</div>
+        <div class="about-text" style="font-size:12px;color:var(--text-muted);margin-bottom:16px">
+          All citations follow APA 7th edition format. These works inform Fund Autopsy's estimation methodology, data architecture, and cost framework.
+        </div>
+
+        <div class="reference-group">
+          <div class="reference-group-title">Trading Cost Estimation</div>
+
+          <div class="reference-entry">
+            Edelen, R. M., Evans, R. B., &amp; Kadlec, G. B. (2013). Shedding light on "invisible" costs: Trading costs and mutual fund performance. <em>Financial Analysts Journal</em>, <em>69</em>(1), 33&ndash;44. <a href="https://doi.org/10.2469/faj.v69.n1.6" class="reference-link" target="_blank">https://doi.org/10.2469/faj.v69.n1.6</a>
+          </div>
+
+          <div class="reference-entry">
+            Edelen, R. M., Evans, R. B., &amp; Kadlec, G. B. (2007). <em>Scale effects in mutual fund performance: The role of trading costs</em> (Working Paper). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=951367" class="reference-link" target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=951367</a>
+          </div>
+
+          <div class="reference-entry">
+            Chalmers, J., Edelen, R. M., &amp; Kadlec, G. B. (2001). On the perils of financial intermediaries setting security prices: The mutual fund wild card option. <em>The Journal of Finance</em>, <em>56</em>(6), 2209&ndash;2236.
+          </div>
+
+          <div class="reference-entry">
+            Chalmers, J., Edelen, R. M., &amp; Kadlec, G. B. (1999). <em>An analysis of mutual fund trading costs</em> (Working Paper). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=195849" class="reference-link" target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=195849</a>
+          </div>
+
+          <div class="reference-entry">
+            Frazzini, A., Israel, R., &amp; Moskowitz, T. J. (2018). Trading costs. <em>SSRN Electronic Journal</em>. <a href="https://doi.org/10.2139/ssrn.3229719" class="reference-link" target="_blank">https://doi.org/10.2139/ssrn.3229719</a>
+          </div>
+        </div>
+
+        <div class="reference-group">
+          <div class="reference-group-title">Fund Disclosure &amp; Obfuscation</div>
+
+          <div class="reference-entry">
+            deHaan, E., Song, Y., Xie, C., &amp; Zhu, C. (2021). Obfuscation in mutual funds. <em>Journal of Accounting and Economics</em>, <em>72</em>(2&ndash;3), Article 101429. <a href="https://doi.org/10.1016/j.jacceco.2021.101429" class="reference-link" target="_blank">https://doi.org/10.1016/j.jacceco.2021.101429</a>
+          </div>
+        </div>
+
+        <div class="reference-group">
+          <div class="reference-group-title">Commission Structure &amp; Soft Dollars</div>
+
+          <div class="reference-entry">
+            Livingston, M., &amp; O'Neal, E. S. (1996). Mutual fund brokerage commissions. <em>The Journal of Financial Research</em>, <em>19</em>(2), 273&ndash;292.
+          </div>
+
+          <div class="reference-entry">
+            Haslem, J. A. (2008). <em>Assessing mutual fund expenses and transaction costs</em> (Working Paper). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1144168" class="reference-link" target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1144168</a>
+          </div>
+
+          <div class="reference-entry">
+            Haslem, J. A. (2011). <em>Mutual fund soft-dollar issues</em> (Working Paper). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1760244" class="reference-link" target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1760244</a>
+          </div>
+        </div>
+
+        <div class="reference-group">
+          <div class="reference-group-title">Cash Holdings &amp; Performance</div>
+
+          <div class="reference-entry">
+            Simutin, M. (2014). Cash holdings and mutual fund performance. <em>Review of Finance</em>, <em>18</em>(4), 1425&ndash;1464. <a href="https://doi.org/10.1093/rof/rft035" class="reference-link" target="_blank">https://doi.org/10.1093/rof/rft035</a>
+          </div>
+        </div>
+
+        <div class="reference-group">
+          <div class="reference-group-title">Industry Reports</div>
+
+          <div class="reference-entry">
+            Investment Company Institute. (2025). <em>2025 Investment Company Fact Book</em> (65th ed.). <a href="https://www.ici.org/fact-book" class="reference-link" target="_blank">https://www.ici.org/fact-book</a>
+          </div>
+        </div>
+
+        <div class="reference-group">
+          <div class="reference-group-title">Software &amp; Development</div>
+
+          <div class="reference-entry">
+            Anthropic. (2025). <em>Claude</em> (Large language model). <a href="https://www.anthropic.com" class="reference-link" target="_blank">https://www.anthropic.com</a>
+          </div>
+
+          <div class="reference-entry">
+            Tombstone Research. (2026). <em>Fund Autopsy</em> (Version 0.1.0) [Computer software]. <a href="https://github.com/tombstoneresearch/fund-autopsy" class="reference-link" target="_blank">https://github.com/tombstoneresearch/fund-autopsy</a>
+          </div>
+        </div>
+
+        <div class="reference-group">
+          <div class="reference-group-title">Regulatory Filings &amp; Data Sources</div>
+
+          <div class="reference-entry">
+            U.S. Securities and Exchange Commission. (2018). <em>Form N-CEN: Annual report for registered investment companies</em>. <a href="https://www.sec.gov/files/formn-cen.pdf" class="reference-link" target="_blank">https://www.sec.gov/files/formn-cen.pdf</a>
+          </div>
+
+          <div class="reference-entry">
+            U.S. Securities and Exchange Commission. (2019). <em>Form N-PORT: Monthly portfolio investments report</em>. <a href="https://www.sec.gov/files/formn-port.pdf" class="reference-link" target="_blank">https://www.sec.gov/files/formn-port.pdf</a>
+          </div>
+
+          <div class="reference-entry">
+            U.S. Securities and Exchange Commission. (n.d.). <em>EDGAR full-text search</em>. <a href="https://efts.sec.gov/LATEST/search-index?q=&dateRange=custom&startdt=2018-01-01&enddt=2026-04-04&forms=N-CEN,N-PORT" class="reference-link" target="_blank">https://efts.sec.gov/LATEST/</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        For educational and informational purposes only. Not investment advice. Past performance is not indicative of future results.
+      </div>
+      <div class="footer-right">
+        <div class="footer-brand">Tombstone Research</div>
+        <div class="footer-url">
+          <a href="/corrections" style="color:var(--text-dim);margin-right:12px">Corrections</a>
+          <a href="/methodology" style="color:var(--text-dim);margin-right:12px">Methodology</a>
+          <a href="https://github.com/tombstoneresearch/fund-autopsy" style="color:var(--text-dim)">Source</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
