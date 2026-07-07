@@ -206,5 +206,22 @@ def site(
     )
 
 
+@app.command()
+def wrapper(
+    tickers: list[str] = typer.Argument(..., help="Fund-of-funds tickers (e.g., AADTX VFIFX TRRMX)"),
+) -> None:
+    """Decompose a fund-of-funds: stated ER vs weighted underlying ER vs wrapper charge.
+
+    Refuses a publishable verdict when share-class resolution confidence is
+    low or fee coverage is thin. Run with OpenFIGI available (not disabled)
+    for CUSIP-accurate share classes.
+    """
+    from fundautopsy.wrapper import compute_wrapper, render_wrapper
+
+    for t in tickers:
+        result = compute_wrapper(t)
+        render_wrapper(result, console)
+
+
 if __name__ == "__main__":
     app()

@@ -171,6 +171,40 @@ def _enrich_root_fees(root: Any) -> StageResult:
                 root.prospectus_turnover = fees.portfolio_turnover
             except Exception:  # noqa: BLE001 — attribute optional on some nodes
                 pass
+
+        # Fund-of-funds: enrich resolved children too, so wrapper-fee
+        # decomposition (stated root ER minus weighted underlying ER)
+        # is computable from the snapshot alone. Per-child failures
+        # degrade the stage, never fail it.
+        child_misses = 0
+        children = list(getattr(root, "children", []) or [])
+        for child in children:
+            try:
+                c_ticker = getattr(getattr(child, "metadata", None), "ticker", None)
+                c_cb = getattr(child, "cost_breakdown", None)
+                if not c_ticker or c_cb is None or c_cb.expense_ratio_bps is not None:
+                    continue
+                c_fees = retrieve_prospectus_fees(c_ticker)
+                if c_fees is None:
+                    child_misses += 1
+                    continue
+                c_er = (
+                    c_fees.net_expenses
+                    if c_fees.net_expenses is not None
+                    else c_fees.total_annual_expenses
+                )
+                if c_er is not None:
+                    c_cb.expense_ratio_bps = TaggedValue(
+                        value=_bps(c_er), tag=DataSourceTag.REPORTED,
+                        note="Prospectus fee table (underlying fund)",
+                    )
+            except Exception:  # noqa: BLE001
+                child_misses += 1
+        if children and child_misses:
+            return StageResult(
+                "fees", label, "degraded", time.perf_counter() - t0,
+                detail=f"Root fees OK; {child_misses}/{len(children)} underlying funds lack a parseable fee table.",
+            )
         return StageResult("fees", label, "ok", time.perf_counter() - t0)
     except Exception as exc:  # noqa: BLE001 — never fail the run over fees
         return StageResult(
