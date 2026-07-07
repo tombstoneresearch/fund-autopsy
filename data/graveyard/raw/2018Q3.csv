@@ -1,0 +1,176 @@
+form,company,cik,date_filed,filing_path,event
+N-14,ADVANCED SERIES TRUST,814679,2018-08,-06  edgar/data/814679/0001104659-18-049783.txt,merger/reorg
+N-14,AMERICAN BEACON FUNDS,809593,2018-08,-31  edgar/data/809593/0000898432-18-000990.txt,merger/reorg
+N-14,AMERICAN BEACON FUNDS,809593,2018-09,-14  edgar/data/809593/0000898432-18-001009.txt,merger/reorg
+N-14,Advisors' Inner Circle Fund III,1593547,2018-07,-25  edgar/data/1593547/0001398344-18-010490.txt,merger/reorg
+N-14,EPIPHANY FUNDS,1377031,2018-07,-26  edgar/data/1377031/0001580642-18-003519.txt,merger/reorg
+N-14,EPIPHANY FUNDS,1377031,2018-08,-01  edgar/data/1377031/0001580642-18-003628.txt,merger/reorg
+N-14,EPIPHANY FUNDS,1377031,2018-09,-21  edgar/data/1377031/0001580642-18-004606.txt,merger/reorg
+N-14,FIRST INVESTORS INCOME FUNDS,740967,2018-07,-06  edgar/data/740967/0000898432-18-000784.txt,merger/reorg
+N-14,FIRST INVESTORS LIFE SERIES FUNDS,770906,2018-09,-28  edgar/data/770906/0000898432-18-001075.txt,merger/reorg
+N-14,FIRST INVESTORS TAX EXEMPT FUNDS,716792,2018-08,-30  edgar/data/716792/0000898432-18-000982.txt,merger/reorg
+N-14,Forward Funds,889188,2018-07,-13  edgar/data/889188/0001193125-18-217761.txt,merger/reorg
+N-14,HARTFORD MUTUAL FUNDS INC/CT,1006415,2018-08,-10  edgar/data/1006415/0001144204-18-043549.txt,merger/reorg
+N-14,HENNESSY FUNDS TRUST,891944,2018-07,-27  edgar/data/891944/0000898531-18-000424.txt,merger/reorg
+N-14,MAINSTAY VP FUNDS TRUST,887340,2018-08,-10  edgar/data/887340/0001144204-18-043439.txt,merger/reorg
+N-14,MUTUAL FUND SERIES TRUST,1355064,2018-07,-26  edgar/data/1355064/0001580642-18-003519.txt,merger/reorg
+N-14,MUTUAL FUND SERIES TRUST,1355064,2018-08,-01  edgar/data/1355064/0001580642-18-003628.txt,merger/reorg
+N-14,MUTUAL FUND SERIES TRUST,1355064,2018-09,-21  edgar/data/1355064/0001580642-18-004606.txt,merger/reorg
+N-14,Meeder Funds,702435,2018-09,-28  edgar/data/702435/0001398344-18-014205.txt,merger/reorg
+N-14,NORTHERN LIGHTS FUND TRUST II,1518042,2018-08,-07  edgar/data/1518042/0001580642-18-003750.txt,merger/reorg
+N-14,North Square Investments Trust,1750821,2018-09,-13  edgar/data/1750821/0000894189-18-005169.txt,merger/reorg
+N-14,Northern Lights Fund Trust,1314414,2018-08,-10  edgar/data/1314414/0001580642-18-003831.txt,merger/reorg
+N-14,PNC FUNDS,778202,2018-09,-25  edgar/data/778202/0001104659-18-058386.txt,merger/reorg
+N-14,PRINCIPAL FUNDS INC,898745,2018-07,-02  edgar/data/898745/0000898745-18-000576.txt,merger/reorg
+N-14,PRINCIPAL VARIABLE CONTRACTS FUNDS INC,12601,2018-07,-02  edgar/data/12601/0000012601-18-000158.txt,merger/reorg
+N-14,PROFESSIONALLY MANAGED PORTFOLIOS,811030,2018-09,-21  edgar/data/811030/0000894189-18-005297.txt,merger/reorg
+N-14,PRUDENTIAL INVESTMENT PORTFOLIOS 9,1070287,2018-07,-18  edgar/data/1070287/0001104659-18-045730.txt,merger/reorg
+N-14,QUAKER INVESTMENT TRUST,870355,2018-09,-07  edgar/data/870355/0001680289-18-000175.txt,merger/reorg
+N-14,RIVERPARK FUNDS TRUST,1494928,2018-08,-29  edgar/data/1494928/0001398344-18-012853.txt,merger/reorg
+N-14,SUNAMERICA SERIES TRUST,892538,2018-07,-03  edgar/data/892538/0001193125-18-212427.txt,merger/reorg
+N-14,SUNAMERICA SERIES TRUST,892538,2018-07,-03  edgar/data/892538/0001193125-18-212431.txt,merger/reorg
+N-14,Securian Funds Trust,766351,2018-08,-30  edgar/data/766351/0001104659-18-054365.txt,merger/reorg
+N-14,"T. Rowe Price International Funds, Inc.",313212,2018-07,-27  edgar/data/313212/0000313212-18-000076.txt,merger/reorg
+N-14 8C,ClearBridge Energy MLP Opportunity Fund Inc.,1517518,2018-07,-12  edgar/data/1517518/0001193125-18-216973.txt,merger/reorg
+N-14 8C,EATON VANCE CALIFORNIA MUNICIPAL BOND FUND,1177161,2018-07,-23  edgar/data/1177161/0000940394-18-001380.txt,merger/reorg
+N-14 8C,EATON VANCE MUNICIPAL BOND FUND,1176984,2018-07,-23  edgar/data/1176984/0000940394-18-001381.txt,merger/reorg
+N-14 8C,EATON VANCE MUNICIPAL INCOME TRUST,1074540,2018-07,-25  edgar/data/1074540/0000940394-18-001387.txt,merger/reorg
+N-14 8C,EATON VANCE NEW YORK MUNICIPAL BOND FUND,1177162,2018-07,-24  edgar/data/1177162/0000940394-18-001383.txt,merger/reorg
+N-14 8C,FS Investment CORP,1422183,2018-07,-30  edgar/data/1422183/0001193125-18-230117.txt,merger/reorg
+N-14 8C,Madison Covered Call & Equity Strategy Fund,1289868,2018-07,-09  edgar/data/1289868/0001289868-18-000023.txt,merger/reorg
+N-14 8C,"Triton Pacific Investment Corporation, Inc.",1521945,2018-08,-13  edgar/data/1521945/0000897101-18-000763.txt,merger/reorg
+N-14 8C/A,ClearBridge Energy MLP Opportunity Fund Inc.,1517518,2018-08,-31  edgar/data/1517518/0001193125-18-263993.txt,merger/reorg
+N-14 8C/A,ClearBridge Energy MLP Opportunity Fund Inc.,1517518,2018-09,-10  edgar/data/1517518/0001193125-18-270143.txt,merger/reorg
+N-14 8C/A,EATON VANCE CALIFORNIA MUNICIPAL BOND FUND,1177161,2018-09,-19  edgar/data/1177161/0000940394-18-001565.txt,merger/reorg
+N-14 8C/A,EATON VANCE MUNICIPAL BOND FUND,1176984,2018-09,-19  edgar/data/1176984/0000940394-18-001568.txt,merger/reorg
+N-14 8C/A,EATON VANCE MUNICIPAL INCOME TRUST,1074540,2018-09,-19  edgar/data/1074540/0000940394-18-001573.txt,merger/reorg
+N-14 8C/A,EATON VANCE NEW YORK MUNICIPAL BOND FUND,1177162,2018-09,-19  edgar/data/1177162/0000940394-18-001575.txt,merger/reorg
+N-14 8C/A,FS Investment CORP,1422183,2018-07,-31  edgar/data/1422183/0001193125-18-232017.txt,merger/reorg
+N-14 8C/A,FS Investment CORP,1422183,2018-09,-18  edgar/data/1422183/0001193125-18-275614.txt,merger/reorg
+N-14 8C/A,Madison Covered Call & Equity Strategy Fund,1289868,2018-08,-29  edgar/data/1289868/0001289868-18-000044.txt,merger/reorg
+N-14/A,ADVANCED SERIES TRUST,814679,2018-09,-11  edgar/data/814679/0001104659-18-056174.txt,merger/reorg
+N-14/A,ALPS Series Trust,1558107,2018-07,-16  edgar/data/1558107/0001398344-18-010121.txt,merger/reorg
+N-14/A,ALPS Series Trust,1558107,2018-07,-25  edgar/data/1558107/0001398344-18-010446.txt,merger/reorg
+N-14/A,BLACKROCK FINANCIAL INSTITUTIONS SERIES TRUST,353281,2018-08,-13  edgar/data/353281/0001193125-18-247434.txt,merger/reorg
+N-14/A,BLACKROCK FUNDS,844779,2018-08,-14  edgar/data/844779/0001193125-18-248569.txt,merger/reorg
+N-14/A,"BLACKROCK INDEX FUNDS, INC.",1026144,2018-08,-14  edgar/data/1026144/0001193125-18-248577.txt,merger/reorg
+N-14/A,"BLACKROCK LARGE CAP SERIES FUNDS, INC.",1097077,2018-08,-14  edgar/data/1097077/0001193125-18-248573.txt,merger/reorg
+N-14/A,"BNY Mellon Absolute Insight Funds, Inc.",1635295,2018-07,-03  edgar/data/1635295/0001144204-18-037087.txt,merger/reorg
+N-14/A,BlackRock Funds II,1398078,2018-08,-13  edgar/data/1398078/0001193125-18-247453.txt,merger/reorg
+N-14/A,BlackRock Funds III,893818,2018-08,-14  edgar/data/893818/0001193125-18-248366.txt,merger/reorg
+N-14/A,BlackRock Funds III,893818,2018-08,-14  edgar/data/893818/0001193125-18-248589.txt,merger/reorg
+N-14/A,BlackRock Funds VI,1738080,2018-08,-14  edgar/data/1738080/0001193125-18-248603.txt,merger/reorg
+N-14/A,"BlackRock Variable Series Funds II, Inc.",1738072,2018-08,-13  edgar/data/1738072/0001193125-18-247450.txt,merger/reorg
+N-14/A,"BlackRock Variable Series Funds, Inc.",355916,2018-08,-13  edgar/data/355916/0001193125-18-247442.txt,merger/reorg
+N-14/A,Forward Funds,889188,2018-08,-17  edgar/data/889188/0001193125-18-251802.txt,merger/reorg
+N-14/A,MAINSTAY VP FUNDS TRUST,887340,2018-09,-28  edgar/data/887340/0001144204-18-051497.txt,merger/reorg
+N-14/A,Managed Portfolio Series,1511699,2018-08,-02  edgar/data/1511699/0000894189-18-004126.txt,merger/reorg
+N-14/A,"T. Rowe Price International Funds, Inc.",313212,2018-09,-04  edgar/data/313212/0000313212-18-000088.txt,merger/reorg
+N-14/A,WASATCH FUNDS TRUST,806633,2018-07,-23  edgar/data/806633/0001193125-18-223875.txt,merger/reorg
+N-14/A,WASATCH FUNDS TRUST,806633,2018-07,-27  edgar/data/806633/0001193125-18-229731.txt,merger/reorg
+N-8F,ADVENT/CLAYMORE ENHANCED GROWTH & INCOME FUND,1278460,2018-08,-29  edgar/data/1278460/0000891804-18-000416.txt,deregistration
+N-8F,AIP Long/Short Fund A,1406731,2018-08,-09  edgar/data/1406731/0001133228-18-004897.txt,deregistration
+N-8F,AIP Long/Short Fund P,1406732,2018-08,-09  edgar/data/1406732/0001133228-18-004899.txt,deregistration
+N-8F,ALPS ETMF Trust,1648453,2018-09,-11  edgar/data/1648453/0001387131-18-004637.txt,deregistration
+N-8F,Advent Claymore Convertible Securities & Income Fund II,1391461,2018-08,-29  edgar/data/1391461/0000891804-18-000415.txt,deregistration
+N-8F,Avondale Funds,1614812,2018-07,-13  edgar/data/1614812/0001162044-18-000421.txt,deregistration
+N-8F,BLACKROCK NEW JERSEY MUNICIPAL BOND TRUST,1169031,2018-07,-30  edgar/data/1169031/0001341004-18-000466.txt,deregistration
+N-8F,BLACKROCK NEW JERSEY MUNICIPAL INCOME TRUST,1137440,2018-07,-30  edgar/data/1137440/0001341004-18-000465.txt,deregistration
+N-8F,"Broadstone Real Estate Access Fund, Inc.",1718302,2018-07,-11  edgar/data/1718302/0001193125-18-216067.txt,deregistration
+N-8F,"Cohen & Steers Active Commodities Strategy Fund, Inc.",1600215,2018-07,-11  edgar/data/1600215/0001193125-18-215857.txt,deregistration
+N-8F,DEUTSCHE FUNDS TRUST,854905,2018-08,-08  edgar/data/854905/0000088053-18-000884.txt,deregistration
+N-8F,Diversified Real Asset Income Fund,1598085,2018-07,-25  edgar/data/1598085/0001137439-18-000149.txt,deregistration
+N-8F,Duff & Phelps Diversified Income Fund Inc.,1555626,2018-09,-14  edgar/data/1555626/0001193125-18-273783.txt,deregistration
+N-8F,ENGEX INC,32598,2018-08,-31  edgar/data/32598/0001615774-18-009024.txt,deregistration
+N-8F,FIRST TRUST STRATEGIC HIGH INCOME FUND II,1329388,2018-08,-16  edgar/data/1329388/0001445546-18-003667.txt,deregistration
+N-8F,HIMCO Variable Insurance Trust,1546585,2018-09,-14  edgar/data/1546585/0001104659-18-056859.txt,deregistration
+N-8F,John Hancock Emerging Markets Income Fund,1525541,2018-07,-27  edgar/data/1525541/0001133228-18-004780.txt,deregistration
+N-8F,John Hancock Floating Rate High Income Fund,1584947,2018-07,-27  edgar/data/1584947/0001133228-18-004783.txt,deregistration
+N-8F,John Hancock Strategic Diversified Income Fund,1543936,2018-07,-27  edgar/data/1543936/0001133228-18-004781.txt,deregistration
+N-8F,KAYNE ANDERSON ENERGY DEVELOPMENT CO,1363890,2018-08,-20  edgar/data/1363890/0001193125-18-252994.txt,deregistration
+N-8F,"Kayne Anderson Energy Total Return Fund, Inc.",1322652,2018-08,-20  edgar/data/1322652/0001193125-18-253001.txt,deregistration
+N-8F,MANAGED HIGH YIELD PLUS FUND INC,1060392,2018-09,-14  edgar/data/1060392/0001193125-18-274262.txt,deregistration
+N-8F,Nuveen Active Allocation Real Return Fund,1546631,2018-08,-23  edgar/data/1546631/0001137439-18-000181.txt,deregistration
+N-8F,Nuveen Flexible Investment Income Fund,1573312,2018-07,-25  edgar/data/1573312/0001137439-18-000147.txt,deregistration
+N-8F,Reaves Global Utility & Energy Income Fund,1534978,2018-09,-18  edgar/data/1534978/0001398344-18-013651.txt,deregistration
+N-8F,STRATEGIC GLOBAL INCOME FUND INC,880943,2018-09,-14  edgar/data/880943/0001193125-18-274280.txt,deregistration
+N-8F,T. Rowe Price California Tax-Free Income Trust,798086,2018-09,-26  edgar/data/798086/0000798086-18-000003.txt,deregistration
+N-8F,Winton Diversified Opportunities Fund,1626974,2018-07,-18  edgar/data/1626974/0001398344-18-010193.txt,deregistration
+N-8F NTC,AB GOVERNMENT EXCHANGE RESERVES,917713,2018-07,-09  edgar/data/917713/9999999997-18-006808.txt,deregistration
+N-8F NTC,AIP Long/Short Fund A,1406731,2018-08,-31  edgar/data/1406731/9999999997-18-007599.txt,deregistration
+N-8F NTC,AIP Long/Short Fund P,1406732,2018-08,-31  edgar/data/1406732/9999999997-18-007600.txt,deregistration
+N-8F NTC,Avenue Mutual Funds Trust,1544657,2018-07,-09  edgar/data/1544657/9999999997-18-006809.txt,deregistration
+N-8F NTC,BLACKROCK NEW JERSEY MUNICIPAL BOND TRUST,1169031,2018-08,-31  edgar/data/1169031/9999999997-18-007601.txt,deregistration
+N-8F NTC,BLACKROCK NEW JERSEY MUNICIPAL INCOME TRUST,1137440,2018-08,-31  edgar/data/1137440/9999999997-18-007602.txt,deregistration
+N-8F NTC,"Broadstone Real Estate Access Fund, Inc.",1718302,2018-07,-30  edgar/data/1718302/9999999997-18-007103.txt,deregistration
+N-8F NTC,CONTEXT CAPITAL FUNDS,1589025,2018-07,-09  edgar/data/1589025/9999999997-18-006811.txt,deregistration
+N-8F NTC,Claymore Exchange-Traded Fund Trust,1364089,2018-08,-31  edgar/data/1364089/9999999997-18-007603.txt,deregistration
+N-8F NTC,Claymore Exchange-Traded Fund Trust 2,1365662,2018-08,-31  edgar/data/1365662/9999999997-18-007604.txt,deregistration
+N-8F NTC,"Cohen & Steers Active Commodities Strategy Fund, Inc.",1600215,2018-07,-30  edgar/data/1600215/9999999997-18-007104.txt,deregistration
+N-8F NTC,Diversified Real Asset Income Fund,1598085,2018-08,-31  edgar/data/1598085/9999999997-18-007605.txt,deregistration
+N-8F NTC,FRESHSTART VENTURE CAPITAL CORP,818897,2018-07,-09  edgar/data/818897/9999999997-18-006810.txt,deregistration
+N-8F NTC,John Hancock Emerging Markets Income Fund,1525541,2018-09,-28  edgar/data/1525541/9999999997-18-008236.txt,deregistration
+N-8F NTC,John Hancock Floating Rate High Income Fund,1584947,2018-09,-28  edgar/data/1584947/9999999997-18-008237.txt,deregistration
+N-8F NTC,John Hancock Strategic Diversified Income Fund,1543936,2018-09,-28  edgar/data/1543936/9999999997-18-008238.txt,deregistration
+N-8F NTC,Legg Mason Global Asset Management Variable Trust,1591167,2018-07,-09  edgar/data/1591167/9999999997-18-006812.txt,deregistration
+N-8F NTC,MORGAN STANLEY SELECT DIMENSIONS INVESTMENT SERIES,924394,2018-07,-09  edgar/data/924394/9999999997-18-006813.txt,deregistration
+N-8F NTC,Nuveen Flexible Investment Income Fund,1573312,2018-08,-31  edgar/data/1573312/9999999997-18-007606.txt,deregistration
+N-8F NTC,Oppenheimer Global Multi Strategies Fund,1368083,2018-07,-09  edgar/data/1368083/9999999997-18-006815.txt,deregistration
+N-8F NTC,Oppenheimer Global Multi-Alternatives Fund.,1560050,2018-07,-09  edgar/data/1560050/9999999997-18-006814.txt,deregistration
+N-8F NTC,Oppenheimer Rochester Maryland Municipal Fund,1357435,2018-07,-09  edgar/data/1357435/9999999997-18-006816.txt,deregistration
+N-8F NTC,Oppenheimer Rochester Virginia Municipal Fund,1357429,2018-07,-09  edgar/data/1357429/9999999997-18-006817.txt,deregistration
+N-8F NTC,PNMAC Mortgage Opportunity Fund LP,1438246,2018-07,-09  edgar/data/1438246/9999999997-18-006819.txt,deregistration
+N-8F NTC,"PNMAC Mortgage Opportunity Fund, LLC",1438050,2018-07,-09  edgar/data/1438050/9999999997-18-006818.txt,deregistration
+N-8F NTC,RYDEX ETF TRUST,1208211,2018-08,-31  edgar/data/1208211/9999999997-18-007607.txt,deregistration
+N-8F NTC,Triloma EIG Energy Income Fund,1636365,2018-07,-09  edgar/data/1636365/9999999997-18-006820.txt,deregistration
+N-8F NTC,Triloma EIG Energy Income Fund - Term I,1634453,2018-07,-09  edgar/data/1634453/9999999997-18-006821.txt,deregistration
+N-8F NTC,Winton Diversified Opportunities Fund,1626974,2018-08,-31  edgar/data/1626974/9999999997-18-007608.txt,deregistration
+N-8F ORDR,AB GOVERNMENT EXCHANGE RESERVES,917713,2018-07,-30  edgar/data/917713/9999999997-18-007089.txt,deregistration
+N-8F ORDR,AIP Long/Short Fund A,1406731,2018-09,-27  edgar/data/1406731/9999999997-18-008190.txt,deregistration
+N-8F ORDR,AIP Long/Short Fund P,1406732,2018-09,-27  edgar/data/1406732/9999999997-18-008191.txt,deregistration
+N-8F ORDR,ALPINE EQUITY TRUST,842436,2018-07,-13  edgar/data/842436/9999999997-18-006899.txt,deregistration
+N-8F ORDR,ALPINE INCOME TRUST,1194319,2018-07,-13  edgar/data/1194319/9999999997-18-006900.txt,deregistration
+N-8F ORDR,ALPINE SERIES TRUST,1142010,2018-07,-09  edgar/data/1142010/9999999997-18-006804.txt,deregistration
+N-8F ORDR,Avenue Mutual Funds Trust,1544657,2018-07,-30  edgar/data/1544657/9999999997-18-007090.txt,deregistration
+N-8F ORDR,BLACKROCK NEW JERSEY MUNICIPAL BOND TRUST,1169031,2018-09,-27  edgar/data/1169031/9999999997-18-008192.txt,deregistration
+N-8F ORDR,BLACKROCK NEW JERSEY MUNICIPAL INCOME TRUST,1137440,2018-09,-27  edgar/data/1137440/9999999997-18-008193.txt,deregistration
+N-8F ORDR,Bond Portfolio II,1623636,2018-07,-09  edgar/data/1623636/9999999997-18-006805.txt,deregistration
+N-8F ORDR,"Broadstone Real Estate Access Fund, Inc.",1718302,2018-08,-22  edgar/data/1718302/9999999997-18-007418.txt,deregistration
+N-8F ORDR,COMPASS STRATEGIC INVESTMENTS FUND,869066,2018-07,-09  edgar/data/869066/9999999997-18-006807.txt,deregistration
+N-8F ORDR,CONTEXT CAPITAL FUNDS,1589025,2018-07,-30  edgar/data/1589025/9999999997-18-007091.txt,deregistration
+N-8F ORDR,Claymore Exchange-Traded Fund Trust,1364089,2018-09,-27  edgar/data/1364089/9999999997-18-008194.txt,deregistration
+N-8F ORDR,Claymore Exchange-Traded Fund Trust 2,1365662,2018-09,-27  edgar/data/1365662/9999999997-18-008196.txt,deregistration
+N-8F ORDR,"Cohen & Steers Active Commodities Strategy Fund, Inc.",1600215,2018-08,-22  edgar/data/1600215/9999999997-18-007419.txt,deregistration
+N-8F ORDR,Diversified Real Asset Income Fund,1598085,2018-09,-27  edgar/data/1598085/9999999997-18-008197.txt,deregistration
+N-8F ORDR,FRESHSTART VENTURE CAPITAL CORP,818897,2018-07,-30  edgar/data/818897/9999999997-18-007092.txt,deregistration
+N-8F ORDR,Legg Mason Global Asset Management Variable Trust,1591167,2018-07,-30  edgar/data/1591167/9999999997-18-007093.txt,deregistration
+N-8F ORDR,MORGAN STANLEY SELECT DIMENSIONS INVESTMENT SERIES,924394,2018-07,-30  edgar/data/924394/9999999997-18-007094.txt,deregistration
+N-8F ORDR,Nuveen Flexible Investment Income Fund,1573312,2018-09,-27  edgar/data/1573312/9999999997-18-008198.txt,deregistration
+N-8F ORDR,Oppenheimer Global Multi Strategies Fund,1368083,2018-07,-30  edgar/data/1368083/9999999997-18-007096.txt,deregistration
+N-8F ORDR,Oppenheimer Global Multi-Alternatives Fund.,1560050,2018-07,-30  edgar/data/1560050/9999999997-18-007095.txt,deregistration
+N-8F ORDR,Oppenheimer Rochester Maryland Municipal Fund,1357435,2018-07,-30  edgar/data/1357435/9999999997-18-007097.txt,deregistration
+N-8F ORDR,Oppenheimer Rochester Virginia Municipal Fund,1357429,2018-07,-30  edgar/data/1357429/9999999997-18-007098.txt,deregistration
+N-8F ORDR,PARTNERS INCOME FUND,824076,2018-07,-09  edgar/data/824076/9999999997-18-006806.txt,deregistration
+N-8F ORDR,PNMAC Mortgage Opportunity Fund LP,1438246,2018-07,-30  edgar/data/1438246/9999999997-18-007100.txt,deregistration
+N-8F ORDR,"PNMAC Mortgage Opportunity Fund, LLC",1438050,2018-07,-30  edgar/data/1438050/9999999997-18-007099.txt,deregistration
+N-8F ORDR,RYDEX ETF TRUST,1208211,2018-09,-27  edgar/data/1208211/9999999997-18-008199.txt,deregistration
+N-8F ORDR,Triloma EIG Energy Income Fund,1636365,2018-07,-30  edgar/data/1636365/9999999997-18-007101.txt,deregistration
+N-8F ORDR,Triloma EIG Energy Income Fund - Term I,1634453,2018-07,-30  edgar/data/1634453/9999999997-18-007102.txt,deregistration
+N-8F ORDR,Winton Diversified Opportunities Fund,1626974,2018-09,-27  edgar/data/1626974/9999999997-18-008200.txt,deregistration
+N-8F/A,AIP Long/Short Fund A,1406731,2018-08,-28  edgar/data/1406731/0001133228-18-005219.txt,deregistration
+N-8F/A,AIP Long/Short Fund P,1406732,2018-08,-28  edgar/data/1406732/0001133228-18-005221.txt,deregistration
+N-8F/A,Advent Claymore Convertible Securities & Income Fund II,1391461,2018-08,-30  edgar/data/1391461/0000891804-18-000420.txt,deregistration
+N-8F/A,"Broadstone Real Estate Access Fund, Inc.",1718302,2018-07,-19  edgar/data/1718302/0001193125-18-221401.txt,deregistration
+N-8F/A,Claymore Exchange-Traded Fund Trust,1364089,2018-07,-20  edgar/data/1364089/0001628280-18-009451.txt,deregistration
+N-8F/A,Claymore Exchange-Traded Fund Trust,1364089,2018-08,-09  edgar/data/1364089/0001628280-18-010879.txt,deregistration
+N-8F/A,Claymore Exchange-Traded Fund Trust 2,1365662,2018-07,-20  edgar/data/1365662/0001628280-18-009452.txt,deregistration
+N-8F/A,Claymore Exchange-Traded Fund Trust 2,1365662,2018-08,-09  edgar/data/1365662/0001628280-18-010880.txt,deregistration
+N-8F/A,DEUTSCHE FUNDS TRUST,854905,2018-08,-28  edgar/data/854905/0000088053-18-000929.txt,deregistration
+N-8F/A,Diversified Real Asset Income Fund,1598085,2018-08,-21  edgar/data/1598085/0001137439-18-000177.txt,deregistration
+N-8F/A,John Hancock Emerging Markets Income Fund,1525541,2018-09,-17  edgar/data/1525541/0001133228-18-005551.txt,deregistration
+N-8F/A,John Hancock Floating Rate High Income Fund,1584947,2018-09,-17  edgar/data/1584947/0001133228-18-005547.txt,deregistration
+N-8F/A,John Hancock Strategic Diversified Income Fund,1543936,2018-09,-17  edgar/data/1543936/0001133228-18-005545.txt,deregistration
+N-8F/A,Nuveen Flexible Investment Income Fund,1573312,2018-08,-21  edgar/data/1573312/0001137439-18-000179.txt,deregistration
+N-8F/A,RYDEX ETF TRUST,1208211,2018-07,-20  edgar/data/1208211/0001628280-18-009455.txt,deregistration
+N-8F/A,RYDEX ETF TRUST,1208211,2018-08,-09  edgar/data/1208211/0001628280-18-010898.txt,deregistration
+N-8F/A,Winton Diversified Opportunities Fund,1626974,2018-08,-10  edgar/data/1626974/0001398344-18-011553.txt,deregistration

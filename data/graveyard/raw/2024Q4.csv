@@ -1,0 +1,120 @@
+form,company,cik,date_filed,filing_path,event
+N-14,"AB Active ETFs, Inc.",1496608,2024-11,-18  edgar/data/1496608/0000919574-24-006832.txt,merger/reorg
+N-14,AIM INTERNATIONAL MUTUAL FUNDS (INVESCO INTERNATIONAL MUT,UAL  880859,2024-11,-01  edgar/data/880859/0001193125-24-249958.txt,merger/reorg
+N-14,AMERICAN BEACON SELECT FUNDS,1096012,2024-12,-18  edgar/data/1096012/0001133228-24-011315.txt,merger/reorg
+N-14,"BNY Mellon Absolute Insight Funds, Inc.",1635295,2024-11,-12  edgar/data/1635295/0001137439-24-001489.txt,merger/reorg
+N-14,Brighthouse Funds Trust I,1126087,2024-11,-22  edgar/data/1126087/0001193125-24-264242.txt,merger/reorg
+N-14,DFA INVESTMENT DIMENSIONS GROUP INC,355437,2024-11,-19  edgar/data/355437/0001137439-24-001516.txt,merger/reorg
+N-14,Destra Investment Trust,1492374,2024-10,-04  edgar/data/1492374/0001829126-24-006651.txt,merger/reorg
+N-14,EA Series Trust,1592900,2024-11,-27  edgar/data/1592900/0001592900-24-002426.txt,merger/reorg
+N-14,FIDELITY ABERDEEN STREET TRUST,880195,2024-10,-01  edgar/data/880195/0001133228-24-009245.txt,merger/reorg
+N-14,FIDELITY FINANCIAL TRUST,708191,2024-12,-20  edgar/data/708191/0001133228-24-011369.txt,merger/reorg
+N-14,FIRST TRUST EXCHANGE-TRADED FUND VIII,1667919,2024-11,-26  edgar/data/1667919/0001445546-24-008115.txt,merger/reorg
+N-14,Fidelity Merrimack Street Trust,1562565,2024-11,-15  edgar/data/1562565/0001133228-24-010291.txt,merger/reorg
+N-14,JNL SERIES TRUST,933691,2024-12,-18  edgar/data/933691/0000933691-24-000496.txt,merger/reorg
+N-14,JNL SERIES TRUST,933691,2024-12,-18  edgar/data/933691/0000933691-24-000499.txt,merger/reorg
+N-14,JNL SERIES TRUST,933691,2024-12,-18  edgar/data/933691/0000933691-24-000502.txt,merger/reorg
+N-14,JOHN HANCOCK BOND TRUST,315554,2024-10,-08  edgar/data/315554/0001193125-24-234445.txt,merger/reorg
+N-14,JOHN HANCOCK BOND TRUST,315554,2024-10,-08  edgar/data/315554/0001193125-24-234454.txt,merger/reorg
+N-14,JOHN HANCOCK BOND TRUST,315554,2024-11,-08  edgar/data/315554/0001193125-24-254139.txt,merger/reorg
+N-14,Manager Directed Portfolios,1359057,2024-12,-12  edgar/data/1359057/0000894189-24-007234.txt,merger/reorg
+N-14,NATIONWIDE MUTUAL FUNDS,1048702,2024-11,-01  edgar/data/1048702/0001680359-24-000386.txt,merger/reorg
+N-14,NATIONWIDE VARIABLE INSURANCE TRUST,353905,2024-11,-01  edgar/data/353905/0001680359-24-000392.txt,merger/reorg
+N-14,PRUDENTIAL INVESTMENT PORTFOLIOS 5,1090155,2024-10,-25  edgar/data/1090155/0001104659-24-111324.txt,merger/reorg
+N-14,SEASONS SERIES TRUST,1003239,2024-12,-17  edgar/data/1003239/0001193125-24-280380.txt,merger/reorg
+N-14,SEASONS SERIES TRUST,1003239,2024-12,-17  edgar/data/1003239/0001193125-24-280386.txt,merger/reorg
+N-14,SEASONS SERIES TRUST,1003239,2024-12,-17  edgar/data/1003239/0001193125-24-280395.txt,merger/reorg
+N-14,SEASONS SERIES TRUST,1003239,2024-12,-17  edgar/data/1003239/0001193125-24-280403.txt,merger/reorg
+N-14,SEASONS SERIES TRUST,1003239,2024-12,-17  edgar/data/1003239/0001193125-24-280415.txt,merger/reorg
+N-14,SUNAMERICA SERIES TRUST,892538,2024-12,-17  edgar/data/892538/0001193125-24-280415.txt,merger/reorg
+N-14,SUNAMERICA SERIES TRUST,892538,2024-12,-17  edgar/data/892538/0001193125-24-280426.txt,merger/reorg
+N-14,TIAA-CREF FUNDS,1084380,2024-10,-11  edgar/data/1084380/0001193125-24-236104.txt,merger/reorg
+N-14,TIAA-CREF FUNDS,1084380,2024-10,-11  edgar/data/1084380/0001193125-24-236107.txt,merger/reorg
+N-14,Tidal Trust III,1722388,2024-10,-10  edgar/data/1722388/0001999371-24-013210.txt,merger/reorg
+N-14,Victory Portfolios IV,2042316,2024-12,-12  edgar/data/2042316/0001683863-24-009074.txt,merger/reorg
+N-14,Victory Portfolios IV,2042316,2024-12,-18  edgar/data/2042316/0001683863-24-009294.txt,merger/reorg
+N-14,Victory Variable Insurance Funds II,2042317,2024-12,-12  edgar/data/2042317/0001683863-24-009075.txt,merger/reorg
+N-14 8C,Apollo Debt Solutions BDC,1837532,2024-11,-22  edgar/data/1837532/0001193125-24-264303.txt,merger/reorg
+N-14 8C,"BLACKROCK INCOME TRUST, INC.",832327,2024-12,-30  edgar/data/832327/0001193125-24-286891.txt,merger/reorg
+N-14 8C,Blue Owl Technology Finance Corp.,1747777,2024-11,-22  edgar/data/1747777/0001628280-24-048969.txt,merger/reorg
+N-14 8C,Blue Owl Technology Finance Corp. II,1889668,2024-11,-01  edgar/data/1889668/0001628280-24-044780.txt,merger/reorg
+N-14 8C,"Carlyle Secured Lending, Inc.",1544206,2024-10,-07  edgar/data/1544206/0001193125-24-233868.txt,merger/reorg
+N-14 8C,HPS Corporate Lending Fund,1838126,2024-12,-09  edgar/data/1838126/0001193125-24-273170.txt,merger/reorg
+N-14 8C,KKR Income Opportunities Fund,1515940,2024-10,-10  edgar/data/1515940/0001193125-24-235968.txt,merger/reorg
+N-14 8C,Morgan Stanley Direct Lending Fund,1782524,2024-12,-06  edgar/data/1782524/0001193125-24-272461.txt,merger/reorg
+N-14 8C,Sixth Street Lending Partners,1925309,2024-11,-04  edgar/data/1925309/0001193125-24-250213.txt,merger/reorg
+N-14 8C/A,Blackstone Private Credit Fund,1803498,2024-10,-02  edgar/data/1803498/0001193125-24-231228.txt,merger/reorg
+N-14 8C/A,Blue Owl Capital Corp,1655888,2024-10,-11  edgar/data/1655888/0001628280-24-042745.txt,merger/reorg
+N-14 8C/A,Blue Owl Technology Finance Corp. II,1889668,2024-12,-13  edgar/data/1889668/0001628280-24-051226.txt,merger/reorg
+N-14 8C/A,"Carlyle Secured Lending, Inc.",1544206,2024-12,-06  edgar/data/1544206/0001193125-24-272494.txt,merger/reorg
+N-14 8C/A,KKR Income Opportunities Fund,1515940,2024-12,-06  edgar/data/1515940/0001193125-24-271727.txt,merger/reorg
+N-14 8C/A,Sixth Street Lending Partners,1925309,2024-12,-10  edgar/data/1925309/0001193125-24-274414.txt,merger/reorg
+N-14 8C/A,TORTOISE ENERGY INFRASTRUCTURE CORP,1268533,2024-10,-21  edgar/data/1268533/0001213900-24-089083.txt,merger/reorg
+N-14 8C/A,TORTOISE ENERGY INFRASTRUCTURE CORP,1268533,2024-10,-29  edgar/data/1268533/0001213900-24-091361.txt,merger/reorg
+N-14 8C/A,TORTOISE ENERGY INFRASTRUCTURE CORP,1268533,2024-11,-05  edgar/data/1268533/0001213900-24-094245.txt,merger/reorg
+N-14/A,BNY Mellon ETF Trust II,2025968,2024-11,-01  edgar/data/2025968/0002025968-24-000023.txt,merger/reorg
+N-14/A,BNY Mellon ETF Trust II,2025968,2024-11,-04  edgar/data/2025968/0002025968-24-000025.txt,merger/reorg
+N-14/A,BlackRock ETF Trust II,1804196,2024-11,-22  edgar/data/1804196/0001193125-24-264348.txt,merger/reorg
+N-14/A,BlackRock ETF Trust II,1804196,2024-11,-26  edgar/data/1804196/0001193125-24-265729.txt,merger/reorg
+N-14/A,Intrepid Capital Management Funds Trust,1300746,2024-11,-01  edgar/data/1300746/0000897069-24-002083.txt,merger/reorg
+N-14/A,Investment Managers Series Trust III,924727,2024-10,-21  edgar/data/924727/0001213900-24-089049.txt,merger/reorg
+N-14/A,MATTHEWS INTERNATIONAL FUNDS,923184,2024-11,-08  edgar/data/923184/0001193125-24-254102.txt,merger/reorg
+N-14/A,MATTHEWS INTERNATIONAL FUNDS,923184,2024-11,-25  edgar/data/923184/0001193125-24-265163.txt,merger/reorg
+N-14/A,MATTHEWS INTERNATIONAL FUNDS,923184,2024-12,-30  edgar/data/923184/0001193125-24-286709.txt,merger/reorg
+N-14/A,NATIONWIDE MUTUAL FUNDS,1048702,2024-10,-30  edgar/data/1048702/0001680359-24-000374.txt,merger/reorg
+N-14/A,NATIONWIDE MUTUAL FUNDS,1048702,2024-11,-01  edgar/data/1048702/0001680359-24-000389.txt,merger/reorg
+N-14/A,TIAA-CREF FUNDS,1084380,2024-11,-13  edgar/data/1084380/0001193125-24-256997.txt,merger/reorg
+N-14/A,Tidal Trust III,1722388,2024-11,-06  edgar/data/1722388/0001999371-24-014274.txt,merger/reorg
+N-14/A,Tortoise Capital Series Trust,2034406,2024-10,-15  edgar/data/2034406/0001213900-24-087855.txt,merger/reorg
+N-14/A,Tortoise Capital Series Trust,2034406,2024-10,-25  edgar/data/2034406/0001213900-24-090760.txt,merger/reorg
+N-14/A,Tortoise Capital Series Trust,2034406,2024-11,-05  edgar/data/2034406/0001213900-24-094308.txt,merger/reorg
+N-8F,ALIGHT SERIES TRUST,1065899,2024-12,-20  edgar/data/1065899/0001680359-24-000456.txt,deregistration
+N-8F,AQUILA FUNDS TRUST,707800,2024-12,-20  edgar/data/707800/0000929638-24-004278.txt,deregistration
+N-8F,BCM Focus Funds,1950357,2024-11,-04  edgar/data/1950357/0001213900-24-094048.txt,deregistration
+N-8F,"BNY Mellon Municipal Bond Funds, Inc.",75176,2024-11,-25  edgar/data/75176/0000075176-24-000012.txt,deregistration
+N-8F,"BNY Mellon New York Tax Exempt Bond Fund, Inc.",723765,2024-10,-17  edgar/data/723765/0000723765-24-000010.txt,deregistration
+N-8F,"Cohen & Steers Alternative Income Fund, Inc.",1307144,2024-10,-31  edgar/data/1307144/0001193125-24-248378.txt,deregistration
+N-8F,Cook & Bynum Funds Trust,1459065,2024-11,-04  edgar/data/1459065/0001839882-24-037264.txt,deregistration
+N-8F,GL Beyond Income Fund,1532716,2024-11,-13  edgar/data/1532716/0001162044-24-001244.txt,deregistration
+N-8F,John Hancock Tax-Advantaged Global Shareholder Yield Fund,1396502,2024-12,-12  edgar/data/1396502/0001193125-24-276767.txt,deregistration
+N-8F,List Income Opportunities Fund,1962937,2024-10,-15  edgar/data/1962937/0001398344-24-018909.txt,deregistration
+N-8F,List Income Opportunities Fund,1962937,2024-11,-15  edgar/data/1962937/0001398344-24-020959.txt,deregistration
+N-8F,PPM Funds,1722478,2024-12,-23  edgar/data/1722478/0001999371-24-015698.txt,deregistration
+N-8F,PREDEX,1568905,2024-12,-06  edgar/data/1568905/0001580642-24-007417.txt,deregistration
+N-8F,"PROSPECTOR FUNDS, INC.",1402472,2024-12,-17  edgar/data/1402472/0000894189-24-007330.txt,deregistration
+N-8F,"Panagram Capital, LLC",1884434,2024-12,-27  edgar/data/1884434/0001104659-24-132140.txt,deregistration
+N-8F,SUPER FLORIDA MAN INC,2025895,2024-12,-26  edgar/data/2025895/0002025895-24-000008.txt,deregistration
+N-8F NTC,AQUILA MUNICIPAL TRUST,784056,2024-12,-02  edgar/data/784056/9999999997-24-004479.txt,deregistration
+N-8F NTC,BCM Focus Funds,1950357,2024-12,-02  edgar/data/1950357/9999999997-24-004480.txt,deregistration
+N-8F NTC,"BNY Mellon Municipal Bond Funds, Inc.",75176,2024-12,-30  edgar/data/75176/9999999997-24-004709.txt,deregistration
+N-8F NTC,"BNY Mellon New York Tax Exempt Bond Fund, Inc.",723765,2024-10,-29  edgar/data/723765/9999999997-24-004207.txt,deregistration
+N-8F NTC,Blackstone Floating Rate Enhanced Income Fund,1710523,2024-10,-02  edgar/data/1710523/9999999997-24-004009.txt,deregistration
+N-8F NTC,ClearBridge MLP & Midstream Fund Inc.,1488775,2024-10,-02  edgar/data/1488775/9999999997-24-004010.txt,deregistration
+N-8F NTC,ClearBridge MLP & Midstream Total Return Fund Inc.,1547341,2024-10,-02  edgar/data/1547341/9999999997-24-004011.txt,deregistration
+N-8F NTC,"Cohen & Steers Alternative Income Fund, Inc.",1307144,2024-12,-02  edgar/data/1307144/9999999997-24-004481.txt,deregistration
+N-8F NTC,Cook & Bynum Funds Trust,1459065,2024-12,-02  edgar/data/1459065/9999999997-24-004482.txt,deregistration
+N-8F NTC,"DELAWARE INVESTMENTS DIVIDEND & INCOME FUND, INC",896923,2024-10,-29  edgar/data/896923/9999999997-24-004208.txt,deregistration
+N-8F NTC,GL Beyond Income Fund,1532716,2024-12,-02  edgar/data/1532716/9999999997-24-004483.txt,deregistration
+N-8F NTC,John Hancock Tax-Advantaged Global Shareholder Yield Fund,1396502,2024-12,-30  edgar/data/1396502/9999999997-24-004710.txt,deregistration
+N-8F NTC,List Income Opportunities Fund,1962937,2024-12,-30  edgar/data/1962937/9999999997-24-004711.txt,deregistration
+N-8F NTC,Macquarie Global Infrastructure Total Return Fund Inc.,1326390,2024-10,-29  edgar/data/1326390/9999999997-24-004209.txt,deregistration
+N-8F NTC,PREDEX,1568905,2024-12,-30  edgar/data/1568905/9999999997-24-004712.txt,deregistration
+N-8F NTC,Variable Annuity Account Ten,1851337,2024-10,-29  edgar/data/1851337/9999999997-24-004210.txt,deregistration
+N-8F ORDR,AQUILA MUNICIPAL TRUST,784056,2024-12,-27  edgar/data/784056/9999999997-24-004704.txt,deregistration
+N-8F ORDR,BCM Focus Funds,1950357,2024-12,-27  edgar/data/1950357/9999999997-24-004705.txt,deregistration
+N-8F ORDR,"BNY Mellon New York Tax Exempt Bond Fund, Inc.",723765,2024-11,-21  edgar/data/723765/9999999997-24-004401.txt,deregistration
+N-8F ORDR,Blackstone Floating Rate Enhanced Income Fund,1710523,2024-10,-24  edgar/data/1710523/9999999997-24-004186.txt,deregistration
+N-8F ORDR,ClearBridge MLP & Midstream Fund Inc.,1488775,2024-10,-24  edgar/data/1488775/9999999997-24-004187.txt,deregistration
+N-8F ORDR,ClearBridge MLP & Midstream Total Return Fund Inc.,1547341,2024-10,-24  edgar/data/1547341/9999999997-24-004188.txt,deregistration
+N-8F ORDR,"Cohen & Steers Alternative Income Fund, Inc.",1307144,2024-12,-27  edgar/data/1307144/9999999997-24-004706.txt,deregistration
+N-8F ORDR,Cook & Bynum Funds Trust,1459065,2024-12,-27  edgar/data/1459065/9999999997-24-004707.txt,deregistration
+N-8F ORDR,"DELAWARE INVESTMENTS DIVIDEND & INCOME FUND, INC",896923,2024-11,-21  edgar/data/896923/9999999997-24-004402.txt,deregistration
+N-8F ORDR,GL Beyond Income Fund,1532716,2024-12,-27  edgar/data/1532716/9999999997-24-004708.txt,deregistration
+N-8F ORDR,Macquarie Global Infrastructure Total Return Fund Inc.,1326390,2024-11,-21  edgar/data/1326390/9999999997-24-004403.txt,deregistration
+N-8F ORDR,Variable Annuity Account Ten,1851337,2024-11,-21  edgar/data/1851337/9999999997-24-004404.txt,deregistration
+N-8F/A,AQUILA MUNICIPAL TRUST,784056,2024-11,-14  edgar/data/784056/0000784056-24-000012.txt,deregistration
+N-8F/A,"DELAWARE INVESTMENTS DIVIDEND & INCOME FUND, INC",896923,2024-10,-22  edgar/data/896923/0001137439-24-001454.txt,deregistration
+N-8F/A,List Income Opportunities Fund,1962937,2024-12,-04  edgar/data/1962937/0001398344-24-022706.txt,deregistration
+N-8F/A,Macquarie Global Infrastructure Total Return Fund Inc.,1326390,2024-10,-22  edgar/data/1326390/0001137439-24-001452.txt,deregistration
+N-8F/A,PREDEX,1568905,2024-12,-17  edgar/data/1568905/0001580642-24-007628.txt,deregistration
+N-8F/A,Variable Annuity Account Ten,1851337,2024-10,-24  edgar/data/1851337/0001193125-24-242214.txt,deregistration

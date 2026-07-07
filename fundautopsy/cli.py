@@ -223,5 +223,25 @@ def wrapper(
         render_wrapper(result, console)
 
 
+@app.command()
+def graveyard(
+    out: Path = typer.Option(Path("data/graveyard"), "--out", "-o", help="Dataset root"),
+    start_year: int = typer.Option(2018, "--start-year", help="First index year to harvest"),
+) -> None:
+    """Harvest fund deaths (N-8F) and mergers (N-14) from EDGAR form indexes into a dataset."""
+    import json
+
+    from fundautopsy.graveyard import aggregate, scan
+
+    console.print("\n[bold]Fund Autopsy[/bold] — digging the graveyard\n")
+    s = scan(out, start_year=start_year, on_progress=lambda m: console.print(f"  {m}"))
+    a = aggregate(out)
+    console.print(
+        f"\n[green]{a['total_events']} events[/green]: "
+        f"{a['deregistrations']} deregistrations, {a['mergers']} merger filings → {a['csv']}"
+    )
+    console.print(json.dumps(a["by_year"], indent=2))
+
+
 if __name__ == "__main__":
     app()

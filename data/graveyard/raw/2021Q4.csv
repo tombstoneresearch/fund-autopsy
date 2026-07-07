@@ -1,0 +1,122 @@
+form,company,cik,date_filed,filing_path,event
+N-14,ADVANCED SERIES TRUST,814679,2021-10,-12  edgar/data/814679/0001104659-21-125351.txt,merger/reorg
+N-14,ADVANCED SERIES TRUST,814679,2021-10,-13  edgar/data/814679/0001104659-21-125859.txt,merger/reorg
+N-14,ADVISORS SERIES TRUST,1027596,2021-11,-10  edgar/data/1027596/0000894189-21-007947.txt,merger/reorg
+N-14,AIM VARIABLE INSURANCE FUNDS (INVESCO VARIABLE INSURANCE,FUN  896435,2021-12,-02  edgar/data/896435/0001193125-21-346866.txt,merger/reorg
+N-14,Brighthouse Funds Trust I,1126087,2021-12,-01  edgar/data/1126087/0001193125-21-345136.txt,merger/reorg
+N-14,FINANCIAL INVESTORS TRUST,915802,2021-10,-07  edgar/data/915802/0001398344-21-019733.txt,merger/reorg
+N-14,First American Funds Trust,1890141,2021-11,-18  edgar/data/1890141/0000897101-21-000960.txt,merger/reorg
+N-14,GOLDMAN SACHS TRUST,822977,2021-10,-22  edgar/data/822977/0001193125-21-305598.txt,merger/reorg
+N-14,GOLDMAN SACHS TRUST,822977,2021-10,-29  edgar/data/822977/0001193125-21-313558.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2021-11,-04  edgar/data/1587982/0001398344-21-020906.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2021-12,-17  edgar/data/1587982/0001398344-21-024040.txt,merger/reorg
+N-14,JNL SERIES TRUST,933691,2021-12,-16  edgar/data/933691/0000933691-21-000652.txt,merger/reorg
+N-14,JNL SERIES TRUST,933691,2021-12,-16  edgar/data/933691/0000933691-21-000654.txt,merger/reorg
+N-14,JNL SERIES TRUST,933691,2021-12,-16  edgar/data/933691/0000933691-21-000655.txt,merger/reorg
+N-14,Listed Funds Trust,1683471,2021-12,-21  edgar/data/1683471/0000894189-21-009051.txt,merger/reorg
+N-14,PRUDENTIAL SERIES FUND,711175,2021-10,-08  edgar/data/711175/0001104659-21-124723.txt,merger/reorg
+N-14,SPROTT FUNDS TRUST,1728683,2021-12,-03  edgar/data/1728683/0001387131-21-011780.txt,merger/reorg
+N-14,TRUST FOR PROFESSIONAL MANAGERS,1141819,2021-11,-12  edgar/data/1141819/0000894189-21-007965.txt,merger/reorg
+N-14,Total Fund Solution,1872253,2021-11,-24  edgar/data/1872253/0000894189-21-008323.txt,merger/reorg
+N-14,Total Fund Solution,1872253,2021-11,-24  edgar/data/1872253/0000894189-21-008327.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000965.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000967.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000969.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000971.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000973.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000975.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000977.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000979.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000981.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000983.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000985.txt,merger/reorg
+N-14,VANGUARD CHESTER FUNDS,752177,2021-10,-05  edgar/data/752177/0001137439-21-000987.txt,merger/reorg
+N-14,VIRTUS OPPORTUNITIES TRUST,1005020,2021-11,-24  edgar/data/1005020/0001104659-21-143538.txt,merger/reorg
+N-14,Voya EQUITY TRUST,1063946,2021-12,-16  edgar/data/1063946/0001683863-21-007229.txt,merger/reorg
+N-14 8C,"BLACKROCK MUNICIPAL INCOME FUND, INC.",1232860,2021-10,-08  edgar/data/1232860/0001193125-21-295503.txt,merger/reorg
+N-14 8C,"BLACKROCK MUNIHOLDINGS CALIFORNIA QUALITY FUND, INC.",1051004,2021-10,-08  edgar/data/1051004/0001193125-21-295492.txt,merger/reorg
+N-14 8C,"BLACKROCK MUNIHOLDINGS NEW JERSEY QUALITY FUND, INC.",1053988,2021-10,-08  edgar/data/1053988/0001193125-21-295498.txt,merger/reorg
+N-14 8C,"Barings BDC, Inc.",1379785,2021-10,-29  edgar/data/1379785/0001140361-21-035928.txt,merger/reorg
+N-14 8C,"Fundrise Income Real Estate Fund, LLC",1885551,2021-10,-08  edgar/data/1885551/0001794202-21-000227.txt,merger/reorg
+N-14 8C,"Kayne Anderson Energy Infrastructure Fund, Inc.",1293613,2021-10,-25  edgar/data/1293613/0001213900-21-054259.txt,merger/reorg
+N-14 8C,Portman Ridge Finance Corp,1372807,2021-10,-05  edgar/data/1372807/0001193125-21-292257.txt,merger/reorg
+N-14 8C,SLR Investment Corp.,1418076,2021-12,-16  edgar/data/1418076/0001193125-21-358275.txt,merger/reorg
+N-14 8C/A,"BLACKROCK MUNICIPAL INCOME FUND, INC.",1232860,2021-12,-16  edgar/data/1232860/0001193125-21-358176.txt,merger/reorg
+N-14 8C/A,"BLACKROCK MUNIHOLDINGS CALIFORNIA QUALITY FUND, INC.",1051004,2021-12,-16  edgar/data/1051004/0001193125-21-358172.txt,merger/reorg
+N-14 8C/A,"BLACKROCK MUNIHOLDINGS NEW JERSEY QUALITY FUND, INC.",1053988,2021-12,-16  edgar/data/1053988/0001193125-21-358168.txt,merger/reorg
+N-14 8C/A,"Barings BDC, Inc.",1379785,2021-12,-13  edgar/data/1379785/0001140361-21-041369.txt,merger/reorg
+N-14 8C/A,"Barings BDC, Inc.",1379785,2021-12,-23  edgar/data/1379785/0001140361-21-042931.txt,merger/reorg
+N-14 8C/A,"Fundrise Income Real Estate Fund, LLC",1885551,2021-11,-24  edgar/data/1885551/0001794202-21-000253.txt,merger/reorg
+N-14 8C/A,"Kayne Anderson Energy Infrastructure Fund, Inc.",1293613,2021-12,-22  edgar/data/1293613/0001213900-21-067019.txt,merger/reorg
+N-14 8C/A,Portman Ridge Finance Corp,1372807,2021-11,-23  edgar/data/1372807/0001193125-21-338661.txt,merger/reorg
+N-14/A,ADVANCED SERIES TRUST,814679,2021-11,-12  edgar/data/814679/0001104659-21-137966.txt,merger/reorg
+N-14/A,ADVISORS SERIES TRUST,1027596,2021-12,-09  edgar/data/1027596/0000894189-21-008644.txt,merger/reorg
+N-14/A,Advisors' Inner Circle Fund III,1593547,2021-12,-20  edgar/data/1593547/0001398344-21-024153.txt,merger/reorg
+N-14/A,COLUMBIA FUNDS SERIES TRUST,1097519,2021-10,-01  edgar/data/1097519/0001193125-21-288390.txt,merger/reorg
+N-14/A,COLUMBIA FUNDS SERIES TRUST,1097519,2021-10,-04  edgar/data/1097519/0001193125-21-289992.txt,merger/reorg
+N-14/A,COLUMBIA FUNDS SERIES TRUST I,773757,2021-10,-01  edgar/data/773757/0001193125-21-289812.txt,merger/reorg
+N-14/A,Columbia Funds Series Trust II,1352280,2021-10,-01  edgar/data/1352280/0001193125-21-288392.txt,merger/reorg
+N-14/A,Columbia Funds Series Trust II,1352280,2021-10,-07  edgar/data/1352280/0001193125-21-293360.txt,merger/reorg
+N-14/A,FIRST AMERICAN FUNDS INC,356134,2021-10,-19  edgar/data/356134/0000897101-21-000827.txt,merger/reorg
+N-14/A,Innovator ETFs Trust,1415726,2021-10,-14  edgar/data/1415726/0001437749-21-023623.txt,merger/reorg
+N-14/A,Investment Managers Series Trust II,1587982,2021-12,-03  edgar/data/1587982/0001398344-21-023264.txt,merger/reorg
+N-14/A,PRUDENTIAL SERIES FUND,711175,2021-11,-09  edgar/data/711175/0001104659-21-136379.txt,merger/reorg
+N-14/A,PRUDENTIAL SERIES FUND,711175,2021-11,-12  edgar/data/711175/0001104659-21-137928.txt,merger/reorg
+N-14/A,"RBB FUND, INC.",831114,2021-11,-24  edgar/data/831114/0001398344-21-022085.txt,merger/reorg
+N-14/A,Starboard Investment Trust,1464413,2021-11,-02  edgar/data/1464413/0001464413-21-000224.txt,merger/reorg
+N-14/A,Total Fund Solution,1872253,2021-12,-29  edgar/data/1872253/0000894189-21-009312.txt,merger/reorg
+N-14/A,Total Fund Solution,1872253,2021-12,-29  edgar/data/1872253/0000894189-21-009331.txt,merger/reorg
+N-14/A,Total Fund Solution,1872253,2021-12,-30  edgar/data/1872253/0000894189-21-009348.txt,merger/reorg
+N-14/A,VIRTUS OPPORTUNITIES TRUST,1005020,2021-10,-18  edgar/data/1005020/0001104659-21-127155.txt,merger/reorg
+N-14/A,VIRTUS OPPORTUNITIES TRUST,1005020,2021-12,-30  edgar/data/1005020/0001104659-21-154672.txt,merger/reorg
+N-14MEF,PIMCO Dynamic Income Fund,1510599,2021-12,-08  edgar/data/1510599/0001193125-21-351233.txt,merger/reorg
+N-8F,American Beacon Apollo Total Return Fund,1740076,2021-11,-24  edgar/data/1740076/0000898432-21-000735.txt,deregistration
+N-8F,American Beacon Sound Point Enhanced Income Fund,1729895,2021-11,-24  edgar/data/1729895/0000898432-21-000736.txt,deregistration
+N-8F,Blackstone Real Estate Income Fund,1588807,2021-12,-16  edgar/data/1588807/0001193125-21-358883.txt,deregistration
+N-8F,Blackstone Real Estate Income Fund II,1589029,2021-12,-16  edgar/data/1589029/0001193125-21-358885.txt,deregistration
+N-8F,Blackstone Real Estate Income Master Fund,1590213,2021-12,-16  edgar/data/1590213/0001193125-21-358882.txt,deregistration
+N-8F,CASCADES TRUST,791049,2021-12,-29  edgar/data/791049/0000791049-21-000003.txt,deregistration
+N-8F,Calvert High Income Term Trust,1817488,2021-10,-29  edgar/data/1817488/0000940394-21-001417.txt,deregistration
+N-8F,Eaton Vance Income Opportunities Fund - MA,1812284,2021-10,-29  edgar/data/1812284/0000940394-21-001418.txt,deregistration
+N-8F,"GENERAL NEW JERSEY MUNICIPAL MONEY MARKET FUND, INC.",831363,2021-10,-12  edgar/data/831363/0000831363-21-000005.txt,deregistration
+N-8F,Gabelli Go Anywhere Trust,1635193,2021-11,-10  edgar/data/1635193/0001193125-21-326010.txt,deregistration
+N-8F,Guggenheim Credit Allocation Fund,1551949,2021-12,-10  edgar/data/1551949/0001821268-21-000512.txt,deregistration
+N-8F,Guggenheim Enhanced Equity Income Fund,1310709,2021-12,-10  edgar/data/1310709/0001821268-21-000514.txt,deregistration
+N-8F,Innovator ETFs Trust II,1595106,2021-10,-26  edgar/data/1595106/0001437749-21-024311.txt,deregistration
+N-8F,LINCOLN LIFE VARIABLE ANNUITY ACCOUNT LMB-K,876438,2021-10,-15  edgar/data/876438/0001104659-21-126696.txt,deregistration
+N-8F,ML OF NEW YORK VARIABLE ANNUITY SEPARATE ACCOUNT C,1162329,2021-11,-05  edgar/data/1162329/0001193125-21-321223.txt,deregistration
+N-8F,NB Crossroads Private Markets Fund VI Custody LP,1774376,2021-11,-05  edgar/data/1774376/0001104659-21-134857.txt,deregistration
+N-8F,NEXPOINT EVENT-DRIVEN FUND,1672514,2021-10,-14  edgar/data/1672514/0001193125-21-298590.txt,deregistration
+N-8F,"RCG ETFs, Inc.",1881221,2021-10,-05  edgar/data/1881221/0000919574-21-006110.txt,deregistration
+N-8F,SPT FUNDS INVESTMENT TRUST,1422286,2021-11,-09  edgar/data/1422286/0001398344-21-021188.txt,deregistration
+N-8F NTC,"Cohen & Steers Global Income Builder, Inc",1395057,2021-11,-02  edgar/data/1395057/9999999997-21-005615.txt,deregistration
+N-8F NTC,FS Multi-Alternative Income Fund,1737268,2021-10,-12  edgar/data/1737268/9999999997-21-005190.txt,deregistration
+N-8F NTC,First Eagle Senior Loan Fund,1583001,2021-11,-29  edgar/data/1583001/9999999997-21-005845.txt,deregistration
+N-8F NTC,Gabelli Go Anywhere Trust,1635193,2021-11,-29  edgar/data/1635193/9999999997-21-005846.txt,deregistration
+N-8F NTC,"Hatteras VC Co-Investment Fund II, LLC",1450150,2021-10,-12  edgar/data/1450150/9999999997-21-005191.txt,deregistration
+N-8F NTC,NEXPOINT HEALTHCARE OPPORTUNITIES FUND,1668234,2021-10,-12  edgar/data/1668234/9999999997-21-005193.txt,deregistration
+N-8F NTC,PACIFIC GLOBAL FUND INC,890206,2021-10,-12  edgar/data/890206/9999999997-21-005194.txt,deregistration
+N-8F NTC,RiverNorth Opportunities Fund II,1769003,2021-10,-12  edgar/data/1769003/9999999997-21-005195.txt,deregistration
+N-8F NTC,STATE FARM ASSOCIATES FUNDS TRUSTS,93715,2021-11,-02  edgar/data/93715/9999999997-21-005616.txt,deregistration
+N-8F NTC,Sound Point Floating Rate 2023 Target Term Fund,1660803,2021-11,-29  edgar/data/1660803/9999999997-21-005847.txt,deregistration
+N-8F NTC,Vivaldi Opportunities Fund,1703117,2021-10,-12  edgar/data/1703117/9999999997-21-005196.txt,deregistration
+N-8F NTC,Western Asset Municipal Defined Opportunity Trust Inc.,1454021,2021-10,-12  edgar/data/1454021/9999999997-21-005197.txt,deregistration
+N-8F NTC,"iShares U.S. ETF Company, Inc.",1492194,2021-10,-12  edgar/data/1492194/9999999997-21-005192.txt,deregistration
+N-8F ORDR,"Cohen & Steers Global Income Builder, Inc",1395057,2021-11,-24  edgar/data/1395057/9999999997-21-005791.txt,deregistration
+N-8F ORDR,FS Multi-Alternative Income Fund,1737268,2021-11,-01  edgar/data/1737268/9999999997-21-005597.txt,deregistration
+N-8F ORDR,"Hatteras VC Co-Investment Fund II, LLC",1450150,2021-11,-01  edgar/data/1450150/9999999997-21-005598.txt,deregistration
+N-8F ORDR,NEXPOINT HEALTHCARE OPPORTUNITIES FUND,1668234,2021-11,-01  edgar/data/1668234/9999999997-21-005600.txt,deregistration
+N-8F ORDR,PACIFIC GLOBAL FUND INC,890206,2021-11,-01  edgar/data/890206/9999999997-21-005601.txt,deregistration
+N-8F ORDR,RiverNorth Opportunities Fund II,1769003,2021-11,-01  edgar/data/1769003/9999999997-21-005602.txt,deregistration
+N-8F ORDR,STATE FARM ASSOCIATES FUNDS TRUSTS,93715,2021-11,-24  edgar/data/93715/9999999997-21-005790.txt,deregistration
+N-8F ORDR,Vivaldi Opportunities Fund,1703117,2021-11,-01  edgar/data/1703117/9999999997-21-005603.txt,deregistration
+N-8F ORDR,Western Asset Municipal Defined Opportunity Trust Inc.,1454021,2021-11,-01  edgar/data/1454021/9999999997-21-005604.txt,deregistration
+N-8F ORDR,"iShares U.S. ETF Company, Inc.",1492194,2021-11,-01  edgar/data/1492194/9999999997-21-005599.txt,deregistration
+N-8F/A,American Beacon Apollo Total Return Fund,1740076,2021-12,-17  edgar/data/1740076/0000898432-21-000923.txt,deregistration
+N-8F/A,American Beacon Sound Point Enhanced Income Fund,1729895,2021-12,-17  edgar/data/1729895/0000898432-21-000924.txt,deregistration
+N-8F/A,"Cohen & Steers Global Income Builder, Inc",1395057,2021-10,-14  edgar/data/1395057/0001193125-21-298444.txt,deregistration
+N-8F/A,First Eagle Senior Loan Fund,1583001,2021-11,-15  edgar/data/1583001/0001104659-21-139267.txt,deregistration
+N-8F/A,"GENERAL NEW JERSEY MUNICIPAL MONEY MARKET FUND, INC.",831363,2021-12,-14  edgar/data/831363/0000831363-21-000006.txt,deregistration
+N-8F/A,Gadsden ETF Trust,1726263,2021-12,-06  edgar/data/1726263/0001726263-21-000003.txt,deregistration
+N-8F/A,Sound Point Floating Rate 2023 Target Term Fund,1660803,2021-10,-29  edgar/data/1660803/0001193125-21-312890.txt,deregistration
+N-8F/A,Stone Ridge Trust VI,1764894,2021-12,-03  edgar/data/1764894/0001193125-21-347500.txt,deregistration

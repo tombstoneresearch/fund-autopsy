@@ -1,0 +1,205 @@
+form,company,cik,date_filed,filing_path,event
+N-14,360 Funds,1319067,2024-06,-21  edgar/data/1319067/0001999371-24-007687.txt,merger/reorg
+N-14,ALLSPRING FUNDS TRUST,1081400,2024-06,-03  edgar/data/1081400/0001081400-24-000348.txt,merger/reorg
+N-14,ALLSPRING FUNDS TRUST,1081400,2024-06,-07  edgar/data/1081400/0001081400-24-000353.txt,merger/reorg
+N-14,ALLSPRING FUNDS TRUST,1081400,2024-06,-10  edgar/data/1081400/0001081400-24-000357.txt,merger/reorg
+N-14,BlackRock ETF Trust,1761055,2024-04,-17  edgar/data/1761055/0001193125-24-099199.txt,merger/reorg
+N-14,BlackRock Funds III,893818,2024-05,-22  edgar/data/893818/0001193125-24-144870.txt,merger/reorg
+N-14,BlackRock Funds III,893818,2024-05,-22  edgar/data/893818/0001193125-24-144873.txt,merger/reorg
+N-14,BlackRock Funds III,893818,2024-05,-22  edgar/data/893818/0001193125-24-144878.txt,merger/reorg
+N-14,CANTOR SELECT PORTFOLIOS TRUST,1903606,2024-04,-17  edgar/data/1903606/0001580642-24-002183.txt,merger/reorg
+N-14,CHARLES SCHWAB FAMILY OF FUNDS,857156,2024-06,-13  edgar/data/857156/0001104659-24-071163.txt,merger/reorg
+N-14,Cavanal Hill Funds,864508,2024-06,-14  edgar/data/864508/0001213900-24-052733.txt,merger/reorg
+N-14,Exchange Listed Funds Trust,1547950,2024-05,-02  edgar/data/1547950/0001213900-24-039217.txt,merger/reorg
+N-14,FIDELITY INVESTMENT TRUST,744822,2024-04,-04  edgar/data/744822/0001193125-24-086973.txt,merger/reorg
+N-14,FIDELITY SUMMER STREET TRUST,225322,2024-04,-04  edgar/data/225322/0001193125-24-087068.txt,merger/reorg
+N-14,FIRST TRUST EXCHANGE-TRADED FUND,1329377,2024-06,-07  edgar/data/1329377/0001445546-24-004213.txt,merger/reorg
+N-14,FIRST TRUST EXCHANGE-TRADED FUND,1329377,2024-06,-07  edgar/data/1329377/0001445546-24-004215.txt,merger/reorg
+N-14,FIRST TRUST SERIES FUND,1497778,2024-06,-07  edgar/data/1497778/0001445546-24-004217.txt,merger/reorg
+N-14,Federated Hermes Money Market Obligations Trust,856517,2024-04,-02  edgar/data/856517/0001623632-24-000472.txt,merger/reorg
+N-14,JOHN HANCOCK INVESTMENT TRUST,22370,2024-06,-28  edgar/data/22370/0001193125-24-172232.txt,merger/reorg
+N-14,LINCOLN VARIABLE INSURANCE PRODUCTS TRUST,914036,2024-05,-16  edgar/data/914036/0001193125-24-140736.txt,merger/reorg
+N-14,Legg Mason Global Asset Management Trust,1474103,2024-05,-09  edgar/data/1474103/0001193125-24-135097.txt,merger/reorg
+N-14,NEOS ETF Trust,1848758,2024-05,-24  edgar/data/1848758/0001999371-24-006576.txt,merger/reorg
+N-14,NORTHERN LIGHTS FUND TRUST II,1518042,2024-06,-25  edgar/data/1518042/0001580642-24-003286.txt,merger/reorg
+N-14,North Square Investments Trust,1750821,2024-04,-09  edgar/data/1750821/0001580642-24-002059.txt,merger/reorg
+N-14,PIMCO ETF Trust,1450011,2024-06,-04  edgar/data/1450011/0001193125-24-154395.txt,merger/reorg
+N-14,Perpetual Americas Funds Trust,1830437,2024-05,-16  edgar/data/1830437/0001193125-24-139726.txt,merger/reorg
+N-14,"T. Rowe Price Global Funds, Inc.",852254,2024-05,-29  edgar/data/852254/0001741773-24-002484.txt,merger/reorg
+N-14,"T. Rowe Price Global Funds, Inc.",852254,2024-05,-29  edgar/data/852254/0001741773-24-002485.txt,merger/reorg
+N-14,"T. Rowe Price International Funds, Inc.",313212,2024-05,-29  edgar/data/313212/0001741773-24-002484.txt,merger/reorg
+N-14,"T. Rowe Price International Funds, Inc.",313212,2024-05,-29  edgar/data/313212/0001741773-24-002485.txt,merger/reorg
+N-14,"T. Rowe Price Retirement Funds, Inc.",1177017,2024-05,-24  edgar/data/1177017/0001741773-24-002369.txt,merger/reorg
+N-14,TCW ETF Trust,1831313,2024-04,-22  edgar/data/1831313/0001829126-24-002688.txt,merger/reorg
+N-14,TCW ETF Trust,1831313,2024-06,-12  edgar/data/1831313/0001829126-24-004140.txt,merger/reorg
+N-14,TOUCHSTONE FUNDS GROUP TRUST,914243,2024-04,-01  edgar/data/914243/0001193125-24-083606.txt,merger/reorg
+N-14,TOUCHSTONE FUNDS GROUP TRUST,914243,2024-04,-05  edgar/data/914243/0001193125-24-088623.txt,merger/reorg
+N-14,Tidal Trust II,1924868,2024-04,-16  edgar/data/1924868/0001999371-24-004858.txt,merger/reorg
+N-14,Voya EQUITY TRUST,1063946,2024-06,-26  edgar/data/1063946/0001683863-24-004383.txt,merger/reorg
+N-14,Voya INVESTORS TRUST,837276,2024-04,-24  edgar/data/837276/0001683863-24-002884.txt,merger/reorg
+N-14,Voya PARTNERS INC,1039001,2024-04,-24  edgar/data/1039001/0001683863-24-002883.txt,merger/reorg
+N-14,abrdn Funds,1413594,2024-04,-17  edgar/data/1413594/0001104659-24-048358.txt,merger/reorg
+N-14 8C,Silver Spike Investment Corp.,1843162,2024-04,-15  edgar/data/1843162/0001140361-24-019711.txt,merger/reorg
+N-14 8C,USQ Core Real Estate Fund,1691570,2024-06,-17  edgar/data/1691570/0000894189-24-003639.txt,merger/reorg
+N-14 8C/A,Blackstone Private Credit Fund,1803498,2024-06,-25  edgar/data/1803498/0001193125-24-167935.txt,merger/reorg
+N-14 8C/A,Blue Owl Credit Income Corp.,1812554,2024-04,-03  edgar/data/1812554/0001193125-24-086086.txt,merger/reorg
+N-14 8C/A,ClearBridge Energy Midstream Opportunity Fund Inc.,1517518,2024-04,-05  edgar/data/1517518/0001193125-24-088589.txt,merger/reorg
+N-14 8C/A,"GOLUB CAPITAL BDC, Inc.",1476765,2024-04,-12  edgar/data/1476765/0001104659-24-046545.txt,merger/reorg
+N-14 8C/A,MidCap Financial Investment Corp,1278752,2024-04,-01  edgar/data/1278752/0001193125-24-083534.txt,merger/reorg
+N-14 8C/A,Silver Spike Investment Corp.,1843162,2024-06,-20  edgar/data/1843162/0001140361-24-030602.txt,merger/reorg
+N-14/A,ALLSPRING FUNDS TRUST,1081400,2024-06,-04  edgar/data/1081400/0001081400-24-000349.txt,merger/reorg
+N-14/A,BlackRock ETF Trust,1761055,2024-06,-27  edgar/data/1761055/0001193125-24-170344.txt,merger/reorg
+N-14/A,CANTOR SELECT PORTFOLIOS TRUST,1903606,2024-05,-24  edgar/data/1903606/0001580642-24-002823.txt,merger/reorg
+N-14/A,Exchange Listed Funds Trust,1547950,2024-06,-07  edgar/data/1547950/0001213900-24-050873.txt,merger/reorg
+N-14/A,NEOS ETF Trust,1848758,2024-04,-02  edgar/data/1848758/0001999371-24-004320.txt,merger/reorg
+N-14/A,NEOS ETF Trust,1848758,2024-04,-02  edgar/data/1848758/0001999371-24-004354.txt,merger/reorg
+N-14/A,TCW FUNDS INC,892071,2024-04,-10  edgar/data/892071/0001193125-24-091642.txt,merger/reorg
+N-14/A,TCW FUNDS INC,892071,2024-05,-03  edgar/data/892071/0001193125-24-130776.txt,merger/reorg
+N-14/A,TCW FUNDS INC,892071,2024-05,-14  edgar/data/892071/0001193125-24-138174.txt,merger/reorg
+N-14/A,Tidal Trust II,1924868,2024-06,-06  edgar/data/1924868/0001999371-24-007206.txt,merger/reorg
+N-8F,5-to-15 Year Laddered Municipal Bond Portfolio,1669035,2024-05,-08  edgar/data/1669035/0000940394-24-000636.txt,deregistration
+N-8F,AMERICAN MATURITY LIFE INSURANCE CO SEPARATE ACCOUNT ONE,1177415,2024-06,-21  edgar/data/1177415/0001628280-24-029206.txt,deregistration
+N-8F,Eaton Vance Floating-Rate 2022 Target Term Trust,1701167,2024-05,-08  edgar/data/1701167/0000940394-24-000637.txt,deregistration
+N-8F,Eaton Vance NextShares Trust,1573035,2024-05,-08  edgar/data/1573035/0000940394-24-000639.txt,deregistration
+N-8F,Eaton Vance NextShares Trust II,1614522,2024-05,-08  edgar/data/1614522/0000940394-24-000640.txt,deregistration
+N-8F,F/M Funds Trust,1546416,2024-06,-04  edgar/data/1546416/0001580642-24-002972.txt,deregistration
+N-8F,Global Income Builder Portfolio,1668984,2024-05,-08  edgar/data/1668984/0000940394-24-000638.txt,deregistration
+N-8F,LifeX Income Trust 1948F,1804299,2024-04,-29  edgar/data/1804299/0001193125-24-122444.txt,deregistration
+N-8F,LifeX Inflation-Protected Income Trust 1948F,1807090,2024-04,-29  edgar/data/1807090/0001193125-24-122366.txt,deregistration
+N-8F,MANDATORILY EXCHANGEABLE SECURITIES TRUST,1089915,2024-06,-28  edgar/data/1089915/0000950103-24-009103.txt,deregistration
+N-8F,MFS CALIFORNIA MUNICIPAL FUND,1092896,2024-04,-10  edgar/data/1092896/0001741773-24-001420.txt,deregistration
+N-8F,Principal Private Credit Fund,1989979,2024-06,-06  edgar/data/1989979/0001989979-24-000008.txt,deregistration
+N-8F,SEVENTH AUTOMATIC COMMON EXCHANGE SECURITY TRUST,1064269,2024-06,-28  edgar/data/1064269/0000950103-24-009105.txt,deregistration
+N-8F,Savos Investments Trust,1068602,2024-04,-17  edgar/data/1068602/0001137439-24-000885.txt,deregistration
+N-8F,Stone Ridge Investment Grade Income Longevity Trust 2045,65F  1808519,2024-04,-29  edgar/data/1808519/0001193125-24-122377.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Master Tr,ust  1804325,2024-04,-29  edgar/data/1804325/0001193125-24-122360.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 65F,1780133,2024-04,-29  edgar/data/1780133/0001193125-24-122451.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 65M,1804321,2024-04,-29  edgar/data/1804321/0001193125-24-122361.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 66F,1804320,2024-04,-29  edgar/data/1804320/0001193125-24-122364.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 66M,1804319,2024-04,-29  edgar/data/1804319/0001193125-24-122367.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 67F,1804318,2024-04,-29  edgar/data/1804318/0001193125-24-122369.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 67M,1804317,2024-04,-29  edgar/data/1804317/0001193125-24-122372.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 68F,1804316,2024-04,-29  edgar/data/1804316/0001193125-24-122379.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 68M,1804315,2024-04,-29  edgar/data/1804315/0001193125-24-122385.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 69F,1804314,2024-04,-29  edgar/data/1804314/0001193125-24-122402.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 69M,1804313,2024-04,-29  edgar/data/1804313/0001193125-24-122404.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 70F,1804312,2024-04,-29  edgar/data/1804312/0001193125-24-122407.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 70M,1804311,2024-04,-29  edgar/data/1804311/0001193125-24-122406.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 71F,1804310,2024-04,-29  edgar/data/1804310/0001193125-24-122411.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 71M,1804309,2024-04,-29  edgar/data/1804309/0001193125-24-122410.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 72F,1804308,2024-04,-29  edgar/data/1804308/0001193125-24-122420.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 72M,1804306,2024-04,-29  edgar/data/1804306/0001193125-24-122445.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 73F,1804305,2024-04,-29  edgar/data/1804305/0001193125-24-122446.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 73M,1804304,2024-04,-29  edgar/data/1804304/0001193125-24-122449.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 74F,1804302,2024-04,-29  edgar/data/1804302/0001193125-24-122452.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 74M,1804301,2024-04,-29  edgar/data/1804301/0001193125-24-122464.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 75M,1804298,2024-04,-29  edgar/data/1804298/0001193125-24-122472.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 76F,1804295,2024-04,-29  edgar/data/1804295/0001193125-24-122462.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 76M,1804294,2024-04,-29  edgar/data/1804294/0001193125-24-122463.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 77F,1804293,2024-04,-29  edgar/data/1804293/0001193125-24-122458.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 77M,1804292,2024-04,-29  edgar/data/1804292/0001193125-24-122453.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 78F,1804291,2024-04,-29  edgar/data/1804291/0001193125-24-122362.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 78M,1804290,2024-04,-29  edgar/data/1804290/0001193125-24-122359.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 79F,1804289,2024-04,-29  edgar/data/1804289/0001193125-24-122354.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 79M,1804288,2024-04,-29  edgar/data/1804288/0001193125-24-122347.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 80F,1804287,2024-04,-29  edgar/data/1804287/0001193125-24-122334.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 80M,1804283,2024-04,-29  edgar/data/1804283/0001193125-24-122316.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 81F,1804282,2024-04,-29  edgar/data/1804282/0001193125-24-122312.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 81M,1804280,2024-04,-29  edgar/data/1804280/0001193125-24-122397.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 82F,1804278,2024-04,-29  edgar/data/1804278/0001193125-24-122393.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 82M,1804276,2024-04,-29  edgar/data/1804276/0001193125-24-122391.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 83F,1804274,2024-04,-29  edgar/data/1804274/0001193125-24-122386.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 83M,1804272,2024-04,-29  edgar/data/1804272/0001193125-24-122383.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 84F,1804270,2024-04,-29  edgar/data/1804270/0001193125-24-122381.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 84M,1804269,2024-04,-29  edgar/data/1804269/0001193125-24-122401.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 85F,1804267,2024-04,-29  edgar/data/1804267/0001193125-24-122380.txt,deregistration
+N-8F,Stone Ridge Longevity Risk Premium Fixed Income Trust 85M,1804263,2024-04,-29  edgar/data/1804263/0001193125-24-122376.txt,deregistration
+N-8F,TWELFTH AUTOMATIC COMMON EXCHANGE SECURITY TRUST,1089917,2024-06,-28  edgar/data/1089917/0000950103-24-009104.txt,deregistration
+N-8F,Virtus Stone Harbor Emerging Markets Total Income Fund,1551040,2024-06,-05  edgar/data/1551040/0001193125-24-154797.txt,deregistration
+N-8F NTC,CGM TRUST,60335,2024-04,-04  edgar/data/60335/9999999997-24-001648.txt,deregistration
+N-8F NTC,ETF Managers Trust,1467831,2024-04,-30  edgar/data/1467831/9999999997-24-002242.txt,deregistration
+N-8F NTC,FIRST AMERICAN FUNDS INC,356134,2024-06,-07  edgar/data/356134/9999999997-24-002797.txt,deregistration
+N-8F NTC,GREENSPRING FUND INC,711322,2024-04,-30  edgar/data/711322/9999999997-24-002243.txt,deregistration
+N-8F NTC,Invesco Dynamic Credit Opportunities Fund,1393662,2024-04,-30  edgar/data/1393662/9999999997-24-002245.txt,deregistration
+N-8F NTC,"LEE FINANCIAL MUTUAL FUND, INC.",837351,2024-04,-30  edgar/data/837351/9999999997-24-002246.txt,deregistration
+N-8F NTC,LifeX Income Trust 1948F,1804299,2024-06,-07  edgar/data/1804299/9999999997-24-002798.txt,deregistration
+N-8F NTC,LifeX Inflation-Protected Income Trust 1948F,1807090,2024-06,-07  edgar/data/1807090/9999999997-24-002799.txt,deregistration
+N-8F NTC,MFS CALIFORNIA MUNICIPAL FUND,1092896,2024-06,-07  edgar/data/1092896/9999999997-24-002800.txt,deregistration
+N-8F NTC,PIONEER EMERGING MARKETS FUND,921023,2024-06,-07  edgar/data/921023/9999999997-24-002801.txt,deregistration
+N-8F NTC,PIONEER REAL ESTATE SHARES,908996,2024-06,-07  edgar/data/908996/9999999997-24-002803.txt,deregistration
+N-8F NTC,PIONEER RESEARCH FUND,1094522,2024-06,-07  edgar/data/1094522/9999999997-24-002804.txt,deregistration
+N-8F NTC,Peak Income Plus Fund,1930746,2024-04,-04  edgar/data/1930746/9999999997-24-001649.txt,deregistration
+N-8F NTC,Pioneer Equity Opportunity Fund,1301444,2024-06,-07  edgar/data/1301444/9999999997-24-002802.txt,deregistration
+N-8F NTC,Pioneer ILS Bridge Fund,1679751,2024-04,-04  edgar/data/1679751/9999999997-24-001650.txt,deregistration
+N-8F NTC,Rimrock Funds Trust,1753394,2024-06,-07  edgar/data/1753394/9999999997-24-002805.txt,deregistration
+N-8F NTC,Savos Investments Trust,1068602,2024-04,-30  edgar/data/1068602/9999999997-24-002248.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Master Tr,ust  1804325,2024-06,-07  edgar/data/1804325/9999999997-24-002806.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 65F,1780133,2024-06,-07  edgar/data/1780133/9999999997-24-002807.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 65M,1804321,2024-06,-07  edgar/data/1804321/9999999997-24-002808.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 66F,1804320,2024-06,-07  edgar/data/1804320/9999999997-24-002809.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 66M,1804319,2024-06,-07  edgar/data/1804319/9999999997-24-002810.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 67F,1804318,2024-06,-07  edgar/data/1804318/9999999997-24-002811.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 67M,1804317,2024-06,-07  edgar/data/1804317/9999999997-24-002812.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 68F,1804316,2024-06,-07  edgar/data/1804316/9999999997-24-002813.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 68M,1804315,2024-06,-07  edgar/data/1804315/9999999997-24-002814.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 69F,1804314,2024-06,-07  edgar/data/1804314/9999999997-24-002815.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 69M,1804313,2024-06,-07  edgar/data/1804313/9999999997-24-002816.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 70F,1804312,2024-06,-07  edgar/data/1804312/9999999997-24-002817.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 70M,1804311,2024-06,-07  edgar/data/1804311/9999999997-24-002818.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 71F,1804310,2024-06,-07  edgar/data/1804310/9999999997-24-002819.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 71M,1804309,2024-06,-07  edgar/data/1804309/9999999997-24-002820.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 72F,1804308,2024-06,-07  edgar/data/1804308/9999999997-24-002821.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 72M,1804306,2024-06,-07  edgar/data/1804306/9999999997-24-002822.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 73F,1804305,2024-06,-07  edgar/data/1804305/9999999997-24-002823.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 73M,1804304,2024-06,-07  edgar/data/1804304/9999999997-24-002824.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 74F,1804302,2024-06,-07  edgar/data/1804302/9999999997-24-002825.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 74M,1804301,2024-06,-07  edgar/data/1804301/9999999997-24-002826.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 75M,1804298,2024-06,-07  edgar/data/1804298/9999999997-24-002827.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 76F,1804295,2024-06,-07  edgar/data/1804295/9999999997-24-002828.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 76M,1804294,2024-06,-07  edgar/data/1804294/9999999997-24-002829.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 77F,1804293,2024-06,-07  edgar/data/1804293/9999999997-24-002830.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 77M,1804292,2024-06,-07  edgar/data/1804292/9999999997-24-002831.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 78F,1804291,2024-06,-07  edgar/data/1804291/9999999997-24-002832.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 78M,1804290,2024-06,-07  edgar/data/1804290/9999999997-24-002833.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 79F,1804289,2024-06,-07  edgar/data/1804289/9999999997-24-002834.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 79M,1804288,2024-06,-07  edgar/data/1804288/9999999997-24-002835.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 80F,1804287,2024-06,-07  edgar/data/1804287/9999999997-24-002836.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 81F,1804282,2024-06,-07  edgar/data/1804282/9999999997-24-002837.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 81M,1804280,2024-06,-07  edgar/data/1804280/9999999997-24-002838.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 82F,1804278,2024-06,-07  edgar/data/1804278/9999999997-24-002839.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 82M,1804276,2024-06,-07  edgar/data/1804276/9999999997-24-002840.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 83F,1804274,2024-06,-07  edgar/data/1804274/9999999997-24-002841.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 83M,1804272,2024-06,-07  edgar/data/1804272/9999999997-24-002842.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 84F,1804270,2024-06,-07  edgar/data/1804270/9999999997-24-002843.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 84M,1804269,2024-06,-07  edgar/data/1804269/9999999997-24-002844.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 85F,1804267,2024-06,-07  edgar/data/1804267/9999999997-24-002845.txt,deregistration
+N-8F NTC,Stone Ridge Longevity Risk Premium Fixed Income Trust 85M,1804263,2024-06,-07  edgar/data/1804263/9999999997-24-002846.txt,deregistration
+N-8F NTC,TRANSAMERICA ETF TRUST,1673996,2024-06,-07  edgar/data/1673996/9999999997-24-002847.txt,deregistration
+N-8F NTC,UCT Immensity FUND,1785117,2024-04,-04  edgar/data/1785117/9999999997-24-001651.txt,deregistration
+N-8F NTC,UIC TRUST,1782028,2024-04,-04  edgar/data/1782028/9999999997-24-001652.txt,deregistration
+N-8F ORDR,BMO EXCHANGE TRADED FUNDS,1649021,2024-04,-22  edgar/data/1649021/9999999997-24-002086.txt,deregistration
+N-8F ORDR,CGM TRUST,60335,2024-04,-26  edgar/data/60335/9999999997-24-002119.txt,deregistration
+N-8F ORDR,ETF Managers Trust,1467831,2024-05,-23  edgar/data/1467831/9999999997-24-002734.txt,deregistration
+N-8F ORDR,GREENSPRING FUND INC,711322,2024-05,-23  edgar/data/711322/9999999997-24-002735.txt,deregistration
+N-8F ORDR,Infusive US Trust,1748197,2024-04,-22  edgar/data/1748197/9999999997-24-002085.txt,deregistration
+N-8F ORDR,Invesco Dynamic Credit Opportunities Fund,1393662,2024-05,-23  edgar/data/1393662/9999999997-24-002736.txt,deregistration
+N-8F ORDR,"LEE FINANCIAL MUTUAL FUND, INC.",837351,2024-05,-23  edgar/data/837351/9999999997-24-002737.txt,deregistration
+N-8F ORDR,MASTER LARGE CAP SERIES LLC,1095789,2024-04,-22  edgar/data/1095789/9999999997-24-002084.txt,deregistration
+N-8F ORDR,NEXPOINT LATIN AMERICAN OPPORTUNITIES FUND,1668542,2024-04,-22  edgar/data/1668542/9999999997-24-002083.txt,deregistration
+N-8F ORDR,Peak Income Plus Fund,1930746,2024-04,-26  edgar/data/1930746/9999999997-24-002120.txt,deregistration
+N-8F ORDR,Pioneer ILS Bridge Fund,1679751,2024-04,-26  edgar/data/1679751/9999999997-24-002121.txt,deregistration
+N-8F ORDR,Salient Midstream & MLP Fund,1534293,2024-04,-22  edgar/data/1534293/9999999997-24-002082.txt,deregistration
+N-8F ORDR,Savos Investments Trust,1068602,2024-05,-23  edgar/data/1068602/9999999997-24-002738.txt,deregistration
+N-8F ORDR,UCT Immensity FUND,1785117,2024-04,-26  edgar/data/1785117/9999999997-24-002122.txt,deregistration
+N-8F ORDR,UIC TRUST,1782028,2024-04,-26  edgar/data/1782028/9999999997-24-002123.txt,deregistration
+N-8F/A,FIRST AMERICAN FUNDS INC,356134,2024-05,-13  edgar/data/356134/0000897101-24-000172.txt,deregistration
+N-8F/A,GREENSPRING FUND INC,711322,2024-04,-23  edgar/data/711322/0000894189-24-002468.txt,deregistration
+N-8F/A,MFS CALIFORNIA MUNICIPAL FUND,1092896,2024-05,-07  edgar/data/1092896/0001741773-24-002162.txt,deregistration
+N-8F/A,Mammoth Institutional Credit Access Fund,1959157,2024-05,-24  edgar/data/1959157/0001398344-24-010213.txt,deregistration
+N-8F/A,Mammoth Institutional Equity Access Fund,1959156,2024-05,-24  edgar/data/1959156/0001398344-24-010211.txt,deregistration
+N-8F/A,PIONEER EMERGING MARKETS FUND,921023,2024-05,-23  edgar/data/921023/0000921023-24-000002.txt,deregistration
+N-8F/A,PIONEER REAL ESTATE SHARES,908996,2024-05,-23  edgar/data/908996/0000921023-24-000008.txt,deregistration
+N-8F/A,PIONEER RESEARCH FUND,1094522,2024-05,-23  edgar/data/1094522/0000921023-24-000006.txt,deregistration
+N-8F/A,Pioneer Equity Opportunity Fund,1301444,2024-05,-23  edgar/data/1301444/0000921023-24-000004.txt,deregistration
+N-8F/A,Rimrock Funds Trust,1753394,2024-05,-16  edgar/data/1753394/0001213900-24-043930.txt,deregistration
+N-8F/A,Stone Ridge Investment Grade Income Longevity Trust 2045,65F  1808519,2024-06,-20  edgar/data/1808519/0001193125-24-164261.txt,deregistration

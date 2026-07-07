@@ -1,0 +1,168 @@
+form,company,cik,date_filed,filing_path,event
+N-14,AB LARGE CAP GROWTH FUND INC,889508,2021-05,-11  edgar/data/889508/0000919574-21-003310.txt,merger/reorg
+N-14,ADVANCED SERIES TRUST,814679,2021-06,-04  edgar/data/814679/0001104659-21-076951.txt,merger/reorg
+N-14,ADVANCED SERIES TRUST,814679,2021-06,-25  edgar/data/814679/0001104659-21-085690.txt,merger/reorg
+N-14,Aberdeen Funds,1413594,2021-05,-18  edgar/data/1413594/0001104659-21-068789.txt,merger/reorg
+N-14,AltShares Trust,1779306,2021-06,-03  edgar/data/1779306/0001104659-21-076413.txt,merger/reorg
+N-14,BNY Mellon Investment Funds I,799295,2021-05,-12  edgar/data/799295/0001104659-21-065108.txt,merger/reorg
+N-14,BRIDGEWAY FUNDS INC,916006,2021-05,-21  edgar/data/916006/0001137439-21-000479.txt,merger/reorg
+N-14,Business Development Corp of America,1490927,2021-06,-23  edgar/data/1490927/0001104659-21-084651.txt,merger/reorg
+N-14,DELAWARE GROUP ADVISER FUNDS,910682,2021-04,-09  edgar/data/910682/0001137439-21-000248.txt,merger/reorg
+N-14,DELAWARE GROUP EQUITY FUNDS II,27574,2021-06,-28  edgar/data/27574/0001137439-21-000579.txt,merger/reorg
+N-14,DELAWARE GROUP EQUITY FUNDS II,27574,2021-06,-28  edgar/data/27574/0001137439-21-000581.txt,merger/reorg
+N-14,DELAWARE GROUP EQUITY FUNDS V,809821,2021-04,-09  edgar/data/809821/0001137439-21-000242.txt,merger/reorg
+N-14,DELAWARE GROUP GLOBAL & INTERNATIONAL FUNDS,875610,2021-04,-09  edgar/data/875610/0001137439-21-000245.txt,merger/reorg
+N-14,DELAWARE GROUP GOVERNMENT FUND,769220,2021-06,-28  edgar/data/769220/0001137439-21-000585.txt,merger/reorg
+N-14,DELAWARE GROUP INCOME FUNDS,27825,2021-04,-09  edgar/data/27825/0001137439-21-000247.txt,merger/reorg
+N-14,DELAWARE GROUP INCOME FUNDS,27825,2021-04,-09  edgar/data/27825/0001137439-21-000249.txt,merger/reorg
+N-14,DELAWARE GROUP INCOME FUNDS,27825,2021-06,-28  edgar/data/27825/0001137439-21-000586.txt,merger/reorg
+N-14,DELAWARE GROUP LIMITED-TERM GOVERNMENT FUNDS,357059,2021-06,-28  edgar/data/357059/0001137439-21-000587.txt,merger/reorg
+N-14,Dimensional ETF Trust,1816125,2021-05,-07  edgar/data/1816125/0001794202-21-000165.txt,merger/reorg
+N-14,FIRST TRUST EXCHANGE-TRADED FUND VIII,1667919,2021-05,-21  edgar/data/1667919/0001445546-21-002732.txt,merger/reorg
+N-14,Federated Hermes Adviser Series,1707560,2021-06,-11  edgar/data/1707560/0001623632-21-000683.txt,merger/reorg
+N-14,Federated Hermes Global Allocation Fund,13386,2021-06,-11  edgar/data/13386/0001623632-21-000686.txt,merger/reorg
+N-14,Federated Hermes Income Securities Trust,789281,2021-06,-11  edgar/data/789281/0001623632-21-000685.txt,merger/reorg
+N-14,Federated Hermes MDT Series,1363526,2021-06,-11  edgar/data/1363526/0001623632-21-000684.txt,merger/reorg
+N-14,"Federated Hermes Municipal Bond Fund, Inc.",201801,2021-06,-11  edgar/data/201801/0001623632-21-000687.txt,merger/reorg
+N-14,"Federated Hermes World Investment Series, Inc.",918199,2021-06,-11  edgar/data/918199/0001623632-21-000688.txt,merger/reorg
+N-14,First Trust Exchange-Traded Fund III,1424212,2021-05,-05  edgar/data/1424212/0001445546-21-002390.txt,merger/reorg
+N-14,Forethought Variable Insurance Trust,1580353,2021-06,-04  edgar/data/1580353/0001104659-21-077157.txt,merger/reorg
+N-14,Forethought Variable Insurance Trust,1580353,2021-06,-04  edgar/data/1580353/0001104659-21-077160.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2021-04,-19  edgar/data/1587982/0001398344-21-008144.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2021-06,-08  edgar/data/1587982/0001398344-21-012747.txt,merger/reorg
+N-14,MASSMUTUAL PREMIER FUNDS,927972,2021-06,-04  edgar/data/927972/0001104659-21-077191.txt,merger/reorg
+N-14,MFS MUNICIPAL SERIES TRUST,751656,2021-05,-24  edgar/data/751656/0001193125-21-170972.txt,merger/reorg
+N-14,MORGAN STANLEY INSTITUTIONAL FUND INC,836487,2021-06,-02  edgar/data/836487/0001104659-21-075620.txt,merger/reorg
+N-14,Managed Portfolio Series,1511699,2021-04,-13  edgar/data/1511699/0000894189-21-002187.txt,merger/reorg
+N-14,MassMutual Advantage Funds,1859808,2021-06,-04  edgar/data/1859808/0001104659-21-077189.txt,merger/reorg
+N-14,NUVEEN INVESTMENT TRUST II,1041673,2021-05,-21  edgar/data/1041673/0001193125-21-169433.txt,merger/reorg
+N-14,Pear Tree Funds,722885,2021-06,-21  edgar/data/722885/0001104659-21-083343.txt,merger/reorg
+N-14,Pioneer Series Trust IV,1331854,2021-04,-13  edgar/data/1331854/0001193125-21-114636.txt,merger/reorg
+N-14,SUNAMERICA SERIES TRUST,892538,2021-06,-30  edgar/data/892538/0001193125-21-204661.txt,merger/reorg
+N-14,"T. Rowe Price Tax-Exempt Money Fund, Inc.",315748,2021-05,-07  edgar/data/315748/0000315748-21-000005.txt,merger/reorg
+N-14,WEITZ FUNDS,1257927,2021-04,-09  edgar/data/1257927/0001821268-21-000119.txt,merger/reorg
+N-14,WELLS FARGO FUNDS TRUST,1081400,2021-06,-07  edgar/data/1081400/0001081400-21-000636.txt,merger/reorg
+N-14,WELLS FARGO FUNDS TRUST,1081400,2021-06,-15  edgar/data/1081400/0001081400-21-000687.txt,merger/reorg
+N-14,WILLIAM BLAIR FUNDS,822632,2021-04,-19  edgar/data/822632/0001193125-21-121412.txt,merger/reorg
+N-14,WILMINGTON FUNDS,830744,2021-06,-15  edgar/data/830744/0001193125-21-191314.txt,merger/reorg
+N-14 8C,GUGGENHEIM STRATEGIC OPPORTUNITIES FUND,1380936,2021-04,-30  edgar/data/1380936/0001821268-21-000189.txt,merger/reorg
+N-14 8C,Invesco Dynamic Credit Opportunity Fund,1860151,2021-05,-27  edgar/data/1860151/0001680359-21-000120.txt,merger/reorg
+N-14 8C,NUVEEN SELECT TAX FREE INCOME PORTFOLIO,883618,2021-06,-22  edgar/data/883618/0001193125-21-196361.txt,merger/reorg
+N-14 8C,Nuveen Multi-Asset Income Fund,1861115,2021-05,-14  edgar/data/1861115/0001193125-21-162187.txt,merger/reorg
+N-14 8C,PIMCO Dynamic Income Fund,1510599,2021-05,-11  edgar/data/1510599/0001193125-21-156649.txt,merger/reorg
+N-14 8C/A,Apollo Tactical Income Fund Inc.,1526697,2021-05,-17  edgar/data/1526697/0001193125-21-162249.txt,merger/reorg
+N-14 8C/A,Blackstone Secured Lending Fund,1736035,2021-05,-14  edgar/data/1736035/0001193125-21-162172.txt,merger/reorg
+N-14 8C/A,Blackstone Secured Lending Fund,1736035,2021-06,-02  edgar/data/1736035/0001193125-21-179728.txt,merger/reorg
+N-14 8C/A,Blackstone Secured Lending Fund,1736035,2021-06,-04  edgar/data/1736035/0001193125-21-181591.txt,merger/reorg
+N-14 8C/A,GUGGENHEIM STRATEGIC OPPORTUNITIES FUND,1380936,2021-06,-21  edgar/data/1380936/0001821268-21-000281.txt,merger/reorg
+N-14 8C/A,Nuveen Multi-Asset Income Fund,1861115,2021-06,-29  edgar/data/1861115/0001193125-21-202897.txt,merger/reorg
+N-14 8C/A,PIMCO Dynamic Income Fund,1510599,2021-06,-29  edgar/data/1510599/0001193125-21-202425.txt,merger/reorg
+N-14 8C/A,PIMCO Dynamic Income Fund,1510599,2021-06,-30  edgar/data/1510599/0001193125-21-203580.txt,merger/reorg
+N-14 8C/A,Portman Ridge Finance Corp,1372807,2021-04,-19  edgar/data/1372807/0001140361-21-013165.txt,merger/reorg
+N-14/A,AMG FUNDS,1089951,2021-04,-21  edgar/data/1089951/0001193125-21-125000.txt,merger/reorg
+N-14/A,Arrow Investments Trust,1527428,2021-04,-29  edgar/data/1527428/0001580642-21-001920.txt,merger/reorg
+N-14/A,DELAWARE GROUP ADVISER FUNDS,910682,2021-05,-18  edgar/data/910682/0001206774-21-001490.txt,merger/reorg
+N-14/A,DELAWARE GROUP ADVISER FUNDS,910682,2021-05,-19  edgar/data/910682/0001206774-21-001505.txt,merger/reorg
+N-14/A,DELAWARE GROUP EQUITY FUNDS V,809821,2021-05,-19  edgar/data/809821/0001206774-21-001495.txt,merger/reorg
+N-14/A,DELAWARE GROUP EQUITY FUNDS V,809821,2021-05,-19  edgar/data/809821/0001206774-21-001506.txt,merger/reorg
+N-14/A,DELAWARE GROUP GLOBAL & INTERNATIONAL FUNDS,875610,2021-05,-19  edgar/data/875610/0001206774-21-001496.txt,merger/reorg
+N-14/A,DELAWARE GROUP GLOBAL & INTERNATIONAL FUNDS,875610,2021-05,-19  edgar/data/875610/0001206774-21-001509.txt,merger/reorg
+N-14/A,DELAWARE GROUP INCOME FUNDS,27825,2021-05,-18  edgar/data/27825/0001206774-21-001491.txt,merger/reorg
+N-14/A,DELAWARE GROUP INCOME FUNDS,27825,2021-05,-19  edgar/data/27825/0001206774-21-001497.txt,merger/reorg
+N-14/A,DELAWARE GROUP INCOME FUNDS,27825,2021-05,-19  edgar/data/27825/0001206774-21-001507.txt,merger/reorg
+N-14/A,DELAWARE GROUP INCOME FUNDS,27825,2021-05,-19  edgar/data/27825/0001206774-21-001508.txt,merger/reorg
+N-14/A,GREAT-WEST FUNDS INC,356476,2021-05,-26  edgar/data/356476/0001193125-21-173653.txt,merger/reorg
+N-14/A,Investment Managers Series Trust II,1587982,2021-05,-20  edgar/data/1587982/0001398344-21-011141.txt,merger/reorg
+N-14/A,MUTUAL FUND SERIES TRUST,1355064,2021-04,-09  edgar/data/1355064/0001580642-21-001659.txt,merger/reorg
+N-14/A,MUTUAL FUND SERIES TRUST,1355064,2021-04,-15  edgar/data/1355064/0001580642-21-001738.txt,merger/reorg
+N-14/A,"T. Rowe Price Tax-Exempt Money Fund, Inc.",315748,2021-06,-11  edgar/data/315748/0000315748-21-000010.txt,merger/reorg
+N-14/A,"T. Rowe Price Tax-Exempt Money Fund, Inc.",315748,2021-06,-22  edgar/data/315748/0000315748-21-000013.txt,merger/reorg
+N-14/A,TOUCHSTONE FUNDS GROUP TRUST,914243,2021-04,-15  edgar/data/914243/0001398344-21-008084.txt,merger/reorg
+N-14/A,Tactical Investment Series Trust,1843263,2021-04,-29  edgar/data/1843263/0001580642-21-001942.txt,merger/reorg
+N-14/A,Tactical Investment Series Trust,1843263,2021-05,-26  edgar/data/1843263/0001580642-21-002498.txt,merger/reorg
+N-14/A,WEITZ FUNDS,1257927,2021-06,-17  edgar/data/1257927/0001821268-21-000276.txt,merger/reorg
+N-14/A,WILLIAM BLAIR FUNDS,822632,2021-05,-21  edgar/data/822632/0001193125-21-169393.txt,merger/reorg
+N-8F,A&Q Masters Fund,1580166,2021-04,-07  edgar/data/1580166/0001104659-21-047398.txt,deregistration
+N-8F,"BNY Mellon Growth & Income Fund, Inc.",881780,2021-04,-05  edgar/data/881780/0000881780-21-000003.txt,deregistration
+N-8F,"FDP Series II, Inc.",1738075,2021-06,-08  edgar/data/1738075/0001193125-21-185274.txt,deregistration
+N-8F,"FDP Series, Inc.",1321652,2021-06,-08  edgar/data/1321652/0001193125-21-185373.txt,deregistration
+N-8F,FPA CAPITAL FUND INC,99188,2021-06,-24  edgar/data/99188/0001104659-21-085113.txt,deregistration
+N-8F,FPA PARAMOUNT FUND INC,76210,2021-06,-24  edgar/data/76210/0001104659-21-085114.txt,deregistration
+N-8F,FSI Low Beta Absolute Return Fund,1527413,2021-05,-14  edgar/data/1527413/0001398344-21-010756.txt,deregistration
+N-8F,IVA Fiduciary Trust,1437921,2021-05,-24  edgar/data/1437921/0000949377-21-000122.txt,deregistration
+N-8F,Oppenheimer International Small-Mid Co Fund,1041102,2021-06,-11  edgar/data/1041102/0001683863-21-003976.txt,deregistration
+N-8F,PGIM Strategic Credit Fund,1813467,2021-06,-10  edgar/data/1813467/0001683863-21-003958.txt,deregistration
+N-8F,"Partners Group Private Income Opportunities, LLC",1682692,2021-06,-04  edgar/data/1682692/0001398344-21-012588.txt,deregistration
+N-8F,SCHRODER GLOBAL SERIES TRUST,1236572,2021-04,-21  edgar/data/1236572/0001398344-21-008385.txt,deregistration
+N-8F,USCA Fund Trust,1678523,2021-05,-18  edgar/data/1678523/0000894189-21-003128.txt,deregistration
+N-8F,WESTERN ASSET CORPORATE LOAN FUND INC.,1068963,2021-04,-01  edgar/data/1068963/0001193125-21-103669.txt,deregistration
+N-8F,WESTERN ASSET VARIABLE RATE STRATEGIC FUND INC.,1299393,2021-04,-01  edgar/data/1299393/0001193125-21-103668.txt,deregistration
+N-8F NTC,A&Q Masters Fund,1580166,2021-06,-08  edgar/data/1580166/9999999997-21-003320.txt,deregistration
+N-8F NTC,"ATLAS US. TACTICAL INCOME FUND, INC.",1831983,2021-05,-05  edgar/data/1831983/9999999997-21-001466.txt,deregistration
+N-8F NTC,AllianzGI Institutional Multi-Series Trust,1609956,2021-05,-24  edgar/data/1609956/9999999997-21-002963.txt,deregistration
+N-8F NTC,BMO LGM Frontier Markets Equity Fund,1580733,2021-05,-24  edgar/data/1580733/9999999997-21-002964.txt,deregistration
+N-8F NTC,Bluerock Institutional High Income Credit Fund,1793101,2021-06,-28  edgar/data/1793101/9999999997-21-003670.txt,deregistration
+N-8F NTC,DUFF & PHELPS UTILITY & CORPORATE BOND TRUST INC,894239,2021-05,-24  edgar/data/894239/9999999997-21-002965.txt,deregistration
+N-8F NTC,FS Global Credit Opportunities Fund - ADV,1667293,2021-05,-05  edgar/data/1667293/9999999997-21-001469.txt,deregistration
+N-8F NTC,FS Global Credit Opportunities Fund - T,1667292,2021-05,-05  edgar/data/1667292/9999999997-21-001475.txt,deregistration
+N-8F NTC,FS Global Credit Opportunities Fund-A,1568193,2021-05,-05  edgar/data/1568193/9999999997-21-001467.txt,deregistration
+N-8F NTC,FS Global Credit Opportunities Fund-D,1568192,2021-04,-02  edgar/data/1568192/9999999997-21-001474.txt,deregistration
+N-8F NTC,FS Global Credit Opportunities Fund-T2,1701341,2021-05,-05  edgar/data/1701341/9999999997-21-001476.txt,deregistration
+N-8F NTC,GMO Series Trust,1521894,2021-05,-24  edgar/data/1521894/9999999997-21-002966.txt,deregistration
+N-8F NTC,INVESCO GLOBAL FINANCIAL SERVICES FUND,1066136,2021-05,-24  edgar/data/1066136/9999999997-21-002968.txt,deregistration
+N-8F NTC,IVA Fiduciary Trust,1437921,2021-06,-28  edgar/data/1437921/9999999997-21-003671.txt,deregistration
+N-8F NTC,Invesco Floating Rate Corporate Credit Fund,1508815,2021-05,-24  edgar/data/1508815/9999999997-21-002967.txt,deregistration
+N-8F NTC,"Mellon Optima L/S Strategy Fund, LLC",1312483,2021-05,-24  edgar/data/1312483/9999999997-21-002969.txt,deregistration
+N-8F NTC,PNC FUNDS,778202,2021-05,-24  edgar/data/778202/9999999997-21-002972.txt,deregistration
+N-8F NTC,PUTNAM EUROPE EQUITY FUND,842940,2021-05,-24  edgar/data/842940/9999999997-21-002974.txt,deregistration
+N-8F NTC,PUTNAM HIGH YIELD TRUST,225777,2021-05,-05  edgar/data/225777/9999999997-21-001477.txt,deregistration
+N-8F NTC,PUTNAM INVESTORS FUND,81269,2021-05,-24  edgar/data/81269/9999999997-21-002975.txt,deregistration
+N-8F NTC,SCHRODER GLOBAL SERIES TRUST,1236572,2021-06,-08  edgar/data/1236572/9999999997-21-003321.txt,deregistration
+N-8F NTC,Stone Ridge Trust III,1629071,2021-05,-24  edgar/data/1629071/9999999997-21-002976.txt,deregistration
+N-8F NTC,Transamerica Separate Account R3,1487499,2021-06,-28  edgar/data/1487499/9999999997-21-003673.txt,deregistration
+N-8F NTC,USA MUTUALS,1137095,2021-05,-24  edgar/data/1137095/9999999997-21-002978.txt,deregistration
+N-8F NTC,USCA Fund Trust,1678523,2021-06,-28  edgar/data/1678523/9999999997-21-003674.txt,deregistration
+N-8F NTC,Van Kampen Debt Opportunity Fund,1463969,2021-06,-03  edgar/data/1463969/9999999997-21-003259.txt,deregistration
+N-8F NTC,Van Kampen Global Equity Dividend & Income Fund,1414222,2021-06,-03  edgar/data/1414222/9999999997-21-003260.txt,deregistration
+N-8F NTC,Van Kampen Municipal Opportunity High Income Fund,1465814,2021-06,-28  edgar/data/1465814/9999999997-21-003675.txt,deregistration
+N-8F NTC,WESTERN ASSET CORPORATE LOAN FUND INC.,1068963,2021-06,-29  edgar/data/1068963/9999999997-21-003258.txt,deregistration
+N-8F NTC,WESTERN ASSET VARIABLE RATE STRATEGIC FUND INC.,1299393,2021-06,-08  edgar/data/1299393/9999999997-21-003322.txt,deregistration
+N-8F NTC,Western Asset Middle Market Debt Fund Inc.,1555085,2021-06,-08  edgar/data/1555085/9999999997-21-003291.txt,deregistration
+N-8F ORDR,A&Q Masters Fund,1580166,2021-06,-29  edgar/data/1580166/9999999997-21-003734.txt,deregistration
+N-8F ORDR,"ATLAS US. TACTICAL INCOME FUND, INC.",1831983,2021-05,-05  edgar/data/1831983/9999999997-21-002388.txt,deregistration
+N-8F ORDR,AllianzGI Institutional Multi-Series Trust,1609956,2021-06,-10  edgar/data/1609956/9999999997-21-003346.txt,deregistration
+N-8F ORDR,BMO LGM Frontier Markets Equity Fund,1580733,2021-06,-11  edgar/data/1580733/9999999997-21-003353.txt,deregistration
+N-8F ORDR,Broadview Funds Trust,1586281,2021-05,-05  edgar/data/1586281/9999999997-21-002389.txt,deregistration
+N-8F ORDR,City National Rochdale Structured Claims Fixed Income Fun,d L  1477289,2021-05,-05  edgar/data/1477289/9999999997-21-002391.txt,deregistration
+N-8F ORDR,DUFF & PHELPS UTILITY & CORPORATE BOND TRUST INC,894239,2021-06,-11  edgar/data/894239/9999999997-21-003354.txt,deregistration
+N-8F ORDR,FS Global Credit Opportunities Fund - ADV,1667293,2021-05,-05  edgar/data/1667293/9999999997-21-002380.txt,deregistration
+N-8F ORDR,FS Global Credit Opportunities Fund - T,1667292,2021-05,-05  edgar/data/1667292/9999999997-21-002383.txt,deregistration
+N-8F ORDR,FS Global Credit Opportunities Fund-A,1568193,2021-05,-05  edgar/data/1568193/9999999997-21-002378.txt,deregistration
+N-8F ORDR,FS Global Credit Opportunities Fund-D,1568192,2021-05,-05  edgar/data/1568192/9999999997-21-002382.txt,deregistration
+N-8F ORDR,FS Global Credit Opportunities Fund-T2,1701341,2021-05,-05  edgar/data/1701341/9999999997-21-002384.txt,deregistration
+N-8F ORDR,GMO Series Trust,1521894,2021-06,-11  edgar/data/1521894/9999999997-21-003355.txt,deregistration
+N-8F ORDR,INVESCO GLOBAL FINANCIAL SERVICES FUND,1066136,2021-06,-11  edgar/data/1066136/9999999997-21-003357.txt,deregistration
+N-8F ORDR,Invesco Floating Rate Corporate Credit Fund,1508815,2021-06,-11  edgar/data/1508815/9999999997-21-003356.txt,deregistration
+N-8F ORDR,MAN FRM ALTERNATIVE MULTI-STRATEGY FUND LLC,1119896,2021-05,-05  edgar/data/1119896/9999999997-21-002385.txt,deregistration
+N-8F ORDR,"Mellon Optima L/S Strategy Fund, LLC",1312483,2021-06,-11  edgar/data/1312483/9999999997-21-003358.txt,deregistration
+N-8F ORDR,PNC FUNDS,778202,2021-06,-11  edgar/data/778202/9999999997-21-003359.txt,deregistration
+N-8F ORDR,PUTNAM EUROPE EQUITY FUND,842940,2021-06,-11  edgar/data/842940/9999999997-21-003360.txt,deregistration
+N-8F ORDR,PUTNAM HIGH YIELD TRUST,225777,2021-05,-05  edgar/data/225777/9999999997-21-002387.txt,deregistration
+N-8F ORDR,PUTNAM INVESTORS FUND,81269,2021-06,-11  edgar/data/81269/9999999997-21-003361.txt,deregistration
+N-8F ORDR,SCHRODER GLOBAL SERIES TRUST,1236572,2021-06,-29  edgar/data/1236572/9999999997-21-003736.txt,deregistration
+N-8F ORDR,Stone Ridge Trust III,1629071,2021-06,-11  edgar/data/1629071/9999999997-21-003362.txt,deregistration
+N-8F ORDR,USA MUTUALS,1137095,2021-06,-11  edgar/data/1137095/9999999997-21-003364.txt,deregistration
+N-8F ORDR,Van Kampen Debt Opportunity Fund,1463969,2021-06,-29  edgar/data/1463969/9999999997-21-003737.txt,deregistration
+N-8F ORDR,Van Kampen Global Equity Dividend & Income Fund,1414222,2021-06,-29  edgar/data/1414222/9999999997-21-003738.txt,deregistration
+N-8F ORDR,WESTERN ASSET CORPORATE LOAN FUND INC.,1068963,2021-06,-29  edgar/data/1068963/9999999997-21-003739.txt,deregistration
+N-8F ORDR,WESTERN ASSET VARIABLE RATE STRATEGIC FUND INC.,1299393,2021-06,-29  edgar/data/1299393/9999999997-21-003741.txt,deregistration
+N-8F ORDR,Western Asset Middle Market Debt Fund Inc.,1555085,2021-06,-29  edgar/data/1555085/9999999997-21-003740.txt,deregistration
+N-8F/A,"BNY Mellon Growth & Income Fund, Inc.",881780,2021-06,-09  edgar/data/881780/0000881780-21-000005.txt,deregistration
+N-8F/A,Bluerock Institutional High Income Credit Fund,1793101,2021-06,-11  edgar/data/1793101/0001398344-21-013036.txt,deregistration
+N-8F/A,GMO Series Trust,1521894,2021-04,-14  edgar/data/1521894/0001104659-21-050160.txt,deregistration
+N-8F/A,"Mellon Optima L/S Strategy Fund, LLC",1312483,2021-04,-08  edgar/data/1312483/0001193125-21-109738.txt,deregistration
+N-8F/A,PNC FUNDS,778202,2021-04,-19  edgar/data/778202/0001104659-21-052035.txt,deregistration
+N-8F/A,Stone Ridge Trust III,1629071,2021-04,-14  edgar/data/1629071/0001193125-21-115671.txt,deregistration
+N-8F/A,Transamerica Separate Account R3,1487499,2021-06,-04  edgar/data/1487499/0001193125-21-182327.txt,deregistration
+N-8F/A,USA MUTUALS,1137095,2021-04,-29  edgar/data/1137095/0000894189-21-002611.txt,deregistration
+N-8F/A,USCA Fund Trust,1678523,2021-06,-17  edgar/data/1678523/0000894189-21-003759.txt,deregistration

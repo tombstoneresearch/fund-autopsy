@@ -1,0 +1,113 @@
+form,company,cik,date_filed,filing_path,event
+N-14,ALLSPRING FUNDS TRUST,1081400,2023-12,-01  edgar/data/1081400/0001081400-23-000775.txt,merger/reorg
+N-14,Advisor Managed Portfolios,1970751,2023-10,-10  edgar/data/1970751/0000894189-23-007572.txt,merger/reorg
+N-14,Advisor Managed Portfolios,1970751,2023-10,-16  edgar/data/1970751/0000894189-23-007607.txt,merger/reorg
+N-14,Advisor Managed Portfolios,1970751,2023-10,-16  edgar/data/1970751/0000894189-23-007609.txt,merger/reorg
+N-14,Advisor Managed Portfolios,1970751,2023-10,-16  edgar/data/1970751/0000894189-23-007627.txt,merger/reorg
+N-14,Advisor Managed Portfolios,1970751,2023-10,-18  edgar/data/1970751/0000894189-23-007650.txt,merger/reorg
+N-14,Angel Oak Funds Trust,1612930,2023-12,-29  edgar/data/1612930/0000894189-23-009430.txt,merger/reorg
+N-14,BERNSTEIN SANFORD C FUND INC,832808,2023-12,-06  edgar/data/832808/0001193125-23-289994.txt,merger/reorg
+N-14,"BNY MELLON MUNICIPAL FUNDS, INC.",878092,2023-11,-03  edgar/data/878092/0000878092-23-000012.txt,merger/reorg
+N-14,"BNY MELLON MUNICIPAL FUNDS, INC.",878092,2023-12,-11  edgar/data/878092/0000878092-23-000018.txt,merger/reorg
+N-14,BNY MELLON NEW YORK AMT-FREE MUNICIPAL BOND FUND,797920,2023-11,-16  edgar/data/797920/0000797920-23-000027.txt,merger/reorg
+N-14,Exchange Listed Funds Trust,1547950,2023-11,-07  edgar/data/1547950/0001213900-23-083966.txt,merger/reorg
+N-14,FIRST TRUST EXCHANGE-TRADED FUND VIII,1667919,2023-11,-01  edgar/data/1667919/0001445546-23-007212.txt,merger/reorg
+N-14,FPA FUNDS TRUST,924727,2023-12,-27  edgar/data/924727/0001104659-23-129760.txt,merger/reorg
+N-14,Federated Hermes Government Income Trust,357052,2023-11,-17  edgar/data/357052/0001623632-23-001457.txt,merger/reorg
+N-14,HOTCHKIS & WILEY FUNDS /DE/,1145022,2023-10,-06  edgar/data/1145022/0000894189-23-007553.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2023-10,-31  edgar/data/1587982/0001213900-23-081822.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2023-11,-24  edgar/data/1587982/0001213900-23-089902.txt,merger/reorg
+N-14,Morgan Stanley ETF Trust,1676326,2023-10,-02  edgar/data/1676326/0001104659-23-105999.txt,merger/reorg
+N-14,Morgan Stanley ETF Trust,1676326,2023-12,-18  edgar/data/1676326/0001104659-23-126646.txt,merger/reorg
+N-14,NORTHERN LIGHTS FUND TRUST II,1518042,2023-12,-18  edgar/data/1518042/0001580642-23-006768.txt,merger/reorg
+N-14,OBERWEIS FUNDS,803020,2023-10,-06  edgar/data/803020/0001013762-23-002337.txt,merger/reorg
+N-14,UBS Series Funds,1060517,2023-12,-18  edgar/data/1060517/0001193125-23-297732.txt,merger/reorg
+N-14,VIRTUS ASSET TRUST,1018593,2023-11,-28  edgar/data/1018593/0001193125-23-283527.txt,merger/reorg
+N-14,VIRTUS ASSET TRUST,1018593,2023-11,-28  edgar/data/1018593/0001193125-23-283528.txt,merger/reorg
+N-14,VIRTUS ASSET TRUST,1018593,2023-12,-14  edgar/data/1018593/0001193125-23-295127.txt,merger/reorg
+N-14,VIRTUS EQUITY TRUST,34273,2023-12,-13  edgar/data/34273/0001193125-23-294212.txt,merger/reorg
+N-14 8C,BlackRock TCP Capital Corp.,1370755,2023-10,-06  edgar/data/1370755/0001140361-23-047401.txt,merger/reorg
+N-14 8C,Franklin BSP Capital Corp,1825248,2023-10,-06  edgar/data/1825248/0001213900-23-081202.txt,merger/reorg
+N-14 8C,MidCap Financial Investment Corp,1278752,2023-11,-17  edgar/data/1278752/0001193125-23-279848.txt,merger/reorg
+N-14 8C,Nuveen AMT-Free Quality Municipal Income Fund,1195737,2023-10,-03  edgar/data/1195737/0001193125-23-250041.txt,merger/reorg
+N-14 8C,abrdn Global Infrastructure Income Fund,1793855,2023-10,-24  edgar/data/1793855/0001104659-23-111142.txt,merger/reorg
+N-14 8C,abrdn Income Credit Strategies Fund,1503290,2023-10,-24  edgar/data/1503290/0001104659-23-111138.txt,merger/reorg
+N-14 8C,abrdn Total Dynamic Dividend Fund,1379400,2023-10,-24  edgar/data/1379400/0001104659-23-111135.txt,merger/reorg
+N-14 8C/A,BlackRock TCP Capital Corp.,1370755,2023-11,-09  edgar/data/1370755/0001133228-23-005999.txt,merger/reorg
+N-14 8C/A,BlackRock TCP Capital Corp.,1370755,2023-11,-14  edgar/data/1370755/0001140361-23-053293.txt,merger/reorg
+N-14 8C/A,Franklin BSP Capital Corp,1825248,2023-10,-20  edgar/data/1825248/0001013762-23-005190.txt,merger/reorg
+N-14 8C/A,Virtus Stone Harbor Emerging Markets Income Fund,1501103,2023-11,-07  edgar/data/1501103/0001104659-23-115301.txt,merger/reorg
+N-14 8C/A,abrdn Global Infrastructure Income Fund,1793855,2023-12,-12  edgar/data/1793855/0001104659-23-125324.txt,merger/reorg
+N-14 8C/A,abrdn Income Credit Strategies Fund,1503290,2023-12,-12  edgar/data/1503290/0001104659-23-125278.txt,merger/reorg
+N-14 8C/A,abrdn Total Dynamic Dividend Fund,1379400,2023-12,-12  edgar/data/1379400/0001104659-23-125329.txt,merger/reorg
+N-14/A,Advisor Managed Portfolios,1970751,2023-10,-19  edgar/data/1970751/0000894189-23-007685.txt,merger/reorg
+N-14/A,CENTAUR MUTUAL FUNDS TRUST,1295908,2023-10,-10  edgar/data/1295908/0001580642-23-005471.txt,merger/reorg
+N-14/A,Exchange Listed Funds Trust,1547950,2023-12,-04  edgar/data/1547950/0001213900-23-092694.txt,merger/reorg
+N-14/A,HOTCHKIS & WILEY FUNDS /DE/,1145022,2023-11,-02  edgar/data/1145022/0000894189-23-008171.txt,merger/reorg
+N-14/A,HOTCHKIS & WILEY FUNDS /DE/,1145022,2023-11,-07  edgar/data/1145022/0000894189-23-008262.txt,merger/reorg
+N-14/A,Segall Bryant & Hamill Trust,357204,2023-10,-13  edgar/data/357204/0001580642-23-005518.txt,merger/reorg
+N-14/A,Segall Bryant & Hamill Trust,357204,2023-10,-17  edgar/data/357204/0001580642-23-005544.txt,merger/reorg
+N-14/A,Segall Bryant & Hamill Trust,357204,2023-10,-19  edgar/data/357204/0001580642-23-005592.txt,merger/reorg
+N-14/A,Segall Bryant & Hamill Trust,357204,2023-10,-20  edgar/data/357204/0001580642-23-005611.txt,merger/reorg
+N-14/A,"T. Rowe Price Retirement Funds, Inc.",1177017,2023-11,-09  edgar/data/1177017/0001741773-23-003610.txt,merger/reorg
+N-14/A,"T. Rowe Price Retirement Funds, Inc.",1177017,2023-11,-16  edgar/data/1177017/0001741773-23-003623.txt,merger/reorg
+N-14/A,"T. Rowe Price Retirement Funds, Inc.",1177017,2023-11,-17  edgar/data/1177017/0001741773-23-003631.txt,merger/reorg
+N-8F,ASYMmetric ETFs Trust,1833032,2023-11,-14  edgar/data/1833032/0000894189-23-008375.txt,deregistration
+N-8F,AlphaMark Investment Trust,1438681,2023-10,-18  edgar/data/1438681/0001580642-23-005566.txt,deregistration
+N-8F,BLACKROCK FLORIDA MUNICIPAL 2020 TERM TRUST,1181249,2023-11,-13  edgar/data/1181249/0001193125-23-275800.txt,deregistration
+N-8F,"BLACKROCK MUNI NEW YORK INTERMEDIATE DURATION FUND, INC.",1232863,2023-11,-13  edgar/data/1232863/0001193125-23-275784.txt,deregistration
+N-8F,BLACKROCK MUNICIPAL 2020 TERM TRUST,1181250,2023-11,-13  edgar/data/1181250/0001193125-23-275795.txt,deregistration
+N-8F,BLACKROCK NEW YORK MUNICIPAL BOND TRUST,1167470,2023-11,-13  edgar/data/1167470/0001193125-23-275777.txt,deregistration
+N-8F,"BNY Mellon International Securities Funds, Inc.",897469,2023-12,-15  edgar/data/897469/0000897469-23-000007.txt,deregistration
+N-8F,BlackRock 2022 Global Income Opportunity Trust,1691433,2023-11,-13  edgar/data/1691433/0001193125-23-275788.txt,deregistration
+N-8F,Cushing Mutual Funds Trust,1716909,2023-11,-15  edgar/data/1716909/0001398344-23-020759.txt,deregistration
+N-8F,"DELAWARE INVESTMENTS DIVIDEND & INCOME FUND, INC",896923,2023-10,-27  edgar/data/896923/0001680359-23-000333.txt,deregistration
+N-8F,E.M.O. Sterling Return LT Fund LP,1713879,2023-10,-30  edgar/data/1713879/0001477932-23-007968.txt,deregistration
+N-8F,Eaton Vance Tax-Managed Buy-Write Strategy Fund,1480999,2023-10,-10  edgar/data/1480999/0000940394-23-001066.txt,deregistration
+N-8F,Finite Solar Finance Fund,1844890,2023-11,-07  edgar/data/1844890/0001839882-23-030052.txt,deregistration
+N-8F,Goldman Sachs Credit Income Fund,1796233,2023-10,-10  edgar/data/1796233/0001193125-23-253279.txt,deregistration
+N-8F,INVESCO BLDRS INDEX FUNDS TRUST,1169717,2023-11,-09  edgar/data/1169717/0001137439-23-001354.txt,deregistration
+N-8F,"Kayne Anderson NextGen Energy & Infrastructure, Inc.",1500096,2023-11,-30  edgar/data/1500096/0001213900-23-091229.txt,deregistration
+N-8F,LPLA SEPARATE ACCOUNT ONE,933666,2023-10,-13  edgar/data/933666/0001193125-23-255915.txt,deregistration
+N-8F,Macquarie Global Infrastructure Total Return Fund Inc.,1326390,2023-10,-27  edgar/data/1326390/0001680359-23-000335.txt,deregistration
+N-8F,"Mutual of America Variable Insurance Portfolios, Inc.",1776030,2023-11,-21  edgar/data/1776030/0001193125-23-281429.txt,deregistration
+N-8F,NB Private Markets Fund II (Master) LLC,1501376,2023-10,-16  edgar/data/1501376/0001104659-23-109280.txt,deregistration
+N-8F,NB Private Markets Fund II (TE) LLC,1501378,2023-10,-16  edgar/data/1501378/0001104659-23-109276.txt,deregistration
+N-8F,NB Private Markets Fund II (TI) LLC,1501377,2023-10,-16  edgar/data/1501377/0001104659-23-109278.txt,deregistration
+N-8F,NUVEEN DIVERSIFIED DIVIDEND & INCOME FUND,1255821,2023-11,-03  edgar/data/1255821/0001193125-23-270166.txt,deregistration
+N-8F,NUVEEN SELECT TAX FREE INCOME PORTFOLIO 2,885733,2023-11,-03  edgar/data/885733/0001193125-23-270172.txt,deregistration
+N-8F,NUVEEN SELECT TAX FREE INCOME PORTFOLIO 3,888411,2023-11,-03  edgar/data/888411/0001193125-23-270174.txt,deregistration
+N-8F,NUVEEN TAX ADVANTAGED TOTAL RETURN STRATEGY FUND,1265708,2023-11,-03  edgar/data/1265708/0001193125-23-270169.txt,deregistration
+N-8F,Nuveen Corporate Income November 2021 Target Term Fund,1647933,2023-11,-03  edgar/data/1647933/0001193125-23-270167.txt,deregistration
+N-8F,Nuveen Tax-Advantaged Dividend Growth Fund,1397173,2023-11,-03  edgar/data/1397173/0001193125-23-270171.txt,deregistration
+N-8F,Strategas Trust,1825052,2023-11,-15  edgar/data/1825052/0001214659-23-015200.txt,deregistration
+N-8F,WESTERN ASSET MUNICIPAL PARTNERS FUND INC.,894351,2023-10,-16  edgar/data/894351/0001193125-23-256978.txt,deregistration
+N-8F NTC,E.M.O. Sterling Return LT Fund LP,1713879,2023-11,-27  edgar/data/1713879/9999999997-23-004703.txt,deregistration
+N-8F NTC,GOLDMAN SACHS MLP & ENERGY RENAISSANCE FUND,1612875,2023-10,-30  edgar/data/1612875/9999999997-23-004607.txt,deregistration
+N-8F NTC,Guggenheim Energy & Income Fund,1642563,2023-10,-02  edgar/data/1642563/9999999997-23-004370.txt,deregistration
+N-8F NTC,LEGG MASON PARTNERS PREMIUM MONEY MARKET TRUST,850628,2023-10,-02  edgar/data/850628/9999999997-23-004371.txt,deregistration
+N-8F NTC,Mirae Asset Discovery Funds,1489215,2023-10,-30  edgar/data/1489215/9999999997-23-004608.txt,deregistration
+N-8F NTC,NB Private Markets Fund II (Master) LLC,1501376,2023-11,-27  edgar/data/1501376/9999999997-23-004704.txt,deregistration
+N-8F NTC,NB Private Markets Fund II (TE) LLC,1501378,2023-11,-27  edgar/data/1501378/9999999997-23-004705.txt,deregistration
+N-8F NTC,NB Private Markets Fund II (TI) LLC,1501377,2023-11,-27  edgar/data/1501377/9999999997-23-004706.txt,deregistration
+N-8F NTC,SFS Series Trust,1818750,2023-10,-02  edgar/data/1818750/9999999997-23-004372.txt,deregistration
+N-8F NTC,TRUST FOR CREDIT UNIONS,825759,2023-10,-30  edgar/data/825759/9999999997-23-004609.txt,deregistration
+N-8F NTC,WESTERN ASSET MUNICIPAL PARTNERS FUND INC.,894351,2023-11,-27  edgar/data/894351/9999999997-23-004707.txt,deregistration
+N-8F NTC,Walthausen Funds,1418191,2023-10,-30  edgar/data/1418191/9999999997-23-004610.txt,deregistration
+N-8F ORDR,GOLDMAN SACHS MLP & ENERGY RENAISSANCE FUND,1612875,2023-11,-27  edgar/data/1612875/9999999997-23-004699.txt,deregistration
+N-8F ORDR,Guggenheim Energy & Income Fund,1642563,2023-10,-26  edgar/data/1642563/9999999997-23-004603.txt,deregistration
+N-8F ORDR,LEGG MASON PARTNERS PREMIUM MONEY MARKET TRUST,850628,2023-10,-26  edgar/data/850628/9999999997-23-004604.txt,deregistration
+N-8F ORDR,Mirae Asset Discovery Funds,1489215,2023-11,-27  edgar/data/1489215/9999999997-23-004700.txt,deregistration
+N-8F ORDR,SFS Series Trust,1818750,2023-10,-26  edgar/data/1818750/9999999997-23-004605.txt,deregistration
+N-8F ORDR,TRUST FOR CREDIT UNIONS,825759,2023-11,-27  edgar/data/825759/9999999997-23-004701.txt,deregistration
+N-8F ORDR,Walthausen Funds,1418191,2023-11,-27  edgar/data/1418191/9999999997-23-004702.txt,deregistration
+N-8F/A,AOG Institutional Diversified Master Fund,1897593,2023-11,-30  edgar/data/1897593/0001580642-23-006414.txt,deregistration
+N-8F/A,AOG Institutional Diversified Tender Fund,1897690,2023-11,-30  edgar/data/1897690/0001580642-23-006413.txt,deregistration
+N-8F/A,Eaton Vance Tax-Managed Buy-Write Strategy Fund,1480999,2023-11,-30  edgar/data/1480999/0000940394-23-001172.txt,deregistration
+N-8F/A,GREENSPRING FUND INC,711322,2023-10,-04  edgar/data/711322/0000894189-23-007475.txt,deregistration
+N-8F/A,GREENSPRING FUND INC,711322,2023-11,-22  edgar/data/711322/0000894189-23-008514.txt,deregistration
+N-8F/A,Goldman Sachs Credit Income Fund,1796233,2023-12,-12  edgar/data/1796233/0001193125-23-293070.txt,deregistration
+N-8F/A,Mirae Asset Discovery Funds,1489215,2023-10,-06  edgar/data/1489215/0001104659-23-107448.txt,deregistration
+N-8F/A,TRUST FOR CREDIT UNIONS,825759,2023-10,-13  edgar/data/825759/0000894189-23-007581.txt,deregistration
+N-8F/A,UCT Immensity FUND,1785117,2023-11,-02  edgar/data/1785117/0001785117-23-000006.txt,deregistration
+N-8F/A,UIC TRUST,1782028,2023-11,-02  edgar/data/1782028/0001782028-23-000005.txt,deregistration

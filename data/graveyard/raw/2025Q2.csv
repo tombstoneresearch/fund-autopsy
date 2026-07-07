@@ -1,0 +1,134 @@
+form,company,cik,date_filed,filing_path,event
+N-14,ADVISORS SERIES TRUST,1027596,2025-05,-08  edgar/data/1027596/0000894189-25-003717.txt,merger/reorg
+N-14,ALLSPRING FUNDS TRUST,1081400,2025-05,-30  edgar/data/1081400/0001081400-25-000246.txt,merger/reorg
+N-14,BNY Mellon ETF Trust II,2025968,2025-06,-16  edgar/data/2025968/0002025968-25-000011.txt,merger/reorg
+N-14,Bitwise Funds Trust,1928561,2025-04,-25  edgar/data/1928561/0001213900-25-035595.txt,merger/reorg
+N-14,BlackRock ETF Trust II,1804196,2025-06,-06  edgar/data/1804196/0001193125-25-136953.txt,merger/reorg
+N-14,BlackRock ETF Trust II,1804196,2025-06,-06  edgar/data/1804196/0001193125-25-136975.txt,merger/reorg
+N-14,CALAMOS INVESTMENT TRUST/IL,826732,2025-05,-28  edgar/data/826732/0001104659-25-053634.txt,merger/reorg
+N-14,DIAMOND HILL FUNDS,1032423,2025-06,-26  edgar/data/1032423/0001032423-25-000069.txt,merger/reorg
+N-14,ETF Opportunities Trust,1771146,2025-04,-10  edgar/data/1771146/0001999371-25-004112.txt,merger/reorg
+N-14,ETF Opportunities Trust,1771146,2025-06,-24  edgar/data/1771146/0001999371-25-008209.txt,merger/reorg
+N-14,Elevation Series Trust,1936157,2025-05,-16  edgar/data/1936157/0001999371-25-006327.txt,merger/reorg
+N-14,Elevation Series Trust,1936157,2025-06,-10  edgar/data/1936157/0001999371-25-007562.txt,merger/reorg
+N-14,Goldman Sachs ETF Trust,1479026,2025-06,-20  edgar/data/1479026/0001193125-25-143723.txt,merger/reorg
+N-14,HENNESSY FUNDS TRUST,891944,2025-05,-19  edgar/data/891944/0000898531-25-000049.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2025-06,-11  edgar/data/1587982/0001213900-25-053224.txt,merger/reorg
+N-14,Investment Managers Series Trust II,1587982,2025-06,-11  edgar/data/1587982/0001213900-25-053228.txt,merger/reorg
+N-14,J.P. Morgan Exchange-Traded Fund Trust,1485894,2025-05,-08  edgar/data/1485894/0001193125-25-115775.txt,merger/reorg
+N-14,J.P. Morgan Exchange-Traded Fund Trust,1485894,2025-06,-04  edgar/data/1485894/0001193125-25-135003.txt,merger/reorg
+N-14,John Hancock Funds II,1331971,2025-04,-28  edgar/data/1331971/0001193125-25-099905.txt,merger/reorg
+N-14,John Hancock Funds III,1329954,2025-05,-20  edgar/data/1329954/0001193125-25-123189.txt,merger/reorg
+N-14,LINCOLN VARIABLE INSURANCE PRODUCTS TRUST,914036,2025-05,-15  edgar/data/914036/0001193125-25-120869.txt,merger/reorg
+N-14,Lazard Active ETF Trust,2051630,2025-05,-22  edgar/data/2051630/0000930413-25-001860.txt,merger/reorg
+N-14,Lazard Active ETF Trust,2051630,2025-06,-24  edgar/data/2051630/0000930413-25-002048.txt,merger/reorg
+N-14,MASSMUTUAL PREMIER FUNDS,927972,2025-06,-05  edgar/data/927972/0001133228-25-006108.txt,merger/reorg
+N-14,MASSMUTUAL SELECT FUNDS,916053,2025-06,-05  edgar/data/916053/0001133228-25-006106.txt,merger/reorg
+N-14,Morgan Stanley ETF Trust,1676326,2025-06,-24  edgar/data/1676326/0001104659-25-062167.txt,merger/reorg
+N-14,NATIONWIDE VARIABLE INSURANCE TRUST,353905,2025-06,-20  edgar/data/353905/0001680359-25-000496.txt,merger/reorg
+N-14,Neuberger Berman ETF Trust,1506001,2025-05,-05  edgar/data/1506001/0000898432-25-000315.txt,merger/reorg
+N-14,Neuberger Berman ETF Trust,1506001,2025-05,-20  edgar/data/1506001/0000898432-25-000382.txt,merger/reorg
+N-14,"PRINCIPAL FUNDS, INC.",898745,2025-06,-23  edgar/data/898745/0000898745-25-000329.txt,merger/reorg
+N-14,PROFESSIONALLY MANAGED PORTFOLIOS,811030,2025-06,-24  edgar/data/811030/0000894189-25-004658.txt,merger/reorg
+N-14,Putnam ETF Trust,1845809,2025-06,-27  edgar/data/1845809/0001193125-25-151504.txt,merger/reorg
+N-14,Putnam Target Date Funds,1295293,2025-05,-01  edgar/data/1295293/0000928816-25-000584.txt,merger/reorg
+N-14,Putnam Target Date Funds,1295293,2025-05,-01  edgar/data/1295293/0000928816-25-000585.txt,merger/reorg
+N-14,"RBB FUND, INC.",831114,2025-05,-05  edgar/data/831114/0001398344-25-008713.txt,merger/reorg
+N-14,SEI Exchange Traded Funds,1888997,2025-06,-25  edgar/data/1888997/0001104659-25-062589.txt,merger/reorg
+N-14,STATE STREET INSTITUTIONAL INVESTMENT TRUST,1107414,2025-04,-01  edgar/data/1107414/0001193125-25-070515.txt,merger/reorg
+N-14,TCW ETF Trust,1831313,2025-04,-02  edgar/data/1831313/0001829126-25-002325.txt,merger/reorg
+N-14,TRANSAMERICA FUNDS,787623,2025-04,-03  edgar/data/787623/0001193125-25-072461.txt,merger/reorg
+N-14,VIRTUS EQUITY TRUST,34273,2025-06,-27  edgar/data/34273/0001213900-25-058791.txt,merger/reorg
+N-14,World Funds Trust,1396092,2025-06,-30  edgar/data/1396092/0001999371-25-008562.txt,merger/reorg
+N-14 8C,"Fundrise Real Estate Interval Fund II, LLC",2053084,2025-05,-01  edgar/data/2053084/0001213900-25-038496.txt,merger/reorg
+N-14 8C,New FS Specialty Lending Fund,2065812,2025-04,-30  edgar/data/2065812/0001104659-25-042588.txt,merger/reorg
+N-14 8C,Nuveen Preferred & Income Opportunities Fund,1216583,2025-04,-24  edgar/data/1216583/0001999371-25-004713.txt,merger/reorg
+N-14 8C,PIMCO CALIFORNIA MUNICIPAL INCOME FUND,1140411,2025-04,-04  edgar/data/1140411/0001193125-25-073433.txt,merger/reorg
+N-14 8C,PIMCO MUNICIPAL INCOME FUND II,1170299,2025-04,-04  edgar/data/1170299/0001193125-25-073435.txt,merger/reorg
+N-14 8C,PIMCO NEW YORK MUNICIPAL INCOME FUND II,1170311,2025-04,-04  edgar/data/1170311/0001193125-25-073434.txt,merger/reorg
+N-14 8C,Puerto Rico Residents Bond Fund I,1847290,2025-05,-09  edgar/data/1847290/0001193125-25-116210.txt,merger/reorg
+N-14 8C,TORTOISE ENERGY INFRASTRUCTURE CORP,1268533,2025-06,-20  edgar/data/1268533/0001213900-25-056252.txt,merger/reorg
+N-14 8C,abrdn Global Infrastructure Income Fund,1793855,2025-04,-18  edgar/data/1793855/0001104659-25-036328.txt,merger/reorg
+N-14 8C/A,ARES STRATEGIC INCOME FUND,1918712,2025-04,-21  edgar/data/1918712/0001104659-25-036879.txt,merger/reorg
+N-14 8C/A,ARES STRATEGIC INCOME FUND,1918712,2025-04,-23  edgar/data/1918712/0001104659-25-037617.txt,merger/reorg
+N-14 8C/A,Golub Capital Private Credit Fund,1930087,2025-05,-08  edgar/data/1930087/0001104659-25-046134.txt,merger/reorg
+N-14 8C/A,New FS Specialty Lending Fund,2065812,2025-06,-13  edgar/data/2065812/0001104659-25-059408.txt,merger/reorg
+N-14 8C/A,Nuveen Preferred & Income Opportunities Fund,1216583,2025-06,-10  edgar/data/1216583/0001999371-25-007489.txt,merger/reorg
+N-14 8C/A,PIMCO CALIFORNIA MUNICIPAL INCOME FUND,1140411,2025-05,-12  edgar/data/1140411/0001193125-25-117271.txt,merger/reorg
+N-14 8C/A,PIMCO CALIFORNIA MUNICIPAL INCOME FUND,1140411,2025-05,-12  edgar/data/1140411/0001193125-25-117918.txt,merger/reorg
+N-14 8C/A,PIMCO MUNICIPAL INCOME FUND II,1170299,2025-05,-12  edgar/data/1170299/0001193125-25-117264.txt,merger/reorg
+N-14 8C/A,PIMCO MUNICIPAL INCOME FUND II,1170299,2025-05,-12  edgar/data/1170299/0001193125-25-117917.txt,merger/reorg
+N-14 8C/A,PIMCO NEW YORK MUNICIPAL INCOME FUND II,1170311,2025-05,-12  edgar/data/1170311/0001193125-25-117267.txt,merger/reorg
+N-14 8C/A,PIMCO NEW YORK MUNICIPAL INCOME FUND II,1170311,2025-05,-12  edgar/data/1170311/0001193125-25-117916.txt,merger/reorg
+N-14 8C/A,Portman Ridge Finance Corp,1372807,2025-04,-21  edgar/data/1372807/0001628280-25-018471.txt,merger/reorg
+N-14 8C/A,Portman Ridge Finance Corp,1372807,2025-05,-06  edgar/data/1372807/0001628280-25-022655.txt,merger/reorg
+N-14 8C/A,abrdn Global Infrastructure Income Fund,1793855,2025-06,-16  edgar/data/1793855/0001104659-25-059944.txt,merger/reorg
+N-14/A,ALLSPRING FUNDS TRUST,1081400,2025-06,-27  edgar/data/1081400/0001081400-25-000267.txt,merger/reorg
+N-14/A,Bitwise Funds Trust,1928561,2025-06,-10  edgar/data/1928561/0001213900-25-052868.txt,merger/reorg
+N-14/A,BlackRock ETF Trust,1761055,2025-04,-22  edgar/data/1761055/0001193125-25-088916.txt,merger/reorg
+N-14/A,ETF Opportunities Trust,1771146,2025-06,-25  edgar/data/1771146/0001999371-25-008252.txt,merger/reorg
+N-14/A,Elevation Series Trust,1936157,2025-06,-24  edgar/data/1936157/0001387131-25-000151.txt,merger/reorg
+N-14/A,FundVantage Trust,1388485,2025-05,-09  edgar/data/1388485/0001829126-25-003530.txt,merger/reorg
+N-14/A,HENNESSY FUNDS TRUST,891944,2025-06,-12  edgar/data/891944/0000898531-25-000055.txt,merger/reorg
+N-14/A,HENNESSY FUNDS TRUST,891944,2025-06,-24  edgar/data/891944/0000898531-25-000057.txt,merger/reorg
+N-14/A,LINCOLN VARIABLE INSURANCE PRODUCTS TRUST,914036,2025-06,-13  edgar/data/914036/0001193125-25-140587.txt,merger/reorg
+N-14/A,"RBB FUND, INC.",831114,2025-06,-30  edgar/data/831114/0001398344-25-012365.txt,merger/reorg
+N-8F,Accordant Real Estate Growth Fund,2008939,2025-06,-20  edgar/data/2008939/0001398344-25-011983.txt,deregistration
+N-8F,Apollo Senior Floating Rate Fund Inc.,1502573,2025-05,-23  edgar/data/1502573/0001193125-25-125754.txt,deregistration
+N-8F,Apollo Tactical Income Fund Inc.,1526697,2025-05,-23  edgar/data/1526697/0001193125-25-125766.txt,deregistration
+N-8F,CROSS SHORE DISCOVERY FUND,1609706,2025-05,-21  edgar/data/1609706/0001580642-25-003226.txt,deregistration
+N-8F,Centre Funds,1517238,2025-06,-05  edgar/data/1517238/0001398344-25-011380.txt,deregistration
+N-8F,DWS STRATEGIC MUNICIPAL INCOME TRUST,846596,2025-05,-28  edgar/data/846596/0000088053-25-000441.txt,deregistration
+N-8F,"Endowment PMF Master Fund, L.P.",1597218,2025-04,-16  edgar/data/1597218/0000898432-25-000278.txt,deregistration
+N-8F,HARTFORD HLS SERIES FUND II INC,790558,2025-06,-13  edgar/data/790558/0001193125-25-140559.txt,deregistration
+N-8F,LEUTHOLD FUNDS INC,1000351,2025-04,-30  edgar/data/1000351/0000897069-25-000894.txt,deregistration
+N-8F,Morgan Creek Global Equity Long/Short Institutional Fund,1499857,2025-06,-05  edgar/data/1499857/0001398344-25-011377.txt,deregistration
+N-8F,NB Private Markets Fund III (Master) LLC,1572914,2025-06,-16  edgar/data/1572914/0001133228-25-006334.txt,deregistration
+N-8F,NB Private Markets Fund III (TE) LLC,1572915,2025-06,-16  edgar/data/1572915/0001133228-25-006330.txt,deregistration
+N-8F,NB Private Markets Fund III (TI) LLC,1572916,2025-06,-16  edgar/data/1572916/0001133228-25-006332.txt,deregistration
+N-8F,NEUBERGER BERMAN CALIFORNIA MUNICIPAL FUND INC.,1178840,2025-06,-27  edgar/data/1178840/0002071111-25-000025.txt,deregistration
+N-8F,NEUBERGER BERMAN NEW YORK MUNICIPAL FUND INC.,1178841,2025-06,-27  edgar/data/1178841/0002071111-25-000027.txt,deregistration
+N-8F,"PMF Fund, L.P.",1597219,2025-04,-16  edgar/data/1597219/0000898432-25-000274.txt,deregistration
+N-8F,"PMF TEI Fund, L.P.",1597220,2025-04,-16  edgar/data/1597220/0000898432-25-000276.txt,deregistration
+N-8F,SECURITY EQUITY SEPARATE ACCOUNT 27,933668,2025-06,-23  edgar/data/933668/0001193125-25-144711.txt,deregistration
+N-8F,"Stock Dividend Fund, Inc.",1288872,2025-04,-14  edgar/data/1288872/0001288872-25-000005.txt,deregistration
+N-8F,Stone Ridge Trust IV,1655788,2025-05,-13  edgar/data/1655788/0001193125-25-118538.txt,deregistration
+N-8F,TEMPLETON CHINA WORLD FUND,909226,2025-06,-18  edgar/data/909226/0001680359-25-000482.txt,deregistration
+N-8F NTC,AB CarVal Opportunistic Credit Fund,1963682,2025-05,-06  edgar/data/1963682/9999999997-25-002212.txt,deregistration
+N-8F NTC,"CPG Cooper Square International Equity, LLC",1818255,2025-06,-02  edgar/data/1818255/9999999997-25-002503.txt,deregistration
+N-8F NTC,Eaton Vance Unit Trust - Series 1,1653425,2025-06,-02  edgar/data/1653425/9999999997-25-002504.txt,deregistration
+N-8F NTC,"Endowment PMF Master Fund, L.P.",1597218,2025-06,-02  edgar/data/1597218/9999999997-25-002505.txt,deregistration
+N-8F NTC,"Federated Hermes Government Income Securities, Inc.",355691,2025-05,-06  edgar/data/355691/9999999997-25-002213.txt,deregistration
+N-8F NTC,Funds For Institutions Series,814079,2025-06,-02  edgar/data/814079/9999999997-25-002506.txt,deregistration
+N-8F NTC,"Macquarie Energy Transition Infrastructure Fund, LLC",2026947,2025-06,-02  edgar/data/2026947/9999999997-25-002507.txt,deregistration
+N-8F NTC,"PMF Fund, L.P.",1597219,2025-05,-06  edgar/data/1597219/9999999997-25-002214.txt,deregistration
+N-8F NTC,"PMF TEI Fund, L.P.",1597220,2025-05,-06  edgar/data/1597220/9999999997-25-002215.txt,deregistration
+N-8F NTC,PPM Funds,1722478,2025-04,-24  edgar/data/1722478/9999999997-25-001644.txt,deregistration
+N-8F NTC,READY ASSETS GOVERNMENT LIQUIDITY FUND,65109,2025-06,-02  edgar/data/65109/9999999997-25-002508.txt,deregistration
+N-8F NTC,RETIREMENT SERIES TRUST,356013,2025-06,-02  edgar/data/356013/9999999997-25-002509.txt,deregistration
+N-8F NTC,"Stock Dividend Fund, Inc.",1288872,2025-05,-06  edgar/data/1288872/9999999997-25-002216.txt,deregistration
+N-8F NTC,Stone Ridge Trust IV,1655788,2025-06,-02  edgar/data/1655788/9999999997-25-002510.txt,deregistration
+N-8F ORDR,AB CarVal Opportunistic Credit Fund,1963682,2025-05,-22  edgar/data/1963682/9999999997-25-002406.txt,deregistration
+N-8F ORDR,ALIGHT SERIES TRUST,1065899,2025-04,-24  edgar/data/1065899/9999999997-25-002006.txt,deregistration
+N-8F ORDR,Eaton Vance Unit Trust - Series 1,1653425,2025-06,-30  edgar/data/1653425/9999999997-25-002799.txt,deregistration
+N-8F ORDR,"Endowment PMF Master Fund, L.P.",1597218,2025-06,-30  edgar/data/1597218/9999999997-25-002800.txt,deregistration
+N-8F ORDR,"Federated Hermes Government Income Securities, Inc.",355691,2025-05,-22  edgar/data/355691/9999999997-25-002405.txt,deregistration
+N-8F ORDR,Funds For Institutions Series,814079,2025-06,-30  edgar/data/814079/9999999997-25-002803.txt,deregistration
+N-8F ORDR,Insight Select Income Fund,30125,2025-04,-24  edgar/data/30125/9999999997-25-002007.txt,deregistration
+N-8F ORDR,"Macquarie Energy Transition Infrastructure Fund, LLC",2026947,2025-06,-30  edgar/data/2026947/9999999997-25-002806.txt,deregistration
+N-8F ORDR,"PMF Fund, L.P.",1597219,2025-05,-22  edgar/data/1597219/9999999997-25-002404.txt,deregistration
+N-8F ORDR,"PMF TEI Fund, L.P.",1597220,2025-05,-22  edgar/data/1597220/9999999997-25-002403.txt,deregistration
+N-8F ORDR,PPM Funds,1722478,2025-04,-24  edgar/data/1722478/9999999997-25-002008.txt,deregistration
+N-8F ORDR,Ready Assets U.S. Treasury Money Fund,869663,2025-04,-24  edgar/data/869663/9999999997-25-002010.txt,deregistration
+N-8F ORDR,"Stock Dividend Fund, Inc.",1288872,2025-05,-22  edgar/data/1288872/9999999997-25-002402.txt,deregistration
+N-8F ORDR,Transparent Value Trust,1465886,2025-04,-24  edgar/data/1465886/9999999997-25-002011.txt,deregistration
+N-8F/A,AB CarVal Opportunistic Credit Fund,1963682,2025-04,-15  edgar/data/1963682/0001193125-25-080906.txt,deregistration
+N-8F/A,"CPG Cooper Square International Equity, LLC",1818255,2025-05,-13  edgar/data/1818255/0001137439-25-000506.txt,deregistration
+N-8F/A,CROSS SHORE DISCOVERY FUND,1609706,2025-06,-24  edgar/data/1609706/0001580642-25-003814.txt,deregistration
+N-8F/A,"Federated Hermes Government Income Securities, Inc.",355691,2025-04,-17  edgar/data/355691/0001623632-25-000414.txt,deregistration
+N-8F/A,MANDATORILY EXCHANGEABLE SECURITIES TRUST,1089915,2025-06,-03  edgar/data/1089915/0000950103-25-006902.txt,deregistration
+N-8F/A,"Macquarie Energy Transition Infrastructure Fund, LLC",2026947,2025-05,-21  edgar/data/2026947/0001213900-25-046505.txt,deregistration
+N-8F/A,SECURITY EQUITY SEPARATE ACCOUNT 26,933621,2025-06,-23  edgar/data/933621/0001193125-25-144710.txt,deregistration
+N-8F/A,SEVENTH AUTOMATIC COMMON EXCHANGE SECURITY TRUST,1064269,2025-06,-03  edgar/data/1064269/0000950103-25-006905.txt,deregistration
+N-8F/A,"Stock Dividend Fund, Inc.",1288872,2025-05,-19  edgar/data/1288872/0001288872-25-000006.txt,deregistration
+N-8F/A,TWELFTH AUTOMATIC COMMON EXCHANGE SECURITY TRUST,1089917,2025-06,-03  edgar/data/1089917/0000950103-25-006903.txt,deregistration

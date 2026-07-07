@@ -1,0 +1,94 @@
+form,company,cik,date_filed,filing_path,event
+N-14,"AB Active ETFs, Inc.",1496608,2026-06,-26  edgar/data/1496608/0000919574-26-004138.txt,merger/reorg
+N-14,ARBITRAGE FUNDS,1105076,2026-06,-22  edgar/data/1105076/0001104659-26-076370.txt,merger/reorg
+N-14,BlackRock ETF Trust,1761055,2026-05,-28  edgar/data/1761055/0001193125-26-245314.txt,merger/reorg
+N-14,CARILLON SERIES TRUST,897111,2026-05,-14  edgar/data/897111/0000898432-26-000380.txt,merger/reorg
+N-14,Calamos ETF Trust,1579881,2026-06,-01  edgar/data/1579881/0001104659-26-068720.txt,merger/reorg
+N-14,Cohen & Steers ETF Trust,1590402,2026-04,-02  edgar/data/1590402/0001193125-26-139944.txt,merger/reorg
+N-14,EA Series Trust,1592900,2026-04,-14  edgar/data/1592900/0001592900-26-001600.txt,merger/reorg
+N-14,Goldman Sachs ETF Trust,1479026,2026-04,-28  edgar/data/1479026/0001193125-26-183131.txt,merger/reorg
+N-14,JOHN HANCOCK VARIABLE INSURANCE TRUST,756913,2026-06,-29  edgar/data/756913/0001193125-26-288382.txt,merger/reorg
+N-14,Lazard Active ETF Trust,2051630,2026-06,-30  edgar/data/2051630/0000930413-26-001999.txt,merger/reorg
+N-14,NORTHERN LIGHTS FUND TRUST II,1518042,2026-04,-10  edgar/data/1518042/0001580642-26-002456.txt,merger/reorg
+N-14,Nomura ETF Trust II,809064,2026-05,-26  edgar/data/809064/0002071844-26-000593.txt,merger/reorg
+N-14,PGIM ETF TRUST,1727074,2026-06,-29  edgar/data/1727074/0001104659-26-078948.txt,merger/reorg
+N-14,PUTNAM DIVERSIFIED INCOME TRUST,836622,2026-06,-10  edgar/data/836622/0001193125-26-265974.txt,merger/reorg
+N-14,PUTNAM INVESTMENT FUNDS,932101,2026-06,-02  edgar/data/932101/0001193125-26-253878.txt,merger/reorg
+N-14,PUTNAM VARIABLE TRUST,822671,2026-06,-02  edgar/data/822671/0001193125-26-253889.txt,merger/reorg
+N-14,Putnam ETF Trust,1845809,2026-05,-01  edgar/data/1845809/0001193125-26-201141.txt,merger/reorg
+N-14,RBB Fund Trust,1618627,2026-04,-20  edgar/data/1618627/0001398344-26-006737.txt,merger/reorg
+N-14,TCW ETF Trust,1831313,2026-04,-01  edgar/data/1831313/0001829126-26-003038.txt,merger/reorg
+N-14,Virtus ETF Trust II,1648403,2026-05,-14  edgar/data/1648403/0001999371-26-010713.txt,merger/reorg
+N-14,Voya PARTNERS INC,1039001,2026-04,-14  edgar/data/1039001/0001039001-26-000009.txt,merger/reorg
+N-14,Voya VARIABLE PORTFOLIOS INC,1015965,2026-04,-14  edgar/data/1015965/0001193125-26-155020.txt,merger/reorg
+N-14,William Blair ETF Trust,2137497,2026-06,-25  edgar/data/2137497/0001193125-26-283076.txt,merger/reorg
+N-14 8C,Apollo Debt Solutions BDC,1837532,2026-05,-11  edgar/data/1837532/0001193125-26-217178.txt,merger/reorg
+N-14 8C,FIDUS INVESTMENT Corp,1513363,2026-06,-30  edgar/data/1513363/0001193125-26-290483.txt,merger/reorg
+N-14 8C,Franklin BSP Capital Corp,1825248,2026-05,-18  edgar/data/1825248/0001213900-26-058545.txt,merger/reorg
+N-14 8C,John Hancock Comvest Private Income Fund,1987221,2026-06,-23  edgar/data/1987221/0001193125-26-277809.txt,merger/reorg
+N-14 8C,North Haven Private Income Fund LLC,1851322,2026-06,-08  edgar/data/1851322/0001193125-26-260345.txt,merger/reorg
+N-14 8C,Nuveen Municipal Credit Income Fund,1137887,2026-05,-13  edgar/data/1137887/0001999371-26-010609.txt,merger/reorg
+N-14 8C,Opportunistic Credit Interval Fund,1907437,2026-04,-20  edgar/data/1907437/0001398344-26-006715.txt,merger/reorg
+N-14 8C/A,ARES STRATEGIC INCOME FUND,1918712,2026-04,-21  edgar/data/1918712/0001104659-26-046095.txt,merger/reorg
+N-14 8C/A,Apollo Debt Solutions BDC,1837532,2026-06,-10  edgar/data/1837532/0001193125-26-265948.txt,merger/reorg
+N-14 8C/A,Barings Private Credit Corp,1859919,2026-04,-29  edgar/data/1859919/0001140361-26-017854.txt,merger/reorg
+N-14 8C/A,Franklin BSP Capital Corp,1825248,2026-06,-26  edgar/data/1825248/0001213900-26-072619.txt,merger/reorg
+N-14 8C/A,Golub Capital Private Credit Fund,1930087,2026-05,-01  edgar/data/1930087/0001104659-26-054159.txt,merger/reorg
+N-14 8C/A,Nuveen Municipal Credit Income Fund,1137887,2026-06,-26  edgar/data/1137887/0001999371-26-013622.txt,merger/reorg
+N-14 8C/A,Opportunistic Credit Interval Fund,1907437,2026-06,-02  edgar/data/1907437/0001104659-26-069120.txt,merger/reorg
+N-14 8C/A,Opportunistic Credit Interval Fund,1907437,2026-06,-23  edgar/data/1907437/0001104659-26-076548.txt,merger/reorg
+N-14/A,FIRST TRUST EXCHANGE-TRADED FUND VIII,1667919,2026-04,-15  edgar/data/1667919/0001445546-26-002743.txt,merger/reorg
+N-14/A,Goldman Sachs ETF Trust,1479026,2026-06,-11  edgar/data/1479026/0001193125-26-267867.txt,merger/reorg
+N-14/A,HARDING LOEVNER FUNDS INC,1018170,2026-05,-07  edgar/data/1018170/0001193125-26-212353.txt,merger/reorg
+N-14/A,MATTHEWS INTERNATIONAL FUNDS,923184,2026-05,-27  edgar/data/923184/0001193125-26-241565.txt,merger/reorg
+N-14/A,RBB Fund Trust,1618627,2026-06,-18  edgar/data/1618627/0001398344-26-011051.txt,merger/reorg
+N-14/A,SHELTON FUNDS,778206,2026-05,-15  edgar/data/778206/0001999371-26-010901.txt,merger/reorg
+N-14/A,SHELTON FUNDS,778206,2026-06,-01  edgar/data/778206/0001999371-26-011824.txt,merger/reorg
+N-8F,AAM Alternatives Trust,2065443,2026-06,-22  edgar/data/2065443/0001213900-26-070526.txt,deregistration
+N-8F,CASH TRUST SERIES INC,852495,2026-04,-06  edgar/data/852495/0001623632-26-000490.txt,deregistration
+N-8F,Destiny Alternative Fund (TEI) LLC,1904800,2026-06,-26  edgar/data/1904800/0001104659-26-078130.txt,deregistration
+N-8F,Destiny Alternative Fund LLC,1824796,2026-06,-26  edgar/data/1824796/0001104659-26-078126.txt,deregistration
+N-8F,FEDERATED PREMIER INTERMEDIATE MUNICIPAL INCOME FUND,1202806,2026-04,-06  edgar/data/1202806/0001623632-26-000492.txt,deregistration
+N-8F,MidBridge Private Markets Fund,1953726,2026-04,-08  edgar/data/1953726/0001213900-26-041292.txt,deregistration
+N-8F,"Popular Income Plus Fund, Inc.",1862971,2026-04,-20  edgar/data/1862971/0001398344-26-006698.txt,deregistration
+N-8F,TALCOTT RESOLUTION LIFE INSURANCE CO- SEPARATE ACCOUNT TW,ELV  1264033,2026-05,-29  edgar/data/1264033/0001264033-26-000008.txt,deregistration
+N-8F,Value Line Core Bond Fund,783316,2026-04,-23  edgar/data/783316/0001104659-26-047348.txt,deregistration
+N-8F,WEITZ FUNDS,1257927,2026-06,-03  edgar/data/1257927/0001528621-26-000585.txt,deregistration
+N-8F NTC,AIP Multi-Strategy Fund A,1428690,2026-06,-26  edgar/data/1428690/9999999997-26-001124.txt,deregistration
+N-8F NTC,AIP Multi-Strategy Fund P,1428688,2026-06,-26  edgar/data/1428688/9999999997-26-001125.txt,deregistration
+N-8F NTC,BIF GOVERNMENT SECURITIES FUND,353480,2026-06,-26  edgar/data/353480/9999999997-26-001127.txt,deregistration
+N-8F NTC,BIF MONEY FUND,215457,2026-06,-26  edgar/data/215457/9999999997-26-001126.txt,deregistration
+N-8F NTC,BlackRock Collateral Trust,1671416,2026-06,-02  edgar/data/1671416/9999999997-26-000987.txt,deregistration
+N-8F NTC,First Eagle Global Opportunities Fund,1876160,2026-06,-02  edgar/data/1876160/9999999997-26-000989.txt,deregistration
+N-8F NTC,GLENMEDE PORTFOLIOS,884381,2026-06,-26  edgar/data/884381/9999999997-26-001123.txt,deregistration
+N-8F NTC,Humankind Benefit Corp,1821080,2026-04,-27  edgar/data/1821080/9999999997-26-000759.txt,deregistration
+N-8F NTC,Humankind Benefit Corp,1821080,2026-05,-21  edgar/data/1821080/9999999997-26-000872.txt,deregistration
+N-8F NTC,MASTER BOND LLC,1264926,2026-04,-27  edgar/data/1264926/9999999997-26-000762.txt,deregistration
+N-8F NTC,MASTER BOND LLC,1264926,2026-05,-21  edgar/data/1264926/9999999997-26-000886.txt,deregistration
+N-8F NTC,MORGAN STANLEY MORTGAGE SECURITIES TRUST,806564,2026-04,-27  edgar/data/806564/9999999997-26-000760.txt,deregistration
+N-8F NTC,MORGAN STANLEY MORTGAGE SECURITIES TRUST,806564,2026-05,-21  edgar/data/806564/9999999997-26-000884.txt,deregistration
+N-8F NTC,MidBridge Private Markets Fund,1953726,2026-06,-02  edgar/data/1953726/9999999997-26-000988.txt,deregistration
+N-8F NTC,VAN KAMPEN MONEY MARKET FUND,5114,2026-04,-27  edgar/data/5114/9999999997-26-000761.txt,deregistration
+N-8F NTC,VAN KAMPEN MONEY MARKET FUND,5114,2026-05,-21  edgar/data/5114/9999999997-26-000885.txt,deregistration
+N-8F NTC,VIRTUS RETIREMENT TRUST,1004658,2026-06,-02  edgar/data/1004658/9999999997-26-000986.txt,deregistration
+N-8F NTC,Value Line Core Bond Fund,783316,2026-06,-26  edgar/data/783316/9999999997-26-001122.txt,deregistration
+N-8F ORDR,BlackRock Collateral Trust,1671416,2026-06,-25  edgar/data/1671416/9999999997-26-001103.txt,deregistration
+N-8F ORDR,First Eagle Global Opportunities Fund,1876160,2026-06,-25  edgar/data/1876160/9999999997-26-001104.txt,deregistration
+N-8F ORDR,Humankind Benefit Corp,1821080,2026-06,-03  edgar/data/1821080/9999999997-26-000995.txt,deregistration
+N-8F ORDR,MASTER BOND LLC,1264926,2026-06,-03  edgar/data/1264926/9999999997-26-000996.txt,deregistration
+N-8F ORDR,MORGAN STANLEY INCOME OPPORTUNITIES FUND,882381,2026-04,-23  edgar/data/882381/9999999997-26-000744.txt,deregistration
+N-8F ORDR,MORGAN STANLEY MORTGAGE SECURITIES TRUST,806564,2026-06,-03  edgar/data/806564/9999999997-26-000997.txt,deregistration
+N-8F ORDR,MidBridge Private Markets Fund,1953726,2026-06,-25  edgar/data/1953726/9999999997-26-001101.txt,deregistration
+N-8F ORDR,"Puerto Rico Residents Tax-Free Fund VI, Inc.",1847283,2026-04,-23  edgar/data/1847283/9999999997-26-000746.txt,deregistration
+N-8F ORDR,VAN KAMPEN MONEY MARKET FUND,5114,2026-06,-03  edgar/data/5114/9999999997-26-000998.txt,deregistration
+N-8F ORDR,VIRTUS RETIREMENT TRUST,1004658,2026-06,-25  edgar/data/1004658/9999999997-26-001100.txt,deregistration
+N-8F/A,180 DEGREE CAPITAL CORP. /NY/,893739,2026-04,-01  edgar/data/893739/0000893739-26-000004.txt,deregistration
+N-8F/A,BlackRock Collateral Trust,1671416,2026-05,-12  edgar/data/1671416/0001193125-26-219303.txt,deregistration
+N-8F/A,CASH TRUST SERIES INC,852495,2026-05,-12  edgar/data/852495/0001623632-26-000698.txt,deregistration
+N-8F/A,First Eagle Global Opportunities Fund,1876160,2026-05,-28  edgar/data/1876160/0000950103-26-007945.txt,deregistration
+N-8F/A,LEUTHOLD FUNDS INC,1000351,2026-05,-26  edgar/data/1000351/0000897069-26-001229.txt,deregistration
+N-8F/A,MASTER BOND LLC,1264926,2026-04,-22  edgar/data/1264926/0001193125-26-170723.txt,deregistration
+N-8F/A,MidBridge Private Markets Fund,1953726,2026-05,-15  edgar/data/1953726/0001213900-26-057549.txt,deregistration
+N-8F/A,VIRTUS RETIREMENT TRUST,1004658,2026-04,-30  edgar/data/1004658/0001193125-26-195540.txt,deregistration
+N-8F/A,VIRTUS RETIREMENT TRUST,1004658,2026-05,-21  edgar/data/1004658/0001193125-26-233751.txt,deregistration
+N-8F/A,Value Line Core Bond Fund,783316,2026-06,-12  edgar/data/783316/0001104659-26-073232.txt,deregistration

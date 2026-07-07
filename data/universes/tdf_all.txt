@@ -1,0 +1,391 @@
+# All target-date fund series with tickered classes, from SEC series/class census 2026
+# Generated 2026-07-07; 387 series; one class per series (retail-preferred)
+# Usage: fundautopsy wrapper $(grep -v "^#" data/universes/tdf_all.txt | tr "
+" " ")
+JHAPX  # 2020 Lifetime Blend Portfolio | Class A
+JHAVX  # 2030 Lifetime Blend Portfolio | Class A
+JRHSX  # 2030 Preservation Blend Portfolio | Class R6
+JHBAX  # 2040 Lifetime Blend Portfolio | Class A
+JRRSX  # 2040 Preservation Blend Portfolio | Class R6
+JHBFX  # 2050 Lifetime Blend Portfolio | Class A
+JRISX  # 2050 Preservation Blend Portfolio | Class R6
+JHBKX  # 2060 Lifetime Blend Portfolio | Class A
+JTFOX  # 2060 Preservation Blend Portfolio | Class R6
+AAATX  # American Funds 2010 Target Date Retirement Income Fund | Class A
+AABTX  # American Funds 2015 Target Date Retirement Income Fund | Class A
+AACTX  # American Funds 2020 Target Date Retirement Income Fund | Class A
+AADTX  # American Funds 2025 Target Date Retirement Income Fund | Class A
+AAETX  # American Funds 2030 Target Date Retirement Fund | Class A
+AAFTX  # American Funds 2035 Target Date Retirement Fund | Class A
+AAGTX  # American Funds 2040 Target Date Retirement Fund | Class A
+AAHTX  # American Funds 2045 Target Date Retirement Fund | Class A
+AALTX  # American Funds 2050 Target Date Retirement Fund | Class A
+AAMTX  # American Funds 2055 Target Date Retirement Fund | Class A
+AANTX  # American Funds 2060 Target Date Retirement Fund | Class A
+AAOTX  # American Funds 2065 Target Date Retirement Fund | Class A
+AAFJX  # American Funds 2070 Target Date Retirement Fund | Class A
+CTHAX  # American Funds College 2030 Fund | Class 529-A
+LPBAX  # BlackRock LifePath Dynamic 2025 Fund | Investor A Shares
+LPRDX  # BlackRock LifePath Dynamic 2030 Fund | Investor A Shares
+LPJAX  # BlackRock LifePath Dynamic 2035 Fund | Investor A Shares
+LPREX  # BlackRock LifePath Dynamic 2040 Fund | Investor A Shares
+LPHAX  # BlackRock LifePath Dynamic 2045 Fund | Investor A Shares
+LPVAX  # BlackRock LifePath Dynamic 2055 Fund | Investor A Shares
+LPRFX  # BlackRock Lifepath Dynamic 2050 Fund | Investor A Shares
+DFARX  # Dimensional 2070 Target Date Retirement Income Fund | Institutional Class
+MXAGX  # Empower Lifetime 2020 Fund | Investor Class
+MXATX  # Empower Lifetime 2030 Fund | Investor Class
+MXBDX  # Empower Lifetime 2040 Fund | Investor Class
+MXBOX  # Empower Lifetime 2050 Fund | Investor Class
+MXGNX  # Empower Lifetime 2060 Fund | Investor Class
+FACFX  # Fidelity Advisor Freedom 2010 Fund | Class A
+FFVAX  # Fidelity Advisor Freedom 2015 Fund | Class A
+FDAFX  # Fidelity Advisor Freedom 2020 Fund | Class A
+FATWX  # Fidelity Advisor Freedom 2025 Fund | Class A
+FAFEX  # Fidelity Advisor Freedom 2030 Fund | Class A
+FATHX  # Fidelity Advisor Freedom 2035 Fund | Class A
+FAFFX  # Fidelity Advisor Freedom 2040 Fund | Class A
+FFFZX  # Fidelity Advisor Freedom 2045 Fund | Class A
+FFFLX  # Fidelity Advisor Freedom 2050 Fund | Class A
+FHFAX  # Fidelity Advisor Freedom 2055 Fund | Class A
+FDKPX  # Fidelity Advisor Freedom 2060 Fund | Class A
+FDFZX  # Fidelity Advisor Freedom 2065 Fund | Class A
+FRBJX  # Fidelity Advisor Freedom 2070 Fund | Class A
+FISNX  # Fidelity Flex Freedom Blend 2010 Fund | Fidelity Flex Freedom Blend 2010 Fund
+FILSX  # Fidelity Flex Freedom Blend 2015 Fund | Fidelity Flex Freedom Blend 2015 Fund
+FULSX  # Fidelity Flex Freedom Blend 2020 Fund | Fidelity Flex Freedom Blend 2020 Fund
+FELSX  # Fidelity Flex Freedom Blend 2025 Fund | Fidelity Flex Freedom Blend 2025 Fund
+FVLSX  # Fidelity Flex Freedom Blend 2030 Fund | Fidelity Flex Freedom Blend 2030 Fund
+FJLSX  # Fidelity Flex Freedom Blend 2035 Fund | Fidelity Flex Freedom Blend 2035 Fund
+FCLSX  # Fidelity Flex Freedom Blend 2040 Fund | Fidelity Flex Freedom Blend 2040 Fund
+FOLSX  # Fidelity Flex Freedom Blend 2045 Fund | Fidelity Flex Freedom Blend 2045 Fund
+FYLSX  # Fidelity Flex Freedom Blend 2050 Fund | Fidelity Flex Freedom Blend 2050 Fund
+FQLSX  # Fidelity Flex Freedom Blend 2055 Fund | Fidelity Flex Freedom Blend 2055 Fund
+FWLSX  # Fidelity Flex Freedom Blend 2060 Fund | Fidelity Flex Freedom Blend 2060 Fund
+FDFPX  # Fidelity Flex Freedom Blend 2065 Fund | Fidelity Flex Freedom Blend 2065 Fund
+FRBQX  # Fidelity Flex Freedom Blend 2070 Fund | Fidelity Flex Freedom Blend 2070 Fund
+FSNKX  # Fidelity Freedom 2010 Fund | Class K
+FSNLX  # Fidelity Freedom 2015 Fund | Class K
+FSNOX  # Fidelity Freedom 2020 Fund | Class K
+FSNPX  # Fidelity Freedom 2025 Fund | Class K
+FSNQX  # Fidelity Freedom 2030 Fund | Class K
+FSNUX  # Fidelity Freedom 2035 Fund | Class K
+FSNVX  # Fidelity Freedom 2040 Fund | Class K
+FSNZX  # Fidelity Freedom 2045 Fund | Class K
+FNSBX  # Fidelity Freedom 2050 Fund | Class K
+FNSDX  # Fidelity Freedom 2055 Fund | Class K
+FNSFX  # Fidelity Freedom 2060 Fund | Class K
+FFSZX  # Fidelity Freedom 2065 Fund | Class K6
+FRBHX  # Fidelity Freedom 2070 Fund | Class K6
+FHABX  # Fidelity Freedom Blend 2010 Fund | Fidelity Advisor Freedom Blend 2010 Fund: Class A
+FJAUX  # Fidelity Freedom Blend 2015 Fund | Fidelity Advisor Freedom Blend 2015 Fund: Class A
+FJAOX  # Fidelity Freedom Blend 2020 Fund | Fidelity Advisor Freedom Blend 2020 Fund: Class A
+FJAHX  # Fidelity Freedom Blend 2025 Fund | Fidelity Advisor Freedom Blend 2025 Fund: Class A
+FJAMX  # Fidelity Freedom Blend 2030 Fund | Fidelity Advisor Freedom Blend 2030 Fund: Class A
+FHJGX  # Fidelity Freedom Blend 2035 Fund | Fidelity Advisor Freedom Blend 2035 Fund: Class A
+FHDEX  # Fidelity Freedom Blend 2040 Fund | Fidelity Advisor Freedom Blend 2040 Fund: Class A
+FHGFX  # Fidelity Freedom Blend 2045 Fund | Fidelity Advisor Freedom Blend 2045 Fund: Class A
+FHJKX  # Fidelity Freedom Blend 2050 Fund | Fidelity Advisor Freedom Blend 2050 Fund: Class A
+FHUEX  # Fidelity Freedom Blend 2055 Fund | Fidelity Advisor Freedom Blend 2055 Fund: Class A
+FHNEX  # Fidelity Freedom Blend 2060 Fund | Fidelity Advisor Freedom Blend 2060 Fund: Class A
+FAZAX  # Fidelity Freedom Blend 2065 Fund | Fidelity Advisor Freedom Blend 2065 Fund: Class A
+FRCHX  # Fidelity Freedom Blend 2070 Fund | Fidelity Advisor Freedom Blend 2070 Fund: Class A
+FKIFX  # Fidelity Freedom Index 2010 Fund | Investor Class
+FLIFX  # Fidelity Freedom Index 2015 Fund | Investor Class
+FPIFX  # Fidelity Freedom Index 2020 Fund | Investor Class
+FQIFX  # Fidelity Freedom Index 2025 Fund | Investor Class
+FXIFX  # Fidelity Freedom Index 2030 Fund | Investor Class
+FIHFX  # Fidelity Freedom Index 2035 Fund | Investor Class
+FBIFX  # Fidelity Freedom Index 2040 Fund | Investor Class
+FIOFX  # Fidelity Freedom Index 2045 Fund | Investor Class
+FIPFX  # Fidelity Freedom Index 2050 Fund | Investor Class
+FDEWX  # Fidelity Freedom Index 2055 Fund | Investor Class
+FDKLX  # Fidelity Freedom Index 2060 Fund | Investor Class
+FFIJX  # Fidelity Freedom Index 2065 Fund | Investor Class
+FRBVX  # Fidelity Freedom Index 2070 Fund | Investor Class
+FRQAX  # Fidelity Managed Retirement 2010 Fund | Fidelity Advisor Managed Retirement 2010 Fund: Class A
+FARSX  # Fidelity Managed Retirement 2015 Fund | Fidelity Advisor Managed Retirement 2015 Fund: Class A
+FARVX  # Fidelity Managed Retirement 2020 Fund | Fidelity Advisor Managed Retirement 2020 Fund: Class A
+FARFX  # Fidelity Managed Retirement 2025 Fund | Fidelity Advisor Managed Retirement 2025 Fund: Class A
+FMRBX  # Fidelity Managed Retirement 2030 Fund | Fidelity Advisor Managed Retirement 2030 Fund: Class A
+FMRUX  # Fidelity Managed Retirement 2035 Fund | Fidelity Advisor Managed Retirement 2035 Fund: Class A
+FIRWX  # Fidelity Simplicity RMD 2020 Fund | Fidelity Simplicity RMD 2020 Fund
+FSRMX  # Fidelity Simplicity RMD 2030 Fund | Fidelity Simplicity RMD 2030 Fund
+FSUZX  # Fidelity Sustainable Target Date 2010 Fund | Fidelity Advisor Sustainable Target Date 2010 Fund: Class A
+FSVOX  # Fidelity Sustainable Target Date 2015 Fund | Fidelity Advisor Sustainable Target Date 2015 Fund: Class A
+FSWEX  # Fidelity Sustainable Target Date 2020 Fund | Fidelity Advisor Sustainable Target Date 2020 Fund: Class A
+FSWQX  # Fidelity Sustainable Target Date 2025 Fund | Fidelity Advisor Sustainable Target Date 2025 Fund: Class A
+FSXBX  # Fidelity Sustainable Target Date 2030 Fund | Fidelity Advisor Sustainable Target Date 2030 Fund: Class A
+FSXLX  # Fidelity Sustainable Target Date 2035 Fund | Fidelity Advisor Sustainable Target Date 2035 Fund: Class A
+FSXWX  # Fidelity Sustainable Target Date 2040 Fund | Fidelity Advisor Sustainable Target Date 2040 Fund: Class A
+FSYLX  # Fidelity Sustainable Target Date 2045 Fund | Fidelity Advisor Sustainable Target Date 2045 Fund: Class A
+FSYYX  # Fidelity Sustainable Target Date 2050 Fund | Fidelity Advisor Sustainable Target Date 2050 Fund: Class A
+FSZJX  # Fidelity Sustainable Target Date 2055 Fund | Fidelity Advisor Sustainable Target Date 2055 Fund: Class A
+FSZTX  # Fidelity Sustainable Target Date 2060 Fund | Fidelity Advisor Sustainable Target Date 2060 Fund: Class A
+FTGUX  # Fidelity Sustainable Target Date 2065 Fund | Fidelity Advisor Sustainable Target Date 2065 Fund: Class A
+FRCWX  # Fidelity Sustainable Target Date 2070 Fund | Fidelity Advisor Sustainable Target Date 2070 Fund: Class A
+FLRMX  # Franklin LifeSmart 2020 Retirement Target Fund | Class A
+FTRTX  # Franklin LifeSmart 2025 Retirement Target Fund | Class A
+FLRSX  # Franklin LifeSmart 2030 Retirement Target Fund | Class A
+FRTAX  # Franklin LifeSmart 2035 Retirement Target Fund | Class A
+FLADX  # Franklin LifeSmart 2040 Retirement Target Fund | Class A
+FTTAX  # Franklin LifeSmart 2045 Retirement Target Fund | Class A
+FLSJX  # Franklin LifeSmart 2050 Retirement Target Fund | Class A
+FLTFX  # Franklin LifeSmart 2055 Retirement Target Fund | Class A
+FLASX  # Franklin LifeSmart 2060 Retirement Target Fund | Class A
+FRDGV  # Freedom 2070 Portfolio | Service Class
+ZCBA  # Global X Zero Coupon Bond 2030 ETF | Global X Zero Coupon Bond 2030 ETF
+BSCU  # Invesco BulletShares 2030 Corporate Bond ETF | Invesco BulletShares 2030 Corporate Bond ETF
+BSMU  # Invesco BulletShares 2030 Municipal Bond ETF | Invesco BulletShares 2030 Municipal Bond ETF
+JNSAX  # JPMorgan SmartRetirement 2025 Fund | Class A
+JSMAX  # JPMorgan SmartRetirement 2030 Fund | Class A
+SRJAX  # JPMorgan SmartRetirement 2035 Fund | Class A
+SMTAX  # JPMorgan SmartRetirement 2040 Fund | Class A
+JSAAX  # JPMorgan SmartRetirement 2045 Fund | Class A
+JTSAX  # JPMorgan SmartRetirement 2050 Fund | Class A
+JFFAX  # JPMorgan SmartRetirement 2055 Fund | Class A
+JAKAX  # JPMorgan SmartRetirement 2060 Fund | Class A
+JSMEX  # JPMorgan SmartRetirement 2065 Fund | Class A
+JAJKX  # JPMorgan SmartRetirement 2070 Fund | Class A
+JAAYX  # JPMorgan SmartRetirement Blend 2060 Fund | Class R6
+JSBYX  # JPMorgan SmartRetirement Blend 2065 Fund | Class R6
+JAKJX  # JPMorgan SmartRetirement Blend 2070 Fund | Class R6
+JBYSX  # JPMorgan SmartRetirement* Blend 2025 Fund | Class R6
+JRBYX  # JPMorgan SmartRetirement* Blend 2030 Fund | Class R6
+JPYRX  # JPMorgan SmartRetirement* Blend 2035 Fund | Class R6
+JOBYX  # JPMorgan SmartRetirement* Blend 2040 Fund | Class R6
+JMYAX  # JPMorgan SmartRetirement* Blend 2045 Fund | Class R6
+JNYAX  # JPMorgan SmartRetirement* Blend 2050 Fund | Class R6
+JTYBX  # JPMorgan SmartRetirement* Blend 2055 Fund | Class R6
+MLTKX  # MFS Lifetime 2030 Fund | R6
+MLFKX  # MFS Lifetime 2040 Fund | R6
+MFFKX  # MFS Lifetime 2050 Fund | R6
+MFJKX  # MFS Lifetime 2060 Fund | R6
+MRTAX  # MassMutual RetireSMART by JPMorgan 2020 Fund | Class A
+MMSDX  # MassMutual RetireSMART by JPMorgan 2025 Fund | Class A
+MRYAX  # MassMutual RetireSMART by JPMorgan 2030 Fund | Class A
+MMXAX  # MassMutual RetireSMART by JPMorgan 2035 Fund | Class A
+MRFAX  # MassMutual RetireSMART by JPMorgan 2040 Fund | Class A
+MMKAX  # MassMutual RetireSMART by JPMorgan 2045 Fund | Class A
+MMARX  # MassMutual RetireSMART by JPMorgan 2050 Fund | Class A
+MMWAX  # MassMutual RetireSMART by JPMorgan 2055 Fund | Class A
+MMWDX  # MassMutual RetireSMART by JPMorgan 2060 Fund | Class A
+MMZGX  # MassMutual RetireSMART by JPMorgan 2065 Fund | Class A
+MMFBX  # MassMutual Select T. Rowe Price Retirement 2005 Fund | Class I
+MMXCX  # MassMutual Select T. Rowe Price Retirement 2010 Fund | Class M5
+MMFHX  # MassMutual Select T. Rowe Price Retirement 2015 Fund | Class I
+MMTWX  # MassMutual Select T. Rowe Price Retirement 2020 Fund | Class I
+MMTFX  # MassMutual Select T. Rowe Price Retirement 2025 Fund | Class I
+MMTRX  # MassMutual Select T. Rowe Price Retirement 2030 Fund | Class I
+MMTJX  # MassMutual Select T. Rowe Price Retirement 2035 Fund | Class I
+MMFOX  # MassMutual Select T. Rowe Price Retirement 2040 Fund | Class I
+MMFTX  # MassMutual Select T. Rowe Price Retirement 2045 Fund | Class I
+MMDDX  # MassMutual Select T. Rowe Price Retirement 2050 Fund | Class I
+MMDJX  # MassMutual Select T. Rowe Price Retirement 2055 Fund | Class I
+MMSKX  # MassMutual Select T. Rowe Price Retirement 2060 Fund | Class I
+MMZLX  # MassMutual Select T. Rowe Price Retirement 2065 Fund | Class M5
+JLDAX  # Multimanager 2020 Lifetime Portfolio | Class A
+JLFAX  # Multimanager 2030 Lifetime Portfolio | Class A
+JLIAX  # Multimanager 2040 Lifetime Portfolio | Class A
+JLKAX  # Multimanager 2050 Lifetime Portfolio | Class A
+JJERX  # Multimanager 2060 Lifetime Portfolio | Class A
+NWAFX  # Nationwide Destination 2020 Fund | Class A
+NWIAX  # Nationwide Destination 2030 Fund | Class A
+NWMAX  # Nationwide Destination 2040 Fund | Class A
+NWOAX  # Nationwide Destination 2050 Fund | Class A
+NWWRX  # Nationwide Destination 2060 Fund | Class A
+NSFBX  # Natixis Target Retirement 2015 Fund | Class N
+NSFDX  # Natixis Target Retirement 2020 Fund | Class N
+NSFEX  # Natixis Target Retirement 2025 Fund | Class N
+NSFFX  # Natixis Target Retirement 2030 Fund | Class N
+NSFGX  # Natixis Target Retirement 2035 Fund | Class N
+NSFHX  # Natixis Target Retirement 2040 Fund | Class N
+NSFJX  # Natixis Target Retirement 2045 Fund | Class N
+NSFKX  # Natixis Target Retirement 2050 Fund | Class N
+NSFLX  # Natixis Target Retirement 2055 Fund | Class N
+NSFMX  # Natixis Target Retirement 2060 Fund | Class N
+NSFOX  # Natixis Target Retirement 2065 Fund | Class N
+TIPA  # Northern Trust 2030 Inflation-Linked Distributing Ladder ETF | Northern Trust 2030 Inflation-Linked Distributing Ladder ETF
+MUNA  # Northern Trust 2030 Tax-Exempt Distributing Ladder ETF | Northern Trust 2030 Tax-Exempt Distributing Ladder ETF
+TCLTX  # Nuveen Lifecycle 2020 Fund | Retirement Class
+TCLNX  # Nuveen Lifecycle 2030 Fund | Retirement Class
+TCLOX  # Nuveen Lifecycle 2040 Fund | Retirement Class
+TLFRX  # Nuveen Lifecycle 2050 Fund | Retirement Class
+TLXRX  # Nuveen Lifecycle 2060 Fund | Retirement Class
+TLWRX  # Nuveen Lifecycle Index 2020 Fund | Retirement Class
+TLHRX  # Nuveen Lifecycle Index 2030 Fund | Retirement Class
+TLZRX  # Nuveen Lifecycle Index 2040 Fund | Retirement Class
+TLLRX  # Nuveen Lifecycle Index 2050 Fund | Retirement Class
+TVITX  # Nuveen Lifecycle Index 2060 Fund | Retirement Class
+ARCVX  # ONE CHOICE 2030 PORTFOLIO | Investor Class
+ARDVX  # ONE CHOICE 2040 PORTFOLIO | Investor Class
+ARFVX  # ONE CHOICE 2050 PORTFOLIO | Investor Class
+ARGVX  # ONE CHOICE 2060 PORTFOLIO | Investor Class
+AABWX  # ONE CHOICE BLEND+ 2030 PORTFOLIO | Investor Class
+AACSX  # ONE CHOICE BLEND+ 2040 PORTFOLIO | Investor Class
+AADNX  # ONE CHOICE BLEND+ 2050 PORTFOLIO | Investor Class
+AAEFX  # ONE CHOICE BLEND+ 2060 PORTFOLIO | Investor Class
+PDOHX  # PGIM TARGET DATE 2065 FUND | Class R6
+PDAUX  # PGIM Target Date 2070 Fund | Class R6
+PBPAX  # PIMCO REALPATH Blend 2030 Fund | Class A
+PVPAX  # PIMCO REALPATH Blend 2040 Fund | Class A
+PPQAX  # PIMCO REALPATH Blend 2050 Fund | Class A
+PRBAX  # PIMCO REALPATH Blend 2060 Fund | Class A
+PTBAX  # Principal LifeTime 2020 Fund | Class A
+PTCAX  # Principal LifeTime 2030 Fund | Class A
+PTDAX  # Principal LifeTime 2040 Fund | Class A
+PPEAX  # Principal LifeTime 2050 Fund | Class A
+PLTZX  # Principal LifeTime 2060 Fund | Institutional Class
+PHTTX  # Principal LifeTime Hybrid 2020 Fund | Institutional Class
+PHTNX  # Principal LifeTime Hybrid 2030 Fund | Institutional Class
+PLTQX  # Principal LifeTime Hybrid 2040 Fund | Institutional Class
+PHTUX  # Principal LifeTime Hybrid 2050 Fund | Institutional Class
+PLTHX  # Principal LifeTime Hybrid 2060 Fund | Institutional Class
+PBDLX  # Putnam Retirement Advantage 2025 Fund | Class A Shares
+PDLTX  # Putnam Retirement Advantage 2030 Fund | Class A Shares
+PDFLX  # Putnam Retirement Advantage 2035 Fund | Class A Shares
+PCCLX  # Putnam Retirement Advantage 2040 Fund | Class A Shares
+PALGX  # Putnam Retirement Advantage 2045 Fund | Class A Shares
+PAEZX  # Putnam Retirement Advantage 2050 Fund | Class A Shares
+PADYX  # Putnam Retirement Advantage 2055 Fund | Class A Shares
+PAAVX  # Putnam Retirement Advantage 2060 Fund | Class A Shares
+PCJZX  # Putnam Retirement Advantage 2065 Fund | Class A
+PCJQX  # Putnam Retirement Advantage Plus 2065 Fund | Class A
+SPTAX  # SP Funds 2030 Target Date Fund | Investor Shares
+SPTBX  # SP Funds 2040 Target Date Fund | Investor Shares
+SPTCX  # SP Funds 2050 Target Date Fund | Investor Shares
+SWBRX  # Schwab Target 2010 Fund | Schwab Target 2010 Fund
+SWYAX  # Schwab Target 2010 Index Fund | Schwab Target 2010 Index Fund
+SWGRX  # Schwab Target 2015 Fund | Schwab Target 2015 Fund
+SWYBX  # Schwab Target 2015 Index Fund | Schwab Target 2015 Index Fund
+SWCRX  # Schwab Target 2020 Fund | Schwab Target 2020 Fund
+SWYLX  # Schwab Target 2020 Index Fund | Schwab Target 2020 Index Fund
+SWHRX  # Schwab Target 2025 Fund | Schwab Target 2025 Fund
+SWYDX  # Schwab Target 2025 Index Fund | Schwab Target 2025 Index Fund
+SWDRX  # Schwab Target 2030 Fund | Schwab Target 2030 Fund
+SWYEX  # Schwab Target 2030 Index Fund | Schwab Target 2030 Index Fund
+SWIRX  # Schwab Target 2035 Fund | Schwab Target 2035 Fund
+SWYFX  # Schwab Target 2035 Index Fund | Schwab Target 2035 Index Fund
+SWERX  # Schwab Target 2040 Fund | Schwab Target 2040 Fund
+SWYGX  # Schwab Target 2040 Index Fund | Schwab Target 2040 Index Fund
+SWMRX  # Schwab Target 2045 Fund | Schwab Target 2045 Fund
+SWYHX  # Schwab Target 2045 Index Fund | Schwab Target 2045 Index Fund
+SWNRX  # Schwab Target 2050 Fund | Schwab Target 2050 Fund
+SWYMX  # Schwab Target 2050 Index Fund | Schwab Target 2050 Index Fund
+SWORX  # Schwab Target 2055 Fund | Schwab Target 2055 Fund
+SWYJX  # Schwab Target 2055 Index Fund | Schwab Target 2055 Index Fund
+SWPRX  # Schwab Target 2060 Fund | Schwab Target 2060 Fund
+SWYNX  # Schwab Target 2060 Index Fund | Schwab Target 2060 Index Fund
+SWQRX  # Schwab Target 2065 Fund | Schwab Target 2065 Fund
+SWYOX  # Schwab Target 2065 Index Fund | Schwab Target 2065 Index Fund
+SWRRX  # Schwab Target 2070 Fund | Schwab Target 2070 Fund
+SWYPX  # Schwab Target 2070 Index Fund | Schwab Target 2070 Index Fund
+SSBJX  # State Street Target Retirement 2020 Fund | Class A
+SSBPX  # State Street Target Retirement 2025 Fund | Class A
+SSBUX  # State Street Target Retirement 2030 Fund | Class A
+SSBZX  # State Street Target Retirement 2035 Fund | Class A
+SSCLX  # State Street Target Retirement 2040 Fund | Class A
+SSCUX  # State Street Target Retirement 2045 Fund | Class A
+SSDFX  # State Street Target Retirement 2050 Fund | Class A
+SSDMX  # State Street Target Retirement 2055 Fund | Class A
+SSDTX  # State Street Target Retirement 2060 Fund | Class A
+SSFKX  # State Street Target Retirement 2065 Fund | Class K
+SSGNX  # State Street Target Retirement 2070 Fund | Class K
+TRRFX  # T. Rowe Price Retirement 2005 Fund | T. Rowe Price Retirement 2005 Fund
+TRRAX  # T. Rowe Price Retirement 2010 Fund | T. Rowe Price Retirement 2010 Fund
+TRRGX  # T. Rowe Price Retirement 2015 Fund | T. Rowe Price Retirement 2015 Fund
+TRRBX  # T. Rowe Price Retirement 2020 Fund | T. Rowe Price Retirement 2020 Fund
+TRRHX  # T. Rowe Price Retirement 2025 Fund | T. Rowe Price Retirement 2025 Fund
+TRRCX  # T. Rowe Price Retirement 2030 Fund | T. Rowe Price Retirement 2030 Fund
+TRRJX  # T. Rowe Price Retirement 2035 Fund | T. Rowe Price Retirement 2035 Fund
+TRRDX  # T. Rowe Price Retirement 2040 Fund | T. Rowe Price Retirement 2040 Fund
+TRRKX  # T. Rowe Price Retirement 2045 Fund | T. Rowe Price Retirement 2045 Fund
+TRRMX  # T. Rowe Price Retirement 2050 Fund | T. Rowe Price Retirement 2050 Fund
+TRRNX  # T. Rowe Price Retirement 2055 Fund | T. Rowe Price Retirement 2055 Fund
+TRRLX  # T. Rowe Price Retirement 2060 Fund | T. Rowe Price Retirement 2060 Fund
+PASUX  # T. Rowe Price Retirement 2065 Fund | T. Rowe Price Retirement 2065 Fund-Advisor Class
+TRVSX  # T. Rowe Price Retirement 2070 Fund | T. Rowe Price Retirement 2070 Fund
+TBLPX  # T. Rowe Price Retirement Blend 2005 Fund | T. Rowe Price Retirement Blend 2005 Fund
+TBLQX  # T. Rowe Price Retirement Blend 2010 Fund | T. Rowe Price Retirement Blend 2010 Fund
+TBLSX  # T. Rowe Price Retirement Blend 2015 Fund | T. Rowe Price Retirement Blend 2015 Fund
+TSBAX  # T. Rowe Price Retirement Blend 2020 Fund | T. Rowe Price Retirement Blend 2020 Fund
+TBLEX  # T. Rowe Price Retirement Blend 2025 Fund | T. Rowe Price Retirement Blend 2025 Fund-I Class
+TBLGX  # T. Rowe Price Retirement Blend 2030 Fund | T. Rowe Price Retirement Blend 2030 Fund-I Class
+TBLYX  # T. Rowe Price Retirement Blend 2035 Fund | T. Rowe Price Retirement Blend 2035 Fund
+TRBLX  # T. Rowe Price Retirement Blend 2040 Fund | T. Rowe Price Retirement Blend 2040 Fund
+TRBQX  # T. Rowe Price Retirement Blend 2045 Fund | T. Rowe Price Retirement Blend 2045 Fund
+TBLLX  # T. Rowe Price Retirement Blend 2050 Fund | T. Rowe Price Retirement Blend 2050 Fund-I Class
+TBLMX  # T. Rowe Price Retirement Blend 2055 Fund | T. Rowe Price Retirement Blend 2055 Fund-I Class
+TRBNX  # T. Rowe Price Retirement Blend 2060 Fund | T. Rowe Price Retirement Blend 2060 Fund
+TBLOX  # T. Rowe Price Retirement Blend 2065 Fund | T. Rowe Price Retirement Blend 2065 Fund-I Class
+TRYQX  # T. Rowe Price Retirement Blend 2070 Fund | T. Rowe Price Retirement Blend 2070 Fund-I Class
+TRLAX  # T. Rowe Price Retirement Income 2020 Fund | T. Rowe Price Retirement Income 2020 Fund
+TRAVX  # T. Rowe Price Retirement Income 2025 Fund | T. Rowe Price Retirement Income 2025 Fund
+TRARX  # T. Rowe Price Target 2005 Fund | T. Rowe Price Target 2005 Fund
+TRROX  # T. Rowe Price Target 2010 Fund | T. Rowe Price Target 2010 Fund
+TRRTX  # T. Rowe Price Target 2015 Fund | T. Rowe Price Target 2015 Fund
+TRRUX  # T. Rowe Price Target 2020 Fund | T. Rowe Price Target 2020 Fund
+PAJRX  # T. Rowe Price Target 2025 Fund | T. Rowe Price Target 2025 Fund-Advisor Class
+TRRWX  # T. Rowe Price Target 2030 Fund | T. Rowe Price Target 2030 Fund
+RPGRX  # T. Rowe Price Target 2035 Fund | T. Rowe Price Target 2035 Fund
+TRHRX  # T. Rowe Price Target 2040 Fund | T. Rowe Price Target 2040 Fund
+RPTFX  # T. Rowe Price Target 2045 Fund | T. Rowe Price Target 2045 Fund
+TRFOX  # T. Rowe Price Target 2050 Fund | T. Rowe Price Target 2050 Fund
+TRFFX  # T. Rowe Price Target 2055 Fund | T. Rowe Price Target 2055 Fund
+TRTFX  # T. Rowe Price Target 2060 Fund | T. Rowe Price Target 2060 Fund
+PAZLX  # T. Rowe Price Target 2065 Fund | T. Rowe Price Target 2065 Fund-Advisor Class
+TRHQX  # T. Rowe Price Target 2070 Fund | T. Rowe Price Target 2070 Fund
+TCSUX  # Transamerica ClearTrack 2020 | R6
+TDHTX  # Transamerica ClearTrack 2030 | R6
+TCKTX  # Transamerica ClearTrack 2040 | R6
+TCMTX  # Transamerica ClearTrack 2050 | R6
+TCSSX  # Transamerica ClearTrack 2060 | Class R6
+VBCA  # Vanguard Target Maturity 2027 Corporate Bond ETF | ETF Shares
+VBCB  # Vanguard Target Maturity 2028 Corporate Bond ETF | ETF Shares
+VBCC  # Vanguard Target Maturity 2029 Corporate Bond ETF | ETF Shares
+VBCD  # Vanguard Target Maturity 2030 Corporate Bond ETF | ETF Shares
+VBCE  # Vanguard Target Maturity 2031 Corporate Bond ETF | ETF Shares
+VBCF  # Vanguard Target Maturity 2032 Corporate Bond ETF | ETF Shares
+VBCG  # Vanguard Target Maturity 2033 Corporate Bond ETF | ETF Shares
+VBCH  # Vanguard Target Maturity 2034 Corporate Bond ETF | ETF Shares
+VBCI  # Vanguard Target Maturity 2035 Corporate Bond ETF | ETF Shares
+VBCJ  # Vanguard Target Maturity 2036 Corporate Bond ETF | ETF Shares
+VTWNX  # Vanguard Target Retirement 2020 Fund | Investor Shares
+VTTVX  # Vanguard Target Retirement 2025 Fund | Investor Shares
+VTHRX  # Vanguard Target Retirement 2030 Fund | Investor Shares
+VTTHX  # Vanguard Target Retirement 2035 Fund | Investor Shares
+VFORX  # Vanguard Target Retirement 2040 Fund | Investor Shares
+VTIVX  # Vanguard Target Retirement 2045 Fund | Investor Shares
+VFIFX  # Vanguard Target Retirement 2050 Fund | Investor Shares
+VFFVX  # Vanguard Target Retirement 2055 Fund | Investor Shares
+VTTSX  # Vanguard Target Retirement 2060 Fund | Investor Shares
+VLXVX  # Vanguard Target Retirement 2065 Fund | Investor Shares
+VSVNX  # Vanguard Target Retirement 2070 Fund | Investor Shares
+URTRX  # Victory Target Retirement 2030 Fund (Formerly USAA Target Retirement 2030 Fund) | Victory Target Retirement 2030 Fund
+URFRX  # Victory Target Retirement 2040 Fund (Formerly USAA Target Retirement 2040 Fund) | Victory Target Retirement 2040 Fund
+URFFX  # Victory Target Retirement 2050 Fund (Formerly USAA Target Retirement 2050 Fund) | Victory Target Retirement 2050 Fund
+URSIX  # Victory Target Retirement 2060 Fund (Formerly USAA Target Retirement 2060 Fund) | Victory Target Retirement 2060 Fund
+VARTX  # Virtus DFA 2015 Target Date Retirement Income Fund | Class A
+IDXFX  # Voya Index Solution 2030 Portfolio | Class ADV
+IDXKX  # Voya Index Solution 2040 Portfolio | Class ADV
+IDXPX  # Voya Index Solution 2050 Portfolio | Class ADV
+VPSAX  # Voya Index Solution 2060 Portfolio | Class ADV
+ISNFX  # Voya Solution 2030 Portfolio | Class ADV
+ISNKX  # Voya Solution 2040 Portfolio | Class ADV
+ISNPX  # Voya Solution 2050 Portfolio | Class ADV
+VSPAX  # Voya Solution 2060 Portfolio | Class ADV
+ITDA  # iShares LifePath Target Date 2025 ETF | iShares LifePath Target Date 2025 ETF
+ITDB  # iShares LifePath Target Date 2030 ETF | iShares LifePath Target Date 2030 ETF
+ITDC  # iShares LifePath Target Date 2035 ETF | iShares LifePath Target Date 2035 ETF
+ITDD  # iShares LifePath Target Date 2040 ETF | iShares LifePath Target Date 2040 ETF
+ITDE  # iShares LifePath Target Date 2045 ETF | iShares LifePath Target Date 2045 ETF
+ITDF  # iShares LifePath Target Date 2050 ETF | iShares LifePath Target Date 2050 ETF
+ITDG  # iShares LifePath Target Date 2055 ETF | iShares LifePath Target Date 2055 ETF
+ITDH  # iShares LifePath Target Date 2060 ETF | iShares LifePath Target Date 2060 ETF
+ITDI  # iShares LifePath Target Date 2065 ETF | iShares LifePath Target Date 2065 ETF
+ITDJ  # iShares LifePath Target Date 2070 ETF | iShares LifePath Target Date 2070 ETF
+IBHJ  # iShares iBonds 2030 Term High Yield and Income ETF | iShares iBonds 2030 Term High Yield and Income ETF
+IBDV  # iShares iBonds Dec 2030 Term Corporate ETF | iShares iBonds Dec 2030 Term Corporate ETF
+IBMS  # iShares iBonds Dec 2030 Term Muni Bond ETF | iShares iBonds Dec 2030 Term Muni Bond ETF
+IBTK  # iShares iBonds Dec 2030 Term Treasury ETF | iShares iBonds Dec 2030 Term Treasury ETF
+IBIG  # iShares iBonds Oct 2030 Term TIPS ETF | iShares iBonds Oct 2030 Term TIPS ETF

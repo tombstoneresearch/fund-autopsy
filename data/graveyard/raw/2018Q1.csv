@@ -1,0 +1,163 @@
+form,company,cik,date_filed,filing_path,event
+N-14,AMERICAN PENSION INVESTORS TRUST,764859,2018-02,-02  edgar/data/764859/0001193125-18-030902.txt,merger/reorg
+N-14,Aberdeen Funds,1413594,2018-01,-26  edgar/data/1413594/0001104659-18-004307.txt,merger/reorg
+N-14,CAPITAL MANAGEMENT INVESTMENT TRUST,931491,2018-02,-09  edgar/data/931491/0001398344-18-001882.txt,merger/reorg
+N-14,Chartwell Funds,1697268,2018-01,-26  edgar/data/1697268/0001398344-18-001015.txt,merger/reorg
+N-14,DREYFUS PREMIER WORLDWIDE GROWTH FUND INC,897569,2018-02,-22  edgar/data/897569/0001144204-18-010300.txt,merger/reorg
+N-14,EATON VANCE MUTUAL FUNDS TRUST,745463,2018-01,-30  edgar/data/745463/0000940394-18-000172.txt,merger/reorg
+N-14,Exchange Listed Funds Trust,1547950,2018-03,-07  edgar/data/1547950/0001398344-18-003727.txt,merger/reorg
+N-14,FRANK FUNDS,1281790,2018-03,-13  edgar/data/1281790/0001162044-18-000182.txt,merger/reorg
+N-14,JOHN HANCOCK VARIABLE INSURANCE TRUST,756913,2018-01,-17  edgar/data/756913/0001133228-18-000369.txt,merger/reorg
+N-14,LAZARD FUNDS INC,874964,2018-03,-08  edgar/data/874964/0000930413-18-000851.txt,merger/reorg
+N-14,LORD ABBETT INVESTMENT TRUST,911507,2018-03,-27  edgar/data/911507/0000930413-18-001095.txt,merger/reorg
+N-14,M3Sixty Funds Trust,1643838,2018-03,-02  edgar/data/1643838/0001387131-18-000894.txt,merger/reorg
+N-14,MORGAN STANLEY INSTITUTIONAL FUND TRUST,741375,2018-02,-09  edgar/data/741375/0001104659-18-008010.txt,merger/reorg
+N-14,NUVEEN INVESTMENT TRUST,1013881,2018-03,-22  edgar/data/1013881/0001193125-18-092050.txt,merger/reorg
+N-14,NUVEEN INVESTMENT TRUST,1013881,2018-03,-22  edgar/data/1013881/0001193125-18-092071.txt,merger/reorg
+N-14,PACIFIC SELECT FUND,813900,2018-03,-27  edgar/data/813900/0001398344-18-004781.txt,merger/reorg
+N-14,PUTNAM FUNDS TRUST,1005942,2018-02,-08  edgar/data/1005942/0000928816-18-000292.txt,merger/reorg
+N-14,PUTNAM U S GOVERNMENT INCOME TRUST,732337,2018-02,-12  edgar/data/732337/0000928816-18-000312.txt,merger/reorg
+N-14,Pear Tree Funds,722885,2018-03,-16  edgar/data/722885/0001144204-18-015355.txt,merger/reorg
+N-14,RUSSELL INVESTMENT CO,351601,2018-01,-30  edgar/data/351601/0001193125-18-025540.txt,merger/reorg
+N-14,SCM Trust,836267,2018-03,-13  edgar/data/836267/0001398344-18-004150.txt,merger/reorg
+N-14,SCM Trust,836267,2018-03,-13  edgar/data/836267/0001398344-18-004154.txt,merger/reorg
+N-14,TEMPLETON GLOBAL SMALLER COMPANIES FUND,350900,2018-01,-18  edgar/data/350900/0000350900-18-000006.txt,merger/reorg
+N-14,THRIVENT MUTUAL FUNDS,811869,2018-03,-29  edgar/data/811869/0001193125-18-101485.txt,merger/reorg
+N-14,THRIVENT SERIES FUND INC,790166,2018-03,-29  edgar/data/790166/0001193125-18-101482.txt,merger/reorg
+N-14,UNIFIED SERIES TRUST,1199046,2018-01,-26  edgar/data/1199046/0001193125-18-021002.txt,merger/reorg
+N-14,USAA MUTUAL FUNDS TRUST,908695,2018-03,-09  edgar/data/908695/0001683863-18-000052.txt,merger/reorg
+N-14,VALUED ADVISERS TRUST,1437249,2018-02,-26  edgar/data/1437249/0001193125-18-058520.txt,merger/reorg
+N-14 8C,FIRST TRUST HIGH INCOME LONG/SHORT FUND,1494530,2018-03,-20  edgar/data/1494530/0001445546-18-001467.txt,merger/reorg
+N-14 8C,Kayne Anderson MLP Investment CO,1293613,2018-03,-20  edgar/data/1293613/0001193125-18-089260.txt,merger/reorg
+N-14 8C,Nuveen Build America Bond Fund,1478888,2018-03,-20  edgar/data/1478888/0001193125-18-089340.txt,merger/reorg
+N-14 8C/A,"ABERDEEN CHILE FUND, INC.",846676,2018-01,-26  edgar/data/846676/0001104659-18-004294.txt,merger/reorg
+N-14 8C/A,"ABERDEEN CHILE FUND, INC.",846676,2018-02,-12  edgar/data/846676/0001104659-18-008502.txt,merger/reorg
+N-14 8C/A,"ABERDEEN CHILE FUND, INC.",846676,2018-02,-15  edgar/data/846676/0001104659-18-010046.txt,merger/reorg
+N-14 8C/A,"BLACKROCK MUNIYIELD NEW JERSEY FUND, INC.",884216,2018-02,-08  edgar/data/884216/0001193125-18-036166.txt,merger/reorg
+N-14/A,AMERICAN PENSION INVESTORS TRUST,764859,2018-02,-27  edgar/data/764859/0001193125-18-058847.txt,merger/reorg
+N-14/A,AMERICAN PENSION INVESTORS TRUST,764859,2018-03,-29  edgar/data/764859/0001193125-18-102243.txt,merger/reorg
+N-14/A,Aberdeen Funds,1413594,2018-03,-09  edgar/data/1413594/0001104659-18-016338.txt,merger/reorg
+N-14/A,"BlackRock Variable Series Funds, Inc.",355916,2018-02,-05  edgar/data/355916/0001193125-18-032259.txt,merger/reorg
+N-14/A,CM ADVISORS FAMILY OF FUNDS,1208252,2018-01,-12  edgar/data/1208252/0001398344-18-000557.txt,merger/reorg
+N-14/A,DIMENSIONAL INVESTMENT GROUP INC,861929,2018-01,-23  edgar/data/861929/0001193125-18-017323.txt,merger/reorg
+N-14/A,DREYFUS PREMIER WORLDWIDE GROWTH FUND INC,897569,2018-03,-22  edgar/data/897569/0001144204-18-016381.txt,merger/reorg
+N-14/A,Fiera Capital Series Trust,1691994,2018-03,-09  edgar/data/1691994/0001140361-18-012739.txt,merger/reorg
+N-14/A,SCM Trust,836267,2018-03,-26  edgar/data/836267/0001398344-18-004733.txt,merger/reorg
+N-14/A,SCM Trust,836267,2018-03,-26  edgar/data/836267/0001398344-18-004736.txt,merger/reorg
+N-14/A,UNIFIED SERIES TRUST,1199046,2018-02,-26  edgar/data/1199046/0001193125-18-057875.txt,merger/reorg
+N-8F,CROFT FUNDS CORP,927437,2018-01,-24  edgar/data/927437/0001162044-18-000037.txt,deregistration
+N-8F,Cushing MLP Infrastructure Fund I,1498753,2018-01,-05  edgar/data/1498753/0001193125-18-004439.txt,deregistration
+N-8F,Cushing MLP Infrastructure Master Fund,1646350,2018-01,-05  edgar/data/1646350/0001193125-18-004450.txt,deregistration
+N-8F,LocalShares Investment Trust,1558303,2018-03,-05  edgar/data/1558303/0001398344-18-003432.txt,deregistration
+N-8F,MORGAN STANLEY LIQUID ASSET FUND INC,93285,2018-02,-09  edgar/data/93285/0001104659-18-007882.txt,deregistration
+N-8F,"Meehan Mutual Funds, Inc.",1094457,2018-02,-22  edgar/data/1094457/0001111830-18-000041.txt,deregistration
+N-8F,Prospect Marketplace Lending Corp,1685710,2018-01,-04  edgar/data/1685710/0001685710-18-000002.txt,deregistration
+N-8F,RAINIER INVESTMENT MANAGEMENT MUTUAL FUNDS,917125,2018-02,-13  edgar/data/917125/0000894189-18-000889.txt,deregistration
+N-8F,SCOUT FUNDS,1105128,2018-02,-06  edgar/data/1105128/0001680359-18-000046.txt,deregistration
+N-8F,TSC UITS,1553385,2018-01,-10  edgar/data/1553385/0001013228-18-000033.txt,deregistration
+N-8F,Transamerica AUIM Opportunistic Bond,1561400,2018-01,-24  edgar/data/1561400/0001193125-18-018180.txt,deregistration
+N-8F,WADDELL & REED ADVISORS FUNDS,1072962,2018-03,-19  edgar/data/1072962/0001193125-18-087251.txt,deregistration
+N-8F NTC,AETNA MULTI-STRATEGY 1099 FUND,1552250,2018-01,-05  edgar/data/1552250/9999999997-17-011036.txt,deregistration
+N-8F NTC,Ashmore Emerging Markets Income Fund,1562376,2018-01,-31  edgar/data/1562376/9999999997-18-000560.txt,deregistration
+N-8F NTC,BlueArc Multi-Strategy Fund,1616980,2018-01,-08  edgar/data/1616980/9999999997-17-011046.txt,deregistration
+N-8F NTC,Brookfield MLP & Energy Infrastructure Income Fund Inc.,1601743,2018-01,-05  edgar/data/1601743/9999999997-17-011033.txt,deregistration
+N-8F NTC,CCA Investments Trust,1557802,2018-01,-05  edgar/data/1557802/9999999997-17-011035.txt,deregistration
+N-8F NTC,CMBS Portfolio,1557018,2018-01,-31  edgar/data/1557018/9999999997-18-000563.txt,deregistration
+N-8F NTC,"Center Coast Core MLP Fund II, LLC",1521972,2018-01,-05  edgar/data/1521972/9999999997-17-011032.txt,deregistration
+N-8F NTC,Currency Income Advantage Portfolio,1579655,2018-01,-31  edgar/data/1579655/9999999997-18-000562.txt,deregistration
+N-8F NTC,Cushing MLP Infrastructure Fund I,1498753,2018-01,-31  edgar/data/1498753/9999999997-18-000580.txt,deregistration
+N-8F NTC,Cushing MLP Infrastructure Master Fund,1646350,2018-01,-31  edgar/data/1646350/9999999997-18-000581.txt,deregistration
+N-8F NTC,EnTrustPermal Hedge Strategies Fund I,1534643,2018-01,-31  edgar/data/1534643/9999999997-18-000567.txt,deregistration
+N-8F NTC,EnTrustPermal Hedge Strategies Fund II,1574762,2018-01,-31  edgar/data/1574762/9999999997-18-000568.txt,deregistration
+N-8F NTC,EnTrustPermal Hedge Strategies Portfolio,1578342,2018-01,-31  edgar/data/1578342/9999999997-18-000569.txt,deregistration
+N-8F NTC,FEG Directional Access Fund LLC,1489471,2018-01,-08  edgar/data/1489471/9999999997-17-011045.txt,deregistration
+N-8F NTC,FEG Directional Access TEI Fund LLC,1667215,2018-01,-08  edgar/data/1667215/9999999997-17-011044.txt,deregistration
+N-8F NTC,FINANCE CO OF PENNSYLVANIA,35616,2018-01,-05  edgar/data/35616/9999999997-17-011034.txt,deregistration
+N-8F NTC,HENDERSON GLOBAL FUNDS,1141306,2018-01,-05  edgar/data/1141306/9999999997-17-011037.txt,deregistration
+N-8F NTC,Integrity Managed Portfolios,866841,2018-01,-05  edgar/data/866841/9999999997-17-011038.txt,deregistration
+N-8F NTC,KOREA EQUITY FUND INC,912023,2018-01,-05  edgar/data/912023/9999999997-17-011031.txt,deregistration
+N-8F NTC,MARKETOCRACY FUNDS,1090154,2018-01,-31  edgar/data/1090154/9999999997-18-000576.txt,deregistration
+N-8F NTC,MIDWEST INVESTORS PROGRAM,66122,2018-02,-23  edgar/data/66122/9999999997-18-001017.txt,deregistration
+N-8F NTC,MONTAGE MANAGERS TRUST,1626633,2018-01,-31  edgar/data/1626633/9999999997-18-000564.txt,deregistration
+N-8F NTC,MORGAN STANLEY LIQUID ASSET FUND INC,93285,2018-02,-23  edgar/data/93285/9999999997-18-001021.txt,deregistration
+N-8F NTC,MSAM Completion Portfolio,1527677,2018-01,-31  edgar/data/1527677/9999999997-18-000561.txt,deregistration
+N-8F NTC,NorthStar Corporate Income Fund,1649201,2018-01,-31  edgar/data/1649201/9999999997-18-000577.txt,deregistration
+N-8F NTC,NorthStar Corporate Income Fund-T,1658653,2018-02,-01  edgar/data/1658653/9999999997-18-000636.txt,deregistration
+N-8F NTC,NorthStar Corporate Income Fund-T,1658653,2018-02,-23  edgar/data/1658653/9999999997-18-000637.txt,deregistration
+N-8F NTC,NorthStar Corporate Income Master Fund,1649202,2018-01,-31  edgar/data/1649202/9999999997-18-000578.txt,deregistration
+N-8F NTC,Nuveen Quality Municipal 2018 Term Fund,1586496,2018-01,-31  edgar/data/1586496/9999999997-18-000565.txt,deregistration
+N-8F NTC,Nuveen Technology Opportunities Fund,1623264,2018-01,-31  edgar/data/1623264/9999999997-18-000566.txt,deregistration
+N-8F NTC,PLIFUNDS INVESTMENT PLANS,79176,2018-02,-23  edgar/data/79176/9999999997-18-001025.txt,deregistration
+N-8F NTC,Prospect Marketplace Lending Corp,1685710,2018-01,-31  edgar/data/1685710/9999999997-18-000579.txt,deregistration
+N-8F NTC,RAINIER INVESTMENT MANAGEMENT MUTUAL FUNDS,917125,2018-02,-23  edgar/data/917125/9999999997-18-001022.txt,deregistration
+N-8F NTC,RidgeWorth Funds,883939,2018-01,-05  edgar/data/883939/9999999997-17-011039.txt,deregistration
+N-8F NTC,SCOUT FUNDS,1105128,2018-02,-23  edgar/data/1105128/9999999997-18-001019.txt,deregistration
+N-8F NTC,Salient Alternative Strategies I Fund,1482208,2018-01,-31  edgar/data/1482208/9999999997-18-000570.txt,deregistration
+N-8F NTC,Salient Alternative Strategies Master Fund,1482209,2018-01,-31  edgar/data/1482209/9999999997-18-000571.txt,deregistration
+N-8F NTC,TFS CAPITAL INVESTMENT TRUST,1283381,2018-01,-05  edgar/data/1283381/9999999997-17-011040.txt,deregistration
+N-8F NTC,TRANSAMERICA PARTNERS FUNDS GROUP,902844,2018-01,-08  edgar/data/902844/9999999997-17-011043.txt,deregistration
+N-8F NTC,TRANSAMERICA PARTNERS FUNDS GROUP II,1004784,2018-01,-08  edgar/data/1004784/9999999997-17-011042.txt,deregistration
+N-8F NTC,TRANSAMERICA PARTNERS PORTFOLIOS,917153,2018-01,-08  edgar/data/917153/9999999997-17-011041.txt,deregistration
+N-8F NTC,TSC UITS,1553385,2018-01,-31  edgar/data/1553385/9999999997-18-000582.txt,deregistration
+N-8F ORDR,AETNA MULTI-STRATEGY 1099 FUND,1552250,2018-01,-30  edgar/data/1552250/9999999997-18-000594.txt,deregistration
+N-8F ORDR,Ashmore Emerging Markets Income Fund,1562376,2018-02,-23  edgar/data/1562376/9999999997-18-001068.txt,deregistration
+N-8F ORDR,BlueArc Multi-Strategy Fund,1616980,2018-01,-30  edgar/data/1616980/9999999997-18-000604.txt,deregistration
+N-8F ORDR,Brookfield MLP & Energy Infrastructure Income Fund Inc.,1601743,2018-01,-30  edgar/data/1601743/9999999997-18-000591.txt,deregistration
+N-8F ORDR,CCA Investments Trust,1557802,2018-01,-30  edgar/data/1557802/9999999997-18-000593.txt,deregistration
+N-8F ORDR,CMBS Portfolio,1557018,2018-02,-23  edgar/data/1557018/9999999997-18-001067.txt,deregistration
+N-8F ORDR,"Center Coast Core MLP Fund II, LLC",1521972,2018-01,-30  edgar/data/1521972/9999999997-18-000590.txt,deregistration
+N-8F ORDR,Currency Income Advantage Portfolio,1579655,2018-02,-23  edgar/data/1579655/9999999997-18-001066.txt,deregistration
+N-8F ORDR,Cushing MLP Infrastructure Fund I,1498753,2018-02,-23  edgar/data/1498753/9999999997-18-001065.txt,deregistration
+N-8F ORDR,Cushing MLP Infrastructure Fund II,1652195,2018-01,-05  edgar/data/1652195/9999999997-18-000215.txt,deregistration
+N-8F ORDR,Cushing MLP Infrastructure Master Fund,1646350,2018-02,-23  edgar/data/1646350/9999999997-18-001064.txt,deregistration
+N-8F ORDR,"DEUTSCHE GLOBAL HIGH INCOME FUND, INC.",887590,2018-01,-05  edgar/data/887590/9999999997-18-000217.txt,deregistration
+N-8F ORDR,EnTrustPermal Hedge Strategies Fund I,1534643,2018-02,-23  edgar/data/1534643/9999999997-18-001063.txt,deregistration
+N-8F ORDR,EnTrustPermal Hedge Strategies Fund II,1574762,2018-02,-23  edgar/data/1574762/9999999997-18-001062.txt,deregistration
+N-8F ORDR,EnTrustPermal Hedge Strategies Portfolio,1578342,2018-02,-23  edgar/data/1578342/9999999997-18-001061.txt,deregistration
+N-8F ORDR,FEG Directional Access Fund LLC,1489471,2018-01,-30  edgar/data/1489471/9999999997-18-000603.txt,deregistration
+N-8F ORDR,FEG Directional Access TEI Fund LLC,1667215,2018-01,-30  edgar/data/1667215/9999999997-18-000602.txt,deregistration
+N-8F ORDR,FINANCE CO OF PENNSYLVANIA,35616,2018-01,-30  edgar/data/35616/9999999997-18-000592.txt,deregistration
+N-8F ORDR,HENDERSON GLOBAL FUNDS,1141306,2018-01,-30  edgar/data/1141306/9999999997-18-000595.txt,deregistration
+N-8F ORDR,Integrity Managed Portfolios,866841,2018-01,-30  edgar/data/866841/9999999997-18-000596.txt,deregistration
+N-8F ORDR,KOREA EQUITY FUND INC,912023,2018-01,-30  edgar/data/912023/9999999997-18-000589.txt,deregistration
+N-8F ORDR,MARKETOCRACY FUNDS,1090154,2018-02,-23  edgar/data/1090154/9999999997-18-001059.txt,deregistration
+N-8F ORDR,MIDWEST INVESTORS PROGRAM,66122,2018-03,-27  edgar/data/66122/9999999997-18-003823.txt,deregistration
+N-8F ORDR,MONTAGE MANAGERS TRUST,1626633,2018-02,-23  edgar/data/1626633/9999999997-18-001057.txt,deregistration
+N-8F ORDR,MORGAN STANLEY LIQUID ASSET FUND INC,93285,2018-03,-27  edgar/data/93285/9999999997-18-003825.txt,deregistration
+N-8F ORDR,MSAM Completion Portfolio,1527677,2018-02,-23  edgar/data/1527677/9999999997-18-001056.txt,deregistration
+N-8F ORDR,NB Crossroads Private Markets Fund IV (TE) - Custody Clie,nt   1659345,2018-01,-05  edgar/data/1659345/9999999997-18-000218.txt,deregistration
+N-8F ORDR,NB Crossroads Private Markets Fund IV (TI) - Custody Clie,nt   1658120,2018-01,-05  edgar/data/1658120/9999999997-18-000219.txt,deregistration
+N-8F ORDR,NorthStar Corporate Income Fund,1649201,2018-02,-23  edgar/data/1649201/9999999997-18-001054.txt,deregistration
+N-8F ORDR,NorthStar Corporate Income Fund-T,1658653,2018-02,-23  edgar/data/1658653/9999999997-18-001055.txt,deregistration
+N-8F ORDR,NorthStar Corporate Income Master Fund,1649202,2018-02,-23  edgar/data/1649202/9999999997-18-001053.txt,deregistration
+N-8F ORDR,Nuveen Quality Municipal 2018 Term Fund,1586496,2018-02,-23  edgar/data/1586496/9999999997-18-001052.txt,deregistration
+N-8F ORDR,Nuveen Technology Opportunities Fund,1623264,2018-02,-23  edgar/data/1623264/9999999997-18-001049.txt,deregistration
+N-8F ORDR,PACHOLDER HIGH YIELD FUND INC,837951,2018-01,-05  edgar/data/837951/9999999997-18-000220.txt,deregistration
+N-8F ORDR,PLIFUNDS INVESTMENT PLANS,79176,2018-03,-27  edgar/data/79176/9999999997-18-003827.txt,deregistration
+N-8F ORDR,Prospect Marketplace Lending Corp,1685710,2018-02,-23  edgar/data/1685710/9999999997-18-001046.txt,deregistration
+N-8F ORDR,RAINIER INVESTMENT MANAGEMENT MUTUAL FUNDS,917125,2018-03,-27  edgar/data/917125/9999999997-18-003826.txt,deregistration
+N-8F ORDR,RidgeWorth Funds,883939,2018-01,-30  edgar/data/883939/9999999997-18-000597.txt,deregistration
+N-8F ORDR,SCOUT FUNDS,1105128,2018-03,-27  edgar/data/1105128/9999999997-18-003824.txt,deregistration
+N-8F ORDR,Salient Alternative Strategies I Fund,1482208,2018-02,-23  edgar/data/1482208/9999999997-18-001045.txt,deregistration
+N-8F ORDR,Salient Alternative Strategies Master Fund,1482209,2018-02,-23  edgar/data/1482209/9999999997-18-001039.txt,deregistration
+N-8F ORDR,TFS CAPITAL INVESTMENT TRUST,1283381,2018-01,-30  edgar/data/1283381/9999999997-18-000598.txt,deregistration
+N-8F ORDR,TRANSAMERICA PARTNERS FUNDS GROUP,902844,2018-01,-30  edgar/data/902844/9999999997-18-000601.txt,deregistration
+N-8F ORDR,TRANSAMERICA PARTNERS FUNDS GROUP II,1004784,2018-01,-30  edgar/data/1004784/9999999997-18-000600.txt,deregistration
+N-8F ORDR,TRANSAMERICA PARTNERS PORTFOLIOS,917153,2018-01,-30  edgar/data/917153/9999999997-18-000599.txt,deregistration
+N-8F ORDR,TSC UITS,1553385,2018-02,-23  edgar/data/1553385/9999999997-18-001031.txt,deregistration
+N-8F/A,Ashmore Emerging Markets Income Fund,1562376,2018-01,-10  edgar/data/1562376/0001193125-18-007949.txt,deregistration
+N-8F/A,CMBS Portfolio,1557018,2018-01,-09  edgar/data/1557018/0000940394-18-000023.txt,deregistration
+N-8F/A,CROFT FUNDS CORP,927437,2018-02,-22  edgar/data/927437/0001162044-18-000104.txt,deregistration
+N-8F/A,Currency Income Advantage Portfolio,1579655,2018-01,-09  edgar/data/1579655/0000940394-18-000024.txt,deregistration
+N-8F/A,EnTrustPermal Hedge Strategies Fund I,1534643,2018-01,-04  edgar/data/1534643/0001193125-18-001825.txt,deregistration
+N-8F/A,EnTrustPermal Hedge Strategies Fund II,1574762,2018-01,-04  edgar/data/1574762/0001193125-18-001822.txt,deregistration
+N-8F/A,EnTrustPermal Hedge Strategies Portfolio,1578342,2018-01,-04  edgar/data/1578342/0001193125-18-001820.txt,deregistration
+N-8F/A,MIDWEST INVESTORS PROGRAM,66122,2018-02,-02  edgar/data/66122/0001144204-18-005510.txt,deregistration
+N-8F/A,MSAM Completion Portfolio,1527677,2018-01,-09  edgar/data/1527677/0000940394-18-000025.txt,deregistration
+N-8F/A,NorthStar Corporate Income Fund,1649201,2018-01,-18  edgar/data/1649201/0001144204-18-002524.txt,deregistration
+N-8F/A,NorthStar Corporate Income Fund-T,1658653,2018-01,-18  edgar/data/1658653/0001144204-18-002526.txt,deregistration
+N-8F/A,NorthStar Corporate Income Master Fund,1649202,2018-01,-18  edgar/data/1649202/0001144204-18-002528.txt,deregistration
+N-8F/A,PLIFUNDS INVESTMENT PLANS,79176,2018-02,-02  edgar/data/79176/0001144204-18-005516.txt,deregistration
+N-8F/A,PLIFUNDS INVESTMENT PLANS,79176,2018-02,-22  edgar/data/79176/0001144204-18-010080.txt,deregistration
+N-8F/A,Prospect Marketplace Lending Corp,1685710,2018-01,-11  edgar/data/1685710/0001685710-18-000004.txt,deregistration
+N-8F/A,Transamerica AUIM Opportunistic Bond,1561400,2018-03,-07  edgar/data/1561400/0001193125-18-073212.txt,deregistration
